@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<title>Computer Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h5, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+         h5 {
+            font-size: 30px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h5 {
+            font-size: 26px
+        }
+
+        h8 {
+            font-size: 27px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+    h3, h2, h3, h4,h8 {
+        color: #222;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+<html lang="en">
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">Computer Network</h3> <!-- Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
+            <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computer Network</a> <!-- Change-->
+
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Computer Network</span>
+    </header>
+
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:330px;margin-right:40px">
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div style="margin-top:10px" id="showcase">
+                <h8 style="margin-left: 30%"><b>Contents</b></h8> <!--Change-->
+                <br>
+                <br>
+                <br>
+                <div class="web">
+                    <p>
+                        <h1><b>Protocol Architecture,TCP/IP, and Internet-Based Applications</b></h1>
+                        The Need for a Protocol Architecture
+                        <br>The TCP/IP Protocol Architecture
+                        <br>The OSI Model
+                        <br>Standardization within a Protocol Architecture
+                        <br>Traditional Internet-Based Applications
+                        <br>Multimedia
+                        <br>
+                        <br>
+                        <h3><b>DATA COMMUNICATIONS</b></h3>
+                        <br>
+                        <h1><b>Data Transmission</b></h1>
+                        Concepts and Terminology
+                        <br>Analog and Digital Data Transmission
+                        <br>Transmission Impairments
+                        <br>Channel Capacity
+                        <br>
+                        <br>
+                        <h1><b>Transmission Media</b></h1>
+                        Guided Transmission Media
+                        <br>Wireless Transmission
+                        <br>Wireless Propagation
+                        <br>Line-of-Sight Transmission
+                        <br>
+                        <br>
+                        <h1><b>Signal Encoding Techniques</b></h1>
+                        Digital Data, Digital Signals
+                        <br>Digital Data,Analog Signals
+                        <br>Analog Data, Digital Signals
+                        <br>Analog Data,Analog Signals
+                        <br>
+                        <br>
+                        <h1><b>Digital Data Communication Techniques</b></h1>
+                        Asynchronous and Synchronous Transmission
+                        <br>Types of Errors
+                        <br>Error Detection
+                        <br>Error Correction
+                        <br>Line Configurations
+                        <br><br>
+                        <h1><b>Data Link Control Protocols</b></h1>
+                        Flow Control
+                        <br>Error Control
+                        <br>High-Level Data Link Control (HDLC)
+                        <br>
+                        <br>
+                        <h1><b>Multiplexing</b></h1>
+                        Frequency-Division Multiplexing
+                        <br>Synchronous Time-Division Multiplexing
+                        <br>Statistical Time-Division Multiplexing
+                        <br>Asymmetric Digital Subscriber Line
+                        <br>xDSL
+                        <br><br>
+                        <h1><b>Spread Spectrum</b></h1>
+                        The Concept of Spread Spectrum
+                        <br>Frequency Hopping Spread Spectrum
+                        <br>Direct Sequence Spread Spectrum
+                        <br>Code-Division Multiple Access
+                        <br>
+                        <br>
+                        <h3><b>WIDE AREA NETWORKS</b></h3>
+                        <br>
+                        <h1><b>Circuit Switching and Packet Switching</b></h1>
+                        Switched Communications Networks
+                        <br>Circuit Switching Networks
+                        <br>Circuit Switching Concepts
+                        <br>Softswitch Architecture
+                        <br>Packet-Switching Principles
+                        <br>X.25
+                        <br>Frame Relay
+                        <br>
+                        <br>
+                        <h1><b>Asynchronous Transfer Mode</b></h1>
+                        Protocol Architecture
+                        <br>ATM Logical Connections
+                        <br>ATM Cells
+                        <br>Transmission of ATM Cells
+                        <br>ATM Service Categories
+                        <br>
+                        <br>
+                        <h1><b>Routing in Switched Networks</b></h1>
+                        Routing in Packet-Switching Networks
+                        <br>Examples: Routing in ARPANET
+                        <br>Least-Cost Algorithms
+                        <br>
+                        <br>
+                        <h1><b>Congestion Control in Data Networks</b></h1>
+                        Effects of Congestion
+                        <br>Congestion Control
+                        <br>Traffic Management
+                        <br>Congestion Control in Packet-Switching Networks
+                        <br>Frame Relay Congestion Control
+                        <br>ATM Traffic Management
+                        <br>ATM-GFR Traffic Management
+                        <br>
+                        <br>
+                        <h1><b>Cellular Wireless Network</b></h1>
+                        Principles of Cellular Networks
+                        <br>First Generation Analog
+                        <br>Second Generation CDMA
+                        <br>Third Generation Systems
+                        <br>
+                        <br>
+                        <h3><b>LOCAL AREA NETWORKS</b></h3>
+                        <br>
+                        <h1><b>Local Area Network</b></h1>
+                        Topologies and Transmission Media
+                        <br>LAN Protocol Architecture
+                        <br>Bridge
+                        <br>Layer 2 and Layer 3 Switches
+                        <br>
+                        <br>
+                        <h1><b>High-Speed LANs</b></h1>
+                        The Emergence of High-Speed LANs
+                        <br>Ethernet
+                        <br>Fibre Channe
+                        <br><br>
+                        <h1><b>Wireless LANs</b></h1>
+                        Wireless LAN Technology
+                        <br>IEEE 802.11 Architecture and Services
+                        <br>IEEE 802.11 Medium Access Control
+                        <br>IEEE 802.11 Physical Layer
+                        <br>IEEE 802.11 Security Considerations
+                        <br>
+                        <br>
+                        <h3><b>INTERNET AND TRANSPORT PROTOCOLS</b></h3>
+                        <br>
+                        <h1><b>Internetwork Protocols</b></h1>
+                        Basic Protocol Functions
+                        <br>Principles of Internetworking
+                        <br>Internet Protocol Operation
+                        <br>Internet Protocol
+                        <br>IPv6
+                        <br>Virtual Private Networks and IP Security
+                        <br>
+                        <br>
+                        <h1><b>Internetwork Operation</b></h1>
+                        Multicasting
+                        <br>Routing Protocols
+                        <br>Integrated Services Architecture
+                        <br>Differentiated Services
+                        <br>Service Level Agreements
+                        <br>IP Performance Metrics
+                        <br>
+                        <br>
+                        <h1><b>Transport Protocols</b></h1>
+                        Transport Protocols
+                        <br>TCP
+                        <br>TCP Congestion Control
+                        <br>UDP
+                        <br>
+                        <br>
+                        <h3><b>INTERNET APPLICATIONS</b></h3>
+                        <br>
+                        <h1><b>Network Security</b></h1>
+                        Security Requirements and Attacks
+                        <br>Confidentiality with Conventional Encryption
+                        <br>Message Authentication and Hash Functions
+                        <br>Public-Key Encryption and Digital Signatures
+                        <br>Secure Socket Layer and Transport Layer Security
+                        <br>IPv4 and IPv6 Security
+                        <br>Wi-Fi Protected Access
+                        <br>
+                        <br>
+                        <h1><b>Internet Applications—Electronic Mail and Network Management</b></h1>
+                        Electronic Mail: SMTP and MIME
+                        <br>Network Management: SNMP
+                        <br>
+                        <br>
+                        <h1><b>Internet Applications—Internet Directory Service and World Wide Web</b></h1>
+                        Internet Directory Service: DNS
+                        <br>Web Access: HTTP
+                        <br>
+                        <br>
+                        <h1><b>Internet Applications—Multimedia</b></h1>
+                        Audio and Video Compression
+                        <br>Real-Time Traffic
+                        <br>Voice Over IP and Multimedia Support—SIP
+                        <br>Real-Time Transport Protocol (RTP)
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+                <div class="web">
+
+                        <div class="w3-container">
+                            <h3><b>Lecture Series</b></h3>
+                            <p>
+                                <h1>Computer Network Lecture by Philip Levis and Nick McKeown | Stanford University</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/qAFI-2I7wPE?list=PLoCMsyE1cvdWKsLVyf6cPwCLDIZnOj0NS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Computer Network Lecture by Nick Feamster | Georgia Tech University</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/KvirwHHTcNs?list=PLpherdrLyny-zJw95jcE-uJkcsIAG1MEn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Computer Networking Complete Course - Basic to Advanced by My CS</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/0PbTi_Prpgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Computer Networking Fundamentals by Microsoft</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/k9ZigsW9il0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Computer Network Fundamentals by Network Direction</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/cupc6Helc6Y?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>CCNA Lecture by Network Direction</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/6tl1GlXjtUQ?list=PLDQaRcbiSnqEDtULk0YIO-Lo2x5Yb_0yv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h1>CCNA Lecture by Network Chuck</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/oIRkXulqJA4?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Computer network by Kenan Casey</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/qL7ZGeSoQRM?list=PLLFIgriuZPAcCkmSTfcq7oaHcVy3rzEtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Computer networking by Eli the computer guy</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/MsJ1A0W7U20?list=PLF360ED1082F6F2A5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+
+                            </p>
+
+                            <h3><b>Reference</b></h3> <!--Change-->
+
+                            <h1>
+                                <i>
+                                    Data & Computer Communications
+                                    Book by William Stallings
+                                </i>
+                            </h1>
+                            <br>
+
+
+                            <div class="responsive">
+                                <div class="gallery">
+                                    <a target="_blank" href="Computer Network Pic/Networking.jpg">
+                                        <img src="Computer Network Pic/Networking.jpg" alt="Equations" style="width:60%">
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                        
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+    </div>
+
+ 
+    <script>
+
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function w3_openmenu() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_closemenu() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClickmenu(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+
+
+    </script>
+
+</body>
+</html>

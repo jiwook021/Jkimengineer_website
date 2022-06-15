@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>JKim Introduction to Proofs- Discrete Mathematics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body, h1, h2, h3, h4, h5 {
+        font-family: "Lato", sans-serif
+    }
+    p, body, html {
+        height: 100%;
+        color: #6b6b6b;
+        line-height: 1.8;
+    }
+
+    body {
+        font-size: 16px;
+   }
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+     .w3-half img:hover {
+            opacity: 1
+     }
+</style>
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        
+        
+        
+        <div class="w3-container">
+            <h3 class="w3-padding-32"><b>Discrete Mathematics</b></h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Mathematics</a>
+            <a href="../Discrete Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Discrete Mathematics</a>
+            <br>
+            <a href="Introduction to Proofs.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Introduction to Proofs</a>
+            <a href="The well ordering Principle.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">The well ordering Principle</a>
+            <a href="Logical Formulas.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Logical Formulas</a>
+            <a href="Mathematical Data Types.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Mathematical Data Types</a>
+            <a href="Induction.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Induction</a>
+            <a href="Recursive Data Types.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Recursive Data Types</a>
+            <a href="Infinite Sets.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Infinite Sets</a>
+            <BR>
+            <a href="Number Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Number Theory</a>
+            <a href="Directed graphs & Partial Orders.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Directed graphs & Partial Orders</a>
+            <a href="Communication Networks.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Communication Networks</a>
+            <a href="Simple Graphs.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Simple Graphs</a>
+            <a href="Planar Graphs.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Planar Graphs</a>
+            <BR>
+            <a href="Events and Probability Spaces.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Events and Probability Spaces</a>
+            <a href="Conditional Probability.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Conditional Probability</a>
+            <a href="Random Variable.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Random Variables</a>
+            <a href="Deviation from the Mean.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Deviation from the Mean</a>
+            <a href="Random Walks.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Random Walks</a>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-grey w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-grey w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Discrete Mathematics</span>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo w3-text-grey"><b>Introduction to Proofs</b></h1>
+        </div>
+
+        <!-- Services -->
+        <div class="w3-container" id="services" style="margin-top:75px">
+
+
+
+            <!-- TITLE -->
+            <!-- INFO STARTS HERE -->
+
+
+
+
+
+        </div>
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function w3_openmenu() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_closemenu() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            function onClickmenu(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+        </script>
+</body>
+</html>

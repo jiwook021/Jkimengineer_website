@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+
+<title>JKim Audio Books</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+
+    a:link {
+        color: #555;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #222;
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 36px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: 13px
+        }
+
+        h2 {
+            font-size: 15px
+        }
+
+        h3 {
+            font-size: 18px
+        }
+
+        h4 {
+            font-size: 21px
+        }
+
+        h8 {
+            font-size: 27px
+        }
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+</style>
+<html lang="en">
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:230px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-32"><b>Audio Books</b></h3> <!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Audio Books</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:260px;margin-right:50px">
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-xlarge"><b>My Audio Books</b></h1>
+            <br><br>
+            <div class="responsive">
+                <div class="gallery">
+
+                    <a target="_blank" href="audio books/An Introduction to Information Theory.jpg">
+                        <img src="audio books/An Introduction to Information Theory.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/AWS.jfif">
+                        <img src="audio books/AWS.jfif" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Clean Architecture.jpg">
+                        <img src="audio books/Clean Architecture.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Comptia Network Mike.jpg">
+                        <img src="audio books/Comptia Network Mike.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Comptia Network+ study guide.jpg">
+                        <img src="audio books/Comptia Network+ study guide.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Comptia Network+.jpg">
+                        <img src="audio books/Comptia Network+.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/Computer Networking All in One.jpg">
+                        <img src="audio books/Computer Networking All in One.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Computer Networking First.jpg">
+                        <img src="audio books/Computer Networking First.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Computer networking jacob.jpg">
+                        <img src="audio books/Computer networking jacob.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/DDA.jpg">
+                        <img src="audio books/DDA.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Deep Learning with Python.jpg">
+                        <img src="audio books/Deep Learning with Python.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Elon Musk.jpg">
+                        <img src="audio books/Elon Musk.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Great Ideas of Classical Physics.jpg">
+                        <img src="audio books/Great Ideas of Classical Physics.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/kali Linux.jpg">
+                        <img src="audio books/kali Linux.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/linux 3books.jpg">
+                        <img src="audio books/linux 3books.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Something_Deeply_Hiddern.jpg">
+                        <img src="audio books/Something_Deeply_Hiddern.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Linux.jpg">
+                        <img src="audio books/Linux.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Naked Statistics.jpg">
+                        <img src="audio books/Naked Statistics.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Physics of the future.jpg">
+                        <img src="audio books/Physics of the future.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Qauntum Physics.jpg">
+                        <img src="audio books/Qauntum Physics.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Steve Jobs.jpg">
+                        <img src="audio books/Steve Jobs.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/The alignment Problem.jpg">
+                        <img src="audio books/The alignment Problem.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/The art of the Infinite.jpg">
+                        <img src="audio books/The art of the Infinite.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/The deep Learning Revolution.jpg">
+                        <img src="audio books/The deep Learning Revolution.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/The Elegant Universe.jpg">
+                        <img src="audio books/The Elegant Universe.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/The master Algorithm.jpg">
+                        <img src="audio books/The master Algorithm.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/The Nature of Matter.jpg">
+                        <img src="audio books/The Nature of Matter.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/The Pragmatic Programmer.jpg">
+                        <img src="audio books/The Pragmatic Programmer.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Clean Code.jpg">
+                        <img src="audio books/Clean Code.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Cybersecurity.jpg">
+                        <img src="audio books/Cybersecurity.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Einstein.jpg">
+                        <img src="audio books/Einstein.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+
+                    <a target="_blank" href="audio books/Energy.jpg">
+                        <img src="audio books/Energy.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/Conquer.jpg">
+                        <img src="audio books/Conquer.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/Circuit.jpg">
+                        <img src="audio books/Circuit.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/Feynman.jpg">
+                        <img src="audio books/Feynman.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/Internet.jpg">
+                        <img src="audio books/Internet.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/Advanced.jpg">
+                        <img src="audio books/Advanced.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/LovePhysics.jpg">
+                        <img src="audio books/LovePhysics.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/hiddenreality.jpg">
+                        <img src="audio books/hiddenreality.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="audio books/mathuni.jpg">
+                        <img src="audio books/mathuni.jpg" style="width:24%" onclick="onClick(this)">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <br>
+
+        <br>
+
+    </div>
+            <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+                <a class="w3-button w3-large w3-light-grey" href="../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+                <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+                <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+            </footer>
+
+        </div>
+
+    <!-- End page content -->
+
+
+
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

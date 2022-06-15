@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<title>JKim Circuit Theory</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 36px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 20px
+        }
+
+        h3 {
+            font-size: 23px
+        }
+
+        h4 {
+            font-size: 26px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+<html lang="en">
+
+
+<body>
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">Circuit Theory</h3> <!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Hardware Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Electronics</a>
+            <a href="Circuit Theory.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Circuit Theory</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Circuit Theory</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:270px;margin-right:40px">
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div class="w3-container">
+                <h8><b>Circuit Theory</b></h8>
+                <br>
+                <br>
+                <div class="web">
+                    <p>
+                        <h1><b>Basic Components and Electric Circuits</b></h1>
+                        Units and Scales
+                        <br>Charge, Current, Voltage, and Power
+                        <br>Voltage and Current Sources
+                        <br>Ohm's Law
+                        <br><br>
+                        <h1><b>Voltage and Current Laws</b></h1> <!--Change-->
+                        Nodes, Paths, Loops, and Branches
+                        <br>Kirchhoff’s Current Law
+                        <br>Kirchhoff’s Voltage Law
+                        <br>The Single-Loop Circuit
+                        <br>The Single-Node-Pair Circuit
+                        <br>Series and Parallel Connected Sources
+                        <br>Resistors in Series and Parallel
+                        <br>Voltage and Current Division
+                        <br><br>
+                        <h1><b>BASIC NODAL AND MESH ANALYSIS</b></h1> <!--Change-->
+                        Nodal Analysis
+                        <br>The Supernode
+                        <br>Mesh Analysis
+                        <br>The Supermesh
+                        <br>Nodal vs. Mesh Analysis: A Comparison
+                        <br><br>
+                        <h1><b>HANDY CIRCUIT ANALYSIS TECHNIQUES</b></h1> <!--Change-->
+                        Linearity and Superposition
+                        <br>Source Transformations
+                        <br>Thévenin and Norton Equivalent Circuits
+                        <br>Maximum Power Transfer
+                        <br>Delta-Wye Conversion
+                        <br><br>
+                        <h1><b>THE OPERATIONAL AMPLIFIER</b></h1> <!--Change-->
+                        The Ideal Op Amp: A Cordial Introduction
+                        <br>Cascaded Stages
+                        <br>Circuits for Voltage and Current Sources
+                        <br><br>
+                        <h1><b>CAPACITORS AND INDUCTORS</b></h1> <!--Change-->
+                        The Capacitor
+                        <br>The Inductor
+                        <br>Inductance and Capacitance Combinations
+                        <br>Consequences of Linearity
+                        <br>Simple Op Amp Circuits with Capacitors
+                        <br>Duality
+                        <br><br>
+                        <h1><b>BASIC RL AND RC CIRCUITS</b></h1> <!--Change-->
+                        The Source-Free RL Circuit
+                        <br>Properties of the Exponential Response
+                        <br>The Source-Free RC Circuit
+                        <br>A More General Perspective
+                        <br>The Unit-Step Function
+                        <br>Driven RL Circuits
+                        <br>Natural and Forced Response
+                        <br>Driven RC Circuits
+                        <br><br>
+                        <h1><b>The RLC Circuit</b></h1> <!--Change-->
+                        The Source-Free Parallel Circuit
+                        <br>The Overdamped Parallel RLC Circuit
+                        <br>Critical Damping
+                        <br>The Underdamped Parallel RLC Circuit
+                        <br>The Source-Free Series RLC Circuit
+                        <br>The Complete Response of the RLC Circuit
+                        <br>The Lossless LC Circuit
+                        <br><br>
+                        <h1><b>Sinusodial Steady-State Analysis</b></h1> <!--Change-->
+                        Characteristics of Sinusoids
+                        <br>Forced Response to Sinusoidal Functions
+                        <br>The Complex Forcing Function
+                        <br>The Phasor
+                        <br>Impedance and Admittance
+                        <br>Nodal and Mesh Analysis
+                        <br>Superposition, Source Transformations and Thévenin’s Theorem
+                        <br>Phasor Diagrams
+                        <br><br>
+                        <h1><b>AC CIRCUIT POWER ANALYSIS</b></h1> <!--Change-->
+                        Instantaneous Power
+                        <br>Average Power
+                        <br>Effective Values of Current and Voltage
+                        <br>Apparent Power and Power Factor
+                        <br>Complex Power
+                        <br><br>
+                    </p>
+                </div>
+
+
+                <div class="web">
+                    <p>
+                        <h1><b>POLYPHASE CIRCUITS</b></h1> <!--Change-->
+                        Polyphase Systems
+                        <br>Single-Phase Three-Wire Systems
+                        <br>Three-Phase Y-Y Connection
+                        <br>The Delta Connection
+                        <br>Power Measurement in Three-Phase Systems
+                        <br><br>
+                        <h1><b>MAGNETICALLY COUPLED CIRCUITS</b></h1> <!--Change-->
+                        Mutual Inductance
+                        <br>Energy Considerations
+                        <br>The Linear Transformer
+                        <br>The Ideal Transformer
+                        <br><br>
+                        <h1><b>COMPLEX FREQUENCY AND THE LAPLACE TRANSFORM</b></h1> <!--Change-->
+                        Complex Frequency
+                        <br>The Damped Sinusoidal Forcing Function
+                        <br>Definition of the Laplace Transform
+                        <br>Laplace Transforms of Simple Time Functions
+                        <br>Inverse Transform Techniques
+                        <br>Basic Theorems for the Laplace Transform
+                        <br>The Initial-Value and Final-Value Theorems
+                        <br><br>
+                        <h1><b>CIRCUIT ANALYSIS IN THE s-DOMAIN</b></h1> <!--Change-->
+                        Z(s) and Y(s)
+                        <br>Nodal and Mesh Analysis in the s-Domain
+                        <br>Additional Circuit Analysis Techniques
+                        <br>Poles, Zeros, and Transfer Functions
+                        <br>Convolution
+                        <br>The Complex-Frequency Plane
+                        <br>Natural Response and the s Plane
+                        <br>A Technique for Synthesizing the Voltage Ratio H(s) = Vout/Vin
+                        <br><br>
+                        <h1><b>FREQUENCY RESPONSE</b></h1> <!--Change-->
+                        Parallel Resonance
+                        <br>Bandwidth and High-Q Circuits
+                        <br>Series Resonance
+                        <br>Other Resonant Forms
+                        <br>Scaling
+                        <br>Bode Diagrams
+                        <br>Basic Filter Design
+                        <br>Advanced Filter Design
+                        <br><br>
+                        <h1><b>TWO-PORT NETWORKS</b></h1> <!--Change-->
+                        One-Port Networks
+                        <br>Admittance Parameters
+                        <br>Some Equivalent Networks
+                        <br>Impedance Parameters
+                        <br>Hybrid Parameters
+                        <br>Transmission Parameters
+                        <br><br>
+                        <h1><b>FOURIER CIRCUIT ANALYSIS</b></h1> <!--Change-->
+                        Trigonometric Form of the Fourier Series
+                        <br>The Use of Symmetry
+                        <br>Complete Response to Periodic Forcing Functions
+                        <br>Complex Form of the Fourier Series
+                        <br>Definition of the Fourier Transform
+                        <br>Some Properties of the Fourier Transform
+                        <br>Fourier Transform Pairs for Some Simple Time Functions
+                        <br>The Fourier Transform of a General Periodic Time Function
+                        <br>The System Function and Response in the Frequency Domain
+                        <br>The Physical Significance of the System Function
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <h1 class="w3-xlarge w3-text-dark-grey content"><b>Circuit Theory by Ali Hijimiri</b></h1>
+            <p>
+                <iframe class="content" width="350" height="200" src="https://www.youtube.com/embed/i9WixHfiZPU?list=PLc7Gz02Znph_HU1I9STgC4Nv0aG_jdb8Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+            <h1 class="w3-xlarge w3-text-dark-grey content"><b>Reference</b></h1>
+            <p>
+                <a target="_blank"  class="content" href="Electronics Principles pic.jpg">
+
+                    <img src="Circuit Theory/Engineering Circuit Analysis pic.jpeg" alt="Equations" style="width:35%" onclick="onClick(this)">
+                </a>
+            </p>
+        </div>
+        </div>
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+    </div>
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

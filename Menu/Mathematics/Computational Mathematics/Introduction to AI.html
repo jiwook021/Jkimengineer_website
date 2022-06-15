@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<title>Data Structure and Algorithm JKim Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 23px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 16px
+        }
+
+        h2 {
+            font-size: 18px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+    h3,h2,h3,h8 {
+        color: #222;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:350px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Introduction to Artificial Intelligence</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computational Mathematics</a>
+            <a href="Introduction to AI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Introduction to AI</a>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-large w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Introduction to AI</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:380px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Introduction to Artificial Intelligences</b></h8>
+
+            <!-- Services -->
+            <!-- TITLE -->
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br><br>
+                <div class="web">
+                    <p>
+                        <h3><b>Problem-solving</b></h3>
+                        <br>
+                        <h1><b>Solving Problems by Searching</b></h1>
+                        Problem-Solving Agents
+                        <br>Example Problems
+                        <br>Search Algorithms
+                        <br>Uninformed Search Strategies
+                        <br>Informed (Heuristic) Search Strategies
+                        <br>Heuristic Functions
+                        <br>
+                        <br>
+                        <h1><b>Search in Complex Environment</b></h1>
+                        Local Search and Optimization Problems
+                        <br>Local Search in Continuous Spaces
+                        <br>Search with Nondeterministic Actions
+                        <br>Search in Partially Observable Environments
+                        <br>Online Search Agents and Unknown Environments
+                        <br>
+                        <br>
+                        <h1><b>Adversarial Search and Games</b></h1>
+                        Game Theory
+                        <br>Optimal Decisions in Games
+                        <br>Heuristic Alpha–Beta Tree Search
+                        <br>Monte Carlo Tree Search
+                        <br>Stochastic Games
+                        <br>Partially Observable Games
+                        <br>Limitations of Game Search Algorithms
+                        <br>
+                        <br>
+                        <h1><b>Constraint Satisfaction Problems</b></h1>
+                        Defining Constraint Satisfaction Problems
+                        <br>Constraint Propagation: Inference in CSPs
+                        <br>Backtracking Search for CSPs
+                        <br>Local Search for CSPs
+                        <br>The Structure of Problem
+                        <br><br><br><br>
+                        <h3><b>Knowledge, reasoning, and planning</b></h3>
+                        <br>
+                        <h1><b>Logical Agents</b></h1>
+                        Knowledge-Based Agents
+                        <br>The Wumpus World
+                        <br>Propositional Logic: A Very Simple Logic
+                        <br>Propositional Theorem Proving
+                        <br>Effective Propositional Model Checking
+                        <br>Agents Based on Propositional Logic
+                        <br>
+                        <br>
+                        <h1><b>First-Order Logic</b></h1>
+                        Representation Revisited
+                        <br>Syntax and Semantics of First-Order Logic
+                        <br>Using First-Order Logic
+                        <br>Knowledge Engineering in First-Order Logic
+                        <br>
+                        <br>
+                        <h1><b>Inference in First-Order Logic</b></h1>
+                        Propositional vs. First-Order Inference
+                        <br>Unification and First-Order Inference
+                        <br>Forward Chaining
+                        <br>Backward Chaining
+                        <br>Resolution
+                        <br>
+                        <br>
+                        <h1><b>Knowledge Representation </b></h1>
+                        Ontological Engineering
+                        <br>Categories and Objects
+                        <br>Events
+                        <br>Mental Objects and Modal Logic
+                        <br>Reasoning Systems for Categories
+                        <br>Reasoning with Default Information
+                        <br>
+                        <br>
+                        <h1><b>Automated Planning</b></h1>
+                        Definition of Classical Planning
+                        <br>Algorithms for Classical Planning
+                        <br>Heuristics for Planning
+                        <br>Hierarchical Planning
+                        <br>Planning and Acting in Nondeterministic Domains
+                        <br>Time, Schedules, and Resources
+                        <br>Analysis of Planning Approaches
+                        <br><br><br><br>
+                        <h3><b>Uncertain knowledge and reasoning</b></h3>
+                        <br>
+                        <h1><b>Quantifying Uncertainty</b></h1>
+                        Acting under Uncertainty
+                        <br>Basic Probability Notation
+                        <br>Inference Using Full Joint Distributions
+                        <br>Independence
+                        <br>Bayes’ Rule and Its Use
+                        <br>Naive Bayes Models
+                        <br>The Wumpus World Revisited
+                        <br>
+                        <br>
+                        <h1><b>Probabilistic Reasoning</b></h1>
+                        Representing Knowledge in an Uncertain Domain
+                        <br>The Semantics of Bayesian Networks
+                        <br>Exact Inference in Bayesian Networks
+                        <br>Approximate Inference for Bayesian Networks
+                        <br>Causal Networks
+                        <br>
+                        <br>
+                        <h1><b>Probabilistic Reasoning over Time</b></h1>
+                        Time and Uncertainty
+                        <br>Inference in Temporal Models
+                        <br>Hidden Markov Models
+                        <br>Kalman Filters
+                        <br>Dynamic Bayesian Networks
+                        <br>
+                        <br>
+                        <h1><b>Probabilistic Programming</b></h1>
+                        Relational Probability Models
+                        <br>Open-Universe Probability Models
+                        <br>Keeping Track of a Complex World
+                        <br>Programs as Probability Models
+                        <br>
+                        <br>
+                        <h1><b>Making Simple Decisions</b></h1>
+                        Combining Beliefs and Desires under Uncertainty
+                        <br>The Basis of Utility Theory
+                        <br>Utility Functions
+                        <br>Multiattribute Utility Functions
+                        <br>Decision Networks
+                        <br>The Value of Information
+                        <br>Unknown Preferences
+                        <br>
+                        <br>
+                        <h1><b>Making Complex Decisions</b></h1>
+                        Sequential Decision Problems
+                        <br>Algorithms for MDPs
+                        <br>Bandit Problems
+                        <br>Partially Observable MDPs
+                        <br>Algorithms for Solving POMDPs
+                        <br>
+                        <br>
+                        <h1><b>Multiagent Decision Making</b></h1>
+                        Properties of Multiagent Environments
+                        <br>Non-Cooperative Game Theory
+                        <br>Cooperative Game Theory
+                        <br>Making Collective Decisions
+                    </p>
+
+
+                </div>
+                <div class="web">
+                    <p>
+                        <h3><b>Machine Learning</b></h3>
+                        <br>
+                        <h1><b>Learning from Examples</b></h1>
+                        Forms of Learning
+                        <br>Supervised Learning
+                        <br>Learning Decision Trees
+                        <br>Model Selection and Optimization
+                        <br>The Theory of Learning
+                        <br>Linear Regression and Classification
+                        <br>Nonparametric Models
+                        <br>Ensemble Learning
+                        <br>Developing Machine Learning Systems
+                        <br>
+                        <br>
+                        <h1><b>Learning Probabilistic Models</b></h1>
+                        Statistical Learning
+                        <br>Learning with Complete Data
+                        <br>Learning with Hidden Variables: The EM Algorithm
+                        <br>
+                        <br>
+                        <h1><b>Deep Learning</b></h1>
+                        Simple Feedforward Networks
+                        <br>Computation Graphs for Deep Learning
+                        <br>Convolutional Networks
+                        <br>Learning Algorithms
+                        <br>Generalization
+                        <br>Recurrent Neural Networks
+                        <br>Unsupervised Learning and Transfer Learning
+                        <br>
+                        <br>
+                        <h1><b>Reinforcement Learning</b></h1>
+                        Learning from Rewards
+                        <br>Passive Reinforcement Learning
+                        <br>Active Reinforcement Learning
+                        <br>Generalization in Reinforcement Learning
+                        <br>Policy Search
+                        <br>Apprenticeship and Inverse Reinforcement Learning
+                        <br>Applications of Reinforcement Learning
+                        <br>
+                        <br><br><br><br>
+                        <h3><b>Perceiving, and acting</b></h3>
+                        <h1><b>Computer Vision</b></h1>
+                        Image Formation
+                        <br>Simple Image Features
+                        <br>Classifying Images
+                        <br>Detecting Objects
+                        <br>The 3D World
+                        <br>Using Computer Vision
+                        <br>
+                        <br>
+                        <h1><b>Robotics</b></h1>
+                        Robot Hardware
+                        <br>Robotic Perception
+                        <br>Planning and Control
+                        <br>Planning Uncertain Movements
+                        <br>Reinforcement Learning in Robotics
+                        <br>Humans and Robots
+                        <br>Alternative Robotic Frameworks
+                        <br>Application Domains
+                        <br><br><br><br>
+                    </p>
+                    <br>
+                    <h3><b>Reference</b></h3> <!--Change-->
+
+                    <h1>
+                        <i>
+
+                            Artificial Intelligence: A Modern Approach
+                            Textbook by Peter Norvig and Stuart J. Russell
+                        </i>
+                    </h1>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="responsive">
+                        <div class="gallery">
+
+                            <a target="_blank" href="Computational mathematics pics/AI.jpg">
+
+                                <img src="Computational mathematics pics/AI.jpg" alt="Equations" style="width:70%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+</body>
+</html>

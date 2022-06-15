@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<title>Deeplearning JKim Engineering</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+    h3,h2,h3,h8 {
+        color: #222;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:350px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Deep Learning</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computational Mathematics</a>
+            <a href="Deep Learning.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Deep learning</a>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-large w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Deep Learning</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:380px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Deep Learning</b></h8>
+
+            <!-- Services -->
+            <!-- TITLE -->
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br><br>
+                <div class="web">
+                    <p>
+                        <h1><b>Introduction to Deep Learning and Pytorch Libary</b></h1>
+                        Deep Learning Revolution
+                        <br>Pytorch for Deep learning
+                        <br>Hardware and Software Requirements
+                        <br><br>
+                        <h1><b>Pretrained Networks</b></h1>
+                        A Pretrained Network that recognizes the subject of an Image
+                        <br>A Pretrained model that fakes it until it makes it 
+                        <br>A Pretrained network that describes scenes
+                        <br>Torch hub
+                        <br>
+                        <br>
+                        <h1><b>Tensor</b></h1>
+                        The world as floating-point Numbers
+                        <br>Tensors: Multidimensional arrays
+                        <br>Indexing tensors
+                        <br>Named tensors
+                        <br>Tensor element types
+                        <br>The tensor API
+                        <br>Tensors: Scenic views of storage
+                        <br>Tensor metadata: Size, offset, and Stride
+                        <br>Moving tensors to the GPU 
+                        <br>Numpy interopenability
+                        <br>Generalize tensors are tensors,too
+                        <br>Serializing Tensors
+                        <br>
+                        <br>
+                        <h1><b>Real-world data representation using Tensors</b></h1>
+                        Working with images
+                        <br>3D images: Volumetric data
+                        <br>Representing tabular data
+                        <br>Working with time series 
+                        <br>Representing Text
+                        <br><br>
+                        <h1><b>The Mechanics of Learning</b></h1>
+                        A timeless lesson in modeling 
+                        <br>Learning is just parameter estimation 
+                        <br>less loss is what we want 
+                        <br>Down along the gradient
+                        <br>Pytorch's autograd: backpropogating all things
+                        <br><br>
+                        <h1><b>Using Neural Network to fit the data</b></h1>
+                        Artificial neurons
+                        <br>The pytorch nn module
+                        <br>neural network 
+                        <br>
+                        <br>
+                        <h1><b>Learning from Images</b></h1>
+                        A dataset of Tiny images
+                        <br>Distringuishing birds from airplanes 
+                        <br><br>
+                        <h1><b>Using Convolutions to generalize</b></h1>
+                        The case for convolutions
+                        <br>Convolutions in action
+                        <br>Subclassing nn.Module
+                        <br>training our convnet 
+                        <br>model design
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+                <div class="web">
+                    <p>
+                        <h1><b>Combining data sources into a unified dataset</b></h1>
+                        Raw CT data files
+                        <br>Parsing LUNA's annotation data
+                        <br>Loading individual CT Scans
+                        <br>Locating a nodule using the patient coordinate System
+                        <br>A Straightforward dataset implementation
+                        <br>
+                        <br> 
+                        <h1><b>Training a classification model</b></h1>
+                        Foundational model and training loop
+                        <br>The main entry point for our application 
+                        <br>Pretraining setup and initalization 
+                        <br>Our first-pass neural network Design
+                        <br>Training and validating the model
+                        <br>Outputting Performance metrics
+                        <br>Running the training script 
+                        <br>Evaliating the model
+                        <br>Graphing training Metrices with TensorBoard
+                        <br>Why isn't the model learning to detect nodules? 
+                        <br>
+                        <br>
+                        <h1><b>Improving training with metrics and augmentation</b></h1>
+                        High-level plan for improvement
+                        <br>False positive and False negative
+                        <br>Graphing the positives and negatives
+                        <br>what does an ideal dataset look like?
+                        <br>Revisiting the problem of overfitting
+                        <br>Preventing overfitting with data augmentation
+                        <br><br>
+                        <h1><b>Using Segmentation to find suspected nodules</b></h1>
+                        Adding a Second model to our project
+                        <br>Various type of segmentation
+                        <br>Semantic segmentation: Per-pixel classification
+                        <br>Updating the model for segmentation
+                        <br>Updating the dataset for segmentation
+                        <br>Updating the training script for segmentation
+                        <br><br>
+                        <h1><b>End-to-end nodule analysis, and where to go next</b></h1>
+                        Towards the finish line 
+                        <br>Independence of the validation set 
+                        <br>Bridging CT Segmentation and nodule candidate classification
+                        <br>Qauntitative validation
+                        <br>predicting malignancy
+                        <br>What we see when we diagnose
+                        <br>What next? Additional sources of inspiration
+                        <br>
+                        <br>
+                        <h1><b>Deploying to production</b></h1>
+                        Serving PyTorch Models
+                        <br>Exporting Models
+                        <br>Interacting with the PyTorch JIT
+                        <br>LibTorch: Pytorch in C++
+                        <br>Going mobile
+                        <br>Emerging technology: Enterprise serving of Pytorch models
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="w3-container">
+            <h3><b>Lecture Series</b></h3>
+            <br>
+            <h1>Neural Network Lecture by 3Blue1Brown</h1>
+            <br>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/aircAruvnKk?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br><h1>Convolutional Neural Network Lecture by Andrew ng</h1>
+            <br>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/ArPaAX_PhIs?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <h1>
+                <i>
+
+                    Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+
+                </i>
+            </h1>
+            <br>
+
+            <div class="responsive">
+                <div class="gallery">
+
+                    <a target="_blank" href="Computational mathematics pics/deeplearningpic.jpeg">
+
+                        <img src="Computational mathematics pics/deeplearningpic.jpeg" alt="Equations" style="width:35%">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+</body>
+</html>

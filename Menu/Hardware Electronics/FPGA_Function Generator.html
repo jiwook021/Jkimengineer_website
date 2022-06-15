@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<title>JKim FPGA: UART</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 27px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+    
+
+
+    body {
+        font-size: 13px;
+    }
+
+
+ 
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:330px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">FPGA(SystemVerilog)</h3> <!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Hardware Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Electronics</a>
+            <a href="FPGA.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">FPGA(SystemVerilog)</a>
+            <br>
+            <a href="FPGA_UART.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">UART Communication</a>
+            <a href="FPGA_ALU.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">ALU Implementation</a>
+            <a href="FPGA_SPI.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">SPI Communication</a>
+            <a href="FPGA_Function Generator.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Function Generator</a>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>FPGA_UART</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:360px;margin-right:40px">
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>FPGA: Implementing Function Generator</b></h8>
+            <br>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/ICg_tSXTH7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <h3>Github</h3>
+            <a href="https://github.com/jiwook021/Verilog-Projects">https://github.com/jiwook021/Verilog-Projects</a>
+            
+        </div>
+            <br><br>
+            <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+                <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+                <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+                <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+            </footer>
+
+
+        </div>
+
+        <script>
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function w3_openmenu() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_closemenu() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClickmenu(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+
+
+        </script>
+
+</body>
+</html>

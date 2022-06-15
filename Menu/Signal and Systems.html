@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<title>JKim Signal and Systems</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+
+    <html lang="en">
+
+    <body>
+
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:350px;font-weight:bold;" id="mySidebar">
+            <br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+            <div class="w3-container">
+                <h3 class="w3-padding-32">Signal and Systems</h3> <!-- Change-->
+            </div>
+            <div class="w3-bar-block">
+                <a href="../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+                <a href="Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computational Mathematics</a>
+                <a href="Signal and Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Signal and Systems</a>
+                <br>
+                <a href="Signal and Systems/Introduction to Signal and Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Introduction to Signal and Systems</a>
+                <a href="Signal and Systems/Linear Time-Invariant Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Linear Time-Invariant Systems</a>
+                <a href="Signal and Systems/Fourier Series Representation of Periodic Signals.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Fourier Series Representation of Periodic Signals</a>
+                <a href="Signal and Systems/The Continuous-Time Fourier Transform.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">The Continuous-Time Fourier Transform</a>
+                <a href="Signal and Systems/The LEPLACE TRANSFORM.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">The Leplace Transform</a>
+
+                <br>
+            </div>
+        </nav>
+
+
+
+        <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+            <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+            <span>Signal and Systems</span>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:380px;margin-right:40px">
+
+
+    
+
+                <!-- Header -->
+            <div class="w3-container" style="margin-top:100px" id="showcase">
+                <h8><b>Signal and Systems</b></h8> <!-- Change-->
+                <br><br>
+   
+
+
+                <div style="margin-top:70px">
+                    <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                    <br>
+                    <div class="web">
+                        <p>
+                            <h1><b>SIGNALS AND SYSTEMS</b></h1>
+                            Continuous-Time and Discrete-Time Signals
+                            <br>Transformations of the Independent Variable
+                            <br>Exponential and Sinusoidal Signals
+                            <br>The Unit Impulse and Unit Step Functions
+                            <br>Continuous-Time and Discrete-Time Systems
+                            <br>Basic System Properties
+                            <br><br>
+                            <h1><b>LINEAR TIME - INVARIANT SYSTEMS</b></h1>
+                            Discrete-Time LTI Systems: The Convolution Sum
+                            <br>Continuous-Time LTI Systems: The Convolution Integral
+                            <br>Properties of Linear Time-Invariant Systems
+                            <br>Causal LTI Systems Described by Differential and Difference Equations
+                            <br>Singularity Functions
+                            <br><br>
+                            <h1><b>FOURIER SERIES REPRESENTATION OF PERIODIC SIGNALS</b></h1>
+                            The Response of LTI Systems to Complex Exponentials
+                            <br>Fourier Series Representation of Continuous-Time Periodic Signals
+                            <br>Convergence of the Fourier Series
+                            <br>Properties of Continuous-Time Fourier Series
+                            <br>Fourier Series Representation of Discrete-Time Periodic Signal
+                            <br>Properties of Discrete-Time Fourier Series
+                            <br>Fourier Series and LTI Systems
+                            <br>Filtering
+                            <br>Examples of Continuous-Time Filters Described by Differential Equations
+                            <br>Examples of Discrete-Time Filters Described by Difference Equations
+                            <br><br>
+                            <h1><b>THE CONTINUOUS - TIME FOURIER TRANSFORM</b></h1>
+                            Representation of Aperiodic Signals: The Continuous-Time Fourier Transform
+                            <br>The Fourier Transform for Periodic Signals
+                            <br>Properties of the Continuous-Time Fourier Transform
+                            <br>The Convolution Property
+                            <br>The Multiplication Property
+                            <br>Tables of Fourier Properties and of Basic Fourier Transform Pairs
+                            <br>Systems Characterized by Linear Constant-Coefficient Differential Equations
+                            <br><br>
+                            <h1><b>THE DISCRETE - TIME FOURIER TRANSFORM</b></h1>
+                            Representation of Aperiodic Signals: The Discrete-Time Fourier Transform
+                            <br>The Fourier Transform for Periodic Signals
+                            <br>Properties of the Discrete-Time Fourier Transform
+                            <br>The Convolution Property
+                            <br>The Multiplication Property
+                            <br>Tables of Fourier Transform Properties and Basic Fourier Transform Pairs
+                            <br>Duality
+                            <br>Systems Characterized by Linear Constant-Coefficient Difference Equations
+                            <br><br>
+                            <h1><b>TIME AND FREQUENCY CHARACTERIZATION OF SIGNALS AND SYSTEMS</b></h1>
+                            The Magnitude-Phase Representation of the Fourier Transform
+                            <br>The Magnitude-Phase Representation of the Frequency Response of LTI Systems
+                            <br>Time-Domain Properties of Ideal Frequency-Selective Filters
+                            <br>Time-Domain and Frequency-Domain Aspects of Nonideal Filters
+                            <br>First-Order and Second-Order Continuous-Time Systems
+                            <br>First-Order and Second-Order Discrete-Time Systems
+                            <br>Examples of Time- and Frequency-Domain Analysis of Systems
+                            <br><br>
+                            <h1><b>SAMPLING</b></h1>
+                            Representation of a Continuous-Time Signal by Its Samples: The Sampling Theorem
+                            <br>Reconstruction of a Signal from Its Samples Using Interpolation
+                            <br>The Effect of Undersampling: Aliasing
+                            <br>Discrete-Time Processing of Continuous-Time Signals
+                            <br>Sampling of Discrete-Time Signals
+                            <br><br>
+                            <h1><b>COMMUNICATION SYSTEMS</b></h1>
+                            Complex Exponential and Sinusoidal Amplitude Modulation
+                            <br>Demodulation for Sinusoidal AM
+                            <br>Frequency-Division Multiplexing
+                            <br>Single-Sideband Sinusoidal Amplitude Modulation
+                            <br>Amplitude Modulation with a Pulse-Train Carrier
+                            <br>Pulse-Amplitude Modulation
+                            <br>Sinusoidal Frequency Modulation
+                            <br>Discrete-Time Modulation
+                            <br><br>
+                            <h1><b>THE LAPLACE TRANSFORM</b></h1>
+                            The Laplace Transform
+                            <br>The Region of Convergence for Laplace Transforms
+                            <br>The Inverse Laplace Transform
+                            <br>Geometric Evaluation of the Fourier Transform from the Pole-Zero Plot
+                            <br>Properties of the Laplace Transform
+                            <br>Some Laplace Transform Pairs
+                            <br>Analysis and Characterization of LTI Systems Using the Laplace Transform
+                            <br>System Function Algebra and Block Diagram Representations
+                            <br>The Unilateral Laplace Transform
+                            <br><br>
+                            <h1><b>THE Z - TRANSFORM</b></h1>
+                            The z-Transform
+                            <br>The Region of Convergence for the z-Transform
+                            <br>The Inverse z-Transform
+                            <br>Geometric Evaluation of the Fourier Transform from the Pole-Zero Plot
+                            <br>Properties of the z-Transform
+                            <br>Some Common z-Transform Pairs
+                            <br>Analysis and Characterization of LTI Systems Using z-Transforms
+                            <br>System Function Algebra and Block Diagram Representations
+                            <br>The Unilateral z-Transform
+                            <br><br>
+                            <h1><b>LINEAR FEEDBACK SYSTEMS</b></h1>
+                            Linear Feedback Systems
+                            <br>Some Applications and Consequences of Feedback
+                            <br>Root-Locus Analysis of Linear Feedback Systems
+                            <br>The Nyquist Stability Criterion
+                            <br>Gain and Phase Margins
+                            <br><br>
+                        </p>
+                    </div>
+    
+    
+                    <div class="web">
+
+
+
+
+
+                        <h2><b>Recommendations</b></h2>
+                        <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRhG6s3jYIU48CqsT5cyiDTO">Signal and Systems Series by Neso Academy</a>
+                        <br>
+                        <br><b>Goes over topics such as..</b>
+                        <br>
+                        <br>Signal definition and its classifications
+                        <br>Different operations on signal
+                        <br>Basic system properties
+                        <br> Continuous time Fourier Series
+                        <br> Continuous time Fourier Transform
+                        <br> Laplace transform
+                        <br> Sampling theorem
+                        <br> Discrete time system
+                        <br> Z-transform
+                        <br> Discrete Fourier transform and Fast Fourier transform
+                        <br> Digital filters
+                        <br>Discrete cosine transform
+                        <br>
+                        <br><br>
+                        <h1>Signals and systems Lecture Series by Neso Academy</h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/0USI-48ovJI?list=PLBlnK6fEyqRhG6s3jYIU48CqsT5cyiDTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </p>
+                        <br>
+                        <h2><b>Reference</b></h2>
+                        <h1>
+                            <i>
+
+                                Signals and systems
+                                Book by Alan V. Oppenheim
+                            </i>
+                        </h1>
+                        <br>
+                        <div class="responsive">
+                            <div class="gallery">
+
+
+
+                                <a target="_blank" href="Signal and Systems.jpeg">
+
+                                    <img src="Signal and Systems.jpeg" alt="Equations" style="width:60%" onclick="onClick(this)">
+                                </a>
+                                <br>
+                                <br>
+                                <br>
+                                <h1>
+                                    <i>
+
+                                        DSP first
+                                        Book by James H. McClellan
+                                    </i>
+                                </h1>
+                                <br>
+                                <a target="_blank" href="DSP_First.jpg">
+
+                                    <img src="DSP_First.jpg" alt="Equations" style="width:60%" onclick="onClick(this)">
+                                </a>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+    
+    
+
+
+
+
+
+            </div>
+
+
+
+<br><br>
+
+                <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+                    <a class="w3-button w3-large w3-light-grey" href="../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+                    <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+                    <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+                    <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+                </footer>
+                <!-- End page content -->
+            </div>
+
+
+
+
+
+            <script>
+
+
+                function w3_open() {
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                function w3_openmenu() {
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_closemenu() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                // Modal Image Gallery
+                function onClickmenu(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                // Accordion
+                function myAccFunc() {
+                    var x = document.getElementById("demoAcc");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+
+            </script>
+
+</body>
+</html>

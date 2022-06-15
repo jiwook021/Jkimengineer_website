@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<title>Embedded Linux</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 36px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 16px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Embedded Linux</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
+            <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Embedded Linux</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Embedded Linux</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div class="w3-container">
+                <h8><b>J Library Embedded Linux</b></h8>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                    <br>
+                    <div class="web">
+                        <p>
+                            <h1><b>Embedded Linux: Big picture</b></h1>
+                            BIOS versus Bootloader
+                            <br>Anatomy of an Embedded System
+                            <br>----- Typical Embedded Linux Setup
+                            <br>----- Starting the Target Board
+                            <br>----- Booting the Kernel
+                            <br>----- Kernel Initialization
+                            <br>----- First User SPace Process: init
+                            <br>Storage Consideration
+                            <br>----- Flash Memory
+                            <br>----- NAND Flash
+                            <br>----- Flash Usage
+                            <br>----- Flash File Systems
+                            <br>----- Memory Space
+                            <br>----- Execution Contexts
+                            <br>----- Process Virtual Memory
+                            <br>----- Cross-Development Environment
+                            <br>Embedded Linux Distribution
+                            <br>
+                            <br>
+                            <h1><b>Processor</b></h1>
+                            Stand-Alone Processors
+                            <br>----- IBM 970FX
+                            <br>----- Intel Pentium M
+                            <br>----- Intel Atom
+                            <br>----- Freescale MPC7448
+                            <br>----- Companion Chipsets
+                            <br>Integrated Processors: Systems on Chip
+                            <br>----- Power Architecture
+                            <br>----- Freescale PowerQUICC I
+                            <br>----- Freescale PowerQUICC II
+                            <br>----- PowerQUICC II Pro
+                            <br>----- Freescale Power QUICC III
+                            <br>----- Freescale QorIQ
+                            <br>----- AMCC Power Architectures
+                            <br>----- MIPS(Microprocessor without interlocked Pipeline Stages)
+                            <br>----- Broadcom MIPS
+                            <br>----- ARM
+                            <br>----- TI ARM
+                            <br>----- Freescale ARM
+                            <br>Hardware Platforms
+                            <br>----- Compact PCI
+                            <br>----- ATCA
+                            <h1><b>The Linux Kernel</b></h1>
+                            Kernel Versions
+                            <br>Kernel Source Repositories
+                            <br>Using git to Download a Kernel
+                            <br>Linux Kernel Construction
+                            <br>----- Top-Level Source Directory
+                            <br>----- Compiling the Kernel
+                            <br>----- The kernel Proper: vmlinux
+                            <br>----- Kernel Image Components
+                            <br>----- Subdirectory Layout
+                            <br>Kernel Build System
+                            <br>----- The Dot-Config
+                            <br>----- Configuration Editors
+                            <br>----- Makefile Targets
+                            <br>Kernel Configuration
+                            <br>----- Custom Configuration Options
+                            <br>----- Kernel Make files
+                            <br>Kernel Documentation
+                            <br>Obtaining Custum Linux Kernel
+                            <br>
+                            <br>
+                            <h1><b>Kernel Initialization</b></h1>
+                            Composite Kernel Image: Piggy and Friends
+                            <br>----- The Image Object
+                            <br>----- Architecture Objects
+                            <br>----- Bootstrap Loader
+                            <br>----- Boot messages
+                            <br>Initalization Flow of Control
+                            <br>----- Kernel Entry point: head.o
+                            <br>----- Kernel Startup: main.c
+                            <br>----- Architecture Setup
+                            <br>Kernel Command-Line Processing
+                            <br>----- The __setup Macro
+                            <br>Subsystem Initalization
+                            <br>----- The *__initcall Macros
+                            <br>The init Thread
+                            <br>----- Initialization via initcalls
+                            <br>----- initcall_debug
+                            <br>----- Findal boot steps
+                            <br>
+                            <br>
+                            <h1><b>User Space Initalization</b></h1>
+                            Root File System
+                            <br>----- FHS: File System Hieracrchy Standard
+                            <br>----- File System Layout
+                            <br>----- Minimal File System
+                            <br>----- The Embedded FS Challenge
+                            <br>----- Trial and Error Method
+                            <br>----- Automated File System build Tool
+                            <br>Kernel's Last Boot Steps
+                            <br>----- First User Space Program
+                            <br>----- Resolving Dependencies
+                            <br>----- Custmized Inital Process
+                            <br>The init Process
+                            <br>----- inittab
+                            <br>----- Sample Web Server Startup Script
+                            <br>Initial RAM Disk
+                            <br>----- Booting with initrd
+                            <br>----- Bootloader Support for initrd
+                            <br>----- initrd Magic: linuxrc
+                            <br>----- The initrd Plubing
+                            <br>----- Building an initrd Image
+                            <br>Using initramfs
+                            <br>
+                            <br>
+                            <h1><b>Bootloaders</b></h1>
+                            Role of Bootloader
+                            <br>Bootloader Challenges
+                            <br>----- DRAM Controller
+                            <br>----- Flash Versus RAM
+                            <br>----- Image Complexity
+                            <br>----- Execution Context
+                            <br>A Universal Bootloader: Das U-Boot
+                            <br>----- Obtaining U-Boot
+                            <br>----- Configurating U-Boot
+                            <br>----- U-Boot Monitor Commands
+                            <br>----- Network Operations
+                            <br>----- Storage Subsystems
+                            <br>----- Booting from Disk
+                            <br>Porting U-Boot
+                            <br>----- EP405 U-Boot port
+                            <br>----- U-Boot Makefile Configuration Target
+                            <br>----- EP405 First build
+                            <br>----- Ep405 Processor Initalization
+                            <br>----- Board-Specific Initalization
+                            <br>----- Port Summary
+                            <br>----- U-Boot Image Format
+                            <br>Device Tree Blob (Flat Device Tree)
+                            <br>----- Device Tree Source
+                            <br>----- Device Tree Compiler
+                            <br>----- Alternative Kernel Image Using DTB(Device Tree block)
+                            <br>Lilo boot loader
+                            <br>GRUB (Grand Unified Boot loader)
+                            <br>
+                            <br>
+                            <h1><b>Device Driver Basics</b></h1>
+                            Device Driver Concepts
+                            <br>----- Loadable Modules
+                            <br>----- Device Driver Architecture
+                            <br>----- Minimal Device Driver
+                            <br>----- Module Build Infrastructure
+                            <br>----- Instaling Device Driver
+                            <br>----- Loading a module
+                            <br>----- Module Parameters
+                            <br>Module Utilities
+                            <br>----- insmod
+                            <br>----- lsmod
+                            <br>----- modprobe
+                            <br>----- depmod
+                            <br>----- rmmod
+                            <br>----- modinfo
+                            <br>Driver Methods
+                            <br>----- Driver File System Operations
+                            <br>----- Allocation of Device Numbers
+                            <br>----- Device Nodes and mknod
+                            <br>Building Out-of-Tree Drivers
+                            <br>Device Drivers and the GPL(GNU Public License)
+                            <br>
+                            <br>
+                            <h1><b>File Systems</b></h1>
+                            Partitions
+                            <br>Mounting a file System
+                            <br>Checking File System Integrity
+                            <br>ext2
+                            <br>ext3
+                            <br>ext4
+                            <br>ReiserFS
+                            <br>building a JFFS2 (Journaling Flash File system version 2) Image
+                            <br>cramfs
+                            <br>Network File system
+                            <br>Root file system on NFS
+                            <br>Pseudo file System
+                            <br>----- /proc File System
+                            <br>----- sysfs
+                            <br>
+                            <br>
+                            <h1><b>MTD(Memory Technology Device) Subsystem</b></h1>
+                            Enabling MTD Services
+                            <br>MTD Basics
+                            <br>Configuring MTD on Target
+                            <br>MTD Partitions
+                            <br>----- Redboot Partition Table Partitioning
+                            <br>----- Kernel Command-Line Partitioning
+                            <br>----- Mapping Driver
+                            <br>----- Flash Chip Drivers
+                            <br>----- Board-Specific Initalization
+                            <br>MTD Utilities
+                            <br>----- JFFS2 Root file System
+                            <br>UBI(Unsorted Block Images) File System
+                            <br>----- Configuring for UBIFS
+                            <br>----- Building a UBIFS Image
+                            <br>----- Using UBIFS as the Root File System
+                            <br>
+                            <br>
+                            <h1><b>BusyBox</b></h1>
+                            BusyBox Configuration
+                            <br>----- Cross-Compiling BusyBox
+                            <br>BusyBox Operation
+                            <br>----- Busy init
+                            <br>----- Sample rcS Initialization Script
+                            <br>----- BusyBox Target Installation
+                            <br>----- BusyBox Applets
+                            <br>
+                            <br>
+                            <h1><b>Embedded Development Environment</b></h1>
+                            Cross-Development Environment
+                            <br>Host System Requirement
+                            <br>----- Hardware Debug Probe
+                            <br>Hosting Target Boards
+                            <br>----- TFTP(Trivial File Transfer Protocol) Service
+                            <br>----- BOOTP(Boot Strap Protocol)/DHCP(Dynamic Host Configuration Protocol)
+                            <br>----- NFS Server
+                            <br>----- Target NFS Root Mount
+                            <br>----- U-Boot NFS Root Mount
+                            <br>
+                            <br>
+                            <h1><b>Development Tools</b></h1>
+                            GDB (GNU Debugger)
+                            <br>----- Debugging a Core Dump
+                            <br>----- Invoking GDB
+                            <br>----- Debug Session in GDB
+                            <br>Data Display Debugger
+                            <br>cbrowser/cscope
+                            <br>Tracing and Profiling tools
+                            <br>----- Strace
+                            <br>----- ltrace
+                            <br>----- ps
+                            <br>----- top
+                            <br>----- mtrace
+                            <br>----- dmalloc
+                            <br>----- Kernel Oops
+                            <br>Binary Utilities
+                            <br>----- readIF
+                            <br>----- Examining Debug Information using readelf
+                            <br>----- objdump
+                            <br>----- objcopy
+                            <br>Miscellaneous Binary Utilities
+                            <br>----- strip
+                            <br>----- addr2line
+                            <br>----- strings
+                            <br>----- ldd
+                            <br>----- nm
+                            <br>----- prelink
+                            <br>
+                            <br>
+                            <h1><b>Kernel Debugging Techniques</b></h1>
+                            Challenges to Kernel Debugging
+                            <br>Using KGDB for Kernel Debugging
+                            <br>----- KGDB kernel Debugging
+                            <br>----- Target Book with KGDB Support
+                            <br>----- Useful Kernel Brakpoints
+                            <br>----- Sharing a Console Serial Port with KGDB
+                            <br>----- Debugging Very Early Kernel Code
+                            <br>Kernel Debugging Techniques
+                            <br>----- GDB remote Serial Protocol
+                            <br>----- Debugging Optimized Kernel Code
+                            <br>----- Useful Kernel GDB Macros
+                            <br>----- Debugging Loadable Modules
+                            <br>----- Printk debugging
+                            <br>----- Magic SysReq Key
+                            <br>Hardware-Assised Debugging
+                            <br>----- Programming Flash Using JTAG Probe
+                            <br>----- Debugging with a JTAG Probe
+                            <br>When It Doesn't boot
+                            <br>----- Early Serial Debug Output
+                            <br>----- Dumping the printk Log Buffer
+                            <br>----- KGDB on Panic
+                            <br>
+                            <br>
+                            <h1><b>Debugging Embedded Linux Applications</b></h1>
+                            Target Debugging
+                            <br>Remote (Cross) Debugging
+                            <br>----- gdbserver
+                            <br>Debugging with Shared Libraries
+                            <br>----- Shared Library Events in GDB
+                            <br>Debugging Multiple Tasks
+                            <br>----- Debugging Multiple Processes
+                            <br>----- Debugging Multithreaded Applications
+                            <br>----- Debugging Bootloader/Flash Code
+                            <br>Debugging Using a Serial Port
+                            <br>Attaching to a Running Process
+                            <br>
+                            <br>
+                            <h1><b>Open Source Build Systems</b></h1>
+                            Scratch box
+                            <br>----- Installing Scratchbox
+                            <br>----- Creating a Cross-Compilation Target
+                            <br>Buildrot
+                            <br>----- Buildroot Installation
+                            <br>----- Buildroot Configuration
+                            <br>----- Buildroot Build
+                            <br>OpenEmbedded
+                            <br>----- OpenEmbedded Composition
+                            <br>----- BitBake Metadata
+                            <br>----- Recipe Basics
+                            <br>----- Metadata Tasks
+                            <br>----- Metadata Classes
+                            <br>----- Configuring OpenEmbedded
+                            <br>----- Building Images
+                            <br>
+                            <br>
+                            <h1><b>Linux and Real Time</b></h1>
+                            Real Time
+                            <br>----- Soft Real Time
+                            <br>----- Hard Real Time
+                            <br>----- Linux Scheduling
+                            <br>----- Latency
+                            <br>Kernel Preemption
+                            <br>----- Impediments to Preemption
+                            <br>----- Preemption Models
+                            <br>----- SMP(Symmetrical Multiprocessing) Kernel
+                            <br>----- Sources of Preemption Latency
+                            <br>Real-Time Kernel Patch
+                            <br>----- Real-Time Features
+                            <br>----- O(1) Scheduler
+                            <br>----- Creating a Real-Time Process
+                            <br>Real-Time Kernel Performance Analysis
+                            <br>----- Using Ftrace for Tracing
+                            <br>----- Preemption Off Latency Measurement
+                            <br>----- Wakeup Latency Measurement
+                            <br>----- Interrupt Off Timing
+                            <br>----- Soft Lockup Detection
+                            <br><br>
+                            <h1><b>Universal Serial Bus</b></h1>
+                            USB Physical Topology
+                            <br>USB Logical Topology
+                            <br>USB Revisions
+                            <br>USB Connectors
+                            <br>USB Cable Assemblies
+                            <br>USB Modes
+                            <br>USB Initalization
+                            <br>sysfs and USB Device Naming
+                            <br>Useful USB Tools
+                            <br>----- USB Mass Storage Class
+                            <br>----- USB HID(Human Interface Device) Class
+                            <br>----- USB CDC(Communivation Device Class) Class Drivers
+                            <br>----- USB Network Support
+                            <br>USB Debug
+                            <br>----- usbmon
+                            <br>
+                            <br>
+                            <h1><b>udev</b></h1>
+                            Device Discovery
+                            <br>Default udev Behavior
+                            <br>udev Rules
+                            <br>----- Modalias
+                            <br>----- Typical udev Rules Configuration
+                            <br>----- Inital System setup for udev
+                            <br>Loading Platform Device Drivers
+                            <br>Customizing udev Behavior
+                            <br>Persistent Device Naming
+                            <br>----- udev Helper utilities
+                            <br>Using udev with busybox
+                            <br>----- busybox mdev
+                            <br>----- configuraing mdev 
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div>
+                       <h3><b>Lecture Series</b></h3>
+                       <p>
+                           <h1>Embedded Linux by Shawn Hymel</h1>
+                           <iframe width="350" height="250" src="https://www.youtube.com/embed/2-PwskQrZac?list=PLEBQazB0HUyTpoJoZecRK6PpDG31Y7RPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           <br>
+                           <h1>RTOS by Shawn Hymel</h1>
+                           <iframe width="350" height="250" src="https://www.youtube.com/embed/95yUbClyf3E?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           <br>
+                           <a href="https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=%EB%A6%AC%EB%88%85%EC%8A%A4&no=192">Link for Embedded Linux by IDEC</a>
+                           <br>
+                           <a href="https://www.yoctoproject.org/software-overview/">Link for Yocto Project</a>
+                           <br>
+                           <h3><b>Reference</b></h3>
+                           <h1>
+                               <i>
+                                   Embedded Linux Primer: A Practical Real-world Approach
+                                   Book by Christopher Hallinan
+                               </i>
+                           </h1>
+                           <br><br>
+                           <img src="Software Engineering Pics/Linux_Primer.jpg" alt="Linux_Primer" style="width:35%" onclick="onClick(this)">
+                           <br>
+                           <br>
+                           <br>
+                       </p>
+
+                    </div>
+
+
+            
+                </div>
+        
+            </div>
+
+     
+        
+        </div>
+
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+
+        <!-- End page content -->
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

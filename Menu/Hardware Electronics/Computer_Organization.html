@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<title>JKim ARM Computer Organization</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body 
+    {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 
+    {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 27px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+    
+
+
+    body {
+        font-size: 13px;
+    }
+
+
+ 
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:330px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">Computer Organization</h3> <!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Hardware Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Electronics</a>
+            <a href="Computer_Organization.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">ARM Computer Organization</a>
+            <br>
+            <br><a href="Hamming_Code.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Hamming Code Reference</a>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Computer Organization</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:360px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br>
+                <div class="web">
+                    <p>
+                        <h1><b>Instructions: Language of the Computer</b></h1> <!--Change-->
+                        Operations of the Computer Hardware
+                        <br>Operands of the Computer Hardware
+                        <br>Signed and Unsigned Numbers
+                        <br>Representing Instructions in the Computer
+                        <br>Logical Operations
+                        <br>Instructions for Making Decisions
+                        <br>Supporting Procedures in Computer Hardware
+                        <br>Communicating with People
+                        <br>LEGv8 Addressing for Wide Immediates and Addresses
+                        <br>Parallelism and Instructions: Synchronization
+                        <br>Translating and Starting a Program
+                        <br>Arrays versus Pointers
+                        <br>Advanced Material: Compiling C and Interpreting Java
+                        <br>Real Stuff: MIPS Instructions
+                        <br>Real Stuff: ARMv7 (32-bit) Instructions
+                        <br>Real Stuff: x86 Instructions
+                        <br>Real Stuff: The Rest of the ARMv8 Instruction Set
+                        <br>Fallacies and Pitfalls
+                        <br><br>
+                        <h1><b>Arithmetic for Computers</b></h1> <!--Change-->
+                        Addition and Subtraction
+                        <br>Multiplication
+                        <br>Division
+                        <br>Floating Point
+                        <br>Parallelism and Computer Arithmetic: Subword Parallelism
+                        <br>Real Stuff: Streaming SIMD Extensions and Advanced Vector Extensions in x86
+                        <br>Real Stuff: The Rest of the ARMv8 Arithmetic Instructions
+                        <br>Going Faster: Subword Parallelism and Matrix Multiply
+                        <br>Fallacies and Pitfalls
+                        <br><br>
+                        <h1><b>The Processor</b></h1> <!--Change-->
+                        Logic Design Conventions
+                        <br>Building a Datapath
+                        <br>A Simple Implementation Scheme
+                        <br>An Overview of Pipelining
+                        <br>Pipelined Datapath and Control
+                        <br>Data Hazards: Forwarding versus Stalling
+                        <br>Control Hazards
+                        <br>Exceptions
+                        <br>Parallelism via Instructions
+                        <br>Real Stuff: The ARM Cortex-A53 and Intel Core i7 Pipelines
+                        <br>Going Faster: Instruction-Level Parallelism and Matrix Multiply
+                        <br>Hardware Design Language to Describe and Model a Pipeline and More Pipelining Illustrations
+                        <br>Fallacies and Pitfalls
+                        <br><br>
+                        <h1><b>Large and Fast: Exploiting Memory Hierarchy</b></h1> <!--Change-->
+                        Memory Technologies
+                        <br>The Basics of Caches
+                        <br>Measuring and Improving Cache Performance
+                        <br>Dependable Memory Hierarchy
+                        <br>Virtual Machines
+                        <br>Virtual Memory
+                        <br>A Common Framework for Memory Hierarchy
+                        <br>Using a Finite-State Machine to Control a Simple Cache
+                        <br>Parallelism and Memory Hierarchy: Cache Coherence
+                        <br>Parallelism and Memory Hierarchy: Redundant Arrays of Inexpensive Disks
+                        <br>Advanced Material: Implementing Cache Controllers
+                        <br>The ARM Cortex-A53 and Intel Core i7 Memory Hierarchies
+                        <br>The Rest of the ARMv8 System and Special Instructions
+                        <br>Going Faster: Cache Blocking and Matrix Multiply
+                        <br>Fallacies and Pitfalls
+                        <br><br>
+                    </p>
+                </div>
+
+
+                <div class="web">
+                    <p>
+                        <h1><b>Parallel Processors from Client to Cloud</b></h1> <!--Change-->
+                        The Difficulty of Creating Parallel Processing Programs
+                        <br>SISD, MIMD, SIMD, SPMD, and Vector
+                        <br>Hardware Multithreading
+                        <br>Multicore and Other Shared Memory Multiprocessors
+                        <br>Introduction to Graphics Processing Units
+                        <br>Clusters, Warehouse Scale Computers, and Other Message-Passing Multiprocessors
+                        <br>Introduction to Multiprocessor Network Topologies
+                        <br>Communicating to the Outside World: Cluster Networking
+                        <br>Multiprocessor Benchmarks and Performance Models
+                        <br>Benchmarking and Rooflines of the Intel Core i7 960 and the NVIDIA Tesla GPU
+                        <br>Multiple Processors and Matrix Multiply
+                        <br><br>
+                        <h1><b>Graphics and Computing GPUs</b></h1> <!--Change-->
+                        GPU System Architectures
+                        <br>Programming GPUs
+                        <br>Multithreaded Multiprocessor Architecture
+                        <br>Parallel Memory System
+                        <br>Floating Point Arithmetic
+                        <br>The NVIDIA GeForce 8800
+                        <br>Mapping Applications to GPUs
+                        <br><br>
+                        <h1><b>Mapping Control to Hardware</b></h1> <!--Change-->
+                        Implementing Combinational Control Units
+                        <br>Implementing Finite-State Machine Control
+                        <br>Implementing the Next-State Function with a Sequencer
+                        <br>Translating a Microprogram to Hardware
+                        <br><br>
+                        <h1><b>RISC Architectures for Desktop, Server, and Embedded Computers</b></h1> <!--Change-->
+                        Addressing Modes and Instruction Formats
+                        <br>Instructions: The MIPS Core Subset
+                        <br>Instructions: Multimedia Extensions of the Desktop/Server RISCs
+                        <br>Instructions: Digital Signal-Processing Extensions of the Embedded RISCs
+                        <br>Instructions: Common Extensions to MIPS Core
+                        <br>Instructions Unique to MIPS-64
+                        <br>Instructions Unique to Alpha
+                        <br>Instructions Unique to SPARC v9
+                        <br>Instructions Unique to PowerPC
+                        <br>Instructions Unique to PA-RISC 2.0
+                        <br>Instructions Unique to ARM
+                        <br>Instructions Unique to Thumb
+                        <br>Instructions Unique to SuperH
+                        <br>Instructions Unique to M32R
+                        <br>Instructions Unique to MIPS-16
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container">
+            <br>
+            <h3><b>Lecture Series</b></h3>
+            <p>
+                <h1>Architecture All Access by Intel</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/vgPFzblBh7w?list=PL8t1FdN2Tj3ZVAzTY-FvsS0qy-mEfRdoj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h1>AMBA Training by ARM</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/Tp6O0EsKcG8?list=PLgyFKd2HIZlYM-w4_veHgX0trB-epVXum" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h1>ARM architecture Fundamentals by ARM </h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/7LqPJGnBPMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h1>Assembly Language Programming with ARM by FreeCodeCamp</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/gfmRrPjnEw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h1>ARM 'What is' series</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/6xHzWrkInyk?list=PLgyFKd2HIZlb9TQfdFx9I1mqex_N4h1ch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1>Cortex ARM-M0 SoC Architecture</h1>
+                <a href="https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=&page=7&no=107">
+                    https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=&page=7&no=107
+                </a>
+
+                <br>
+            </p>
+
+            <h2><b>Guidline Reference</b></h2> <!--Change-->
+            <h1>
+                <i>
+                    Computer Organization and Design: The Hardware/Software Interface Book by David A Patterson and John L. Hennessy
+                </i>
+            </h1>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Hardware Electronics Pics/Computer Organization.jpg">
+                        <img src="Hardware Electronics Pics/Computer Organization.jpg" alt="Equations" style="width:40%" onclick="onClick(this)">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+       
+   
+   </div>
+
+            <script>
+
+                function w3_open() {
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                function w3_openmenu() {
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_closemenu() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                // Modal Image Gallery
+                function onClickmenu(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                // Accordion
+                function myAccFunc() {
+                    var x = document.getElementById("demoAcc");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+
+
+
+            </script>
+
+</body>
+</html>

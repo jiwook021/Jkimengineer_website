@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<title>JKim Applied Linear Algebra</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 20px
+        }
+
+        h2 {
+            font-size: 23px
+        }
+
+        h3 {
+            font-size: 25px
+        }
+
+        h4 {
+            font-size: 29px
+        }
+
+        h8 {
+            font-size: 33px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+
+
+            .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Applied Linear Algebra</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computational Mathematics</a>
+            <a href="Applied Linear Algebra.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Applied Linear Algebra</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Applied Linear Algebra</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Applied Linear Algebra</b></h8>
+        </div>
+
+        <!-- Services -->
+        <div class="w3-container" id="services" style="margin-top:75px">
+
+
+
+            <!-- TITLE -->
+            <h3><b>Contents</b></h3> <!--Change-->
+            <hr style="width: 400px;" class="w3-round">
+            <p>
+                <h1><b>Computations with Large Matrices</b></h1> <!--Change-->
+                Numerical Linear Algebra
+                <br>Least Squres: Fourways
+                <br>Three Bases for Column Space
+                <br>Randomized Linear Algebra
+                <br><br>
+                <h1><b>Low Rank and Compressed Sensing</b></h1> <!--Change-->
+                Changes in A inverse from changes in A
+                <br>Interlacing Eigenvalues and Low Rank Signals
+                <br>Rapdily Decaying Singular Values
+                <br>Compressed Sensing and Matrix Completion
+                <br><br>
+                <h1><b>Special Matrices</b></h1> <!--Change-->
+                Fourier Transform: Discrete and Continous
+                <br>Shift Matrices and Circulant Matrices
+                <br>The Kronecker Product A ® B
+                <br>Sine and Cosine Transforms from Kronecker Sums
+                <br>Toeplitz Matrices and Shift Invariant Filters
+                <br>Graphs and Laplacians and Kirchhoff's Laws
+                <br>Clustering by Spectral Methods and k-means
+                <br>Completing Rank One Matrices
+                <br>The Orthogonal Procrustes Problem
+                <br>Distance Matrices
+                <br><br>
+                <h1><b>Probability and Statistics</b></h1> <!--Change-->
+                Moments,Cumulants, and Ineqaulities of Statistics
+                <br>Covariance Matrices and Joint Probability
+                <br>Multivariate Gaussian and Weigthed Least Squares
+                <br>Marcov Chains
+                <br>
+                <br>
+                <h1><b>Optimization</b></h1> <!--Change-->
+                Minimum Problems:Convexity and Newton's Method
+                <br>Langrange Multipliers=Derivatives of the Cost
+                <br>Linear Programming, Game Theory,and Duality
+                <br>Gradient Descent Toward the Minimum
+                <br>Stochastic Gradient Descent and ADAM
+                <br>
+                <br>
+                <h1><b>Learning From Data</b></h1> <!--Change-->
+                The Construction of Deep Neural Networks
+                <br>Convolutional Neural Nets
+                <br>Backpropagation and the Chain Rule
+                <br>Hyperparameters: The Fateful Decisions
+            </p>
+
+
+            <!-- INFO STARTS HERE -->
+            <br>
+            <br>
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="math pics/Linear Algebra and its Applications pic.jfif">
+                        <img src="../math pics/Linear Algebra and Learning from Data.jpg" alt="Equations" style="width:40%">
+                    </a>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h1 class="w3-xlarge w3-text-dark-grey"><b>Recommendations</b></h1>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Linear Algebra Series by Youtube channel 3Blue 1Brown.</a>
+            <br><br>
+            <a>
+                Visualize Linear Algebra theorms clearly so that audience can intutively understand Linear Algebra.
+            </a>
+
+            <br>
+            <br>
+
+
+
+
+
+        </div>
+
+
+        <!-- End page content -->
+
+
+        <br><br>
+            <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+                <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+                <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+                <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+            </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

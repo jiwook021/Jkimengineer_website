@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<title>Computer Vision JKim Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Computer Vision</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computational Mathematics</a>
+            <a href="Computer Vision.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computer Vision</a>
+
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Computer Vision</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:370px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Computer Vision</b></h8>
+        
+
+        <!-- Services -->
+       
+            <div style="margin-top:20px">
+                <br>
+                <div class="web">
+
+
+                    <!-- TITLE -->
+                    <h3><b>Contents</b></h3> <!--Change-->
+                    <br>
+                    <p>
+                        <h1><b>Image Data</b></h1> <!--Change-->
+                        Images in the Spatial Domain
+                        <br>Images in the Frequency Domain
+                        <br>Colour and Colour Images
+                        <br><br>
+                        <h1><b>Image Processing</b></h1> <!--Change-->
+                        Point, Local, and Global Operators
+                        <br>Three Procedural Components
+                        <br>Classes of Local Operators
+                        <br>Advanced Edge Detectors
+                        <br><br>
+                        <h1><b>Image Analysis</b></h1> <!--Change-->
+                        Basic Image Topology
+                        <br>Geometric 2D Shape Analysis
+                        <br>Image Value Analysis
+                        <br>Detection of Lines and Circles
+                        <br><br>
+                        <h1><b>Dense Motion Analysis</b></h1> <!--Change-->
+                        3D Motion and 2D Optical Flow
+                        <br>The Horn–Schunck Algorithm
+                        <br>Lucas–Kanade Algorithm
+                        <br>The BBPW Algorithm
+                        <br>Performance Evaluation of Optical Flow Results
+                        <br><br>
+                        <h1><b>Image Segmentation</b></h1> <!--Change-->
+                        Basic Examples of Image Segmentation
+                        <br>Mean-Shift Segmentation
+                        <br>Image Segmentation as an Optimization Problem
+                        <br>Video Segmentation and Segment Tracking
+                        <br><br>
+                        <h1><b>Cameras, Coordinates, and Calibration</b></h1> <!--Change-->
+                        Cameras
+                        <br>Coordinates
+                        <br>Camera Calibration
+                        <br><br>
+                        <h1><b>3D Shape Reconstruction</b></h1> <!--Change-->
+                        Surfaces
+                        <br>Structured Lighting
+                        <br>Stereo Vision
+                        <br>Photometric Stereo Method
+                        <br><br>
+                        <h1><b>Stereo Matching</b></h1> <!--Change-->
+                        Matching, Data Cost, and Confidence
+                        <br>Dynamic Programming Matching
+                        <br>Belief-Propagation Matching
+                        <br>Third-Eye Technique
+                        <br><br>
+                        <h1><b>Feature Detection and Tracking</b></h1> <!--Change-->
+                        Invariance, Features, and Sets of Features
+                        <br>Examples of Features
+                        <br>Tracking and Updating of Features
+                        <br><br>
+                        <h1><b>Object Detection</b></h1> <!--Change-->
+                        Localization, Classification, and Evaluation
+                        <br>AdaBoost
+                        <br>Random Decision Forests
+                        <br>Pedestrian Detection
+                        <br><br>
+                        <br><br>
+                    </p>
+
+                </div>
+                <!-- INFO STARTS HERE -->
+
+                <h3><b>Computer Vision Lectures</b></h3> <!--Change-->
+                <h1>Introduction to Computer Vision by Georgia Tech</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/2vFzla0E_NE?list=PL_Ig1a5kxu57krhCBsOQnE0bVgbXbLOO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+
+                <h3>Github</h3>
+                <a href="https://github.com/jiwook021/OpenCV_Projects">
+                    https://github.com/jiwook021/OpenCV_Projects
+                </a>
+
+                <h3><b>Reference</b></h3> <!--Change-->
+
+                <div class="responsive">
+                    <div class="gallery">
+
+
+                        <a target="_blank" href="../math pics/Computer Vision picture.jpg">
+
+                            <img src="../math pics/Computer Vision picture.jpg" alt="Equations" style="width:33%">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+<br>        <br><br>
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>

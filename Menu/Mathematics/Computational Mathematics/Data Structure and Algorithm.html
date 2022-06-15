@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<title>Algorithm JKim Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+    h3,h2,h3,h8 {
+        color: #222;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:350px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Data Structure and Algorithm</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computational Mathematics</a>
+            <a href="Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Algorithm</a>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-large w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Algorithm</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:380px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Algorithm</b></h8>
+
+            <!-- Services -->
+            <!-- TITLE -->
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br><br>
+                <div class="web">
+                    <p>
+                        <h3><b>Foundations</b></h3>
+                        <br>
+                        <h1><b>Growth of Functions</b></h1>
+                        Asymptotic Notation
+                        <br>Standard notations and Common Functions
+                        <h1><b>Divide-and-Conquer</b></h1>
+                        The Maximum-subarry problem
+                        <br>Strassen's Algorithm for Matrix multiplication
+                        <br>The Substitution Method for solving Recurrences
+                        <br>The Recursion-tree Method for solving Recurrences
+                        <br>The master method for solving Recurrences
+                        <br>Proof of the master therom
+                        <br>
+                        <br>
+                        <h1><b>Probabilitstic Analysis and Randomized Algorithms</b></h1>
+                        The hiring Problem
+                        <br>Indicator Randon Variables
+                        <br>Randomized Algorithms
+                        <br>Probablistic Analysis and Further Uses of Indicator Random Variables
+                        <br><br><br>
+                        <h3><b>Sorting and Order Statistics</b></h3>
+                        <br>
+                        <h1><b>Heap sort</b></h1>
+                        Heaps
+                        <br>Maintaining heap property
+                        <br>Building a heap
+                        <br>The heap sort Algorithm
+                        <br>Priority Queues
+                        <br><br>
+                        <h1><b>Quick Sort</b></h1>
+                        Description of Quicksort
+                        <br>Performance of Quicksort
+                        <br>A randomized version of Quicksort
+                        <br>Analysis of Quicksort
+                        <br><br>
+                        <h1><b>Sorting in Linear Time</b></h1>
+                        Lower Bounds for Sorting
+                        <br>Counting sort
+                        <br>Radix Sort
+                        <br>Bucket Sort
+                        <br>
+                        <br>
+                        <h1><b>Median and Order Statistics</b></h1>
+                        Minimum and Maximum
+                        <br>Selection in Expected Linear Time
+                        <br>Selection in Worst-case Linear Time
+                        <br><br><br><br>
+                        <h3><b>Data Structures</b></h3>
+                        <br>
+                        <h1><b>Elementary Data Structures</b></h1>
+                        Stacks and Queues
+                        <br>Linked Lists
+                        <br>Implementing Pointers and Objects
+                        <br>Representing Root trees
+                        <br>
+                        <br>
+                        <h1><b>Hash Tables</b></h1>
+                        Direct-address tables
+                        <br>Hash tables
+                        <br>Hash Functions
+                        <br>Open addressing
+                        <br>Perfect Hashing
+                        <br>
+                        <br>
+                        <h1><b>Binary Search Trees</b></h1>
+                        Binary Search Trees
+                        <br>Querying a binary search Tree
+                        <br>Insertion and Deletion
+                        <br>Randomly built binary Search Trees
+                        <br><br>
+                        <h1><b>Red-Black Trees</b></h1>
+                        <br>Properties of red-black trees
+                        <br>Rotations
+                        <br>Insertion
+                        <br>Deletion
+                        <br>
+                        <br>
+                        <h1><b>Augmenting Data Structures</b></h1>
+                        Dynamic order Statistics
+                        <br>How to augment a data structures
+                        <br>Interval Trees
+                        <br><br><br><br>
+                        <h3><b>Advanced Design and Analysis Techniques</b></h3>
+                        <br>
+                        <h1><b>Dynamic Programming</b></h1>
+                        Rod cutting
+                        <br>Matrix chain multiplication
+                        <br>Element of dynamic programming
+                        <br>longest common subsequence
+                        <br>optimal binary search trees
+                        <br>
+                        <br>
+                        <h1><b>Greedy Algorithm</b></h1>
+                        An acitivity-selection problem
+                        <br>Element of the greedy strategy
+                        <br>huffman codes
+                        <br>Matroids and greedy methods
+                        <br>A task-Scheduling problem as matroid
+                        <br><br>
+                        <h1><b>Amortized Analysis</b></h1>
+                        The Aggregate Analysis
+                        <br>The accounting method
+                        <br>The potential method
+                        <br>Dynamic tables
+                        <br><br><br><br>
+                        <h3><b>Advanced Data Structures</b></h3>
+                        <br>
+                        <h1><b>B-Trees</b></h1>
+                        B-Trees
+                        <br>Basic Operation on B-Trees
+                        <br>Deleting a key from a B-Trees
+                        <br>
+                        <br>
+                        <h1><b>Fibonacci Heaps</b></h1>
+                        Structure of Fibonacci heaps
+                        <br>Mergeable-heap Operations
+                        <br>Decreasing a key and deleting a node
+                        <br>Bouding the maxmium degree
+                        <br><br>
+                        <h1><b>van Embe Boas Trees</b></h1>
+                        Prelimnary Approaches
+                        <br>A recursive Structure
+                        <br>The van Embde Boas Trees
+                        <br><br>
+                        <h1><b>Data Structure for Disjoint Sets</b></h1>
+                        Disjoint-set Operations
+                        <br>Linked-list representation of disjoint Sets
+                        <br>Disjoint-set forest
+                        <br>Analysis of Union by Rank with path compression
+
+                    </p>
+
+
+                </div>
+                <div class="web">
+                    <p>
+                        <h3><b>Graph Algorithms</b></h3>
+                        <br>
+                        <h1><b>Elementary Graph Algorithms</b></h1>
+                        Representation of Graphs
+                        <br>Breath-first Search
+                        <br>Deapth-first Search
+                        <br>Topological Sort
+                        <br>Strongly Connected Components
+                        <br>
+                        <br>
+                        <h1><b>Minimum Spanning Trees</b></h1>
+                        Growing a Minimum Spanning Tree
+                        <br>The Algoritm of Kruskal and Prim
+                        <br>
+                        <br>
+                        <h1><b>Single-Source Shrotest Paths</b></h1>
+                        The Bellman-Ford Algorithm
+                        <br>Single source Shortest path in Directed acyclic Graphs
+                        <br>Dijsktra's Algorithm
+                        <br>Difference Constraints and Shortest Path
+                        <br>Proofs of Shortest-path Properties
+                        <br>
+                        <br>
+                        <h1><b>All-Pairs Shortest Paths</b></h1>
+                        Shortest path and Matrix Multiplication
+                        <br>The Floyd-Warshall Algorithm
+                        <br>Johnson's Algorithm for Sparse Graphs
+                        <br>
+                        <br>
+                        <h1><b>Maximum Flow</b></h1>
+                        Flow networks
+                        <br>The Ford-Fulkerson method
+                        <br>Maximum bipartile Matching
+                        <br>Push-relabel Algorithms
+                        <br>The relabel-to-front Algorithm
+                        <br><br><br><br>
+                        <h3><b>Selected Topics</b></h3>
+                        <br>
+                        <h1><b>Multithreaded Algorithms</b></h1>
+                        dynamic multithreading
+                        <br>Multithreaded matrix multiplication
+                        <br>Multithreaded merge sort
+                        <br>
+                        <br>
+                        <h1><b>Matrix Operations</b></h1>
+                        Solving systems of linear equations
+                        <br>Inverting matrices
+                        <br>Symmetric positive-definite matrices and least-squares approximation
+                        <br>
+                        <br>
+                        <h1><b>Linear Programming</b></h1>
+                        Standard and slack forms
+                        <br>Formulating problems as linear programs
+                        <br>The simplex algorithm
+                        <br>Duality
+                        <br>The initial basic feasible solution
+                        <br>
+                        <br>
+                        <h1><b>Polynomials and the FFT</b></h1>
+                        Representing polynomials
+                        <br>The DFT and FFT
+                        <br>Efficient FFT implementations
+                        <br>
+                        <br>
+                        <h1><b>Number-Theoretic Algorithms</b></h1>
+                        Elementary number-theoretic notions
+                        <br>Greatest common divisor
+                        <br>Modular arithmetic
+                        <br>Solving modular linear equations
+                        <br>The Chinese remainder theorem
+                        <br>Powers of an element
+                        <br>The RSA public-key cryptosystem
+                        <br>Primality testing
+                        <br>Integer factorization
+                        <br><br>
+                        <h1><b>String Matching</b></h1>
+                        The naive string-matching algorithm
+                        <br>The Rabin-Karp algorithm
+                        <br>String matching with finite automata
+                        <br>The Knuth-Morris-Pratt algorithm
+                        <br>
+                        <br>
+                        <h1><b>Computational Geometry</b></h1>
+                        Line-segment properties
+                        <br>Determining whether any pair of segments intersects
+                        <br>Finding the convex hull
+                        <br>Finding the closest pair of points
+                        <br>
+                        <br>
+                        <h1><b>NP-Completeness</b></h1>
+                        Polynomial time
+                        <br>Polynomial-time verification
+                        <br>NP-completeness and reducibility
+                        <br>NP-completeness proofs
+                        <br>NP-complete problems
+                        <br>
+                        <br>
+                        <h1><b>Approximation Algorithms</b></h1>
+                        The vertex-cover problem
+                        <br>The traveling-salesman problem
+                        <br>The set-covering problem
+                        <br>Randomization and linear programming
+                        <br>The subset-sum problem
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="w3-container">
+            <br>
+            <h3><b>Lecture Series</b></h3>
+            <h1>Graph Theory Tutorial from a Google Engineer</h1>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/0qgaIMqOEVs?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+
+
+            <br>
+            <h3>Github</h3>
+            <a href="https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-">
+                https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-
+            </a>
+            <br>
+            <br>
+
+
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <h1>
+                <i>
+
+                    Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+
+                </i>
+            </h1>
+            <br>
+
+            <div class="responsive">
+                <div class="gallery">
+
+                    <a target="_blank" href="Computational mathematics pics/Algorithm Pic.jpg">
+
+                        <img src="Computational mathematics pics/Algorithm Pic.jpg" alt="Equations" style="width:35%">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+</body>
+</html>

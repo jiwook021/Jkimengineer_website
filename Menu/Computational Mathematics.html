@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<title>Jlibrary Computational Math</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 14px
+        }
+
+        h2 {
+            font-size: 17px
+        }
+
+        h3 {
+            font-size: 20px
+        }
+
+        h4 {
+            font-size: 23px
+        }
+
+        h8 {
+            font-size: 26px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Computational Mathematics</h3> <!-- Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computational Mathematics</a> <!-- Change-->
+            <br>
+            <a href="Signal and Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Signal and Systems</a>
+            <a href="Mathematics/Computational Mathematics/Digital Signal Processing.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Digital Signal Processing</a>
+            <a href="Mathematics/Computational Mathematics/Control System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Control System</a>
+            <a href="Mathematics/Computational Mathematics/Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Algorithm</a>
+            <a href="Mathematics/Computational Mathematics/Applied Linear Algebra.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Applied Linear Algebra</a>
+            <a href="Mathematics/Computational Mathematics/Introduction to AI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Introduction to AI</a>
+            <a href="Mathematics/Computational Mathematics/Deep Learning.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Deep Learning</a>    
+            <a href="Mathematics/Computational Mathematics/Computer Vision.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Computer Vision</a>
+            <br>
+        </div>
+    </nav>
+
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Computational Mathematics</span>
+    </header>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:370px;margin-right:40px">
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Jlibrary Computational Mathematics</b></h8> <!-- Change-->
+            <!-- Services -->
+            <br>
+            <br>
+            <h3><b>Course Lists</b></h3> <!--Change-->
+            <br>
+            <img src="Mathematics/math pics/Applied Mathematics for web.png" alt="Applied Mathematics " style="width:50%" onclick="onClick(this)">
+            <br>
+            <br>
+            <br>
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <br>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/Signals and System Pics.jpg">
+
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/Signals and System Pics.jpg" alt="Equations" style="width:24%">
+                    </a>
+
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/DSP pic.jpg">
+
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/DSP pic.jpg" alt="Equations" style="width:24%">
+                    </a>
+
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/Think_DSP.jpg">
+
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/Think_DSP.jpg" alt="Equations" style="width:24%">
+                    </a>
+
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/Control System Engineering.jpg">
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/Control System Engineering.jpg" alt="Equations" style="width:24%">
+                    </a>
+
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/Algorithm Pic.jpg">
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/Algorithm Pic.jpg" alt="Equations" style="width:24%">
+                    </a>
+                    <a target="_blank" href="Mathematics/math pics/Linear Algebra and its Applications pic.jfif">
+                        <img src="Mathematics/math pics/Linear Algebra and Learning from Data.jpg" alt="Equations" style="width:24%">
+                    </a>
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/AI.jpg">
+
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/AI.jpg" alt="Equatdions" style="width:24%">
+                    </a>
+
+                    <a target="_blank" href="Mathematics/Computational Mathematics/Computational mathematics pics/deeplearningpic.jpeg">
+
+                        <img src="Mathematics/Computational Mathematics/Computational mathematics pics/deeplearningpic.jpeg" alt="Equations" style="width:24%">
+                    </a>
+
+                    <a target="_blank" href="Mathematics/math pics/Computer Vision picture.jpg">
+
+                        <img src="Mathematics/math pics/Computer Vision picture.jpg" alt="Equatdions" style="width:24%">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

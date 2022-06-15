@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<title>JKim Sensor Physics</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 17px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 26px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32" >Sensor Physics</h3> <!-- Change-->
+        </div>
+        
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Hardware Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Electronics</a>
+            <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Sensor Physics</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Sensor Physics</span>
+    </header>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:370px;margin-right:40px">
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Sensor Physics</b></h8>
+
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br>
+                <div class="web">
+                    <p>
+                        <h1><b>Data Acquisition</b></h1> <!--Change-->
+                        Sensors, Signals, and Systems
+                        <br>Sensor Classification
+                        <br>Units of Measurements
+                        <br><br>
+                        <h1><b>Transfer Functions</b></h1> <!--Change-->
+                        Mathematical Models
+                        <br>Calibration
+                        <br>Computation of Parameters
+                        <br>Computation of a Stimulus
+                        <br><br>
+                        <h1><b>Sensor Characteristics</b></h1> <!--Change-->
+                        Sensors for Mobile Communication Devices
+                        <br>Span(Full-Scale Input)
+                        <br>Full-Scale Output
+                        <br>Accuracy
+                        <br>Calibration Error
+                        <br>Nonlinearity
+                        <br>Saturation
+                        <br>Repeatability
+                        <br>Dead Band
+                        <br>Resolution
+                        <br>Special Properties
+                        <br>Output Impedance
+                        <br>Output Format
+                        <br>Resolution
+                        <br>Excitation
+                        <br>Dynamic Characteristics
+                        <br>Dynamic Models of Sensor Elements
+                        <br>Environmental Factors
+                        <br>Reliability
+                        <br>Application Characteristics
+                        <br>Resolution
+                        <br>Uncertainty
+                        <br><br>
+                        <h1><b>Physical Principles of Sensing</b></h1> <!--Change-->
+                        Electric Charges, Fields, and Potentials
+                        <br>Capacitance
+                        <br>Magnetism
+                        <br>Induction
+                        <br>Resistance
+                        <br>Piezoelectric Effects
+                        <br>Pyroelectric Effect
+                        <br>Thermoelectric Effects
+                        <br>Sound Waves
+                        <br>Temperature and Thermal Properties of Materials
+                        <br>Heat Transfer
+                        <br><br>
+                        <h1><b>Optical Components of Sensors</b></h1> <!--Change-->
+                        Light
+                        <br>Light Scattering
+                        <br>Geometrical Optics
+                        <br>Radiometry
+                        <br>Photometry
+                        <br>Windows
+                        <br>Mirrors
+                        <br>Lenses
+                        <br>Optical Efficiency
+                        <br><br>
+                        <h1><b>Interface Electronic Circuits</b></h1> <!--Change-->
+                        Signal Conditioners
+                        <br>Sensor Connections
+                        <br>Excitation Circuits
+                        <br>Analog-to-Digital Converters
+                        <br>Integrated Interfaces
+                        <br>Data Transmission
+                        <br>Noise in Sensors and Circuits
+                        <br>Batteries for Low-Power Sensors
+                        <br>Energy Harvesting
+                        <br><br>
+                        <h1><b>Detectors of Humans</b></h1> <!--Change-->
+                        Ultrasonic Detectors
+                        <br>Microwave Motion Detectors
+                        <br>Micropower Impulse Radars
+                        <br>Ground Penetrating Radars
+                        <br>Linear Optical Sensors (PSD)
+                        <br>Capacitive Occupancy Detectors
+                        <br>Triboelectric Detectors
+                        <br>Ground Penetrating Radars
+                        <br>Linear Optical Sensors (PSD)
+                        <br>Capacitive Occupancy Detectors
+                        <br>Triboelectric Detectors
+                        <br>Optoelectronic Motion Detectors
+                        <br>Optical Presence Sensors
+                        <br>Pressure-Gradient Sensors
+                        <br>2-D Pointing Devices
+                        <br>Gesture Sensing (3-D Pointing)
+                        <br>Tactile Sensors
+                        <h1><b>Presence, Displacement, and Level</b></h1>
+                        Stationary Velocity Sensors
+                        <br>Inertial Rotary Sensors (Gyroscope)
+                        <br>Inertial Linear Sensors (Accelerometers)
+                        <br>Inductive and Magnetic Sensors
+                        <br>
+                        <br>
+                        <h1><b>Force and Strain</b></h1> <!--Change-->
+                        Basic Considerations
+                        <br>Strain Gauges
+                        <br>Pressure-Sensitive Films
+                        <br>Piezoelectric Force Sensors
+                        <br>Piezoelectric Cables
+                        <br>Optical Force Sensors
+                        <br><br>
+                        <h1><b>Pressure Sensors</b></h1>
+                        Concept of Pressure
+                        <br>Units of Pressure
+                        <br>Mercury Pressure Sensor
+                        <br>Bellows, Membranes, and Thin Plates
+                        <br>Piezoresistive Sensors
+                        <br>Capacitive Sensors
+                        <br>VRP Sensors
+                        <br>Optoelectronic Pressure Sensors
+                        <br>Indirect Pressure Sensor
+                        <br>Vacuum Sensors
+                        <br><br>
+                        <h1><b>Flow Sensors</b></h1>
+                        Basics of Flow Dynamics
+                        <br>Pressure Gradient Technique
+                        <br>Thermal Transport Sensors
+                        <br>Ultrasonic Sensors
+                        <br>Electromagnetic Sensors
+                        <br>Breeze Sensor
+                        <br>Coriolis Mass Flow Sensors
+                        <br>Drag Force Flowmeter
+                        <br>Cantilever MEMS Sensors
+                        <br>Dust and Smoke Detectors
+                        <br><br>
+                    </p>
+                </div>
+
+
+
+                <div class="web">
+                    <p>
+
+                        <h1><b>Microphones</b></h1>
+                        Introduction to Trees
+                        <br>Microphone Characteristics
+                        <br>Resistive Microphones
+                        <br>Condenser Microphones
+                        <br>Electret Microphones
+                        <br>Optical Microphones
+                        <br>Piezoelectric Microphones
+                        <br>Dynamic Microphones
+                        <br><br>
+                        <h1><b>Humidity and Moisture Sensors</b></h1>
+                        Concept of Humidity
+                        <br>Sensor Concepts
+                        <br>Capacitive Humidity Sensors
+                        <br>Resistive Humidity Sensors
+                        <br>Thermal Conductivity Sensor
+                        <br>Optical Hygrometers
+                        <br>Oscillating Hygrometer
+                        <br>Soil Moisture
+                        <br><br>
+                        <h1><b>Light Detectors</b></h1>
+                        Principle of Quantum Detectors
+                        <br>Photodiode
+                        <br>Phototransistor
+                        <br>Photoresistor
+                        <br>Cooled Detectors
+                        <br>Imaging Sensors for Visible Range
+                        <br>UV Detectors
+                        <br>Thermal Radiation Detectors
+                        <br><br>
+                        <h1><b>Detectors of Ionizing Radiations</b></h1>
+                        Scintillating Detectors
+                        <br>Ionization Detectors
+                        <br>Cloud and Bubble Chambers
+                        <br><br>
+                        <h1><b>Temperature Sensors</b></h1>
+                        Coupling with Object
+                        <br>Temperature References
+                        <br>Resistance Temperature Detectors (RTD)
+                        <br>Ceramic Thermistors
+                        <br>Silicon and Germanium Thermistors
+                        <br>Semiconductor pn-Junction Sensors
+                        <br>Silicon PTC Temperature Sensors
+                        <br>Thermoelectric Sensors
+                        <br>Optical Temperature Sensors
+                        <br>Acoustic Temperature Sensors
+                        <br>Piezoelectric Temperature Sensors
+                        <br><br>
+                        <h1><b>Chemical and Biological Sensors</b></h1>
+                        Chemical Sensors
+                        <br>Biochemical Sensors
+                        <br>Chemical Sensor Characteristics
+                        <br>Electrical and Electrochemical Sensors
+                        <br>Photoionization Detectors
+                        <br>Physical Transducers
+                        <br>Spectrometers
+                        <br>Thermal Sensors
+                        <br>Optical Transducers
+                        <br>Multi-sensor Arrays
+                        <br>Specific Difficulties
+                        <br><br>
+                        <h1><b>Potentiometer</b></h1>
+                        Rotatory Potentiometers
+                        <br>Performance Considerations
+                        <br>Optical Potentiometer
+                        <br>
+                        <br>
+                        <h1><b>Encoders</b></h1>
+                        Incremental Encoder
+                        <br>Absolute Encoder
+                        <br>Optical Encoder
+                        <br>Sliding Contact Encoder
+                        <br>Magnetic Encoder
+                        <br>Proximity Sensor Encoder
+                        <br>Direction Sensing
+                        <br>Incremental Optical Encoder
+                        <br>Optical Potentiometer
+                        <br>
+                        <br>
+                        <h1><b>Stepper Motor</b></h1>
+                        Principle of Operation
+                        <br>Stepper Motor Classification
+                        <br>Driver and Controller
+                        <br>Torque Motion Characteristics
+                        <br>Magnetic Encoder
+                        <br>Static Position Error
+                        <br>Damping of Stepper Motors
+                        <br>Stepper Motor Models
+                        <br>Control of Stepper Motors
+                        <br>Stepper Motor Selection and Applications.
+                        <br>
+                        <br>
+                        <h1><b>Motors</b></h1>
+                        Principle of Operation DC Motor
+                        <br>Rotor and Stator
+                        <br>Commutation
+                        <br>Static Torque Characteristics
+                        <br>Brushless DC Motors
+                        <br>Torque Motors
+                        <br>DC Motor Equations
+                        <br>DC Servomotors
+                        <br>Armature Control
+                        <br>Field Control
+                        <br>Feedback Control of DC Motors
+                        <br>Phase-Locked Control
+                        <br>Motor Driver and Feedback Control
+                        <br>DC Motor Selection
+                        <br>Induction Motors
+                        <br>Induction Motor Control
+                        <br>Synchronous Motors
+                        <br><br>
+
+                    </p>
+                </div>
+
+
+            </div>
+            
+        </div>
+        <div class="w3-container">
+                <h3><b>Reference</b></h3> <!--Change-->
+                <h1>
+                    <i>
+                        Handbook of modern sensors Book by Jacob Fraden
+                        <br>Sensors and Actuators: Engineering System Instrumentation, Second Edition
+                        Book by Clarence W. De Silva
+                    </i>
+                </h1>
+
+                <div class="responsive">
+                    <div class="gallery">
+
+                        <a target="_blank" href="Sensor Physics pic/Handbook of Modern Sensors pic.jpg">
+
+                            <img src="Sensor Physics pic/Handbook of Modern Sensors pic.jpg" alt="Equations" style="width:35%">
+                        </a>
+
+                        <a target="_blank" href="math pics/Sesnros and Actuators.tif">
+
+                            <img src="Sensor Physics pic/Sesnros and Actuators.tif" alt="Equations" style="width:35%">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <br>
+        </div>
+
+
+    
+
+
+    <br><br>
+    <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+        <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+        <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+        <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+    </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

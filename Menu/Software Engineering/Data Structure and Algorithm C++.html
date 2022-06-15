@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<title>J Engineering library Data Structure and Algorithm with C++</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 36px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 16px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Data Structure and Algorithm with C++</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
+            <a href="Data Structure and Algorithm with C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Data Structure and Algorithm with C++</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Algorithm with C++</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div class="w3-container">
+                <h8><b>Data Structure and Algorithm with C++</b></h8>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                    <br>
+                    <div class="web">
+                        <p>
+                            <h1><b>Object-Oriented Programming Using C++</b></h1> <!--Change-->
+                            Abstract Data Types
+                            <br>Encapsulation
+                            <br>Inheritance
+                            <br>Pointers
+                            <br>------ Pointers and Arrays
+                            <br>------ Pointers and Copy Constructors
+                            <br>------ Pointers and Destructors
+                            <br>------ Pointers and Reference Variables
+                            <br>------ Pointers to Functions
+                            <br>Polymorphism
+                            <br>C++ and Object-Oriented Programming
+                            <br>The Standard Template Library
+                            <br>------ Containers
+                            <br>------ Iterators
+                            <br>------ Algorithms
+                            <br>------ Function Objects
+                            <br>Vectors in the Standard Template Library
+                            <br>Data Structures and Object-Oriented Programming
+                            <br>Case Study: Random Access File
+                            <br><br>
+                            <h1><b>Complexity Analysis</b></h1> <!--Change-->
+                            Computational and Asymptotic Complexity
+                            <br>Big-O Notation
+                            <br>Properties of Big-O Notation
+                            <br>Ω and Θ Notations
+                            <br>Possible Problems
+                            <br>Examples of Complexities
+                            <br>Finding Asymptotic Complexity: Examples
+                            <br>The Best, Average, and Worst Cases
+                            <br>Amortized Complexity
+                            <br>NP-Completeness
+                            <br><br>
+                            <h1><b>Linked Lists</b></h1>
+                            Singly Linked Lists
+                            <br>------ Insertion
+                            <br>------ Deletion
+                            <br>------ Search
+                            <br>Doubly Linked Lists
+                            <br>Circular Lists
+                            <br>Skip Lists
+                            <br>Self-Organizing Lists
+                            <br>Sparse Tables
+                            <br>Lists in the Standard Template Library
+                            <br>Concluding Remarks
+                            <br><br>
+                            <h1><b>Stacks and Queues</b></h1>
+                            Stacks
+                            <br>Queues
+                            <br>Priority Queues
+                            <br>Stacks in the Standard Template Library
+                            <br>Queues in the Standard Template Library
+                            <br>Priority Queues in the Standard Template Library
+                            <br>Deques in the Standard Template Library
+                            <br><br>
+                            <h1><b>Recursion</b></h1>
+                            Recursive Definitions
+                            <br>Function Calls and Recursion Implementation
+                            <br>Anatomy of a Recursive Call
+                            <br>Tail Recursion
+                            <br>Nontail Recursion
+                            <br>Indirect Recursion
+                            <br>Nested Recursion
+                            <br>Excessive Recursion
+                            <br>Backtracking
+                            <br><br>
+                            <h1><b>Binary Trees</b></h1>
+                            Trees, Binary Trees, and Binary Search Trees
+                            <br>Implementing Binary Trees
+                            <br>Searching a Binary Search Tree
+                            <br>Tree Traversal
+                            <br>------ Breadth-First Traversal
+                            <br>------ Depth-First Traversal
+                            <br>------ Stackless Depth-First Traversal
+                            <br>Insertion
+                            <br>Deletion
+                            <br>------ Deletion by Merging
+                            <br>------ Deletion by Copying
+                            <br>Balancing a Tree
+                            <br>------ The DSW Algorithm
+                            <br>------ AVL Trees
+                            <br>Self-Adjusting Trees
+                            <br>------ Self-Restructuring Trees
+                            <br>------ Splaying
+                            <br>Heaps
+                            <br>------ Heaps as Priority Queues
+                            <br>------ Organizing Arrays as Heaps
+                            <br>Treaps
+                            <br>k-d Trees
+                            <br>Polish Notation and Expression Trees
+                            <br><br>
+
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <h1><b>Multiway Trees</b></h1>
+                            Family of B-Trees
+                            <br>------ B-Trees
+                            <br>------ B*-Trees
+                            <br>------ B+-Trees
+                            <br>------ Prefix B+-Trees
+                            <br>------ K-d B-trees
+                            <br>------ Bit-Trees
+                            <br>------ R-Trees
+                            <br>------ 2–4 Trees
+                            <br>------ Sets and Multisets in the Standard Template Library
+                            <br>------ Maps and Multimaps in the Standard Template Library
+                            <br>Tries
+                            <br><br>
+                            <h1><b>Graphs</b></h1>
+                            Graph Representation
+                            <br>Graph Traversals
+                            <br>Shortest Paths
+                            <br>------ All-to-All Shortest Path Problem
+                            <br>Cycle Detection
+                            <br>------ Union-Find Problem
+                            <br>Spanning Trees
+                            <br>Connectivity
+                            <br>------ Connectivity in Undirected Graphs
+                            <br>------ Connectivity in Directed Graphs
+                            <br>Topological Sort
+                            <br>Networks
+                            <br>------ Maximum Flows
+                            <br>------ Maximum Flows of Minimum Cost
+                            <br>Matching
+                            <br>------ Stable Matching Problem
+                            <br>------ Assignment Problem
+                            <br>------ Matching in Nonbipartite Graphs
+                            <br>Eulerian and Hamiltonian Graphs
+                            <br>------ Eulerian Graphs
+                            <br>------ Hamiltonian Graphs
+                            <br>Graph Coloring
+                            <br>NP-Complete Problems in Graph Theory
+                            <br>------ The Clique Problem
+                            <br>------ The 3-Colorability Problem
+                            <br>------ The Vertex Cover Problem
+                            <br>------ The Hamiltonian Cycle Problem
+                            <br><br>
+                            <h1><b>Sorting</b></h1>
+                            Elementary Sorting Algorithms
+                            <br>------ Insertion Sort
+                            <br>------ Selection Sort
+                            <br>------ Bubble Sort
+                            <br>------ Comb Sort
+                            <br>Decision Trees
+                            <br>Efficient Sorting Algorithms
+                            <br>------ Shell Sort
+                            <br>------ Heap Sort
+                            <br>------ Quicksort
+                            <br>------ Mergesort
+                            <br>------ Radix Sort
+                            <br>------ Counting Sort
+                            <br>Sorting in the Standard Template Library
+                            <br><br>
+                            <h1><b>Hashing</b></h1>
+                            Hash Functions
+                            <br>------ Division
+                            <br>------ Folding
+                            <br>------ Mid-Square Function
+                            <br>------ Extraction
+                            <br>------ Radix Transformation
+                            <br>------ Universal Hash Functions
+                            <br>Collision Resolution
+                            <br>------ Open Addressing
+                            <br>------ Chaining
+                            <br>------ Bucket Addressing
+                            <br>Deletion
+                            <br>Perfect Hash Functions
+                            <br>------ Cichelli’s Method
+                            <br>------ The FHCD Algorithm
+                            <br>Rehashing
+                            <br>------ The Cuckoo Hashing
+                            <br>Hash Functions for Extendible Files
+                            <br>------ Extendible Hashing
+                            <br>------ Linear Hashing
+                            <br><br>
+                            <h1><b>Data Compression</b></h1>
+                            Conditions for Data Compression
+                            <br>Huffman Coding
+                            <br>Run-Length Encoding
+                            <br>Ziv-Lempel Code
+                            <br><br>
+                            <h1><b>Memory Management</b></h1>
+                            The Sequential-Fit Methods
+                            <br>The Nonsequential-Fit Methods
+                            <br>------ Buddy Systems
+                            <br>Garbage Collection
+                            <br>------ Mark-and-Sweep
+                            <br>------ Copying Methods
+                            <br>------ Incremental Garbage Collection
+                            <br>------ Generational Garbage Collection
+                            <br><br>
+                            <h1><b>String Matching</b></h1>
+                            Exact String Matching
+                            <br>------ Straightforward Algorithms
+                            <br>------ The Knuth-Morris-Pratt Algorithm
+                            <br>------ The Boyer-Moore Algorithm
+                            <br>------ Multiple Searches
+                            <br>------ Bit-Oriented Approach
+                            <br>------ Matching Sets of Words
+                            <br>------ Regular Expression Matching
+                            <br>------ Suffix Tries and Trees
+                            <br>------ Suffix Arrays
+                            <br>Approximate String Matching
+                            <br>------ String Similarity
+                            <br>------ String Matching with k Errors
+                            <br><br>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="w3-container">
+                <h3><b>Lecture Series</b></h3>
+                <h1>Graph Theory Tutorial from a Google Engineer</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/0qgaIMqOEVs?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h3>Github</h3>
+                <a href="https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-">
+                    https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-
+                </a>
+                <br><a href="http://www.orentec.co.kr/teachlist/DA_ST_1/teach_sub1.php" target="_blank">Seongyoo yun's C Data Structure and Algorithm Power point and Source code'</a>
+                <br>
+                <h3><b>Reference</b></h3>
+                <h1><i>Data Structure and Algorithms in C++ by Adam Drozdek</i></h1>
+                <br><br>
+                <img src="Software Engineering Pics/Data Structures and Algorithms.jpg" alt="Operating Systems pics" style="width:35%" onclick="onClick(this)">
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+
+        <!-- End page content -->
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

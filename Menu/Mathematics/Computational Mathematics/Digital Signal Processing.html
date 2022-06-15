@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<title>Digital Signal Processing JLibrary</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 20px
+        }
+
+        h2 {
+            font-size: 22px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 17px
+        }
+
+        h2 {
+            font-size: 20px
+        }
+
+        h3 {
+            font-size: 23px
+        }
+
+        h4 {
+            font-size: 26px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <br>
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Digital Signal Processing</h3><!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computational Mathematics</a>
+            <a href="Digital Signal Processing.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Digital Signal Processing</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Digital Signal Processing</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Digital Signal Processing JLibrary</b></h8>
+
+            <!-- Services -->
+            <!-- TITLE -->
+            <div style="margin-top:50px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br><br>
+                <div class="web">
+                    <p>
+                        <h1><b>DISCRETE SEQUENCES AND SYSTEMS</b></h1> <!--Change-->
+                        Discrete Sequences and Their Notation
+                        <br>Signal Amplitude, Magnitude, Power
+                        <br>Signal Processing Operational Symbols
+                        <br>Introduction to Discrete Linear Time-Invariant Systems
+                        <br>Discrete Linear Systems
+                        <br>Time-Invariant Systems
+                        <br>The Commutative Property of Linear Time-Invariant Systems
+                        <br>Analyzing Linear Time-Invariant Systems
+                        <br><br>
+                        <h1><b>PERIODIC SAMPLING</b></h1> <!--Change-->
+                        Aliasing: Signal Ambiguity in the Frequency Domain
+                        <br>Sampling Lowpass Signals
+                        <br>Sampling Bandpass Signals
+                        <br>Practical Aspects of Bandpass Sampling
+                        <br>
+                        <br>
+                        <h1><b>THE DISCRETE FOURIER TRANSFORM</b></h1> <!--Change-->
+                        Understanding the DFT Equation
+                        <br>DFT Linearity
+                        <br>DFT Magnitudes
+                        <br>DFT Frequency Axis
+                        <br>DFT Shifting Theorem
+                        <br>Inverse DFT
+                        <br>DFT Leakage
+                        <br>Windows
+                        <br>DFT Scalloping Loss
+                        <br>DFT Resolution, Zero Padding, and Frequency-Domain Sampling
+                        <br>DFT Processing Gain
+                        <br>The DFT of Rectangular Functions
+                        <br>Interpreting the DFT Using the Discrete-Time Fourier Transform
+                        <br>
+                        <br>
+                        <h1><b>THE FAST FOURIER TRANSFORM</b></h1> <!--Change-->
+                        Relationship of the FFT to the DFT
+                        <br>Hints on Using FFTs in Practice
+                        <br>Derivation of the Radix-2 FFT Algorithm
+                        <br>FFT Input /Output Data Index Bit Reversal
+                        <br>Radix-2 FFT Butterfly Structures
+                        <br>Alternate Single-Butterfly Structures
+                        <br>
+                        <br>
+                        <h1><b>Finite Impulse Response Filters </b></h1> <!--Change-->
+                        Finite Impulse Response(FIR) Filters
+                        <br>Convolution in FIR Filters
+                        <br>Lowpass FIR Filter Design
+                        <br>Bandpass FIR Filter Design
+                        <br>Highpass FIR Filter Design
+                        <br>Parks-McClellan Exchange FIR Filter Design Method
+                        <br>Half-band FIR Filters
+                        <br>Phase Response of FIR Filters
+                        <br>A Generic Description of Decrete Convolution
+                        <br>Analyzing FIR Filters
+                        <br>
+                        <br>
+                        <h1><b>Infinite Impulse Response FIlter</b></h1> <!--Change-->
+                        An Introduction to Infinite Impulse Response Filters
+                        <br>The Laplace Transform
+                        <br>The z-Transform
+                        <br>Using the z-Transform to Analyze IIR Filters
+                        <br>Using Poles and Zeros to Analyze IIR Filters
+                        <br>Alternate IIR Filter Structures
+                        <br>Pitfalls in building IIR Filters
+                        <br>Improving IIR Filters with Cascaded Structures
+                        <br>Scaling the Gain of IIR Filters
+                        <br>Impulse Invariance IIR Filter Design Method
+                        <br>Bilinear Transform IIR Filter Design Method
+                        <br>Optimized IIR Filter Design Method
+                        <br>Comparison of IIR and FIR Filters
+                        <br>
+                        <br>
+                        <h1><b>SPECIALIZED DIGITAL NETWORKS AND FILTERS</b></h1> <!--Change-->
+                        Differentiators
+                        <br>Integrators
+                        <br>Matched Filters
+                        <br>Interpolated Lowpass FIR Filters
+                        <br>Frequency Sampling Filters
+                        <br><br>
+                        <h1><b>QUADRATURE SIGNALS</b></h1> <!--Change-->
+                        Quadrature Signals
+                        <br>Notation of Complex Numbers
+                        <br>Representing Real Signals using Complex Phasors
+                        <br>Qaudrature Signals in the Frequency Domain
+                        <br>Bandpass Quadrature Signals in the Frequency Domain
+                        <br>Complex Down-Conversion and Methods
+                        <br>
+                        <br>
+                        <h1><b>THE DISCRETE HILBERT TRANSFORM</b></h1> <!--Change-->
+                        Hilbert Transform Definition
+                        <br>Impulse Response of a Hilbert Transformer
+                        <br>Designing a Descrete Hilbert Transformer
+                        <br>Time-Domain Analytic Signal Generation
+                        <br>Comparing Analytical signal Generation Methods
+                        <br>
+                        <br>
+                        <h1><b>SAMPLE RATE CONVERSION</b></h1> <!--Change-->
+                        Decimation
+                        <br>Two-Stage Decimation
+                        <br>Properties of Downsampling
+                        <br>Interpolation
+                        <br>Propoerties of Interpolation
+                        <br>Combining Decimation and Iterpolation
+                        <br>Polyphase Filters
+                        <br>Two-Stage Interpolation
+                        <br>z-Transform Analysis of Multrate Systems
+                        <br>PolyPhase Filter Implementations
+                        <br>Sample Rate Conversion by Rational Factors
+                        <br>Sample Rate Conversion with Half-band Filters
+                        <br>Sample Rate Conversion with IFIR Filters
+                        <br>Cascaded Integrator-Comb Filters
+                        <br>
+                        <br>
+                        <h1><b>Signal Averaging</b></h1> <!--Change-->
+                        Coherent Averaging
+                        <br>Incoherent Averaging
+                        <br>Averaging Multiple Fast Fourier Transforms
+                        <br>Averaging Phase Angles
+                        <br>Filtering Aspects of Time-Domain Averaging
+                        <br>Exponential Averaging
+                        <br>
+                        <br>
+                        <h1><b>DIGITAL DATA FORMATS AND THEIR EFFECTS</b></h1> <!--Change-->
+                        Fixed-Point Binary Formats
+                        <br>Binary Number Precision and Dynamic Range
+                        <br>Effects of Finite Fixed-Point Binary Word Length
+                        <br>Floating-Point Binary Formats
+                        <br>Block Floating-Point Binary Format
+                        <br>
+                        <br>
+                        <h1><b>DIGITAL SIGNAL PROCESSING TRICKS</b></h1> <!--Change-->
+                        Frequency Translation without Multiplication
+                        <br>High-Speed Vector Magnitude Approximation
+                        <br>Frequency-Domain Windowing
+                        <br>Fast Multiplication of Complex Numbers
+                        <br>Efficiently Performing the FFT of Real Sequences
+                        <br>Computing the Inverse FFT Using the Forward FFT
+                        <br>Simplified FIR Filter Structure
+                        <br>Reducing A / D Converter Quantization Noise
+                        <br>A/D Converter Testing Techniques
+                        <br>Fast FIR Filtering Using the FFT
+                        <br>Generating Normally Distributed Random Data
+                        <br>Zero-Phase Filtering
+                        <br>Sharpended FIR Filters
+                        <br>Interpolating a Bandpass Signal
+                        <br>Spectral Peak Location Algorithm
+                        <br>Computing FFT Twiddle Factor
+                        <br>Single Tone Detection
+                        <br>The Sliding DFT
+                        <br>The Zoom FFT
+                        <br>A Practical Spectrum Analyzer
+                        <br>An Efficient Artangent Approximation
+                        <br>Frequency Demodulation Algoithms
+                        <br>DC Removal
+                        <br>Improving Tradititional CIC Filters
+                        <br>Smoothing Impulsive Noise
+                        <br>Efficient Polynomial Evaluation
+                        <br>Designing Very High-Order FIR Filters
+                        <br>Time-Domain Interpolation Using the FFT
+                        <br>Frequency Translation Using Decimation
+                        <br>Automatic Gain Control (AGC)
+                        <br>Approximate Envelope Detection
+                        <br>A Quadrature Oscilator
+                        <br>Specialized Exponential Averaging
+                        <br>Filtering Narrowband Noise Using Filter Nulls
+                        <br>Efficient Computation of Signal Variance
+                        <br>Real-time computation of Signal Averages and Variances
+                        <br>Building Hilber Transformers From Half-band Filter
+                        <br>Complex Vector Rotation with Arttangents
+                        <br>An Efficient Differentiating Network
+                        <br>Linear-Phase DC-Removal Filter
+                        <br>Avoiding Overflow In Magnitude Computations
+                        <br>Efficient Linear Interpolation
+                        <br>Altenate Complex Down-Conversion Schemes
+                        <br>Signal Transition Detection
+                        <br>Spectral Flipping aroung Signal Center Frequency
+                        <br>Computing Missing Signal Sample
+                        <br>Computing Large DFTs Using Small FFTs
+                        <br>Computing Filter Group Delay without Arctangnets
+                        <br>Computing a Forward and Inverse FFT Using a Single FFT
+                        <br>Improved Narrowband Lowpass IIR Filter
+                        <br>A Stable Goertzel Algorithm
+
+                    </p>
+
+
+                </div>
+                <div class="web">
+                    <p>
+
+                        <h1><b>Sounds and Signals</b></h1> <!--Change-->
+                        Periodic Signals
+                        <br>Spectral decomposition
+                        <br>Signals
+                        <br>Reading and writing Waves
+                        <br>Spectrums
+                        <br>Wave objects
+                        <br>Signal objects
+                        <br>
+                        <br>
+                        <h1><b>Harmonics</b></h1> <!--Change-->
+                        Triangle waves
+                        <br>Square waves
+                        <br>Aliasing
+                        <br>Computing the Spectrum
+                        <br>
+                        <br>
+                        <h1><b>Non-periodic signals</b></h1> <!--Change-->
+                        Linear chirp
+                        <br>Exponential chirp
+                        <br>Specturm of a chirp
+                        <br>Spectrogram
+                        <br>The Gabor limit
+                        <br>Leakage
+                        <br>Windowing
+                        <br>Implementing spectrograms
+                        <br>
+                        <br>
+                        <h1><b>Noise</b></h1> <!--Change-->
+                        Uncorrelated Noise
+                        <br>Integrated Spectrum
+                        <br>Brownian Noise
+                        <br>Pink Noise
+                        <br>Gaussian noise
+                        <br>
+                        <br>
+                        <h1><b>Autocorrelation</b></h1> <!--Change-->
+                        Correlation
+                        <br>Serial correlation
+                        <br>Autocorrelation
+                        <br>Autocorrelation of periodic signals
+                        <br>Correlations as dot product
+                        <br>
+                        <br>
+                        <h1><b>Discrete Cosing Transform</b></h1> <!--Change-->
+                        Sythesis with arrays
+                        <br>Analysis
+                        <br>Orthogonal Matrices
+                        <br>DCT-IV
+                        <br>The DCT class
+                        <br>
+                        <br>
+                        <h1><b>Discrete Fourier Transform</b></h1> <!--Change-->
+                        Complex exponentials
+                        <br>Complex signals
+                        <br>The sythesis Problem
+                        <br>The analysis problem
+                        <br>Efficient Analysis
+                        <br>DFT
+                        <br>The DFT is periodic
+                        <br>DFT of real signals
+                        <br>
+                        <br>
+                        <h1><b>Filtering and Convolution</b></h1> <!--Change-->
+                        Smoothing
+                        <br>Convolution
+                        <br>The frequency domain
+                        <br>The Convolution Theorem
+                        <br>Gaussian filter
+                        <br>Efficient convolution
+                        <br>Efficient autocorrelation
+                        <br>
+                        <br>
+                        <h1><b>Differentiation and Integration</b></h1> <!--Change-->
+                        Finite differences
+                        <br>The Frequency domain
+                        <br>Differentiation
+                        <br>Integration
+                        <br>Cumulative Sum
+                        <br>Integrating noise
+                        <br>
+                        <br>
+                        <h1><b>LTI systems</b></h1> <!--Change-->
+                        Signals and Systems
+                        <br>Windows and filters
+                        <br>Acoustic response
+                        <br>System and Convolution
+                        <br>Proof of the COnvolution Theorem
+                        <br>
+                        <br>
+                        <h1><b>Modulation and sampling</b></h1> <!--Change-->
+                        Convolution with impulses
+                        <br>Amplitude modulation
+                        <br>Sampling 
+                        <br>Aliasing
+                        <br>Interpolation
+                    </p>
+
+                    <br>
+                    <br>
+                    <h1>DSP with Python Github</h1>
+                    <a href="https://github.com/jiwook021/DSP-with-Python">
+                        https://github.com/jiwook021/DSP-with-Python
+                    </a>
+                    <br><br>
+                    <h3><b>Lecture Series</b></h3>
+                    <h1>Digital Signal Processing Lecture by Rich Radke</h1>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/8cjDKirNIko?list=PLuh62Q4Sv7BUSzx5Jr8Wrxxn-U10qG1et" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br>
+                    <h1>Digital Signal Processing Series by University of Illinois Urbana-Champaign</h1>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/NqyYPqLn4HE?list=PLPm8uUIhq-UI0I7m0FhXxFNHvNT-WHpPj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <br>
+
+                    <h3><b>Reference</b></h3> <!--Change-->
+
+                    <h1>
+                        <i>
+                            Digital Signal Processing
+                            Second Edition
+                            by
+                            Steven W. Smith
+                        </i>
+                    </h1>
+                    <br>
+                    <div class="responsive">
+                        <div class="gallery">
+
+                            <a target="_blank" href="Computational mathematics pics/DSP pic.jpg">
+
+                                <img src="Computational mathematics pics/DSP pic.jpg" alt="Equations" style="width:60%">
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <h1>
+                        <i>
+                            Think DSP: Digital Signal Processing in Python
+                            Book by Allen B. Downey
+                        </i>
+                    </h1>
+                    
+
+
+                    <div class="responsive">
+                        <div class="gallery">
+
+                            <a target="_blank" href="Computational mathematics pics/Think_DSP.jpg">
+
+                                <img src="Computational mathematics pics/Think_DSP.jpg" alt="Equations" style="width:60%">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            </div>
+    <br>
+        <br>
+    
+
+    <br><br>
+    <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+        <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+        <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+        <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+    </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<title>JKim Computer Architecture</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body 
+    {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 
+    {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 27px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+    
+
+
+    body {
+        font-size: 13px;
+    }
+
+
+ 
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:330px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">Computer Architecture</h3> <!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Hardware Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Electronics</a>
+            <a href="Computer_Architecture.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Computer Architecture</a>
+            <br>
+            <br><a href="Hamming_Code.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Hamming Code Reference</a>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Computer Architecture</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:360px;margin-right:40px">
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br>
+                <div class="web">
+                    <p>
+                        <h1><b>Combinational Logic Design</b></h1> <!--Change-->
+                        Introduction
+                        <br>Boolean Equations
+                        <br>------- Terminology
+                        <br>------- Sum-of-Products Form
+                        <br>------- Product-of-Sums Form
+                        <br>Boolean Algebra
+                        <br>------- Axioms
+                        <br>------- Theorems of One Variable
+                        <br>------- Theorems of Several Variables
+                        <br>------- The Truth Behind It All
+                        <br>------- Simplifying Equations
+                        <br>From Logic to Gates
+                        <br>Multilevel Combinational Logic
+                        <br>------- Hardware Reduction
+                        <br>------- Bubble Pushing
+                        <br>X’s and Z’s, Oh My
+                        <br>------- Illegal Value: X
+                        <br>------- Floating Value: Z
+                        <br>Karnaugh Maps
+                        <br>------- Circular Thinking
+                        <br>------- Logic Minimization with K-Maps
+                        <br>------- Don’t Cares
+                        <br>------- The Big Picture
+                        <br>Combinational Building Blocks
+                        <br>------- Multiplexers
+                        <br>------- Decoders
+                        <br>Timing
+                        <br>------- Propagation and Contamination Delay
+                        <br>------- Glitches
+                        <br><br>
+                        <h1><b>Sequential Logic Design</b></h1> <!--Change-->
+                        Latches and Flip-Flops
+                        <br>------- SR Latch
+                        <br>------- D Latch
+                        <br>------- D FIip-Flop
+                        <br>------- Register
+                        <br>------- Enabled Flip-Flop
+                        <br>------- Resettable Flip-Flop
+                        <br>------- Transistor-Level Latch and Flip-Flop Designs
+                        <br>Synchronous Logic Design
+                        <br>------- Some Problematic Circuits
+                        <br>------- Synchronous Sequential Circuits
+                        <br>------- Synchronous and Asynchronous Circuits
+                        <br>Finite State Machines
+                        <br>------- FSM Design Example
+                        <br>------- State Encodings
+                        <br>------- Moore and Mealy Machines
+                        <br>------- Factoring State Machines
+                        <br>------- Deriving an FSM from a Schematic
+                        <br>Timing of Sequential Logic
+                        <br>------- The Dynamic Discipline
+                        <br>------- System Timing
+                        <br>------- Clock Skew
+                        <br>------- Metastability
+                        <br>------- Synchronizers
+                        <br>------- Derivation of Resolution Time
+                        <br>Parallelism
+                        <br><br>
+                        <h1><b>Hardware Description Languages</b></h1> <!--Change-->
+                        Combinational Logic
+                        <br>------- Bitwise Operators
+                        <br>------- Comments and White Space
+                        <br>------- Reduction Operators
+                        <br>------- Conditional Assignment
+                        <br>------- Internal Variables
+                        <br>------- Precedence
+                        <br>------- Numbers
+                        <br>------- Z’s and X’s
+                        <br>------- Bit Swizzling
+                        <br>------- Delays
+                        <br>Structural Modeling
+                        <br>Sequential Logic
+                        <br>------- Registers
+                        <br>------- Resettable Registers
+                        <br>------- Enabled Registers
+                        <br>------- Multiple Registers
+                        <br>------- Latches
+                        <br>More Combinational Logic
+                        <br>------- Case Statements
+                        <br>------- If Statements
+                        <br>------- Truth Tables with Don’t Cares
+                        <br>------- Blocking and Nonblocking Assignments
+                        <br>Finite State Machines
+                        <br>Data Types
+                        <br>------- SystemVerilog
+                        <br>------- VHDL
+                        <br>Parameterized Modules
+                        <br>Testbenches
+                        <br><br>
+                        <h1><b>Digital Building Blocks</b></h1> <!--Change-->
+                        Arithmetic Circuits
+                        <br>------- Addition
+                        <br>------- Subtraction
+                        <br>------- Comparators
+                        <br>------- ALU
+                        <br>------- Shifters and Rotators
+                        <br>------- Multiplication
+                        <br>------- Division
+                        <br>Number Systems
+                        <br>------- Fixed-Point Number Systems
+                        <br>------- Floating-Point Number Systems
+                        <br>Sequential Building Blocks
+                        <br>------- Counters
+                        <br>------- Shift Registers
+                        <br>Memory Arrays
+                        <br>------- Dynamic Random Access Memory (DRAM)
+                        <br>------- Static Random Access Memory (SRAM)
+                        <br>------- Area and Delay
+                        <br>------- Register Files
+                        <br>------- Read Only Memory (ROM)
+                        <br>------- Logic Using Memory Arrays
+                        <br>------- Memory HDL
+                        <br>Logic Arrays
+                        <br>------- Programmable Logic Array (PLA)
+                        <br>------- Field Programmable Gate Array (FPGA)
+                        <br>------- Array Implementations
+                        <br><br>
+                    </p>
+                </div>
+
+
+                <div class="web">
+                    <p>
+                        <h1><b>Architecture</b></h1> <!--Change-->
+                        Assembly Language
+                        <br>------- Instructions
+                        <br>------- Operands: Registers, Memory, and Constants
+                        <br>Programming
+                        <br>------- Program Flow
+                        <br>------- Logical, Shift, and Multiply Instructions
+                        <br>------- Branching
+                        <br>------- Conditional Statements
+                        <br>------- Getting Loopy
+                        <br>------- Arrays
+                        <br>------- Function Calls
+                        <br>------- Pseudoinstructions
+                        <br>Machine Language
+                        <br>------- R-Type Instructions
+                        <br>------- l-Type Instructions
+                        <br>------- S/B-Type Instructions
+                        <br>------- U/J-Type Instructions
+                        <br>------- Immediate Encodings
+                        <br>------- Addressing Modes
+                        <br>------- Interpreting Machine Language Code
+                        <br>------- The Power of the Stored Program
+                        <br>Lights, Camera, Action: Compiling, Assembling, and Loading
+                        <br>------- The Memory Map
+                        <br>------- Assembler Directives
+                        <br>------- Compiling
+                        <br>------- Assembling
+                        <br>------- Linking
+                        <br>------- Loading
+                        <br>Odds and Ends
+                        <br>------- Endianness
+                        <br>------- Exceptions
+                        <br>------- Signed and Unsigned Instructions
+                        <br>------- Floating-Point Instructions
+                        <br>------- Compressed Instructions
+                        <br>Evolution of the RISC-V Architecture
+                        <br>------- RISC-V Base Instruction Sets and Extensions
+                        <br>------- Comparison of RISC-V and MIPS Architectures
+                        <br>------- Comparison of RISC-V and ARM Architectures
+                        <br>Another Perspective: x86 Architecture
+                        <br>------- x86 Registers
+                        <br>------- x86 Operands
+                        <br>------- Status Flags
+                        <br>------- x86 Instructions
+                        <br>------- x86 Instruction Encoding
+                        <br>------- Other x86 Peculiarities
+                        <br><br>
+                        <h1><b>Microarchitecture</b></h1> <!--Change-->
+                        Introduction
+                        <br>------- Architectural State and Instruction Set
+                        <br>------- Design Processv
+                        <br>------- Microarchitectures
+                        <br>Performance Analysis
+                        <br>Single-Cycle Processor
+                        <br>------- Sample Program
+                        <br>------- Single-Cycle Datapath
+                        <br>------- Single-Cycle Control
+                        <br>------- More Instructions
+                        <br>------- Performance Analysis
+                        <br>Multicycle Processor
+                        <br>------- Multicycle Datapath
+                        <br>------- Multicycle Control
+                        <br>------- More Instructions
+                        <br>------- Performance Analysis
+                        <br>Pipelined Processor
+                        <br>------- Pipelined Datapath
+                        <br>------- Pipelined Control
+                        <br>------- Hazards
+                        <br>------- Performance Analysis
+                        <br>HDL Representation
+                        <br>------- Single-Cycle Processor
+                        <br>------- Generic Building Blocks
+                        <br>------- Testbench
+                        <BR>Advanced Microarchitecture
+                        <br>------- Deep Pipelines
+                        <br>------- Micro-Operations
+                        <br>------- Branch Prediction
+                        <br>------- Superscalar Processors
+                        <br>------- Out-of-Order Processor
+                        <br>------- Register Renaming
+                        <br>------- Multithreading
+                        <br>------- Multiprocessors
+                        <br>Real-World Perspective: Evolution of RISC-V Microarchitecture
+                        <br><br>
+                        <h1><b>Memory Systems</b></h1> <!--Change-->
+                        Memory System Performance Analysis
+                        <br>Caches
+                        <br>------- What Data is Held in the Cache?
+                        <br>------- How is Data Found?
+                        <br>------- What Data is Replaced?
+                        <br>------- Advanced Cache Design
+                        <br>Virtual Memory
+                        <br>------- Address Translation
+                        <br>------- The Page Table
+                        <br>------- The Translation Lookaside Buffer
+                        <br>------- Memory Protection
+                        <br>------- Replacement Policies
+                        <br>------- Multilevel Page Tables
+                        <br><br>
+                        <h1><b>Digital System Implementation</b></h1> <!--Change-->
+                        74xx Logic
+                        <br>PROMs
+                        <br>PLAs
+                        <br>FPGAs
+                        <br>Application-Specific Integrated Circuits
+                        <br>Datasheets
+                        <br>Transmission Lines
+                        <br>------- Matched Termination
+                        <br>------- Open Termination
+                        <br>------- Short Termination
+                        <br>------- Mismatched Termination
+                        <br>------- When to Use Transmission Line Models
+                        <br>------- Proper Transmission Line Terminations
+                        <br>------- Derivation of the Reflection Coefficient
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container">
+            <br>
+            <h3><b>Lecture Series</b></h3>
+            <p>
+                <h1>Computer Architecture Lecture by Princeton University</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/9nuAjYRbITQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+            <p>
+                <h1>Technology series by Techquickie</h1>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/6-CKZ9kqv7w?list=PLQMVnqe4XbictUtFZK1-gBYvyUzTWJnOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+            <h1>SoC Lesson by Samsung Semiconductor</h1>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/M30HAGmHKi0?list=PL74m3He-VakaSSBkCHdk5XYuIsc5p9PF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/52TnzJIxhjk?list=PL74m3He-VakYTwNpJ4vqQzUWFQXz5WIWG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+
+            <h2><b>Guidline Reference</b></h2> <!--Change-->
+            <h1>
+                <i>
+                    Digital Design and Computer Architecture, RISC-V Edition
+                    Book by David Harris and Sarah L. Harris
+                </i>
+            </h1>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Hardware Electronics Pics/RISC-V.jpg">
+                        <img src="Hardware Electronics Pics/RISC-V.jpg" alt="Equations" style="width:40%" onclick="onClick(this)">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+       
+   
+   </div>
+
+            <script>
+
+                function w3_open() {
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                function w3_openmenu() {
+                    document.getElementById("mySidebar").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_closemenu() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+
+                // Modal Image Gallery
+                function onClickmenu(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+                // Accordion
+                function myAccFunc() {
+                    var x = document.getElementById("demoAcc");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    var captionText = document.getElementById("caption");
+                    captionText.innerHTML = element.alt;
+                }
+
+
+
+
+            </script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?jkimengineer\.com
+RewriteRule ^(.*)$ https://www.jkimengineer.com/$1 [R,L]

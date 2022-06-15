@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<title>JKim Control System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 17px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 21px
+        }
+
+        h4 {
+            font-size: 24px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    body {
+        font-size: 13px;
+    }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <br>
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Control System</h3><!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computational Mathematics</a>
+            <a href="Control System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Control System</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Control System</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Control System</b></h8>
+
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br><br>
+                <div class="web">
+                    <p>
+                        <h1><b>Modeling in the Frequency Domain</b></h1> <!--Change-->
+                        Leplace Transform
+                        <br>Transfer Function
+                        <br>Electrical Network Transfer Function
+                        <br>Translational Mechanical System Transfer Function
+                        <br>Rotational Mechanical System Transfer Function
+                        <br>Transfer Functions for Systems with Gears
+                        <br>Electromechanical System Transfer Functions
+                        <br>Electric Circuit Analoges
+                        <br>Electromechanical System Transfer Functions
+                        <br>Electric Circuit Analoges
+                        <br>Nonlinearlities
+                        <br>Linearization
+                        <br>
+                        <br>
+                        <h1><b>Modeling in the Time Domain</b></h1> <!--Change-->
+                        General State-Space Representation
+                        <br>Applying the State-Space Representation
+                        <br>Converting a Transfer Function to State space
+                        <br>Converting from State Space to a Transfer Function
+                        <br>Linearization
+                        <br>
+                        <br>
+                        <h1><b>Time Response</b></h1> <!--Change-->
+                        Poles,Zeros, and System Response
+                        <br>First-Order Systems
+                        <br>Second-Order Systems
+                        <br>The General Second-Order Systems
+                        <br>The Underdamped Second-Order Systems
+                        <br>System response with Additional Poles
+                        <br>System Response with Zeros
+                        <br>Effects of Nonlinearlities upon Time Response
+                        <br>Leplace Transform Solution of State Equations
+                        <br>Time domain Solution of State Equations
+                        <br>
+                        <br>
+                        <h1><b>Reduction of Multiple Subsystems</b></h1> <!--Change-->
+                        Block Diagrams
+                        <br>Analysis and Design of Feedback Systems
+                        <br>Signal-Flow Graphs
+                        <br>Mason's Rule
+                        <br>Signal-Flow Graphs of State Equations
+                        <br>Alternative Representation in State Space
+                        <br>Similarity Transformations
+                        <br>
+                        <br>
+                        <h1><b>Stability</b></h1> <!--Change-->
+                        Routh-Hurwitz Criterion
+                        <br>Stability in State Space
+                        <br>
+                        <br>
+                        <h1><b>Steady-State Errors</b></h1> <!--Change-->
+                        Steady-State Error for Unity Feedback Systems
+                        <br>Static Error Constants and System Type
+                        <br>Steady-State Error Specifications
+                        <br>Steady-State Error for disturbances
+                        <br>Steady-State Error for Nonunity Feedback Systems
+                        <br>Sensitivity
+                        <br>Steady-State Error for System in State Space
+                        <br>
+                        <br>
+                        <h1><b>Root Locus Techniques</b></h1> <!--Change-->
+                        Defining the Root Locus
+                        <br>Properties of the Root locus
+                        <br>Sketching the Root locus
+                        <br>Transient Reponse Design via Gain Adjustment
+                        <br>Generalized Root locus
+                        <br>Root Locus for Positive-Feedback Systems
+                        <br>Pole Sensitivity
+                        <br>
+                        <br>
+
+                    </p>
+
+
+                </div>
+                <div class="web">
+                    <p>
+                        <h1><b>Design Via Root Locus</b></h1>
+                        Improving Steady-State Error via Cascade Compensation
+                        <br>Improving Transient Reponse via Cascade Compensation
+                        <br>Improving Steady-State Error and Transient Reponse
+                        <br>Feedback compensation
+                        <br>Physical Realization of compensation
+                        <br><br>
+                        <h1><b>Frequency Response Techniques</b></h1>
+                        Asymptotic Approximation: Bode Plots
+                        <br>Nyquist Criterion
+                        <br>Sketching,Stability of Nyquist Diagram
+                        <br>Gain Margin and Phase Margin via Nyquist Diagram
+                        <br>Stability, Gain Margin, and Phase Margin via Bode plots
+                        <br>Relation Between Closed- and Open-Loop Frequency Responses
+                        <br>Relation Between Closed - Loop Transient and Open-Loop frequency responses
+                        <br>Steady-State Error Characteristics from frequency responses
+                        <br>Systems with Time Delay
+                        <br><br>
+                        <h1><b>Design Via Frequency Response</b></h1>
+                        Transient Reponse via Gain Adjustments
+                        <br>Lag Compensations
+                        <br>Lead Compensations
+                        <br>Lag-Lead Compensations
+                        <br><br>
+                        <h1><b>Design via State Response</b></h1>
+                        Controller Design
+                        <br>Controllability
+                        <br>Alternative Approaches to Controller Design
+                        <br>Observer Design
+                        <br>Observability
+                        <br>Alternative Approaches to Observer Design
+                        <br>Steady-State Error Design via Integral Control
+                        <br><br>
+                        <h1><b>Digital Control Systems</b></h1>
+                        Modeling the Digital Computer
+                        <br>The Z-Transform
+                        <br>Transfer Functions
+                        <br>Block Diagram Reduction
+                        <br>Stabilty
+                        <br>Steady-State Errors
+                        <br>Transient Response on the z-Plane
+                        <br>Gain Design on the z-Plane
+                        <br>Cascade Compensation via the s-plane
+                        <br>Implementing the Digital Compensator
+                        <br><br>
+                    </p>
+                </div>
+
+
+            </div>
+
+    </div>
+        <div class="w3-container">
+            <h3><b>Control System Lectures</b></h3> <!--Change-->
+            <h1>Brian Douglas</h1>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/3eDDTFcSC_Y?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+            <h1>Neso Academy</h1>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/yHzXOcCelts?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <h1>
+                <i>
+
+                    Control Systems Engineering
+                    Book by Norman Nise
+
+                </i>
+            </h1>
+            <br>
+
+            <div class="responsive">
+                <div class="gallery">
+
+                    <a target="_blank" href="Computational mathematics pics/Control System Engineering.jpg">
+
+                        <img src="Computational mathematics pics/Control System Engineering.jpg" alt="Equations" style="width:35%">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    <br><br>
+    <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+        <a class="w3-button w3-large w3-light-grey" href="../../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+        <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+        <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+    </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

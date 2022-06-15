@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<title>Linux Driver</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 36px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 16px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Linux Driver</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
+            <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linux Device Driver</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Linux Driver</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+e
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+        <div class="w3-container" style="margin-top:50px" id="showcase">
+            <div class="w3-container">
+                <br>
+                <br>
+                <h8><b>J Library Linux Device Driver</b></h8>
+                <br>
+                <br>
+                <div>
+                    <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                    <br>
+            
+                    <div class="web">
+                        <p>
+                            <h1><b>Device Drivers</b></h1>
+                            The Role of the Device Driver
+                            <br>Splitting the Kernel
+                            <br>Classes of Devices and Modules
+                            <br>Security Issues
+                            <br>Version Numbering
+                            <br>License Terms
+                            <br>
+                            <br>
+                            <h1><b>Building and Running Modules</b></h1>
+                            Setting Up Your Test System
+                            <br>The Hello World Module
+                            <br>Kernel Modules Versus Applications
+                            <br>Compiling and Loading
+                            <br>The Kernel Symbol Table
+                            <br>Preliminaries
+                            <br>Initialization and Shutdown
+                            <br>Module Parameters
+                            <br>Doing It in User Space
+                            <br>
+                            <br>
+                            <h1><b>Char Drivers</b></h1>
+                            The Design of scull
+                            <br>Major and Minor Numbers
+                            <br>Some Important Data Structures
+                            <br>Char Device Registration
+                            <br>open and release
+                            <br>scull’s Memory Usage
+                            <br>read and write
+                            <br>Playing with the New Devices
+                            <br>
+                            <br>
+                            <h1><b>Debugging Techniques</b></h1>
+                            Debugging Support in the Kernel
+                            <br>Debugging by Printing
+                            <br>Debugging by Querying
+                            <br>Debugging by Watching
+                            <br>Debugging System Faults
+                            <br>Debuggers and Related Tools
+                            <br>
+                            <br>
+                            <h1><b>Concurrency and Race Conditions</b></h1>
+                            Pitfalls in scull
+                            <br>Concurrency and Its Management
+                            <br>Semaphores and Mutexes
+                            <br>Completions
+                            <br>Spinlocks
+                            <br>Locking Traps
+                            <br>
+                            <br>
+                            <h1><b>Advanced Char Driver Operations</b></h1>
+                            ioctl
+                            <br>Blocking I/O
+                            <br>poll and select
+                            <br>Asynchronous Notification
+                            <br>Seeking a Device
+                            <br>Access Control on a Device File
+                            <br>
+                            <br>
+                            <h1><b>Time, Delays, and Deferred Work</b></h1>
+                            Measuring Time Lapses
+                            <br>Knowing the Current Time
+                            <br>Delaying Execution
+                            <br>Kernel Timers
+                            <br>Tasklets
+                            <br>Workqueues
+                            <br>
+                            <br>
+                            <h1><b>Allocating Memory</b></h1>
+                            The Real Story of kmalloc
+                            <br>Lookaside Caches
+                            <br>get_free_page and Friends
+                            <br>vmalloc and Friends
+                            <br>Per-CPU Variables
+                            <br>Obtaining Large Buffers
+                            <br>
+                            <br>
+                            <h1><b>Communicating with Hardware</b></h1>
+                            I/O Ports and I/O Memory
+                            <br>Using I/O Ports
+                            <br>An I/O Port Example
+                            <br>Using I/O Memory
+                            <br>
+                            <br>
+                            <h1><b>Interrupt Handling</b></h1>
+                            Preparing the Parallel Port
+                            <br>Installing an Interrupt Handler
+                            <br>Implementing a Handler
+                            <br>Top and Bottom Halves
+                            <br>Interrupt Sharing
+                            <br>Interrupt-Driven I/O
+                            <br>
+                            <br>
+                            <h1><b>Data Types in the Kernel</b></h1>
+                            Use of Standard C Types
+                            <br>Assigning an Explicit Size to Data Items
+                            <br>Interface-Specific Types
+                            <br>Linked Lists
+                            <br>
+                            <br>
+                            <h1><b>PCI Drivers</b></h1>
+                            The PCI Interface
+                            <br>ISA
+                            <br>PC/104 and PC/104+
+                            <br>SBus
+                            <br>NuBus
+                            <br>External Buses
+                            <br>
+                            <br>
+                            <h1><b>USB Drivers</b></h1>
+                            USB Device Basics
+                            <br>USB and Sysfs
+                            <br>USB Urbs
+                            <br>Writing a USB Driver
+                            <br>USB Transfers Without Urbs
+                            <br>
+                            <br>
+                           </p>
+                    </div>
+                    <div>
+                        <p>
+                            <h1><b>The Linux Device Model</b></h1>
+                            Kobjects, Ksets, and Subsystems
+                            <br>Low-Level Sysfs Operations
+                            <br>Hotplug Event Generation
+                            <br>Buses, Devices, and Drivers
+                            <br>Classes
+                            <br>Hotplug
+                            <br>Dealing with Firmware
+                            <br>
+                            <br>
+                            <h1><b>Memory Mapping and DMA</b></h1>
+                            Memory Management in Linux
+                            <br>The mmap Device Operation
+                            <br>Performing Direct I/O
+                            <br>Direct Memory Access
+                            <br>
+                            <br>
+                            <h1><b>Block Drivers</b></h1>
+                            Registration
+                            <br>The Block Device Operations
+                            <br>Request Processing
+                            <br>
+                            <br>
+                            <h1><b>Network Drivers</b></h1>
+                            How snull Is Designed
+                            <br>Connecting to the Kernel
+                            <br>The net_device Structure in Detail
+                            <br>Opening and Closing
+                            <br>Packet Transmission
+                            <br>Packet Reception
+                            <br>The Interrupt Handler
+                            <br>Receive Interrupt Mitigation
+                            <br>Changes in Link State
+                            <br>The Socket Buffers
+                            <br>MAC Address Resolution
+                            <br>Custom ioctl Commands
+                            <br>Statistical Information
+                            <br>Multicast
+                            <br>
+                            <br>
+                            <h1><b>TTY Drivers</b></h1>
+                            A Small TTY Driver
+                            <br>tty_driver Function Pointers
+                            <br>TTY Line Settings
+                            <br>ioctls
+                            <br>proc and sysfs Handling of TTY Devices
+                            <br>The tty_driver Structure in Detail
+                            <br>The tty_operations Structure in Detail
+                            <br>The tty_struct Structure in Detail
+                            <br>
+                            <br>
+                            <h3><b>Reference</b></h3>
+
+                            <h1>
+                                <i>
+                                    Linux Device Drivers
+                                    Book by Alessandro Rubini, Greg Kroah-Hartman, and Jonathan Corbet
+                                </i>
+                            </h1>
+
+                            <br>
+                            <img src="Software Engineering Pics/Device Driver.jpg" alt="Operating Systems pics" style="width:35%" onclick="onClick(this)">
+
+
+                            <br><br>
+
+
+                        </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+    
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+
+        <!-- End page content -->
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

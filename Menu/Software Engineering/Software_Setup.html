@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<title>Software Setup</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 36px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 16px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h8 {
+            font-size: 30px
+        }
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+</style>
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+
+
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Software Setup</h3><!--Change-->
+        </div>
+
+
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
+            <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Setup</a>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Software Setup</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div class="w3-container">
+                <h8><b>Software Setup</b></h8>
+                <br><br>
+                <br><a href="https://visualstudio.microsoft.com/vs/" target="_blank">Install Visual Studio</a>
+                <br><a href="https://code.visualstudio.com/Download" target="_blank">Install VSCode</a>
+                <br><a href="https://jhnyang.tistory.com/440" target="_blank">VS-Code C/C++ Setting Setup</a>
+                <br><a href="https://jhnyang.tistory.com/430" target="_blank">VS-Code C/C++ Debuger Setup</a>
+                <br><a href="https://git-scm.com/downloads" target="_blank">Install Git in windows</a>
+                <br><a href="https://mobaxterm.mobatek.net/" target="_blank">Install mobaXterm in Windows</a>
+                <br><a href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview" target="_blank">WSL2(Windows Subsystem Linux 2) on Windows 10</a>
+                <br><a href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#2-install-wsl" target="_blank">WSL2(Windows Subsystem Linux 2) on Windows 11</a>
+                <br><a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank">Visual Studio Code in WSL</a>
+                <br><a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab" target="_blank">Windows Terminal Installation</a>
+                <br><a href="https://ubuntu.com/download/desktop" target="_blank">Install Ubuntu ISO image file</a>
+                <br><a href="https://www.qt.io/download" target="_blank">Install QtCreator</a>
+                <br><a href="https://jhnyang.tistory.com/445" target="_blank">MSYS2 Intallation</a>
+                <br><a href="https://cmake.org/download/" target="_blank">Install Cmake</a>
+                <br><a href="https://github.com/tmux/tmux/wiki/Installing" target="_blank">Install tmux</a>
+                <br><a href="https://seamless.tistory.com/2#:~:text=-c%20%EC%98%B5%EC%85%98%EC%9D%80%20%EC%A0%84%EC%B2%98%EB%A6%AC%2C%20%EC%BB%B4%ED%8C%8C%EC%9D%BC,.o)%EC%9D%84%20%EC%83%9D%EC%84%B1%ED%95%9C%EB%8B%A4.&text=file.c%EB%A5%BC%20-c%20%EC%98%B5%EC%85%98,%EC%9D%B4%EB%A6%84.o'%EA%B0%80%20%EB%90%9C%EB%8B%A4." target="_blank">How to Compile with GCC</a>
+                <br><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=asialamp&logNo=220776966637" target="_blank">How to Compile with Make File</a>
+                <br><a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">Install Docker Engine on Ubuntu</a>
+                <br><a href="https://89douner.tistory.com/123" target="_blank">How to use Docker in Visual Studio Code</a>
+                <br><a href="https://code.visualstudio.com/docs/remote/containers-tutorial" target="_blank">Remote Containers in Visual Studio Code</a>
+                <br><a href="https://learnopencv.com/install-opencv3-on-ubuntu/" target="_blank">Install Opencv in Ubuntu</a>
+                <br><a href="https://sourceforge.net/projects/opencvlibrary/" target="_blank">Install openCV for C++</a>
+                <br><a href="https://learnopencv.com/code-opencv-in-visual-studio/" target="_blank">How to set up openCV with C++ for Visual Studio</a>
+                <br><a href="https://visionprogrammer.tistory.com/5" target="_blank">Install Visual Studio image Watch</a>
+                <br><a href="http://wiki.ros.org/ROS/Installation">How to install ROS on Ubuntu</a>
+                <br><a href="https://jack-kawell.com/2020/06/12/ros-wsl2/">How to install ROS on WSL</a>
+                <br><a href="https://saint-swithins-day.tistory.com/37" target="_blank">Install OpenCV for ROS</a>
+                <br><a href="https://www.python.org/downloads/" target="_blank">Install Python</a>
+                <br><a href="https://www.anaconda.com/products/individual" target="_blank">Install Anaconda</a>
+                <br><a href="https://jupyter.org/install" target="_blank">Install Jupyter Lab</a>
+                <br><a href="https://catswhocode.com/python-modules-list/" target="_blank">Python-Module-Lists</a>
+                <br><a href="https://www.putty.org/" target="_blank">Install Putty</a>
+                <br><a href="https://ttssh2.osdn.jp/index.html.en" target="_blank">Install teraterm</a>
+                <br><a href="https://www.arduino.cc/en/software" target="_blank">Install Arduino IDE 2.0</a>
+                <br><a href="https://winmerge.org/downloads/?lang=en" target="_blank">Winmerge</a>
+                <br><a href="https://chrome.google.com/webstore/detail/quick-javascript-switcher/geddoclleiomckbhadiaipdggiiccfje?hl=en" target="_blank">JavaScript Disabler Installation</a>
+                <br><a href="https://tecadmin.net/install-openssl-on-windows/" target="_blank">How to install OpenSSL on Windows</a>
+                <br><a href="https://www.libssh.org/get-it/" target="_blank">How to install libssh</a>
+                <br><a href="https://kr.bandisoft.com/bandizip/" target="_blank">Install bandizip</a>
+                <br><a href="https://www.wireshark.org/download.html" target="_blank">Install WireShark</a>
+                <br><a href="https://tortoisesvn.net/downloads.html" target="_blank">Install tortoiseSVN</a>
+                <br><a href="https://www.samba.org/samba/download/" target="_blank">Install Samba</a>
+                <br><a href="https://dev.mysql.com/downloads/installer/" target="_blank">Install MySQL</a>
+                <br><a href="https://openframeworks.cc/download/" target="_blank">Install OpenFramework</a>
+                <br><a href="https://anydesk.com/en/downloads/windows" target="_blank">Install AnyDesk</a>
+                <br><a href="https://remotedesktop.google.com/access/" target="_blank">Chrome Remote Desktop</a>
+                <br><a href="https://www.realvnc.com/en/connect/download/vnc/" target="_blank">Install VNC</a>
+                <br><a href="https://www.liquidweb.com/kb/how-to-upgrade-ubuntu-16-04-to-ubuntu-18-04/" target="_blank">How to Upgrade Ubuntu</a>
+                <br><a href="https://hunq.blogspot.com/2016/06/vmware.html" target="_blank">VMware Speed and Optimization</a>
+                <br><a href="https://on-ai.tistory.com/9?category=1001888" target="_blank">Git password automation for Push/Pull</a>
+                <br>
+                <br>
+                <br><h1>Linux CLI List</h1>
+                <br><a>sudo apt-get update</a>
+                <br><a>Install Cmake in Linux:  sudo apt-get install cmake</a>
+                <br><a>Install OpenSSL in Linux:  sudo apt-get install openssl libssl-dev</a>
+                <br><a>Install Git in Linux:  sudo apt-get install git</a>
+                <br><a>Install vim in Linux:  sudo apt-get install vim</a>
+                <br><a>Install GCC in Linux:  sudo apt-get install build-essential</a>
+                <br><a>Install Python in Linux:  python3 --version, sudo apt-get install python3.8</a>
+                <br><a>Install Terminator in Linux:sudo apt install terminator</a>
+                <br><a>Install openssh in Linux: sudo apt install openssh-server</a>
+                <br><a>Install Putty in Linux: sudo apt install -y putty</a>
+                <br><a>Install eigen3 in Linux: sudo apt-get install libeigen3-dev</a>
+                <br><a>Install all in one: sudo apt-get install autoconf automake bison bzip2 cmake g++ gcc help2man gettext openssl libssl-dev git vim build-essential terminator openssh-server software-properties-common apt-transport-https wget libssh-dev curl putty gawk xterm iputils-ping libeigen3-dev libtool libtool-bin make patch python3-dev rsync texinfo unzip unzip xz-utils</a>
+
+            </div>
+            
+        </div>
+
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+
+        <!-- End page content -->
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+</body>
+</html>

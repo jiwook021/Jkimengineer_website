@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<title>JKim Computer Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h5, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+         h5 {
+            font-size: 30px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h5 {
+            font-size: 26px
+        }
+
+        h8 {
+            font-size: 27px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+    h3, h2, h3, h4,h8 {
+        color: #222;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        .w3-half img:hover {
+            opacity: 1
+        }
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+<html lang="en">
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">Computer Network</h3> <!-- Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Hardware Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Electronics</a>
+            <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Computer Network</a> <!-- Change-->
+
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Computer Network</span>
+    </header>
+
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:330px;margin-right:40px">
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div style="margin-top:10px" id="showcase">
+                <h8 style="margin-left: 30%"><b>Contents</b></h8> <!--Change-->
+                <br>
+                <br>
+                <br>
+                <div class="web">
+                    <p>
+                        <h3><b>Physical Layer and Media</b></h3>
+                        <br>
+                        <h1><b>Data and Signals</b></h1>
+                        Analog and Digital
+                        <br>Periodic Analog Signals
+                        <br>Digital Signals
+                        <br>Transmission Impariment
+                        <br>Data rate limits
+                        <br>Performance
+                        <br>
+                        <br>
+                        <h1><b>Digital Transmission</b></h1>
+                        Digital-To-Digital Conversion
+                        <br>Analog To Digital Conversion
+                        <br>Transmission Modes
+                        <br>
+                        <br>
+                        <h1><b>Analog Transmission</b></h1>
+                        Digital to Analog Conversion
+                        <br>Analog to Analog Conversion
+                        <br>
+                        <br>
+                        <h1><b>Bandwidth Utilization: Multiplexing and Spreading</b></h1>
+                        Multiplexing
+                        <br>Spread Spectrum
+                        <br>
+                        <br>
+                        <h1><b>Transmission Media</b></h1>
+                        Guided Media
+                        <br>Unguided Media: Wireless
+                        <br>
+                        <br>
+                        <h1><b>Switching</b></h1>
+                        Circuit Switched Networks
+                        <br>Datagram Networks
+                        <br>Virtual-Circuit Networks
+                        <br>Structure of a Switch
+                        <br>
+                        <br>
+                        <h1><b>Using Telephone and Cable Networks for Data Transmission</b></h1>
+                        Telephone Network
+                        <br>Dial-Up Modem
+                        <br>Digital Subscriber Line
+                        <br>Cable TV Networks
+                        <br>Cable TV for Data Transfer
+                        <br><br><br><br>
+                        <h3><b>Data Link Layer</b></h3>
+                        <br>
+                        <h1><b>Error Detection and Correction</b></h1>
+                        Block Coding
+                        <br>Linear Block Codes
+                        <br>Cyclic Codes
+                        <br>Check Sum
+                        <br>
+                        <br>
+                        <h1><b>Data Link Control</b></h1>
+                        Framing
+                        <br>Flow and Error Control
+                        <br>Protocols
+                        <br>Noiseless Channels
+                        <br>Noisy Channels
+                        <br>HDLC(High-level Data Link Control)
+                        <br>Point to Point Protocol
+                        <br><br>
+                        <h1><b>Multiple Access</b></h1>
+                        Random Access
+                        <br>Controlled Access
+                        <br>Channelization
+                        <br>
+                        <br>
+                        <h1><b>Multiple Access</b></h1>
+                        Random Access
+                        <br>Controlled Access
+                        <br>Channelization
+                        <br>
+                        <br>
+                        <h1><b>Wired LANs: Ethernet</b></h1>
+                        IEEE Standards
+                        <br>Standard Ethernet
+                        <br>Changes in The Standard
+                        <br>Fast Ethernet
+                        <br>Gigabit Ethernet
+                        <br>
+                        <br>
+                        <h1><b>Wireless LANs</b></h1>
+                        IEEE 802.11
+                        <br>BlueTooth
+                        <br>
+                        <br>
+                        <h1><b>Connecting LANs, Backbone Networks, and Virtual LANs</b></h1>
+                        Connecting Devices
+                        <br>Backbone Networks
+                        <br>Virtual LANs
+                        <br>
+                        <br>
+                        <h1><b>Wireless Wans: Cellular Telephone and Satelite Networks</b></h1>
+                        Ceullar Telephony
+                        <br>Satellite Networks
+                        <br>
+                        <br>
+                        <h1><b>SONET/SDH(Synchronous Digital Hierarchy)</b></h1>
+                        Architecture
+                        <br>SONET(Synchronous Optical Network) Layers
+                        <br>SONET Frames
+                        <br>STS Multiplexing
+                        <br>SONET Networks
+                        <br>Virtual Tributaries
+                        <h1><b>Virtual-Circuit Networks: Frame Relay and ATM</b></h1>
+                        <br>Frame Relay
+                        <br>ATM(Asynchronous Transfer Mode)
+                        <br>ATM LANs
+                    </p>
+                </div>
+
+                <div class="web">
+                    <p>
+                        <h3><b>Network Layer</b></h3>
+                        <br>
+                        <h1><b>Network Layer: Logical Addressing</b></h1>
+                        IPv4 Addresses
+                        <br>IPv6 Addresses
+                        <br>
+                        <br>
+                        <h1><b>Network Layer: Internet Protocal</b></h1>
+                        Internetworking
+                        <br>IPv4
+                        <br>IPv6
+                        <br>Transistion from IPv4 to IPv6
+                        <br><br>
+                        <h1><b>Network Layer: Adress Mapping,Error Reporting, and Multicasting</b></h1>
+                        Address Maping
+                        <br>ICMP(Internet Control Message Protocol)
+                        <br>IGMP(Internet Group Management Protocol)
+                        <br>ICMPv6
+                        <br>
+                        <br>
+                        <h1><b>Network Layer: Delivery,forwarding, and Routing</b></h1>
+                        Delivery
+                        <br>Forwarding
+                        <br>Unicast Routing Protocols
+                        <br>Multicast Routing Protocols
+                        <br><br><br><br>
+                        <h3><b>Transport Layer</b></h3>
+                        <br>
+                        <h1><b>Process-to-Process Delivery: UDP,TCP, and SCTP</b></h1>
+                        Process to Process Delivery
+                        <br>User Datagram Protocol(UDP)
+                        <br>Transmission Control Protocol(TCP)
+                        <br>Stream Control Transmission Protocol(SCTP)
+                        <br>
+                        <br>
+                        <h1><b>Congestion Control and Quality of Service</b></h1>
+                        Data Traffic
+                        <br>Congestion
+                        <br>Congestion Control
+                        <br>Congestion Control in TCP
+                        <br>Congestion Control in Frame Relay
+                        <br>Qaulity of Service
+                        <br>Techniques to Improve Qos
+                        <br>Integrated Services
+                        <br>Differentiated Services
+                        <br>Qos in Switched Networks
+                        <br><br><br><br>
+                        <h3><b>Application Layer</b></h3>
+                        <br>
+                        <h1><b>Domain Name System</b></h1>
+                        Name Space
+                        <br>Domain Name Space
+                        <br>Distribution of Name Space
+                        <br>DNS in the Internet
+                        <br>Resolution
+                        <br>DNS Messages
+                        <br>Question Record
+                        <br>Reosource Record
+                        <br>Registrars
+                        <br>Dynamic Domain Name System(DDNS)
+                        <br>Encapsulation
+                        <br>
+                        <br>
+                        <h1><b>Remote Logging , Electronic Mail, and File Transfer</b></h1>
+                        Remote Logging
+                        <br>Electronic Mail
+                        <br>File Transfer Protocol(FTP)
+                        <br>
+                        <br>
+                        <h1><b>WWW and HTTP</b></h1>
+                        Architecture
+                        <br>Web Documents
+                        <br>HTTP(Hypertext Transfer Protocol)
+                        <br><br>
+                        <h1><b>Network Management:SNMP</b></h1>
+                        Network Management System
+                        <br>Simple Network Management Protocol(SNMP)
+                        <br>
+                        <br>
+                        <h1><b>Multimedia</b></h1>
+                        Digitalizing Audio and Video
+                        <br>Audio and Video Compression
+                        <br>Streaming Stored Audio/Video
+                        <br>Straming Live Audio/Video
+                        <br>Real-Time Interactive Audio/Video
+                        <br>RTP(Real-time Transport Protocol)
+                        <br>Voice Over IP
+                        <br><br>
+                        <h3><b>Security</b></h3>
+                        <br>
+                        <h1><b>Cryptography</b></h1>
+                        Symmetric-Key Cryptography
+                        <br>Asymmetric-Key Cryptography
+                        <br>
+                        <br>
+                        <h1><b>Network Security</b></h1>
+                        Security Services
+                        <br>Message Confidentiality
+                        <br>Message Integrity
+                        <br>Digital Signature
+                        <br>Entity Authentication
+                        <br>Key Management
+                        <br>
+                        <br>
+                        <h1><b>Security in the Internet:IPSec,SSL/TLS,PGP, and Firewalls</b></h1>
+                        IPSecurity(IP Sec)
+                        <br>SSL(Secure Sockets Layer)/TLS(Transport Layer Security (TLS)
+                        <br>PGP(Pretty Good Privacy)
+                        <br>Firewalls
+                        <br>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="w3-container">
+            <br>
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <h1>
+                <i>
+
+                    Data Communications and Networking
+                    Book by Behrouz A. Forouzan
+                </i>
+            </h1>
+            <br>
+
+
+            <div class="responsive">
+                <div class="gallery">
+
+                    <a target="_blank" href="Computer Network Pic/Data Communications and Networking.jfif">
+
+                        <img src="Computer Network Pic/Data Communications and Networking.jfif" alt="Equations" style="width:30%">
+                    </a>
+                    <a target="_blank" href="Computer Network Pic/Computer-networking-all-in-one.jfif">
+
+                        <img src="Computer Network Pic/Computer-networking-all-in-one.jfif" alt="Equations" style="width:25%">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+
+        <br>
+        <br>
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+    </div>
+
+ 
+    <script>
+
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function w3_openmenu() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_closemenu() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClickmenu(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+
+
+    </script>
+
+</body>
+</html>

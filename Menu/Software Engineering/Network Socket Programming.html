@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<title>J Engineering library Computer Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h5, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    @media screen and (min-width: 601px) {
+        p, body, html, p100 {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+         h5 {
+            font-size: 30px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    @media screen and (max-width: 600px) {
+        p, body, html, p100 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 18px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h5 {
+            font-size: 26px
+        }
+
+        h8 {
+            font-size: 27px
+        }
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+
+
+    
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
+    h3, h2, h3, h4,h8 {
+        color: #222;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+        
+    .w3-half img:hover {
+            opacity: 1
+        
+            }
+
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+<html lang="en">
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class=" w3-xlarge w3-padding-32">Network Programming</h3> <!-- Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
+            <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Network Programming</a> <!-- Change-->
+
+        </div>
+    </nav>
+
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Network Programming</span>
+    </header>
+
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:330px;margin-right:40px">
+
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <div style="margin-top:10px" id="showcase">
+                <h8 style="margin-left: 30%"><b>Contents</b></h8> <!--Change-->
+                <br>
+                <br>
+                <br>
+                <div class="web">
+                    <p>
+                        <h1><b>Networks and Protocals</b></h1>
+                        The internet and C
+                        <br>OSI layer model
+                        <br>TCP/IP layer model
+                        <br>Data encapsulation
+                        <br>Internet Protocol
+                        <br>Domain names
+                        <br>Internet routing
+                        <br>Port numbers
+                        <br>Clients and servers
+                        <br>Listing network adapters from C
+                        <br><br>
+                        <h1><b>Getting to Grips with Socket APIs</b></h1>
+                        Socket setup
+                        <br>Two types of sockets
+                        <br>Socket functions
+                        <br>Anatomy of a socket program
+                        <br>Berkeley sockets versus Winsock sockets
+                        <br><br>
+                        <h1><b>An In-Depth Overview of TCP Connections</b></h1>
+                        Multiplexing TCP connections
+                        <br>Synchronous multiplexing with select()
+                        <br>A TCP client
+                        <br>A TCP server
+                        <br>Blocking on send()
+                        <br>TCP is a stream protocol
+                        <br><br>
+                        <h1><b>Establishing UDP Connections</b></h1>
+                        How UDP sockets differ
+                        <br>UDP client/server
+                        <br>UDP Server
+                        <br><br>
+                        <h1><b>Hostname Resolution and DNS</b></h1>
+                        How hostname resolution works
+                        <br>Name/address translation functions
+                        <br>The DNS protocol
+                        <br>A DNS query program
+                        <br><br>
+                        <h1><b>Building a Simple Web Client</b></h1>
+                        The HTTP protocol
+                        <br>What's in a URL
+                        <br>Implementing a web client
+                        <br>HTTP POST requests
+                        <br><br>
+                        <h1><b>Building a Simple Web Server</b></h1>
+                        The HTTP server
+                        <br>Content types
+                        <br>Creating the server socket
+                        <br>Multiple connections buffering
+                        <br>The main loop
+                        <br>Security and robustness
+                        <br><br>
+                        <h1><b>Making Your Program Send Email</b></h1>
+                        Email servers
+                        <br>SMTP dialog
+                        <br>The format of an email
+                        <br>A simple SMTP client program
+                        <br>Enhanced emails
+                        <br>Spam-blocking pitfalls
+                        <br><br>
+                    </p>
+                </div>
+
+                <div class="web">
+                    <p>            
+                        <h1><b>Loading Secure Web Pages with HTTPS and OpenSSL</b></h1>
+                        HTTPS overview
+                        <br>Encryption basics
+                        <br>The TLS protocol
+                        <br>OpenSSL
+                        <br>A simple HTTPS client
+                        <br><br>
+                        <h1><b>Implementing a Secure Web Server</b></h1>
+                        HTTPS and OpenSSL
+                        <br>HTTPS server with OpenSSL
+                        <br>HTTPS server challenges
+                        <br><br>
+                        <h1><b>Establishing SSH Connections with libssh</b></h1>
+                        The SSH protocol
+                        <br>libssh
+                        <br>SSH authentication
+                        <br>Executing a remote command
+                        <br><br>
+                        <h1><b>Network Monitoring and Security</b></h1>
+                        The purpose of network monitoring
+                        <br>Testing reachability
+                        <br>Checking local connections
+                        <br>Snooping on connections
+                        <br>Network security
+                        <br>Network-testing etiquette
+                        <br><br>
+                        <h1><b>Socket Programming Tips and Pitfalls</b></h1>
+                        Error handling
+                        <br>TCP socket tips
+                        <br>Socket's local address
+                        <br>Multiplexing with a large number of sockets
+                        <br><br>
+                        <h1><b>Web Programming for the Internet of Things Technical requirements</b></h1>
+                        Wi-Fi
+                        <br>Ethernet
+                        <br>Cellular
+                        <br>Bluetooth
+                        <br>IEEE 802.15.4 WPANs
+                        <br>Single-board computers
+                        <br>Microcontrollers
+                        <br>FPGAs
+                        <br>External transceivers and modems
+                        <br>IoT protocols
+                        <br><br>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="w3-container">
+            <br>
+            <h3>Github</h3>
+            <a href="https://github.com/jiwook021/Linux-Network-Programming-in-C/tree/main/Hands-On-Network-Programming-with-C-master">
+                https://github.com/jiwook021/Linux-Network-Programming-in-C/tree/main/Hands-On-Network-Programming-with-C-master
+            </a>
+
+
+            <a href="https://github.com/jiwook021/Network_Programming_with_C_KOREAN">
+                https://github.com/jiwook021/Network_Programming_with_C_KOREAN
+            </a>
+
+
+            <h3><b>Reference</b></h3> <!--Change-->
+
+            <h1>
+                <i>
+                    Hands-On Network
+                    Programming with C
+                    Book by Lewis Van Winkle
+                </i>
+            </h1>
+            <br>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Computer Network Pic/socket.jpg">
+
+                        <img src="Computer Network Pic/socket.jpg" alt="Equations" style="width:40%">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+
+        <br>
+        <br>
+
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+    </div>
+
+ 
+    <script>
+
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function w3_openmenu() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_closemenu() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClickmenu(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+
+
+    </script>
+
+</body>
+</html>

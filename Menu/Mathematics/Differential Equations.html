@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<title>Ordinary Differential Equations JKim Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
+
+
+    h, h1, h2, h3, h4, h5 {
+        color: #333;
+    }
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+    @media screen and (min-width: 601px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 2;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 15px
+        }
+
+        h2 {
+            font-size: 21px
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 28px
+        }
+
+        h8 {
+            font-size: 32px
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        p, body, html {
+            height: 100%;
+            color: #555;
+            line-height: 1.7;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: 16px
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        h4 {
+            font-size: 25px
+        }
+
+        h8 {
+            font-size: 27px
+        }
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-half img:hover {
+        opacity: 1
+    }
+
+
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+    .web {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .content {
+        margin-left: 30%;
+    }
+
+    @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .web {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .content {
+            margin-left: 0%;
+        }
+    }
+</style>
+
+<html lang="en">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-32">Differential Equations</h3><!--Change-->
+        </div>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
+            <a href="../Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Mathematics</a>
+            <a href="Differential Equations.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Differential Equations</a>
+
+            <br>
+            <br>
+        </div>
+    </nav>
+
+
+    <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
+        <span>Differential Equations</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:350px;margin-right:40px">
+
+
+
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:100px" id="showcase">
+            <h8><b>Differential Equations</b></h8>
+
+            <div style="margin-top:70px" id="showcase">
+
+                <h4 class="content"><b>Contents</b></h4> <!--Change-->
+                <br><br>
+                <div class="web">
+                    <p>
+                        <h1><b>First-Order Differential Equations</b></h1>
+                        Seperable Equations
+                        <br>Linear Equations
+                        <br>Exact Equations
+                        <br>Special Integrating Factors
+                        <br>Subsitutions and Transformations
+                        <br><br>
+                        <h1><b>Linear Second-Order Equations</b></h1>
+                        Mass-Spring Oscilator
+                        <br>Homogeneous Linear Equations: The General Solution
+                        <br>Auxilary Equations with Complex Roots
+                        <br>Nonhomogeneous Equations: the Method of Undetermined Coefficients
+                        <br>The Superposition Principle and Undetermined Coeffeicients
+                        <br>Variation of Parameters
+                        <br>Variable-Coefficient Equations
+                        <br>Qaulitative Considerations for Variable-Coefficient and Nonlinear Equations
+                        <br>Free Mechanical Vibrations
+                        <br>Forced Mechanical Vibrations
+                        <br><br>
+                        <h1><b>Phase plane Analysis</b></h1>
+                        Differential Operators and the Elimination Method for Systems
+                        <br>Solving Systems and Higher order Equations Numerically
+                        <br>Phase plane
+                        <br>Coupled Mass-Spring Systems
+                        <br>Electrical Systems
+                        <br>Dynamical Systems,poincare Maps, and Chaos
+                        <br><br>
+                        <h1><b>Theory of Higher-Order Linear Differential Equations</b></h1>
+                        Homogenous Linear Equations with Constant Coefficients
+                        <br>Undetermined Coefficients and the Annihilator Method
+                        <br>Method Of Variation of Parameters
+                        <br><br>
+                        <h1><b>Leplace Transforms</b></h1>
+                        Definition of the Leplace Transform
+                        <br>Properties of the Leplace Transform
+                        <br>Inverse Leplace Transform
+                        <br>Solving initial Value Problems
+                        <br>Transforms of Discontinous Functions
+                        <br>Transforms of periodic and Power Functions
+                        <br>Convolutions
+                        <br>Impulses and the Dirac Delta Function
+                        <br>Solving Linear Systems With Leplace Transforms
+                        <br><br>
+                        <h1><b>Series Solution of Differential Equations</b></h1>
+                        The Taylor Polynomial Approximation
+                        <br>Power Series and Analytic Functions
+                        <br>Power Series Solutions to Linear Differential Equations
+                        <br>Equations With Analytic Coefficients
+                        <br>Cauchy-Euler Equations
+                        <br>Method of Frobenius
+                        <br>Find a Second Linearly Independent Solution
+                        <br>Special Functions
+                        <br><br>
+                    </p>
+                </div>
+                <div class="web">
+                    <p>
+                        <h1><b>Matrix Methods for Linear Systems</b></h1>
+                        Linear Systems in Normal Form
+                        <br>Homogenous Linear Systems with Constant Coefficients
+                        <br>Complex Eigienvalues
+                        <br>NonHomogenous Linear Systems
+                        <br>Matrix Exponential Functions
+                        <br><br>
+                        <h1><b>Partial Differential Equations</b></h1>
+                        Method of Separation of Variables
+                        <br>Fourier Series
+                        <br>Fourier Cosine and Sine Series
+                        <br>Fourier Transforms
+                        <br>The Heat Equation
+                        <br>The Wave Euqation
+                        <br>Leplace's Equation
+                    </p>
+                    <br>
+                    <br><h2><b>Differential Equation MIT Lecture Series</b></h2>
+                    <br><iframe width="350" height="250" src="https://www.youtube.com/embed/WWphCZkdByA?list=PLUl4u3cNGP63oTpyxCMLKt_JmB0WtSZfG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br>
+                    <br>
+                    <br>
+                    <h3><b>Reference</b></h3>
+                    <h1>
+                        <i>
+                            Fundamentals of Differential Equations, 9th Edition
+                            book by R. Kent Nagle,Edward B. Saff, Arthur David Snider
+                        </i>
+                    </h1>
+                    <div class="responsive">
+                        <div class="gallery">
+
+                            <a target="_blank" href="math pics/Fundamentals of Differential Equations Pics.jfif">
+                                <img src="math pics/Fundamentals of Differential Equations Pics.jfif" alt="Equatiodns" style="width:60%">
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+            
+
+
+        </div>
+
+        <br><br>
+        <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+            <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+            <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+            <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>
