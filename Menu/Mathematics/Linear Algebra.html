@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
-<title>JKim Linear Algebra</title>
+
+<title>JKim Portfolio</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,7 +10,34 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
 <style>
+
+    a:link {
+        color: #555;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+
     body {
         font-family: "Lato", sans-serif
     }
@@ -18,18 +47,13 @@
     }
 
 
+
     h, h1, h2, h3, h4, h5 {
-        color: #333;
+        color: #222;
     }
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
+
     @media screen and (min-width: 601px) {
         p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
             font-size: 16px;
         }
 
@@ -57,37 +81,47 @@
 
     @media screen and (max-width: 600px) {
         p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 15px;
+            font-size: 13px;
         }
 
         h1 {
-            font-size: 16px
+            font-size: 13px
         }
 
         h2 {
-            font-size: 18px
+            font-size: 15px
         }
 
         h3 {
-            font-size: 20px
+            font-size: 18px
         }
 
         h4 {
-            font-size: 22px
+            font-size: 21px
         }
 
         h8 {
-            font-size: 31px
+            font-size: 27px
         }
     }
+
+    p, body, html {
+        height: 100%;
+        color: #444;
+        line-height: 2;
+    }
+
 
 
     .w3-bar, h1, button {
         font-family: "Montserrat", sans-serif
     }
+
+    .w3-burgundy {
+        color: #fff !important;
+        background-color: #940f0f !important
+    }
+
 
     .w3-half img {
         margin-bottom: -6px;
@@ -99,213 +133,232 @@
         .w3-half img:hover {
             opacity: 1
         }
-    .web {
-        width: 50%;
-        height: 100%;
-        float: left;
-    }
-
-    .content {
-        margin-left: 30%;
-    }
-
-    @media only screen and (max-width: 620px) {
-        /* For mobile phones: */
-        .web {
-            width: 100%;
-            height: 100%;
-            float: left;
-        }
-
-        .content {
-            margin-left: 0%;
-        }
-    }
 </style>
-
 <html lang="en">
-
 <body>
 
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+    <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:230px;font-weight:bold;" id="mySidebar">
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-
-
-
         <div class="w3-container">
-            <h3 class="w3-padding-32">Linear Algebra</h3><!--Change-->
+            <h3 class="w3-padding-32"><b>Portfolio</b></h3> <!--Change-->
         </div>
-
-
         <div class="w3-bar-block">
-            <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
-            <a href="../Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Mathematics</a>
-            <a href="Linear Algebra.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linear Algebra</a>
-            <br>
+            <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
             <br>
         </div>
     </nav>
 
 
+
     <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
-        <span>Linear Algebra</span>
+        <span>Portfolio</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:260px;margin-right:50px">
 
 
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>Linear Algebra</b></h8>
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-xxlarge"><b>Portfolio</b></h1>
         </div>
 
-        <!-- Services -->
-        <div class="w3-container" id="services">
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <h1 class="w3-large"><b>Hanyang University: Technology Commercialization center: HELPS LTE Localize Embedded Device development</b></h1>
+            <iframe src='https://tv.naver.com/embed/25051461?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='350' HEIGHT='250' allow='autoplay' allowfullscreen></iframe>
+            <p>
+                • I mainly worked on SystemVerilog development with Xilinx FPGA chip and Vivado IDE for high speed signal processing modem and embedded Linux development. I assist on SoC development, electronic circuit design, embedded linux development, and research and devlopment on GPS, Bluetooth and WiFi for accurate localization on embedded linux device.
+                <br>• Manage Code with Samba, SVN and Git.
+            </p>
+        </div>
+
+
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <h1 class="w3-large"><b>Viewmagine: Done Station embedded system with http and TCP/IP communication with web</b></h1>
+
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/mfWSWizRWYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                •  Drone battery charging station circuit, embedded firmware with http and socket programming development.
+                <br>•  Assisted on autonomous drone development with SLAM Algorithms with ROS middleware.
+                <br>•  Research in Deep learning computer vision and SLAM
+                <br>•  Managed code and environmental setup with Docker and GitHub
+            </p>
+        </div>
+
+
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <h1 class="w3-large"><b>BOSE: Embedded Design,IOT Lighting MP3 Player,Thermodynamics Test,Battery Test</b></h1>
+            <p>
+                •  Wrote firmware(C++) and designed the electric circuit for an audio-based IOT device that could play music and perform LED interactions through cooperating with capacitor and proximity sensors, rotary encoders, buttons, and potential-meters. Designed algorithm-intensive real-time-based software for the device’s prototype, allowing the company to experience the realized product and conduct user testing
+            </p>
+
             <br>
-            <br>
-            <br>
+            Picture after introducing sleep device prototypes with Boston Mayor and BOSE, CEO.
             <br>
 
-            <div>
-                <div class="web">
+            <a target="_blank" href="IMG_2191.jpg.png">
+                <img src="PersonalProjects pic/IMG_2191.JPG" alt="Bose Photo" style="width:30%" onclick="onClick(this)">
+            </a>
 
-                    <!-- TITLE -->
-                    <h4><b>Contents</b></h4> <!--Change-->
-                    <p>
-                        <br>Linear Equations in Linear Algebra
-                        <br>Matrix Algebra
-                        <br>Determinants
-                        <br>Vector Spaces
-                        <br>Eigenvalues and Eigenvectors
-                        <br>Orthogonality and Least squares
-                        <br>Symmetric Matrices and Qaudratic Forms
-                        <br>The Geometry of Vector Spaces
-                    </p>
-                    <br>
-                    <h4><b>Reference</b></h4> <!--Change-->
-                    <h1>
-                        <i>
-                            Linear Algebra and Its Applications Book by David C Lay
-                        </i>
-                    </h1>
+        </div>
 
-                    <div class="responsive">
-                        <div class="gallery">
-                            <a target="_blank" href="math pics/Linear Algebra and its Applications pic.jfif">
-                                <img src="math pics/Linear Algebra and its Applications pic.jfif" alt="Equations" style="width:60%">
-                            </a>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-                <div class="web">
+        <br><br>
 
-                    <h4><b>Recommendations</b></h4>
-                    <iframe width="400" height="300" src="https://www.youtube.com/embed/PFDu9oVAE-g?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br>
-                    <a>
-                        Visualize Linear Algebra theorms clearly so that audience can intutively understand Linear Algebra.
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <h1 class="w3-large"><b>Research Assistant</b></h1>
+            <p>
+                •  Developed firmware system for a batrobot via a STM32 Micro-controller using C/C++.
+                <br>• Assisted in designing electric circuits and debugged hardware defects.
+            </p>
+
+            <a target="_blank" href="BatWings.png">
+                <img src="PersonalProjects pic/BatWings.png" alt="Equations" style="width:30%" onclick="onClick(this)">
+            </a>
+
+        </div>
+
+
+        <br>
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <h1 class="w3-large"><b>First Tech Challenge 2015 - 2017</b></h1>
+            <p>Worked as engineer, both providing the model for the robot and building the final machine to complete in tech challenge competitions. Utilized AutoCAD for 3D printing. Coded the robot’s control system using Java on Tetrix/REV software
+
+        </div>
+
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="FTC2.png">
+
+                        <img src="PersonalProjects pic/FTC2.png" alt="FTC PHOTO" style="width:15%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="FTC3.png">
+
+                        <img src="PersonalProjects pic/FTC3.png" alt="FTC PHOTO" style="width:15%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="FTC4.png">
+
+                        <img src="PersonalProjects pic/FTC4.png" alt="FTC PHOTO" style="width:15%" onclick="onClick(this)">
                     </a>
 
                 </div>
-
-
-
             </div>
-
-
-        </div>
- 
-                <br><br>
-                <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
-                    <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
-                    <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
-                    <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
-                    <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
-                </footer>    
         </div>
 
 
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="FTC10.png">
+
+                        <img src="PersonalProjects pic/FTC10.png" alt="FTC PHOTO" style="width:15%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="FTC11.png">
+
+                        <img src="PersonalProjects pic/FTC11.png" alt="FTC PHOTO" style="width:15%" onclick="onClick(this)">
+                    </a>
+                    <a target="_blank" href="FTC12.png">
+
+                        <img src="PersonalProjects pic/FTC12.png" alt="FTC PHOTO" style="width:15%" onclick="onClick(this)">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="w3-container" id="designers" style="margin-top:10px">
+            <h1 class="w3-large"><b>My Github</b></h1>
+            Link: <a href="https://github.com/jiwook021">https://github.com/jiwook021</a>
+        </div>
+
+        <div class="w3-container" id="designers" style="margin-top:20px">
+            <h1 class="w3-large"><b>Share STEM educational Lectures and Resources</b></h1>
+            <a target="_blank" href="4-2.jpg">
+                <img src="../Homepage pics/4-2.png" alt="Equations" style="width:70%" onclick="onClick(this)">
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
+                <a class="w3-button w3-large w3-light-grey" href="../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>
+                <a class="w3-button w3-large w3-pale-red" href="mailto:jiwook021@gmail.com" title="Mail" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a class="w3-button w3-large w3-grey" href="https://www.jkimengineer.com" title="JkimEngineer Website" target="_blank"><i class="fa fa-home"></i></a>
+                <a class="w3-button w3-large w3-blue-grey" href="https://www.linkedin.com/in/jiwook-kim-72b914158/" title="Jiwook Kim Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="w3-button w3-large w3-dark-grey" href="https://github.com/jiwook021" title="Jiwook Kim GitHub" target="_blank"><i class="fa fa-github"></i></a>
+            </footer>
+
+        </div>
+
+        <!-- End page content -->
 
 
 
 
 
+        <script>
 
-
-
-
-
-    <script>
-
-
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        function w3_openmenu() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_closemenu() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClickmenu(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Accordion
-        function myAccFunc() {
-            var x = document.getElementById("demoAcc");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
             }
-        }
 
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            function w3_openmenu() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_closemenu() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClickmenu(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Accordion
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
 
 
-    </script>
+        </script>
 
 </body>
 </html>
