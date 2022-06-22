@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\Menu",
+<<<<<<< HEAD
+    "\\Menu\\Hardware Electronics"
+  ],
+  "SelectedNode": "\\Menu\\Personal Projects.html",
+=======
     "\\Menu\\Mathematics"
   ],
   "SelectedNode": "\\Menu\\Mathematics\\Linear Algebra.html",
+>>>>>>> de9c388cad48fc6ad8dc4b7497fe0070e29a6aa5
   "PreviewInSolutionExplorer": false
 }
