@@ -2,6 +2,14 @@
 <title>J Engineering library Computer Network</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -39,7 +47,7 @@
             font-size: 28px
         }
 
-         h5 {
+        h5 {
             font-size: 30px
         }
 
@@ -47,10 +55,12 @@
             font-size: 32px
         }
     }
+
     .w3-burgundy {
         color: #fff !important;
         background-color: #940f0f !important
     }
+
     @media screen and (max-width: 600px) {
         p, body, html, p100 {
             font-size: 14px;
@@ -87,14 +97,14 @@
     }
 
 
-    
+
     p, body, html {
         height: 100%;
         color: #444;
         line-height: 2;
     }
 
-    h3, h2, h3, h4,h8 {
+    h3, h2, h3, h4, h8 {
         color: #222;
     }
 
@@ -109,11 +119,10 @@
         cursor: pointer
     }
 
-        
-    .w3-half img:hover {
+
+        .w3-half img:hover {
             opacity: 1
-        
-            }
+        }
 
     .web {
         width: 50%;
@@ -242,7 +251,7 @@
                 </div>
 
                 <div class="web">
-                    <p>            
+                    <p>
                         <h1><b>Loading Secure Web Pages with HTTPS and OpenSSL</b></h1>
                         HTTPS overview
                         <br>Encryption basics
@@ -345,55 +354,55 @@
         </footer>
     </div>
 
- 
+
     <script>
 
 
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
 
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
-            }
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
-            function w3_openmenu() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
+        function w3_openmenu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-            function w3_closemenu() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
+        function w3_closemenu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
 
-            // Modal Image Gallery
-            function onClickmenu(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
-            }
+        // Modal Image Gallery
+        function onClickmenu(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
-            // Accordion
-            function myAccFunc() {
-                var x = document.getElementById("demoAcc");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
+        // Accordion
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
             }
+        }
 
 
 
