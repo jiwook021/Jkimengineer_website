@@ -136,6 +136,23 @@
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linux System Programming</a>
             <br>
             <br>
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
+            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
+            <!--<a href="Software Engineering/C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
+            <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
+            <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
+            <!--<a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
+           --> <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
+            <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
+            <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
+            <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
+            <br>
+            <a href="Software Engineering/Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
+            <a href="Software Engineering/Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Resources</a>
+            <br>
+            <br>
         </div>
     </nav>
 
@@ -263,21 +280,14 @@
                             Real User ID and Real Group ID
                             <br>Effective User ID and Effective Group ID
                             <br>Set-User-ID and Set-Group-ID Programs
-                            <br>Saved set-User-ID and Saved Set-Group-ID
+                            <br>Saved set-User-ID and Set-Group-ID
                             <br>File-System User ID and File-System Group ID
-                            <br>Retrieving and Modifying Process Credentials
-                            <br>----- Retrieving and Modifying Real, Effective, and Saved Set IDs
-                            <br>----- Retrieving and Modifying File-System IDs
-                            <br>----- Retrieving and Modifying Supplementary Group IDs
+                            <br>Retrieving and Modifying Real, Effective, and Saved Set IDs, File-System IDs, Supplementary Group IDs
                             <br>
                             <br>
                             <h1><b>TIME</b></h1>
                             Calender Time
                             <br>Time
-                            <br>Time-Conversion Functions
-                            <br>----- Converting time_t to Printable Form
-                            <br>----- Converting Between time_t and Broken-Down Time
-                            <br>----- Converting Between Broken-Down Time and Printable Form
                             <br>Timezones
                             <br>Locales
                             <br>Updating the System Clock
@@ -319,15 +329,11 @@
                             <br>The Virtual File System (VFS)
                             <br>Journaling File System
                             <br>Single Directory Hierarchy and Mount Points
-                            <br>Mounting and Unmounting File Systems
-                            <br>----- Mounting a File System: mount()
-                            <br>----- Unmounting a File System: umount() and umount2()
-                            <br>Advanced Mount Features
-                            <br>----- Mounting a File System at Multiple Mount Points
-                            <br>----- Stacking Multiple Mounts on the Same Mount Point
-                            <br>----- Mount Flags That Are Per-Mount Options
-                            <br>----- Bind Mounts
-                            <br>----- Recursibe Bind Mounts
+                            <br>Mounting a File System: mount()
+                            <br>Unmounting a File System: umount() and umount2()
+                            <br>Mounting a File System at Multiple Mount Points
+                            <br>Stacking Multiple Mounts on the Same Mount Point
+                            <br>Bind Mounts
                             <br>A Virtual Memory File System: tmpfs
                             <br>Obtaining Information About a File System: statvfs()
                             <br>
@@ -339,7 +345,6 @@
                             <br>----- Changing File Timestamps with utime() and utimes()
                             <br>----- Changing File Timestamps with utimensat() and furimens()
                             <br>File Owndership
-                            <br>----- Ownership of New Files
                             <br>----- Changing File Ownership: chown(), fchown(), and lchown()
                             <br>File Permissions
                             <br>----- Permissions on Regular Files
@@ -395,7 +400,6 @@
                             <h1><b>SIGNALS</b></h1>
                             Signal Types and Default Actions
                             <br>Changing Signal Dispositions: signal()
-                            <br>Introduction to Signal Handlers
                             <br>Sending Signals: kill()
                             <br>Checking for the Existence of a Process
                             <br>Other Ways of Sending Signals: raise() and killpg()
@@ -409,13 +413,10 @@
                             <br>
                             <br>
                             <h1><b>SIGNALS: SIGNAL HANDLERS</b></h1>
-                            Designing Signal Handlers
-                            <br>----- Signals Are Not Queued (Revisited)
-                            <br>----- Reentrant and Async-Signal-Safe Functions
-                            <br>----- Global Variables and the sig_atomic_t Data Type
-                            <br>Other Methods of Terminating a Signal Handler
-                            <br>----- Performing a Nonlocal Goto from a Signal Handler
-                            <br>----- Terminating a Process Abnormally:abort()
+                            <br>Reentrant and Async-Signal-Safe Functions
+                            <br>Global Variables and the sig_atomic_t Data Type
+                            <br>Performing a Nonlocal Goto from a Signal Handler
+                            <br>Terminating a Process Abnormally:abort()
                             <br>Handling a Signal on an Alternate Stack: sigaltstack()
                             <br>The SA_SIGINFO Flag
                             <br>Interruption and Restarting of System Calls
@@ -429,9 +430,7 @@
                             <br>Synchronous and Asynchronous Signal Generation
                             <br>Timing and Order of Signal Delivery
                             <br>Implementation and Portability of signal()
-                            <br>Realtime Signals
-                            <br>----- Sending Realtime Signals
-                            <br>----- Handling Realtime Signals
+                            <br>Sending and Handling Realtime Signals
                             <br>Waiting for a Signal Using a Mask: sigsuspend()
                             <br>Synchronously Waiting for a Signal
                             <br>Fetching Signals via a File Descriptor
@@ -443,9 +442,7 @@
                             Interval Timers
                             <br>Scheduling and Accuracy of Timer
                             <br>Setting Timeout on Blocking Operations
-                            <br>Suspending Execution for a Fixed Interval (Sleeping)
-                            <br>----- Low-Resolution Sleeping: sleep()
-                            <br>----- High-Resolution Sleeping: nanosleep()
+                            <br>Low-Resolution Sleeping: sleep(), High-Resolution Sleeping: nanosleep()
                             <br>POSIX Clocks
                             <br>----- Retrieving the Value of a clock: clock_gettime()
                             <br>----- Setting the Value of a clock: clock_settime()
@@ -463,8 +460,8 @@
                             <br><br>
                             <h1><b>PROCESS CREATION</b></h1>
                             Creating a New Process: fork()
-                            <br>----- File Sharing Between Parent and Child
-                            <br>----- Memory Semantics of fork()
+                            <br>File Sharing Between Parent and Child
+                            <br>Memory Semantics of fork()
                             <br>the vfork() System call
                             <br>Race Condition After fork()
                             <br>Avoiding Race Conditions by Sychronizing with Signals
@@ -484,7 +481,6 @@
                             <br>----- The Wait Status Value
                             <br>----- Process Termination from a Signal Handler
                             <br>----- The waitid() System call
-                            <br>----- The wait3() and wait4() System Calls
                             <br>Orphans and Zombies
                             <br>The SIGCHLD Signal
                             <br>----- Establishing a Handler for SIGCHLD
@@ -544,9 +540,6 @@
                             <br>One-Time Initialization
                             <br>Thread-Specific Data
                             <br>----- Thread-Specific Data from the Library Function's Perspective
-                            <br>----- Thread-Specific Data API
-                            <br>----- Employing the Thread-Specific Data API
-                            <br>----- Thread-Specific Data Implementation Limits
                             <br>Thread-Local Storage
                             <br>
                             <br>
@@ -631,16 +624,10 @@
                             <br>Check Return Statuses and Fail Safetly
                             <br>
                             <br>
-                        </p>
-                    </div>
-                    <div class="web">
-                        <p>
                             <h1><b>CAPABILITIES</b></h1>
                             Rationale for Capabilities
                             <br>The Linux Capabilities
                             <br>Process and File Capabilities
-                            <br>----- Process Capabilities
-                            <br>----- File Capabilities
                             <br>----- Purpose of the Process Permitted and Effective Capability Sets
                             <br>----- Purpose of the File Permitted and Effective Capability Sets
                             <br>----- Purpose of the Process and File Inheritable Sets
@@ -656,6 +643,11 @@
                             <br>Older Kernels and Systems Without File Capabilities
                             <br>
                             <br>
+                        </p>
+                    </div>
+                    <div class="web">
+                        <p>
+                       
                             <h1><b>LOGIN ACCOUNTING</b></h1>
                             Overview of the utmp and wtmp Files
                             <br>The utmpx API
@@ -994,7 +986,6 @@
                             <br>BSD Pseudoterminals
                             <br>
                             <br>
-
                             <h1><b>Tracing System Calls</b></h1>
                             <h1><b>Pasing Command-Line Options</b></h1>
                             <br>
