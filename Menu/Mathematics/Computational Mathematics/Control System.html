@@ -133,8 +133,9 @@
             <br>
             <a href="../../Signal and Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Signal and Systems</a>
             <a href="Digital Signal Processing.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Digital Signal Processing</a>
-           <!-- <a href="Control System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Control System</a>
-           --> <a href="Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Algorithm</a>
+            <!-- <a href="Control System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Control System</a>
+            -->
+            <a href="Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Algorithm</a>
             <a href="Applied Linear Algebra.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Applied Linear Algebra</a>
             <a href="Introduction to AI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Introduction to AI</a>
             <a href="Deep Learning.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Deep Learning</a>
@@ -341,77 +342,7 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-
-
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        function w3_openmenu() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_closemenu() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClickmenu(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Accordion
-        function myAccFunc() {
-            var x = document.getElementById("demoAcc");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-
+    <script src="../../filejs.js">
     </script>
 
 </body>

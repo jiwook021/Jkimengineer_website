@@ -150,8 +150,9 @@
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
             <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
-           <!-- <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-           --> <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+            <!-- <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
+            -->
+            <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
             <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
@@ -355,7 +356,7 @@
                         <br>------- x86 Instruction Encoding
                         <br>------- Other x86 Peculiarities
                         <br><br>
-                      
+
                     </p>
                 </div>
 
@@ -435,27 +436,27 @@
                         <iframe width="350" height="250" src="https://www.youtube.com/embed/9nuAjYRbITQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h1>Technology series by Techquickie</h1>
                         <iframe width="350" height="250" src="https://www.youtube.com/embed/6-CKZ9kqv7w?list=PLQMVnqe4XbictUtFZK1-gBYvyUzTWJnOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                    <h2><b>Guidline Reference</b></h2> <!--Change-->
-                    <h1>
-                        <i>
-                            Digital Design and Computer Architecture, RISC-V Edition
-                            Book by David Harris and Sarah L. Harris
-                        </i>
-                    </h1>
-                    <a target="_blank" href="Hardware Electronics Pics/RISC-V.webp">
-                        <img src="Hardware Electronics Pics/RISC-V.webp" alt="Equations" style="width:65%" onclick="onClick(this)">
-                    </a>
+
+                        <h2><b>Guidline Reference</b></h2> <!--Change-->
+                        <h1>
+                            <i>
+                                Digital Design and Computer Architecture, RISC-V Edition
+                                Book by David Harris and Sarah L. Harris
+                            </i>
+                        </h1>
+                        <a target="_blank" href="Hardware Electronics Pics/RISC-V.webp">
+                            <img src="Hardware Electronics Pics/RISC-V.webp" alt="Equations" style="width:65%" onclick="onClick(this)">
+                        </a>
                     </p>
                 </div>
             </div>
         </div>
-            <br>
-          
-              
-            <br>
-            <br>
-     
+        <br>
+
+
+        <br>
+        <br>
+
 
         <br><br>
         <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
@@ -469,64 +470,10 @@
 
     </div>
 
-    <script>
 
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        function w3_openmenu() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_closemenu() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClickmenu(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Accordion
-        function myAccFunc() {
-            var x = document.getElementById("demoAcc");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-
-
-
+    <script src="../filejs.js">
     </script>
+
 
 </body>
 </html>
