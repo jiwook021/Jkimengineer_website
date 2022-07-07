@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Homepage pics",
     "\\Menu",
-    "\\Menu\\Hardware Electronics\\Digital Circuit Design",
-    "\\Menu\\Hardware Electronics\\Embedded Architecture",
+    "\\Menu\\Hardware Electronics",
     "\\Menu\\Mathematics",
-    "\\Menu\\Mathematics\\Computational Mathematics"
+    "\\Menu\\Mathematics\\Computational Mathematics",
+    "\\Menu\\Physics Pictures",
+    "\\Menu\\Signal and Systems"
   ],
-  "SelectedNode": "\\Menu\\Mathematics\\Computational Mathematics\\Computer Vision.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
