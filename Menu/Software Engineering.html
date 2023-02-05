@@ -12,9 +12,13 @@
 
 <link rel="stylesheet" href="../jiwook.css">
 <style>
-	body {
-		font-family: "Lato", sans-serif
-	}
+    body {
+        font-family: "Montserrat", sans-serif
+    }
+
+    h1, h2, h3, h4, h8 {
+        font-family: "Montserrat", sans-serif
+    }
 
 	.w3-burgundy {
 		color: #fff !important;
@@ -120,23 +124,26 @@
 		<br>
 		<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
 		<div class="w3-container">
-			<h3 class="w3-padding-32">Software Engineering</h3> <!-- Change-->
+			<h2 class="w3-padding-32">Software Engineering</h2> <!-- Change-->
 		</div>
 		<div class="w3-bar-block">
 			<a href="../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
 			<a href="Software Engineering.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Engineering</a>
 			<br>
-			<a href="Software Engineering/C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Low-level Programming</a>
-			<a href="Software Engineering/Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data Structure and Algorithm with C++</a>
+			<a href="Software Engineering/C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C and Assembly Language</a>
+			<a href="Software Engineering/C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++</a>
+			<a href="Software Engineering/Python.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Python</a>
 			<!--<a href="Software Engineering/C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
 			<a href="Software Engineering/Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Operating Systems</a>
 			<a href="Software Engineering/Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Linux CLI & Shell Scripts</a>
 			<a href="Software Engineering/Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Computer Network</a>
 			<a href="Software Engineering/Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Linux System Programming</a>
 			<a href="Software Engineering/Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Linux Kernel</a>
+			<a href="Software Engineering/RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">RTOS</a>
 			<a href="Software Engineering/Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Embedded Linux</a>
 			<a href="Software Engineering/Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Linux Device Driver</a>
 			<a href="Software Engineering/Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Network Programming</a>
+			<a href="Software Engineering/Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Clean Code</a>
 			<!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
 			<br>
 			<a href="Software Engineering/Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Software Setup</a>
@@ -167,7 +174,7 @@
 	<!-- !PAGE CONTENT! -->
 	<div class="w3-main" style="margin-left:390px;margin-right:40px">
 
-		<div class="w3-container" style="margin-top:100px" id="showcase">
+		<div class="w3-container" style="margin-top:80px" id="showcase">
 
 
 			<!-- Header -->
@@ -177,7 +184,10 @@
 			<br>
 			<h3><b>Course Lists</b></h3> <!--Change-->
 			<br>
-			<img src="../homepage pics/Software Engineering.png" alt="Applied Mathematics " style="width:50%" onclick="onClick(this)">
+			<!--			<img src="../homepage pics/Software Engineering.png" alt="Applied Mathematics " style="width:50%" onclick="onClick(this)">
+	-->
+			<img src="Software Engineering/Software Engineering Pics/Software Engineering.png" alt="Applied Mathematics" style="width:50%" onclick="onClick(this)">
+
 			<br>
 			<br>
 			<h4><b>Reference</b></h4> <!--Change-->
@@ -190,14 +200,20 @@
 					<a target="_blank" href="Software Engineering/Software Engineering Pics/lowlevel.webp">
 						<img src="Software Engineering/Software Engineering Pics/lowlevel.webp" alt="lowlevel" style="width:24%">
 					</a>
-					<a target="_blank" href="Software Engineering/Software Engineering Pics/Data Structures and Algorithms.webp">
 
-						<img src="Software Engineering/Software Engineering Pics/Data Structures and Algorithms.webp" alt="Equastions" style="width:24%">
+					<a target="_blank" href="Software Engineering Pics/C++2.jpg">
+						<img src="Software Engineering/Software Engineering Pics/C++2.jpg" alt="lowlevel" style="width:24%">
 					</a>
-					<!--<a target="_blank" href="Software Engineering/Software Engineering Pics/C++STL.webp">
+					<a target="_blank" href="Software Engineering Pics/C++1.jpg">
+						<img src="Software Engineering/Software Engineering Pics/C++1.jpg" alt="lowlevel" style="width:24%">
+					</a>
+					<a target="_blank" href="Software Engineering Pics/ModernC++.jpg">
+						<img src="Software Engineering/Software Engineering Pics/ModernC++.jpg" alt="lowlevel" style="width:24%">
+					</a>
+					<a target="_blank" href="Software Engineering Pics/automatepython.jpg">
+						<img src="Software Engineering/Software Engineering Pics/automatepython.jpg" alt="lowlevel" style="width:24%">
+					</a>
 
-		<img src="Software Engineering/Software Engineering Pics/C++STL.webp" alt="Equastions" style="width:24%">
-	</a>-->
 					<a target="_blank" href="Software Engineering/Software Engineering Pics/Operating Systems pics.webp">
 
 						<img src="Software Engineering/Software Engineering Pics/Operating Systems pics.webp" alt="Equastions" style="width:24%">
@@ -232,18 +248,39 @@
 
 						<img src="Software Engineering/Software Engineering Pics/socket.webp" alt="Equations" style="width:24%">
 					</a>
-					<!--			<a target="_blank" href="Software Engineering/Software Engineering Pics/linux_network.jpg">
-		<img src="Software Engineering/Software Engineering Pics/linux_network.jpg" alt="Equations" style="width:24%">
-	</a>-->
-					<!--					<a target="_blank" href="Software Engineering/Software Engineering Pics/Designing Data-Intensive Applications.jpg">
 
-						<img src="Software Engineering/Software Engineering Pics/Designing Data-Intensive Applications.jpg" alt="Equations" style="width:24%">
-					</a>
-
-	-->
 					<br>
 				</div>
 			</div>
+			<br><br>
+			<i> Reference Books:</i>
+			<p33>
+				<i>
+					C in a Nutshell: The Definitive Reference
+					Book by Peter Prinz and Tony Crawford
+					, Low-Level Programming: C, Assembly, and Program Execution on Intel 64 Architecture
+					Book by Igor Zhirkov,  Thinking in C++
+					Book by Bruce Eckel,  Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14 Book by Scott Meyers, 
+					Automate the Boring Stuff With Python: Practical Programming
+					Book by Al Sweigart,
+					, Operating System Concepts, 10e by Avi Silberschatz, Greg Gagne, and Peter Baer Galvin
+					, Linux Command Line and Shell Scripting Bible
+					Book by Christine Bresnahan and Richard BLUM
+					, Data & Computer Communications
+					Book by William Stallings
+					, The Linux Programming Interface Book by Michael Kerrisk
+					, How Linux Works, 3rd Edition: What Every Superuser Should Know Book by Brian Ward
+					, Understanding the Linux Kernel Book by Daniel Pierre Bovet and Marco Cesati
+					,  Embedded Linux Primer: A Practical Real-world Approach
+					Book by Christopher Hallinan
+					, Linux Device Drivers
+					Book by Alessandro Rubini, Greg Kroah-Hartman, and Jonathan Corbet
+					, Hands-On Network
+					Programming with C
+					Book by Lewis Van Winkle
+				</i>
+				<p33>
+
 		</div>
 		<br><br>
 		<footer class="w3-container w3-padding-32 w3-center w3-xlarge">

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<title>Algorithm JKim Engineering</title>
+<title>Data Structure and Algorithm</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,106 +11,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="../../reference.css">
 
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 14px
-        }
-
-        h2 {
-            font-size: 17px
-        }
-
-        h3 {
-            font-size: 20px
-        }
-
-        h4 {
-            font-size: 23px
-        }
-
-        h8 {
-            font-size: 26px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-    h3, h2, h3, h8 {
-        color: #222;
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-    
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-</style>
 <html lang="en">
 
 <body>
@@ -123,25 +25,25 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Data Structure and Algorithm</h3><!--Change-->
+            <h2 class="w3-padding-32">Data Structure and Algorithm</h2><!--Change-->
         </div>
 
 
         <div class="w3-bar-block">
             <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
-            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computational Mathematics</a>
-            <a href="Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Algorithm</a>
+            <a href="../../Computational Mathematics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Mathematics</a>
+            <a href="Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm</a>
             <br>
             <br>
             <a href="../../Signal and Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Signal and Systems</a>
             <a href="Digital Signal Processing.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Digital Signal Processing</a>
             <a href="Control System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Control System</a>
+            <a href="Digital Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Digital Communications</a>
             <!--    <a href="Data Structure and Algorithm.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Algorithm</a>
-            -->
-            <a href="Applied Linear Algebra.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Applied Linear Algebra</a>
-            <a href="Introduction to AI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Introduction to AI</a>
+    -->
+            <a href="Introduction to AI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Artificial Intelligence</a>
             <a href="Deep Learning.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Deep Learning</a>
-            <a href="Computer Vision.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Computer Vision</a>
+            <a href="Computer Vision.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Machine Vision</a>
             <br><br>
         </div>
     </nav>
@@ -149,7 +51,7 @@
 
     <header class="w3-container w3-top w3-hide-large w3-burgundy w3-large w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
-        <span>Algorithm</span>
+        <span>Data Structure and Algorithm</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -163,308 +65,562 @@
 
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>Algorithm</b></h8>
+        <div class="w3-container" style="margin-top:80px" id="showcase">
 
             <!-- Services -->
             <!-- TITLE -->
-            <div style="margin-top:70px" id="showcase">
+            <div>
 
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
                 <br><br>
                 <div class="web">
                     <p>
-                        <h3><b>Foundations</b></h3>
-                        <br>
-                        <h1><b>Growth of Functions</b></h1>
-                        Asymptotic Notation
-                        <br>Standard notations and Common Functions
-                        <h1><b>Divide-and-Conquer</b></h1>
-                        The Maximum-subarry problem
-                        <br>Strassen's Algorithm for Matrix multiplication
-                        <br>The Substitution Method for solving Recurrences
-                        <br>The Recursion-tree Method for solving Recurrences
-                        <br>The master method for solving Recurrences
-                        <br>Proof of the master therom
-                        <br>
-                        <br>
-                        <h1><b>Probabilitstic Analysis and Randomized Algorithms</b></h1>
-                        The hiring Problem
-                        <br>Indicator Randon Variables
-                        <br>Randomized Algorithms
-                        <br>Probablistic Analysis and Further Uses of Indicator Random Variables
-                        <br><br><br>
-                        <h3><b>Sorting and Order Statistics</b></h3>
-                        <br>
-                        <h1><b>Heap sort</b></h1>
-                        Heaps
-                        <br>Maintaining heap property
-                        <br>Building a heap
-                        <br>The heap sort Algorithm
-                        <br>Priority Queues
-                        <br><br>
-                        <h1><b>Quick Sort</b></h1>
-                        Description of Quicksort
-                        <br>Performance of Quicksort
-                        <br>A randomized version of Quicksort
-                        <br>Analysis of Quicksort
-                        <br><br>
-                        <h1><b>Sorting in Linear Time</b></h1>
-                        Lower Bounds for Sorting
-                        <br>Counting sort
-                        <br>Radix Sort
-                        <br>Bucket Sort
-                        <br>
-                        <br>
-                        <h1><b>Median and Order Statistics</b></h1>
-                        Minimum and Maximum
-                        <br>Selection in Expected Linear Time
-                        <br>Selection in Worst-case Linear Time
-                        <br><br><br><br>
-                        <h3><b>Data Structures</b></h3>
-                        <br>
-                        <h1><b>Elementary Data Structures</b></h1>
-                        Stacks and Queues
-                        <br>Linked Lists
-                        <br>Implementing Pointers and Objects
-                        <br>Representing Root trees
-                        <br>
-                        <br>
-                        <h1><b>Hash Tables</b></h1>
-                        Direct-address tables
-                        <br>Hash tables
-                        <br>Hash Functions
-                        <br>Open addressing
-                        <br>Perfect Hashing
-                        <br>
-                        <br>
-                        <h1><b>Binary Search Trees</b></h1>
-                        Binary Search Trees
-                        <br>Querying a binary search Tree
-                        <br>Insertion and Deletion
-                        <br>Randomly built binary Search Trees
-                        <br><br>
-                        <h1><b>Red-Black Trees</b></h1>
-                        <br>Properties of red-black trees
-                        <br>Rotations
-                        <br>Insertion
-                        <br>Deletion
-                        <br>
-                        <br>
-                        <h1><b>Augmenting Data Structures</b></h1>
-                        Dynamic order Statistics
-                        <br>How to augment a data structures
-                        <br>Interval Trees
-                        <br><br><br><br>
-                        <h3><b>Advanced Design and Analysis Techniques</b></h3>
-                        <br>
-                        <h1><b>Dynamic Programming</b></h1>
-                        Rod cutting
-                        <br>Matrix chain multiplication
-                        <br>Element of dynamic programming
-                        <br>longest common subsequence
-                        <br>optimal binary search trees
-                        <br>
-                        <br>
-                        <h1><b>Greedy Algorithm</b></h1>
-                        An acitivity-selection problem
-                        <br>Element of the greedy strategy
-                        <br>huffman codes
-                        <br>Matroids and greedy methods
-                        <br>A task-Scheduling problem as matroid
-                        <br><br>
-                        <h1><b>Amortized Analysis</b></h1>
-                        The Aggregate Analysis
-                        <br>The accounting method
-                        <br>The potential method
-                        <br>Dynamic tables
-                        <br><br><br><br>
-                        <h3><b>Advanced Data Structures</b></h3>
-                        <br>
-                        <h1><b>B-Trees</b></h1>
-                        B-Trees
-                        <br>Basic Operation on B-Trees
-                        <br>Deleting a key from a B-Trees
-                        <br>
-                        <br>
-                        <h1><b>Fibonacci Heaps</b></h1>
-                        Structure of Fibonacci heaps
-                        <br>Mergeable-heap Operations
-                        <br>Decreasing a key and deleting a node
-                        <br>Bouding the maxmium degree
-                        <br><br>
-                        <h1><b>van Embe Boas Trees</b></h1>
-                        Prelimnary Approaches
-                        <br>A recursive Structure
-                        <br>The van Embde Boas Trees
-                        <br><br>
-                        <h1><b>Data Structure for Disjoint Sets</b></h1>
-                        Disjoint-set Operations
-                        <br>Linked-list representation of disjoint Sets
-                        <br>Disjoint-set forest
-                        <br>Analysis of Union by Rank with path compression
+                        <!--        <h3><b>Foundations</b></h3>
+            <br>
+    -->
+                        <h1>Growth of Functions</h1>
+                        <!--     Asymptotic Notation
+         <br>Standard notations and Common Functions
+         <h1>Divide-and-Conquer</h1>
+         The Maximum-subarry problem
+         <br>Strassen's Algorithm for Matrix multiplication
+         <br>The Substitution Method for solving Recurrences
+         <br>The Recursion-tree Method for solving Recurrences
+         <br>The master method for solving Recurrences
+         <br>Proof of the master therom
+         <br>
+         <br>
+    -->
+                        <h1>Probabilitstic Analysis and Randomized Algorithms</h1>
+                        <!--  The hiring Problem
+      <br>Indicator Randon Variables
+      <br>Randomized Algorithms
+      <br>Probablistic Analysis and Further Uses of Indicator Random Variables
+      <br><br><br>
+      <h3>Sorting and Order Statistics</h3>
+      <br>
+    -->
+                        <h1>Heap sort</h1>
+                        <!-- Heaps
+     <br>Maintaining heap property
+     <br>Building a heap
+     <br>The heap sort Algorithm
+     <br>Priority Queues
+     <br><br>
+    -->
+                        <h1>Quick Sort</h1>
+                        <!-- Description of Quicksort
+     <br>Performance of Quicksort
+     <br>A randomized version of Quicksort
+     <br>Analysis of Quicksort
+     <br><br>
+    -->
+                        <h1>Sorting in Linear Time</h1>
+                        <!--Lower Bounds for Sorting
+    <br>Counting sort
+    <br>Radix Sort
+    <br>Bucket Sort
+    <br>
+    <br>
+    -->
+                        <h1>Median and Order Statistics</h1>
+                        <!--Minimum and Maximum
+    <br>Selection in Expected Linear Time
+    <br>Selection in Worst-case Linear Time
+    <br><br><br><br>
+    <h3>Data Structures</h3>
+    <br>
+    -->
+                        <h1>Elementary Data Structures</h1>
+                        <!--Stacks and Queues
+    <br>Linked Lists
+    <br>Implementing Pointers and Objects
+    <br>Representing Root trees
+    <br>
+    <br>
+    -->
+                        <h1>Hash Tables</h1>
+                        <!--Direct-address tables
+    <br>Hash tables
+    <br>Hash Functions
+    <br>Open addressing
+    <br>Perfect Hashing
+    <br>
+    <br>
+    -->
+                        <h1>Binary Search Trees</h1>
+                        <!--Binary Search Trees
+    <br>Querying a binary search Tree
+    <br>Insertion and Deletion
+    <br>Randomly built binary Search Trees
+    <br><br>
+    -->
+                        <h1>Red-Black Trees</h1>
+                        <!--<br>Properties of red-black trees
+    <br>Rotations
+    <br>Insertion
+    <br>Deletion
+    <br>
+    <br>
+    -->
+                        <h1>Augmenting Data Structures</h1>
+                        <!--Dynamic order Statistics
+    <br>How to augment a data structures
+    <br>Interval Trees
+    <br><br><br><br>
+    <h3>Advanced Design and Analysis Techniques</h3>
+    <br>
+    -->
+                        <h1>Dynamic Programming</h1>
+                        <!--Rod cutting
+    <br>Matrix chain multiplication
+    <br>Element of dynamic programming
+    <br>longest common subsequence
+    <br>optimal binary search trees
+    <br>
+    <br>
+    -->
+                        <h1>Greedy Algorithm</h1>
+                        <!--An acitivity-selection problem
+    <br>Element of the greedy strategy
+    <br>huffman codes
+    <br>Matroids and greedy methods
+    <br>A task-Scheduling problem as matroid
+    <br><br>
+    -->
+                        <h1>Amortized Analysis</h1>
+                        <!--The Aggregate Analysis
+    <br>The accounting method
+    <br>The potential method
+    <br>Dynamic tables
+    <br><br><br><br>
+    <h3>Advanced Data Structures</h3>
+    <br>
+    -->
+                        <h1>B-Trees</h1>
+                        <!--B-Trees
+    <br>Basic Operation on B-Trees
+    <br>Deleting a key from a B-Trees
+    <br>
+    <br>
+    -->
+                        <h1>Fibonacci Heaps</h1>
+                        <!--Structure of Fibonacci heaps
+    <br>Mergeable-heap Operations
+    <br>Decreasing a key and deleting a node
+    <br>Bouding the maxmium degree
+    <br><br>
+    -->
+                        <h1>van Embe Boas Trees</h1>
+                        <!--Prelimnary Approaches
+    <br>A recursive Structure
+    <br>The van Embde Boas Trees
+    <br><br>
+    -->
+                        <h1>Data Structure for Disjoint Sets</h1>
+                        <!-- Disjoint-set Operations
+    <br>Linked-list representation of disjoint Sets
+    <br>Disjoint-set forest
+    <br>Analysis of Union by Rank with path compression
+    <br><br>
+    <h3>Graph Algorithms</h3>
+    <br>-->
+                        <h1>Elementary Graph Algorithms</h1>
+                        <!--            Representation of Graphs
+                <br>Breath-first Search
+                <br>Deapth-first Search
+                <br>Topological Sort
+                <br>Strongly Connected Components
+                <br>
+                <br>
+    -->
+                        <h1>Minimum Spanning Trees</h1>
+                        <!--         Growing a Minimum Spanning Tree
+             <br>The Algoritm of Kruskal and Prim
+             <br>
+             <br>
 
-                    </p>
-
-
-                </div>
-                <div class="web">
-                    <p>
-                        <h3><b>Graph Algorithms</b></h3>
-                        <br>
-                        <h1><b>Elementary Graph Algorithms</b></h1>
-                        Representation of Graphs
-                        <br>Breath-first Search
-                        <br>Deapth-first Search
-                        <br>Topological Sort
-                        <br>Strongly Connected Components
-                        <br>
-                        <br>
-                        <h1><b>Minimum Spanning Trees</b></h1>
-                        Growing a Minimum Spanning Tree
-                        <br>The Algoritm of Kruskal and Prim
-                        <br>
-                        <br>
-                        <h1><b>Single-Source Shrotest Paths</b></h1>
-                        The Bellman-Ford Algorithm
-                        <br>Single source Shortest path in Directed acyclic Graphs
-                        <br>Dijsktra's Algorithm
-                        <br>Difference Constraints and Shortest Path
-                        <br>Proofs of Shortest-path Properties
-                        <br>
-                        <br>
-                        <h1><b>All-Pairs Shortest Paths</b></h1>
-                        Shortest path and Matrix Multiplication
-                        <br>The Floyd-Warshall Algorithm
-                        <br>Johnson's Algorithm for Sparse Graphs
-                        <br>
-                        <br>
-                        <h1><b>Maximum Flow</b></h1>
-                        Flow networks
-                        <br>The Ford-Fulkerson method
-                        <br>Maximum bipartile Matching
-                        <br>Push-relabel Algorithms
-                        <br>The relabel-to-front Algorithm
-                        <br><br><br><br>
-                        <h3><b>Selected Topics</b></h3>
-                        <br>
-                        <h1><b>Multithreaded Algorithms</b></h1>
-                        dynamic multithreading
-                        <br>Multithreaded matrix multiplication
-                        <br>Multithreaded merge sort
-                        <br>
-                        <br>
-                        <h1><b>Matrix Operations</b></h1>
-                        Solving systems of linear equations
-                        <br>Inverting matrices
-                        <br>Symmetric positive-definite matrices and least-squares approximation
-                        <br>
-                        <br>
-                        <h1><b>Linear Programming</b></h1>
-                        Standard and slack forms
-                        <br>Formulating problems as linear programs
-                        <br>The simplex algorithm
-                        <br>Duality
-                        <br>The initial basic feasible solution
-                        <br>
-                        <br>
-                        <h1><b>Polynomials and the FFT</b></h1>
-                        Representing polynomials
-                        <br>The DFT and FFT
-                        <br>Efficient FFT implementations
-                        <br>
-                        <br>
-                        <h1><b>Number-Theoretic Algorithms</b></h1>
-                        Elementary number-theoretic notions
-                        <br>Greatest common divisor
-                        <br>Modular arithmetic
-                        <br>Solving modular linear equations
-                        <br>The Chinese remainder theorem
-                        <br>Powers of an element
-                        <br>The RSA public-key cryptosystem
-                        <br>Primality testing
-                        <br>Integer factorization
+    -->
+                        <h1>Single-Source Shrotest Paths</h1>
+                        <!--      The Bellman-Ford Algorithm
+          <br>Single source Shortest path in Directed acyclic Graphs
+          <br>Dijsktra's Algorithm
+          <br>Difference Constraints and Shortest Path
+          <br>Proofs of Shortest-path Properties
+          <br>
+          <br>
+    -->
+                        <h1>All-Pairs Shortest Paths</h1>
+                        <!--   Shortest path and Matrix Multiplication
+       <br>The Floyd-Warshall Algorithm
+       <br>Johnson's Algorithm for Sparse Graphs
+       <br>
+       <br>
+    -->
+                        <h1>Maximum Flow</h1>
+                        <!--Flow networks
+    <br>The Ford-Fulkerson method
+    <br>Maximum bipartile Matching
+    <br>Push-relabel Algorithms
+    <br>The relabel-to-front Algorithm
+    <br><br><br>
+    <h3>Selected Topics</h3>
+    <br>
+    -->
+                        <h1>Multithreaded Algorithms</h1>
+                        <!--dynamic multithreading
+    <br>Multithreaded matrix multiplication
+    <br>Multithreaded merge sort
+    <br>
+    <br>
+    -->
+                        <h1>Matrix Operations</h1>
+                        <!--Solving systems of linear equations
+    <br>Inverting matrices
+    <br>Symmetric positive-definite matrices and least-squares approximation
+    <br>
+    <br>
+    -->
+                        <h1>Linear Programming</h1>
+                        <!--Standard and slack forms
+    <br>Formulating problems as linear programs
+    <br>The simplex algorithm
+    <br>Duality
+    <br>The initial basic feasible solution
+    <br>
+    <br>
+    -->
+                        <h1>Polynomials and the FFT</h1>
+                        <!--Representing polynomials
+    <br>The DFT and FFT
+    <br>Efficient FFT implementations
+    <br>
+    <br>
+    -->
+                        <h1>Number-Theoretic Algorithms</h1>
+                        <!--Elementary number-theoretic notions
+    <br>Greatest common divisor
+    <br>Modular arithmetic
+    <br>Solving modular linear equations
+    <br>The Chinese remainder theorem
+    <br>Powers of an element
+    <br>The RSA public-key cryptosystem
+    <br>Primality testing
+    <br>Integer factorization
+    <br><br>
+    -->
+                        <h1>String Matching</h1>
+                        <!--The naive string-matching algorithm
+    <br>The Rabin-Karp algorithm
+    <br>String matching with finite automata
+    <br>The Knuth-Morris-Pratt algorithm
+    <br>
+    <br>
+    -->
+                        <h1>Computational Geometry</h1>
+                        <!--Line-segment properties
+    <br>Determining whether any pair of segments intersects
+    <br>Finding the convex hull
+    <br>Finding the closest pair of points
+    <br>
+    <br>
+    -->
+                        <h1>NP-Completeness</h1>
+                        <!--Polynomial time
+    <br>Polynomial-time verification
+    <br>NP-completeness and reducibility
+    <br>NP-completeness proofs
+    <br>NP-complete problems
+    <br>
+    <br>
+    -->
+                        <h1>Approximation Algorithms</h1>
+                        <!--The vertex-cover problem
+    <br>The traveling-salesman problem
+    <br>The set-covering problem
+    <br>Randomization and linear programming
+    <br>The subset-sum problem
+    <br>
+    <br>
+    <br>
+    -->
                         <br><br>
-                        <h1><b>String Matching</b></h1>
-                        The naive string-matching algorithm
-                        <br>The Rabin-Karp algorithm
-                        <br>String matching with finite automata
-                        <br>The Knuth-Morris-Pratt algorithm
+                        <h3><b>Reference Book</b></h3> <!--Change-->
+
+                        <a>
+                            <i>
+
+                                Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+
+                            </i>
+                        </a>
                         <br>
-                        <br>
-                        <h1><b>Computational Geometry</b></h1>
-                        Line-segment properties
-                        <br>Determining whether any pair of segments intersects
-                        <br>Finding the convex hull
-                        <br>Finding the closest pair of points
-                        <br>
-                        <br>
-                        <h1><b>NP-Completeness</b></h1>
-                        Polynomial time
-                        <br>Polynomial-time verification
-                        <br>NP-completeness and reducibility
-                        <br>NP-completeness proofs
-                        <br>NP-complete problems
-                        <br>
-                        <br>
-                        <h1><b>Approximation Algorithms</b></h1>
-                        The vertex-cover problem
-                        <br>The traveling-salesman problem
-                        <br>The set-covering problem
-                        <br>Randomization and linear programming
-                        <br>The subset-sum problem
-                        <br>
-                        <br>
-                    </p>
-                </div>
+                        <a target="_blank" href="Computational mathematics pics/Algorithm Pic.webp">
+
+                            <img src="Computational mathematics pics/Algorithm Pic.webp" alt="Equations" style="width:65%">
+                        </a>
+                        <br><br><br><br><br>
+                            <p>
+                                <h1>Object-Oriented Programming Using C++</h1> <!--Change-->
+                                <!--Abstract Data Types
+            <br>Encapsulation
+            <br>Inheritance
+            <br>Pointers
+            <br>Pointers and Arrays
+            <br>Pointers and Copy Constructors
+            <br>Pointers and Destructors
+            <br>Pointers and Reference Variables
+            <br>Pointers to Functions
+            <br>Polymorphism
+            <br>C++ and Object-Oriented Programming
+            <br>The Standard Template Library
+            <br>------ Containers
+            <br>------ Iterators
+            <br>------ Algorithms
+            <br>------ Function Objects
+            <br>Vectors in the Standard Template Library
+            <br>Data Structures and Object-Oriented Programming
+            <br><br>
+            -->
+                                <h1>Complexity Analysis</h1> <!--Change-->
+                                <!--Computational and Asymptotic Complexity
+            <br>Properties of Big-O Notation
+            <br>Ω and Θ Notations
+            <br>Possible Problems
+            <br>Finding Asymptotic Complexity
+            <br>The Best, Average, and Worst Cases
+            <br>Amortized Complexity
+            <br>NP-Completeness
+            <br><br>
+            -->
+                                <h1>Linked Lists</h1>
+                                <!--Singly Linked Lists
+            <br>------ Insertion
+            <br>------ Deletion
+            <br>------ Search
+            <br>Doubly Linked Lists
+            <br>Circular Lists
+            <br>Skip Lists
+            <br>Self-Organizing Lists
+            <br>Sparse Tables
+            <br>Lists in the Standard Template Library
+            <br><br>
+            -->
+                                <h1>Stacks and Queues</h1>
+                                <!--Stacks
+            <br>Queues
+            <br>Priority Queues
+            <br>Stacks in the STL
+            <br>Queues in the STL
+            <br>Priority Queues in the STL
+            <br>Deques in the STL
+            <br><br>-->
+                                <h1>Recursion</h1>
+                                <!--Recursive Definitions
+            <br>Function Calls and Recursion Implementation
+            <br>Anatomy of a Recursive Call
+            <br>Tail Recursion
+            <br>Nontail Recursion
+            <br>Indirect Recursion
+            <br>Nested Recursion
+            <br>Excessive Recursion
+            <br>Backtracking
+            <br><br>
+            -->
+                                <h1>Binary Trees</h1>
+                                <!--  Trees, Binary Trees, and Binary Search Trees
+              <br>Implementing Binary Trees
+              <br>Searching a Binary Search Tree
+              <br>Tree Traversal
+              <br>------ Breadth-First Traversal
+              <br>------ Depth-First Traversal
+              <br>------ Stackless Depth-First Traversal
+              <br>Insertion
+              <br>Deletion
+              <br>------ Deletion by Merging
+              <br>------ Deletion by Copying
+              <br>Balancing a Tree
+              <br>------ The DSW Algorithm
+              <br>------ AVL Trees
+              <br>Self-Adjusting Trees
+              <br>------ Self-Restructuring Trees
+              <br>Heaps
+              <br>------ Heaps as Priority Queues
+              <br>------ Organizing Arrays as Heaps
+              <br>Treaps
+              <br>k-d Trees
+              <br><br>
+            -->
+                                <h1>Multiway Trees</h1>
+                                <!--Family of B-Trees
+            <br>------ B-Trees
+            <br>------ B*-Trees
+            <br>------ B+-Trees
+            <br>------ Prefix B+-Trees
+            <br>------ K-d B-trees
+            <br>------ Bit-Trees
+            <br>------ R-Trees
+            <br>------ 2–4 Trees
+            <br>------ Sets and Multisets in the STL
+            <br>------ Maps and Multimaps in the STL
+            <br>Tries
+            <br><br>
+            -->
+                                <h1>Graphs</h1>
+                                <!--Graph Representation
+            <br>Graph Traversals
+            <br>Shortest Paths
+            <br>Cycle Detection
+            <br>------ Union-Find Problem
+            <br>Spanning Trees
+            <br>Connectivity
+            <br>------ Connectivity in Undirected Graphs
+            <br>------ Connectivity in Directed Graphs
+            <br>Topological Sort
+            <br>Networks
+            <br>------ Maximum Flows
+            <br>------ Maximum Flows of Minimum Cost
+            <br>Matching
+            <br>------ Stable Matching Problem
+            <br>------ Assignment Problem
+            <br>------ Matching in Nonbipartite Graphs
+            <br>Eulerian and Hamiltonian Graphs
+            <br>------ Eulerian Graphs
+            <br>------ Hamiltonian Graphs
+            <br>Graph Coloring
+            <br>NP-Complete Problems in Graph Theory
+            <br>------ The Clique Problem
+            <br>------ The 3-Colorability Problem
+            <br>------ The Vertex Cover Problem
+            <br>------ The Hamiltonian Cycle Problem
+            <br><br>
+            -->
+                                <h1>Sorting</h1>
+                                <!--Elementary Sorting Algorithms
+            <br>------ Insertion Sort
+            <br>------ Selection Sort
+            <br>------ Bubble Sort
+            <br>------ Comb Sort
+            <br>Decision Trees
+            <br>Efficient Sorting Algorithms
+            <br>------ Shell Sort
+            <br>------ Heap Sort
+            <br>------ Quicksort
+            <br>------ Mergesort
+            <br>------ Radix Sort
+            <br>------ Counting Sort
+            <br>Sorting in the STL
+            <br><br>-->
+                                <h1>Hashing</h1>
+                                <!--Hash Functions
+            <br>------ Division
+            <br>------ Folding
+            <br>------ Mid-Square Function
+            <br>------ Extraction
+            <br>------ Radix Transformation
+            <br>------ Universal Hash Functions
+            <br>Collision Resolution
+            <br>------ Open Addressing
+            <br>------ Chaining
+            <br>------ Bucket Addressing
+            <br>Deletion
+            <br>Perfect Hash Functions
+            <br>------ Cichelli’s Method
+            <br>------ The FHCD Algorithm
+            <br>Rehashing
+            <br>------ The Cuckoo Hashing
+            <br>Hash Functions for Extendible Files
+            <br>------ Extendible Hashing
+            <br>------ Linear Hashing
+            <br><br>
+            -->
+                                <h1>Data Compression</h1>
+                                <!--Conditions for Data Compression
+            <br>Huffman Coding
+            <br>Run-Length Encoding
+            <br>Ziv-Lempel Code
+            <br><br>
+            <h1><b>Memory Management</b></h1>
+            The Sequential-Fit Methods
+            <br>The Nonsequential-Fit Methods
+            <br>------ Buddy Systems
+            <br>Garbage Collection
+            <br>------ Mark-and-Sweep
+            <br>------ Copying Methods
+            <br>------ Incremental Garbage Collection
+            <br>------ Generational Garbage Collection
+            <br><br>
+            -->
+                                <h1>String Matching</h1>
+                                <!--Exact String Matching
+            <br>------ Straightforward Algorithms
+            <br>------ The Knuth-Morris-Pratt Algorithm
+            <br>------ The Boyer-Moore Algorithm
+            <br>------ Multiple Searches
+            <br>------ Bit-Oriented Approach
+            <br>------ Matching Sets of Words
+            <br>------ Regular Expression Matching
+            <br>------ Suffix Tries and Trees
+            <br>------ Suffix Arrays
+            <br>Approximate String Matching
+            <br>------ String Similarity
+            <br>------ String Matching with k Errors
+            <br><br>
+            -->
+                                <br>
+                            </p>
+                            <h3><b>Reference Book</b></h3>
+                            <a><i>Data Structure and Algorithms in C++ by Adam Drozdek</i></a>
+                            <br>
+                            <img src="../../Software Engineering/Software Engineering Pics/Data Structures and Algorithms.webp" alt="Operating Systems pics" style="width:65%" onclick="onClick(this)">
+                            <br><br>
+                            <a href="http://www.orentec.co.kr/teachlist/DA_ST_1/teach_sub1.php" target="_blank">Seongyoo yun's C Data Structure and Algorithm Power point and Source code'</a>
+                            <br><br>
+                          
+                            <br>
+
+                        </div>
+                        <div class="web">
+                            <p>
+                                <h2><b>Lecture Series for Algorithm</b></h2>
+                                <h1>Algorithm 1 by Tim Roughgarden Stanford</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/yRM3sc57q0c?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V" title="1   1   Why Study Algorithms   4 min" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Algorithm 2  by Tim Roughgarden Stanford</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/R-ElS5wfcm4?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6" title="TWO MOTIVATING APPLICATIONS: Internet Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Data Structures from William Fiset</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/jND_WJ8r7FE?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu" title="Indexed Priority Queue (UPDATED) | Data Structures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Graph Theory from William Fiset</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/0qgaIMqOEVs?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <br>
+                                <h1>Hamming Code by 3blue1brown</h1> <!--Change-->
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/X8jsijhllIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Data Compression by Reducible</h1> <!--Change-->
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/B3y0RsVCyrw?list=PLpXOY-RxVRTOR1PAtQUwoZN2tSs1ICSk7" title="Huffman Codes: An Information Theory Perspective" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Data Structure with C from Jacob Sorber</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/VOpjAHCee7c?list=PL9IEJIKnBJjFiudyP6wSXmykrn67Ykqib" title="Understanding and implementing a Linked List in C and Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <h1>Reed Solomon Code from vcubingx</h1>
+                                <iframe width="350" height="250" src="https://www.youtube.com/embed/1pQJkt7-R4Q" title="What are Reed-Solomon Codes?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br><br>
+
+                                <h3>My Github Projects</h3>
+                                <a href="https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-">
+                                    https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-
+                                </a>
+                            </p>
+                        </div>
 
 
-            </div>
+</div>
 
         </div>
-        <div class="w3-container">
-            <br>
-            <h3><b>Lecture Series</b></h3>
-            <h1>Data Structures Playlist from William Fiset</h1>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/jND_WJ8r7FE?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu" title="Indexed Priority Queue (UPDATED) | Data Structures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <h1>Graph Theory Tutorial from William Fiset</h1>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/0qgaIMqOEVs?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
 
-
-            <br>
-            <h3>Github</h3>
-            <a href="https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-">
-                https://github.com/jiwook021/Data-Structure-and-Algorithm-with-C-
-            </a>
-            <br>
-            <br>
-
-
-            <h3><b>Reference</b></h3> <!--Change-->
-
-            <h1>
-                <i>
-
-                    Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
-
-                </i>
-            </h1>
-            <br>
-
-            <div class="responsive">
-                <div class="gallery">
-
-                    <a target="_blank" href="Computational mathematics pics/Algorithm Pic.webp">
-
-                        <img src="Computational mathematics pics/Algorithm Pic.webp" alt="Equations" style="width:35%">
-                    </a>
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
 
 
 

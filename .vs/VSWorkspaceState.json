@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Menu",
-    "\\Menu\\Hardware Electronics",
-    "\\Menu\\Mathematics",
-    "\\Menu\\Mathematics\\Computational Mathematics",
-    "\\Menu\\Physics Pictures",
-    "\\Menu\\Signal and Systems"
+    "\\Menu\\Software Engineering"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\Menu\\Software Engineering\\Computer Network.html",
   "PreviewInSolutionExplorer": false
 }

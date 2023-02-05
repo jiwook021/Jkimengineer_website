@@ -4,135 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../../jiwook.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 27px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    body {
-        font-size: 13px;
-    }
-
-
-
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-    .main {
-        float: left;
-        width: 60%;
-        padding: 0 20px;
-    }
-
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
-
 <body>
-
-
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:330px;font-weight:bold;" id="mySidebar">
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">Digital Design of Signal Processing System</h3> <!--Change-->
+            <h2 class=" w3-padding-32">Digital Design of Signal Processing System</h2> <!--Change-->
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -140,18 +24,19 @@
             <a href="Digital Design of Signal Processing System.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Digital Design of Signal Processing System</a>
             <br>
             <br>
-            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Circuit Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Circuit Theory</a>
             <a href="Analog Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Analog Electronics</a>
             <a href="Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
+            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-         <!--   <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-        -->    <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
-           <!-- <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
-           --> <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
+            <!--   <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+    -->
+            <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!-- <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
+    -->
+            <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
             <a href="Hardware_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Hardware Resources</a>
             <br>
             <br>
@@ -174,628 +59,649 @@
 
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>Digital Design of Signal Processing System</b></h8>
-
-            <div style="margin-top:70px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+          
+            <div>
 
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
                     <p>
-                        <h1><b>Digital Systems</b></h1> <!--Change-->
-                        Fueling the Innovation: Moore's Law
-                        <br>Pricniples
-                        <br>Multi-core Systems
-                        <br>NoC- Based MPSoC
-                        <br>Digital Receiver for a Voice Communication System
-                        <br>The BackPlane of a Router
-                        <br>Design
-                        <br>Implementation
-                        <br>Verification
-                        <br>Competing Objectives in Digital Design
-                        <br>Synchronous Digital Hardware Systems
-                        <br>Example of Design Partitioning
-                        <br>------ NoC-based SoC for Carrier-class VoIP Media Gateway
-                        <br>------ Design Flow Migration
-                        <br><br>
-                        <h1><b>Using a Hardware Description Language</b></h1> <!--Change-->
-                        Verilog
-                        <br>System Design Flow
-                        <br>Logic Synthesis
-                        <br>Modules
-                        <br>Design Partitioning
-                        <br>Hierarchical Design
-                        <br>Logic Values
-                        <br>Variable Declaration
-                        <br>Constants
-                        <br>Four Levels of Abstraction
-                        <br>------ Switch Level
-                        <br>------ Gate Level or Structural Modeling
-                        <br>------ Dataflow Level
-                        <br>------ Behavioral Level
-                        <br>------ Verilog Tasks
-                        <br>------ Verilog Functions
-                        <br>------ Signed Arithmetic
-                        <br>Verification in Hardware Design
-                        <br>------ Introduction to Verification
-                        <br>------ Approaches to Testing a Digital Design
-                        <br>------ Levels of Testing in the Development Cycle
-                        <br>------ Method for Generating Test Cases
-                        <br>------ Trasnsaction-level Modeling
-                        <br>SystemVerilog
-                        <br>Data types
-                        <br>Module Instatiation and Port Listing
-                        <br>Constructs of the C/C++ Type
-                        <br>For and do-while Loops
-                        <br>The always Procedural Block
-                        <br>The final Procedural Block
-                        <br>The unique and priority Case Statements
-                        <br>Nested Modules
-                        <br>Functions and Tasks
-                        <br>The Interface
-                        <br>Classes
-                        <br>Direct Programming Interface (DPI)
-                        <br>Assertion
-                        <br>Packages
-                        <br>Randomization
-                        <br>Coverage
-                        <br><br>
-                        <h1><b>System Design Flow and FIxed-point Arithmetic</b></h1>
-                        Requirements and Specifications of a UHF Software define Radio
-                        <br>Coding Guidelines for High-Level Behavioral Description
-                        <br>Fixed-point versus Floating-point Hardware
-                        <br>Two's Complement Representation
-                        <br>Computing Two's Complement of a signed Number
-                        <br>Scaling
-                        <br>Floating-point Format
-                        <br>------ Normalized and Denormalized Values
-                        <br>------ Floating-point Arithmetic Addition
-                        <br>------ Floating-point Multiplication
-                        <br>Qn.m Format for Fixed-point Arithmetic
-                        <br>------ Floating-point to Fixed-point Conversion of Numbers
-                        <br>------ Addition in Q Format
-                        <br>------ Multiplication in Q Format
-                        <br>------ Bit Growth in Fixed-point Arithmetic
-                        <br>------ Overflow and Saturation
-                        <br>------ Two’s Complement Intermediate Overflow Property
-                        <br>------ Corner Cases
-                        <br>------ Code Conversion and Checking the Corner Case
-                        <br>------ Rounding the Product in Fixed-point Multiplication
-                        <br>------ MATLAB Support for Fixed-point Arithmetic
-                        <br>------ SystemC Support for Fixed-point Arithmetic
-                        <br>Floating-point to Fixed-point Conversion
-                        <br>Block Floating-point Format
-                        <br>Forms of Digital Filter
-                        <br>------ Infinite Impulse Response Filter
-                        <br>------ Quantization of IIR Filter Coefficients
-                        <br>------ Coefficient Quantization Analysis of a Second-order Section
-                        <br>------ Folded FIR Filters
-                        <br>------ Coefficient Quantization of an FIR Filter
-                        <br><br>
-                        <h1><b>Mapping on Fully Dedicated Architecture</b></h1> <!--Change-->
-                        Discrete Real-time Systems
-                        <br>Synchronous Digital Hardware Systems
-                        <br>Kahn Process Networks
-                        <br>------ Introduction to KPN
-                        <br>------ KPN for Modeling Streaming Applications
-                        <br>------ Limitations of KPN
-                        <br>------ Modified KPN and MPSoC
-                        <br>------ Case Study: GMSK Communication Transmitter
-                        <br>Methods of Representing DSP Systems
-                        <br>------ Block Diagram
-                        <br>------ Signal Flow Graph
-                        <br>------ Dataflow Graph or Data Dependency Graph
-                        <br>------ Self-timed Firing
-                        <br>------ Single-rate and Multi-rate SDFGs
-                        <br>------ Homogeneous SDFG
-                        <br>------ Cyclo-static DFG
-                        <br>------ Multi-dimensional Arrayed Dataflow Graphs
-                        <br>------ Control Flow Graphs
-                        <br>------ Finite State Machine
-                        <br>------ Transformations on a Dataflow Graph
-                        <br>------ Dataflow Interchange Format (DIF) Language
-                        <br>Performance Measures
-                        <br>------ Iteration Period
-                        <br>------ Sampling Period and Throughput
-                        <br>------ Latency
-                        <br>------ Power Dissipation
-                        <br>Fully Dedicated Architecture
-                        <br>------ The Design Space
-                        <br>------ Pipelining
-                        <br>------ Selecting Basic Building Blocks
-                        <br>------ Extending the Concept of One-to-One Mapping
-                        <br>DFG to HW Synthesis
-                        <br>------ Mapping a Multi-rate DFG in Hardware
-                        <br>------ Centralized Controller for DFG Realization
-                        <br><br>
-                        <h1><b>Design Options for Basic Building Blocks</b></h1> <!--Change-->
-                        Embedded Processors and Arithmetic Units in FPGAs
-                        <br>Instantiation of Embedded Blocks
-                        <br>------ Design Optimization for the Target Technology
-                        <br>Basic Building Blocks: Introduction
-                        <br>Adders
-                        <br>------ Half Adders and Full Adders
-                        <br>------ Ripple Carry Adder
-                        <br>------ Fast Adders
-                        <br>------ Carry Look-ahead Adder
-                        <br>------ Hybrid Ripple Carry and Carry Look-ahead Adder
-                        <br>------ Binary Carry Look-ahead Adder
-                        <br>------ Carry Skip Adder
-                        <br>------ Conditional Sum Adder
-                        <br>------ Carry Select Adder
-                        <br>------ Using Hybrid Adders
-                        <br>Barrel Shifter
-                        <br>Carry Save Adders and Compressors
-                        <br>------ Carry Save Adders
-                        <br>------ Compression Trees
-                        <br>------ Dot Notation
-                        <br>Parallel Multipliers
-                        <br>------ Partial Product Generation and Reduction
-                        <br>------ A Decomposed Multiplier
-                        <br>------ Optimized Compressors
-                        <br>------ Single- and Multiple-column Counters
-                        <br>Two’s Complement Signed Multiplier
-                        <br>------ Basics
-                        <br>------ Sign Extension Elimination
-                        <br>------ String Property
-                        <br>------ Modified Booth Recoded Multiplier in RTL Verilog
-                        <br>Compression Trees for Multi-operand Addition
-                        <br>Algorithm Transformations for CSA(configurable spatial accelerator)
-                        <br><br>
-                        <h1><b>Multiplier-less Multiplication by Constants</b></h1> <!--Change-->
-                        Canonic Signed Digit Representation
-                        <br>Minimum Signed Digit Representation
-                        <br>Multiplication by a Constant in a Signal Processing Algorithm
-                        <br>Optimized DFG Transformation
-                        <br>Fully Dedicated Architecture for Direct-form FIR Filter
-                        <br>------ Introduction
-                        <br>------ Transposed Direct-form FIR Filter
-                        <br>------ Example: TDF Architecture
-                        <br>------ Hybrid FIR Filter Structure
-                        <br>Complexity Reduction
-                        <br>------ Sub-graph Sharing
-                        <br>------ Common Sub-expression Elimination
-                        <br>------ Common Sub-expressions with Multiple Operands
-                        <br>Distributed Arithmetic
-                        <br>------ Basics
-                        <br>------ Example: FIR Filter Design
-                        <br>------ M-Parallel Sub-filter-based Design
-                        <br>------ DA Implementation without Look-up Tables
-                        <br>FFT Architecture using FIR Filter Structure
-                        <br><br>
-                        <h1><b>Pipelining, Retiming, Look-ahead Transformation, Polyphase Decomposition</b></h1> <!--Change-->
-                        Cut-set Retiming
-                        <br>Retiming using the Delay Transfer Theorem
-                        <br>Pipelining and Retiming in a Feedforward System
-                        <br>Re-pipelining: Pipelining using Feedforward Cut-set
-                        <br>Cut-set Retiming of a Direct-form FIR Filter
-                        <br>Pipelining using the Delay Transfer Theorem
-                        <br>Pipelining Optimized DFG
-                        <br>Pipelining Carry Propagate Adder
-                        <br>Retiming Support in Synthesis Tools
-                        <br>Mathematical Formulation of Retiming
-                        <br>Minimizing the Number of Registers and Critical Path Delay
-                        <br>Retiming with Shannon Decomposition
-                        <br>Peripheral Retiming
-                        <br>Digital Design of Feedback Systems
-                        <br>------ Definitions
-                        <br>------ Cut-set Retiming for a Feedback System
-                        <br>------ Shannon Decomposition to Reduce the IPB
-                        <br>C-slow Retiming
-                        <br>------ Basics
-                        <br>------ C-Slow for Block Processing
-                        <br>------ C-Slow for FPGAs and Time-multiplexed Reconfigurable Design
-                        <br>------ C-Slow for an Instruction Set Processor
-                        <br>Look-ahead Transformation for IIR filters
-                        <br>Look-ahead Transformation for Generalized IIR Filters
-                        <br>Polyphase Structure for Decimation and Interpolation Applications
-                        <br>IIR Filter for Decimation and Interpolation
-                        <br><br>
-                        <h1><b> Unfolding and Folding of Architectures</b></h1> <!--Change-->
-                        Unfolding
-                        <br>Sampling Rate Considerations
-                        <br>------ Nyquist Sampling Theorem and Design Options
-                        <br>------ Software-defined Radio Architecture and Band-pass Sampling
-                        <br>------ A/D Converter Bandwidth and Band-pass Sampling
-                        <br>Unfolding Techniques
-                        <br>------ Loop Unrolling
-                        <br>------ Unfolding Transformation
-                        <br>------ Loop Unrolling for Mapping SW to HW
-                        <br>------ Unfolding to Maximize Use of a Compression Tree
-                        <br>------ Unfolding for Effective Use of FPGA Resources
-                        <br>------ Unfolding and Retiming in Feedback Designs
-                        <br>Folding Techniques
-                        <br>------ Definitions and the Folding Transformation
-                        <br>------ Folding Regular Structured DFGs
-                        <br>------ Folded Architectures for FFT Computation
-                        <br>------ Memory-based Folded FFT Processor
-                        <br>------ Systolic Folded Architecture
-                        <br>Mathematical Transformation for Folding
-                        <br>Algorithmic Transformation
-                        <br><br>
-                        <h1><b>Designs based on Finite State Machines</b></h1> <!--Change-->
-                        Bit-serial and Digit-serial Architectures
-                        <br>Sequential Architecture
-                        <br>Sequencing and Control
-                        <br>Finite State Machines
-                        <br>State Encoding: One-hot versus Binary Assignment
-                        <br>Mealy and Moore State Machine Designs
-                        <br>Mathematical Formulations
-                        <br>Coding Guidelines for Finite State Machines
-                        <br>SystemVerilog Support for FSM Coding
-                        <br>Algorithmic State Machine Representation
-                        <br>------ Example: Design of a Four-entry FIFO
-                        <br>------ Example: Design of an Instruction Dispatcher
-                        <br>FSM Optimization for Low Power and Area
-                        <br>Designing for Testability
-                        <br>------ Methodology
-                        <br>------ Coverage Metrics for Design Validation
-                        <br>Methods for Reducing Power Dissipation
-                        <br>------ Switching Power
-                        <br>------ Clock Gating Technique
-                        <br>------ FSM Decomposition
-                        <br><br>
-                        <h1><b>Micro-programmed State Machines</b></h1> <!--Change-->
-                        Micro-programmed Controller
-                        <br>------ Basics
-                        <br>------ Moore Micro-programmed State Machines
-                        <br>------ Example: LIFO and FIFO
-                        <br>Counter-based State Machines
-                        <br>------ Basics
-                        <br>------ Loadable Counter-based State Machine
-                        <br>------ Counter-based FSM with Conditional Branching
-                        <br>------ Register-based Controllers
-                        <br>------ Register-based Machine with Parity Field
-                        <br>------ Example to Illustrate Complete Functionality
-                        <br>Subroutine Support
-                        <br>Nested Subroutine Support
-                        <br>Nested Loop Support
-                        <br>Design for Motion Estimation
-                        <br>Design of a Wavelet Processor
-                        <br><br>
-                        <h1><b>Micro-programmed Adaptive Filtering Applications</b></h1> <!--Change-->
-                        Adaptive Filter Configurations
-                        <br>------ System Identification
-                        <br>------ Inverse System Modeling
-                        <br>------ Acoustic Noise Cancellation
-                        <br>------ Linear Prediction
-                        <br>Adaptive Algorithms
-                        <br>------ Basics
-                        <br>------ Least Mean Square (LMS) Algorithm
-                        <br>------ Normalized LMS Algorithm
-                        <br>------ Block LMS
-                        <br>Channel Equalizer using NLMS
-                        <br>------ NLMS Algorithm to Update Coefficients
-                        <br>Echo Canceller
-                        <br>------ Acoustic Echo Canceller
-                        <br>------ Line Echo Cancellation (LEC)
-                        <br>Adaptive Algorithms with Micro-programmed State Machines
-                        <br>------ Example: LEC(Logical Equivalent Check) Micro-coded Accelerator
-                        <br>------ Address Registers Arithmetic
-                        <br>------ Pipelining Options
-                        <br>------ Optional Support for Coefficient Update
-                        <br>------ Multi MAC Block Design Option
-                        <br>------ Compression Tree and Single CPA-based Design
-                        <br><br>
-                        <h1><b>CORDIC-based(Coordinate Rotation DIgital Computer) DDFS(Direct Digital Frequency Synthesizer) Architectures</b></h1> <!--Change-->
-                        Design of a Basic DDFS
-                        <br>------ CORDIC Algorithm for Hardware Implementation
-                        <br>------ Hardware Mapping
-                        <br>------ Time-shared Architecture
-                        <br>------ C-slowed Time-shared Architecture
-                        <br>------ Modified CORDIC Algorithm
-                        <br>------ Recoding of Binary Representation as +-1
-                        <br>Hardware Mapping of Modified CORDIC Algorithm
-                        <br>------ Hardware Optimization
-                        <br>------ Novel Optimal Hardware Design
-                        <br><br>
-                        <h1><b>Digital Design of Communication Systems</b></h1> <!--Change-->
-                        Top-level Design Options
-                        <br>------ Bus-based Design
-                        <br>------ Point-to-Point Design
-                        <br>------ Network-based Design
-                        <br>------ Hybrid Connectivity
-                        <br>------ Point-to-Point KPN-based Top-level Design
-                        <br>------ KPN with Shared Bus and DMA Controller
-                        <br>------ Network-on-Chip Top-level Design
-                        <br>------ Design of a Router for NoC
-                        <br>------ Run-time Reconfiguration
-                        <br>------ NoC for Software-defined Radio
-                        <br>Typical Digital Communication System
-                        <br>------ Source Encoding
-                        <br>------ Data Compression
-                        <br>------ Encryption
-                        <br>------ Channel Coding
-                        <br>------ Framing
-                        <br>------ Modulation
-                        <br>------ Digital Up-conversion and Mixing
-                        <br>------ Front End of the Receiver
-                        <br><br>
-                        <br><br><br><br>
-                    </p>
-                </div>
+
+
+                        <h1>Digital Systems</h1> <!--Change-->
+                        <!--Fueling the Innovation: Moore's Law
+    <br>Pricniples
+    <br>Multi-core Systems
+    <br>NoC(Network on Chip) Based MPSoC(Multiprocessor system on a chip)
+    <br>Digital Receiver for a Voice Communication System
+    <br>The BackPlane of a Router
+    <br>Design
+    <br>Implementation
+    <br>Verification
+    <br>Competing Objectives in Digital Design
+    <br>Synchronous Digital Hardware Systems
+    <br>NoC-based SoC for Carrier-class VoIP Media Gateway
+    <br><br>
+    -->
+                        <h1>Using a Hardware Description Language</h1> <!--Change-->
+                        <!--Verilog
+    <br>System Design Flow
+    <br>Logic Synthesis
+    <br>Modules
+    <br>Design Partitioning
+    <br>Hierarchical Design
+    <br>Logic Values
+    <br>Variable Declaration
+    <br>Constants
+    <br>Four Levels of Abstraction
+    <br>------ Switch Level
+    <br>------ Gate Level or Structural Modeling
+    <br>------ Dataflow Level
+    <br>------ Behavioral Level
+    <br>------ Verilog Tasks
+    <br>------ Verilog Functions
+    <br>------ Signed Arithmetic
+    <br>Verification in Hardware Design
+    <br>------ Approaches to Testing a Digital Design
+    <br>------ Levels of Testing in the Development Cycle
+    <br>------ Method for Generating Test Cases
+    <br>------ Trasnsaction-level Modeling
+    <br>SystemVerilog
+    <br>Data types
+    <br>Module Instatiation and Port Listing
+    <br>Constructs of the C/C++ Type
+    <br>For and do-while Loops
+    <br>The always Procedural Block
+    <br>The final Procedural Block
+    <br>The unique and priority Case Statements
+    <br>Nested Modules
+    <br>Functions and Tasks
+    <br>The Interface
+    <br>Classes
+    <br>Direct Programming Interface (DPI)
+    <br>Assertion
+    <br>Packages
+    <br>Randomization
+    <br>Coverage
+    <br><br>
+    -->
+                        <h1>System Design Flow and FIxed-point Arithmetic</h1>
+                        <!--Requirements and Specifications of a UHF Software define Radio
+    <br>Coding Guidelines for High-Level Behavioral Description
+    <br>Fixed-point versus Floating-point Hardware
+    <br>Two's Complement Representation
+    <br>Computing Two's Complement of a signed Number
+    <br>Scaling
+    <br>Floating-point Format
+    <br>------ Normalized and Denormalized Values
+    <br>------ Floating-point Arithmetic Addition
+    <br>------ Floating-point Multiplication
+    <br>Qn.m Format for Fixed-point Arithmetic
+    <br>------ Floating-point to Fixed-point Conversion of Numbers
+    <br>------ Addition in Q Format
+    <br>------ Multiplication in Q Format
+    <br>------ Bit Growth in Fixed-point Arithmetic
+    <br>------ Overflow and Saturation
+    <br>------ Two’s Complement Intermediate Overflow Property
+    <br>------ Corner Cases
+    <br>------ Code Conversion and Checking the Corner Case
+    <br>------ Rounding the Product in Fixed-point Multiplication
+    <br>------ MATLAB Support for Fixed-point Arithmetic
+    <br>------ SystemC Support for Fixed-point Arithmetic
+    <br>Floating-point to Fixed-point Conversion
+    <br>Block Floating-point Format
+    <br>Forms of Digital Filter
+    <br>------ Infinite Impulse Response Filter
+    <br>------ Quantization of IIR Filter Coefficients
+    <br>------ Coefficient Quantization Analysis of a Second-order Section
+    <br>------ Folded FIR Filters
+    <br>------ Coefficient Quantization of an FIR Filter
+    <br><br>
+    -->
+                        <h1>Mapping on Fully Dedicated Architecture</h1> <!--Change-->
+                        <!--Discrete Real-time Systems
+    <br>Synchronous Digital Hardware Systems
+    <br>Kahn Process Networks
+    <br>------ Introduction to KPN
+    <br>------ KPN for Modeling Streaming Applications
+    <br>------ Limitations of KPN
+    <br>------ Modified KPN and MPSoC
+    <br>------ Case Study: GMSK Communication Transmitter
+    <br>Methods of Representing DSP Systems
+    <br>------ Block Diagram
+    <br>------ Signal Flow Graph
+    <br>------ Dataflow Graph or Data Dependency Graph
+    <br>------ Self-timed Firing
+    <br>------ Single-rate and Multi-rate SDFGs
+    <br>------ Homogeneous SDFG
+    <br>------ Cyclo-static DFG
+    <br>------ Multi-dimensional Arrayed Dataflow Graphs
+    <br>------ Control Flow Graphs
+    <br>------ Finite State Machine
+    <br>------ Transformations on a Dataflow Graph
+    <br>------ Dataflow Interchange Format (DIF) Language
+    <br>Performance Measures
+    <br>------ Iteration Period
+    <br>------ Sampling Period and Throughput
+    <br>------ Latency
+    <br>------ Power Dissipation
+    <br>Fully Dedicated Architecture
+    <br>------ The Design Space
+    <br>------ Pipelining
+    <br>------ Selecting Basic Building Blocks
+    <br>------ Extending the Concept of One-to-One Mapping
+    <br>DFG to HW Synthesis
+    <br>------ Mapping a Multi-rate DFG in Hardware
+    <br>------ Centralized Controller for DFG Realization
+    <br><br>
+    -->
+                        <h1>Design Options for Basic Building Blocks</h1> <!--Change-->
+                        <!--Embedded Processors and Arithmetic Units in FPGAs
+    <br>Instantiation of Embedded Blocks
+    <br>------ Design Optimization for the Target Technology
+    <br>Adders
+    <br>------ Half Adders and Full Adders
+    <br>------ Ripple Carry Adder
+    <br>------ Fast Adders
+    <br>------ Carry Look-ahead Adder
+    <br>------ Hybrid Ripple Carry and Carry Look-ahead Adder
+    <br>------ Binary Carry Look-ahead Adder
+    <br>------ Carry Skip Adder
+    <br>------ Conditional Sum Adder
+    <br>------ Carry Select Adder
+    <br>------ Using Hybrid Adders
+    <br>Barrel Shifter
+    <br>Carry Save Adders and Compressors
+    <br>------ Carry Save Adders
+    <br>------ Compression Trees
+    <br>------ Dot Notation
+    <br>Parallel Multipliers
+    <br>------ Partial Product Generation and Reduction
+    <br>------ A Decomposed Multiplier
+    <br>------ Optimized Compressors
+    <br>------ Single- and Multiple-column Counters
+    <br>Two’s Complement Signed Multiplier
+    <br>------ Basics
+    <br>------ Sign Extension Elimination
+    <br>------ String Property
+    <br>------ Modified Booth Recoded Multiplier in RTL Verilog
+    <br>Compression Trees for Multi-operand Addition
+    <br>Algorithm Transformations for CSA(Configurable Spatial Accelerator)
+    <br><br>
+    -->
+                        <h1>Multiplier-less Multiplication by Constants</h1> <!--Change-->
+                        <!--Canonic Signed Digit Representation
+    <br>Minimum Signed Digit Representation
+    <br>Multiplication by a Constant in a Signal Processing Algorithm
+    <br>Optimized DFG Transformation
+    <br>Fully Dedicated Architecture for Direct-form FIR Filter
+    <br>------ Introduction
+    <br>------ Transposed Direct-form FIR Filter
+    <br>------ Hybrid FIR Filter Structure
+    <br>Complexity Reduction
+    <br>------ Sub-graph Sharing
+    <br>------ Common Sub-expression Elimination
+    <br>------ Common Sub-expressions with Multiple Operands
+    <br>Distributed Arithmetic
+    <br>------ Basics
+    <br>------ Example: FIR Filter Design
+    <br>------ M-Parallel Sub-filter-based Design
+    <br>------ DA Implementation without Look-up Tables
+    <br>FFT Architecture using FIR Filter Structure
+    <br><br>
+    -->
+                        <h1>Pipelining, Retiming, Look-ahead Transformation, Polyphase Decomposition</h1> <!--Change-->
+                        <!--Cut-set Retiming
+    <br>Retiming using the Delay Transfer Theorem
+    <br>Pipelining and Retiming in a Feedforward System
+    <br>Re-pipelining: Pipelining using Feedforward Cut-set
+    <br>Cut-set Retiming of a Direct-form FIR Filter
+    <br>Pipelining using the Delay Transfer Theorem
+    <br>Pipelining Optimized DFG
+    <br>Pipelining Carry Propagate Adder
+    <br>Retiming Support in Synthesis Tools
+    <br>Mathematical Formulation of Retiming
+    <br>Minimizing the Number of Registers and Critical Path Delay
+    <br>Retiming with Shannon Decomposition
+    <br>Peripheral Retiming
+    <br>Digital Design of Feedback Systems
+    <br>------ Definitions
+    <br>------ Cut-set Retiming for a Feedback System
+    <br>------ Shannon Decomposition to Reduce the IPB
+    <br>C-slow Retiming
+    <br>------ C-Slowing: Block Processing
+    <br>------ C-Slowing: FPGAs and Time-multiplexed Reconfigurable Design
+    <br>------ C-Slowing: an Instruction Set Processor
+    <br>Look-ahead Transformation for IIR filters
+    <br>Look-ahead Transformation for Generalized IIR Filters
+    <br>Polyphase Structure for Decimation and Interpolation Applications
+    <br>IIR Filter for Decimation and Interpolation
+    <br><br>
+    -->
+                        <h1> Unfolding and Folding of Architectures</h1> <!--Change-->
+                        <!--Unfolding
+    <br>Sampling Rate Considerations
+    <br>------ Nyquist Sampling Theorem and Design Options
+    <br>------ Software-defined Radio Architecture and Band-pass Sampling
+    <br>------ A/D Converter Bandwidth and Band-pass Sampling
+    <br>Unfolding Techniques
+    <br>------ Loop Unrolling
+    <br>------ Unfolding Transformation
+    <br>------ Loop Unrolling for Mapping SW to HW
+    <br>------ Unfolding to Maximize Use of a Compression Tree
+    <br>------ Unfolding for Effective Use of FPGA Resources
+    <br>------ Unfolding and Retiming in Feedback Designs
+    <br>Folding Techniques
+    <br>------ Definitions and the Folding Transformation
+    <br>------ Folding Regular Structured DFGs
+    <br>------ Folded Architectures for FFT Computation
+    <br>------ Memory-based Folded FFT Processor
+    <br>------ Systolic Folded Architecture
+    <br>Mathematical Transformation for Folding
+    <br>Algorithmic Transformation
+    <br><br>
+    -->
+                        <h1>Designs based on Finite State Machines</h1> <!--Change-->
+                        <!--Bit-serial and Digit-serial Architectures
+    <br>Sequential Architecture
+    <br>Sequencing and Control
+    <br>Finite State Machines
+    <br>State Encoding: One-hot versus Binary Assignment
+    <br>Mealy and Moore State Machine Designs
+    <br>Mathematical Formulations
+    <br>Coding Guidelines for Finite State Machines
+    <br>SystemVerilog Support for FSM Coding
+    <br>Algorithmic State Machine Representation
+    <br>Design of a Four-entry FIFO
+    <br>Design of an Instruction Dispatcher
+    <br>FSM Optimization for Low Power and Area
+    <br>Designing for Testability
+    <br>Methods for Reducing Power Dissipation
+    <br>------ Switching Power
+    <br>------ Clock Gating Technique
+    <br>------ FSM Decomposition
+    <br><br>
+    -->
+                        <h1>Micro-programmed State Machines</h1> <!--Change-->
+                        <!--Micro-programmed Controller
+    <br>------ Basics
+    <br>------ Moore Micro-programmed State Machines
+    <br>------ LIFO and FIFO
+    <br>Counter-based State Machines
+    <br>------ Basics
+    <br>------ Loadable Counter-based State Machine
+    <br>------ Counter-based FSM with Conditional Branching
+    <br>------ Register-based Controllers
+    <br>------ Register-based Machine with Parity Field
+    <br>------ Example to Illustrate Complete Functionality
+    <br>Subroutine Support
+    <br>Nested Subroutine Support
+    <br>Nested Loop Support
+    <br>Design for Motion Estimation
+    <br>Design of a Wavelet Processor
+    <br><br>
+    -->
+                        <h1>Micro-programmed Adaptive Filtering Applications</h1> <!--Change-->
+                        <!-- Adaptive Filter Configurations
+     <br>------ System Identification
+     <br>------ Inverse System Modeling
+     <br>------ Acoustic Noise Cancellation
+     <br>------ Linear Prediction
+     <br>Adaptive Algorithms
+     <br>------ Basics
+     <br>------ Least Mean Square (LMS) Algorithm
+     <br>------ Normalized LMS Algorithm
+     <br>------ Block LMS
+     <br>Channel Equalizer using NLMS
+     <br>------ NLMS Algorithm to Update Coefficients
+     <br>Echo Canceller
+     <br>------ Acoustic Echo Canceller
+     <br>------ Line Echo Cancellation (LEC)
+     <br>Adaptive Algorithms with Micro-programmed State Machines
+     <br>------ LEC(Logical Equivalent Check) Micro-coded Accelerator
+     <br>------ Address Registers Arithmetic
+     <br>------ Pipelining Options
+     <br>------ Optional Support for Coefficient Update
+     <br>------ Multi MAC(Multiply And Accumulate) Block Design Option
+     <br>------ Compression Tree and Single CPA-based Design
+     <br><br>
+    -->
+                        <h1>CORDIC-based(Coordinate Rotation Digital Computer) DDFS(Direct Digital Frequency Synthesizer) Architectures</h1> <!--Change-->
+                        <!--Design of a Basic DDFS
+    <br>------ CORDIC Algorithm for Hardware Implementation
+    <br>------ Hardware Mapping
+    <br>------ Time-shared Architecture
+    <br>------ C-slowed Time-shared Architecture
+    <br>------ Modified CORDIC Algorithm
+    <br>------ Recoding of Binary Representation as +-1
+    <br>Hardware Mapping of Modified CORDIC Algorithm
+    <br>------ Hardware Optimization
+    <br>------ Novel Optimal Hardware Design
+    <br><br>
+    -->
+                        <h1>Digital Design of Communication Systems</h1> <!--Change-->
+                        <!--Top-level Design Options
+    <br>------ Bus-based Design
+    <br>------ Point-to-Point Design
+    <br>------ Network-based Design
+    <br>------ Hybrid Connectivity
+    <br>------ Point-to-Point KPN-based Top-level Design
+    <br>------ KPN with Shared Bus and DMA Controller
+    <br>------ Network-on-Chip Top-level Design
+    <br>------ Design of a Router for NoC
+    <br>------ Run-time Reconfiguration
+    <br>------ NoC for Software-defined Radio
+    <br>Typical Digital Communication System
+    <br>------ Source Encoding
+    <br>------ Data Compression
+    <br>------ Encryption
+    <br>------ Channel Coding
+    <br>------ Framing
+    <br>------ Modulation
+    <br>------ Digital Up-conversion and Mixing
+    <br>------ Front End of the Receiver
+    <br><br>-->
+                        <br>
+                        <br>
+                        <h3><b>Reference Books</b></h3> <!--Change-->
+                        <h1>
+                            <i>
+                                Digital Design of Signal Processing Systems: A Practical Approach
+                                Book by Shoab Ahmed Khan
+                            </i>
+                        </h1>
+                        <a target="_blank" href="Hardware Electronics Pics/Digital Design of DSP.webp">
+                            <img src="Hardware Electronics Pics/Digital Design of DSP.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
+                        </a>
+                        <br><br><br>
+                        <h2>
+                            DSP with FPGA
+                        </h2>
+                        
+                        <h1>DSP Basics</h1> <!--Change-->
+                        <!--Definition of DSP Systems
+    <br>Sampling
+    <br>Sampling Rate
+    <br>DSP Transformations
+    <br>Discrete Fourier Transform
+    <br>Fast Fourier Transform
+    <br>Discrete Cosine Transform
+    <br>Wavelet Transform
+    <br>Filters
+    <br>Finite Impulse Response Filter
+    <br>Infinite Impulse Response Filter
+    <br>Wave Digital Filters
+    <br>Adaptive Filtering
+    <br>Applications of Adaptive Filters
+    <br>Adaptive Algorithms
+    <br>LMS(Least Mean Square) Algorithm
+    <br>RLS(Recursive Least Square Algorithm
+    <br>Squared Givens Rotations
+    <br><br>
+    -->
+                        <h1>Arithmetic Basics</h1> <!--Change-->
+                        <!--Number Representations
+    <br>Signed Magnitude
+    <br>One’s Complement
+    <br>Two’s Complement
+    <br>Binary Coded Decimal
+    <br>Fixed-Point Representation
+    <br>Floating-Point Representation
+    <br>Arithmetic Operations
+    <br>Adders
+    <br>Adders and Subtracters
+    <br>Adder Final Remarks
+    <br>Multipliers
+    <br>Alternative Number Representations
+    <br>Signed Digit Number Representation
+    <br>Logarithmic Number Systems
+    <br>Residue Number Systems
+    <br>CORDIC
+    <br>Division
+    <br>Recurrence Division
+    <br>Division by Functional Iteration
+    <br>Square Root
+    <br>Digit Recurrence Square Root
+    <br>Square Root by Functional Iteration
+    <br>Initial Approximation Techniques
+    <br>Fixed-Point versus Floating-Point
+    <br>Floating-Point on FPGA
+    <br><br>
+    -->
+                        <h1>Technology Review</h1> <!--Change-->
+                        <!--Implications of Technology Scaling
+    <br>Architecture and Programmability
+    <br>DSP Functionality Characteristics
+    <br>Computational Complexity
+    <br>Parallelism
+    <br>Data Independence
+    <br>Arithmetic Requirements
+    <br>Processor Classification
+    <br>Microprocessors
+    <br>ARM Microprocessor Architecture Family
+    <br>Parallella Computer
+    <br>DSP Processors
+    <br>Evolutions in DSP Microprocessors
+    <br>TMS320C6678 Multicore DSP
+    <br>Graphical Processing Units
+    <br>GPU Architecture
+    <br>System-on-Chip Solutions
+    <br>Systolic Arrays
+    <br>Heterogeneous Computing Platforms
+    <br><br>
+    -->
+                        <h1>Current FPGA Technologies</h1> <!--Change-->
+                        <!--Toward FPGAs
+    <br>Early FPGA Architectures
+    <br>Altera Stratix V and 10 FPGA Family
+    <br>ALMs
+    <br>Memory Organization
+    <br>DSP Processing Blocks
+    <br>Clocks and Interconnect
+    <br>Stratix 10 innovations
+    <br>Xilinx Ultrascale/Virtex-7 FPGA Families
+    <br>Configurable Logic Block
+    <br>Memory
+    <br>Digital Signal Processing
+    <br>Xilinx Zynq FPGA Family
+    <br>Lattice iCE40isp FPGA Family
+    <br>Programmable Logic Blocks
+    <br>Memory
+    <br>Digital Signal Processing
+    <br>MicroSemi RTG4 FPGA Family
+    <br>Programmable Logic Blocks
+    <br>Memory
+    <br>Mathblocks for DSP
+    <br>Design Stratregies for FPGA-based DSP Systems
+    <br>DSP Processing Elements
+    <br>Memory Organization
+    <br>Other FPGA-Based Design Guidelines
+    <br><br>
+    -->
+                        <h1>Detailed FPGA Implementation Techniques</h1>
+                        <!--FPGA Functionality
+    <br>LUT Functionality
+    <br>DSP Processing Elements
+    <br>Memory Availability
+    <br>Mapping to LUT-Based FPGA Technology
+    <br>Reductions in Inputs/Outputs
+    <br>Controller Design
+    <br>Fixed-Coefficient DSP
+    <br>Fixed-Coefficient FIR Filtering
+    <br>DSP Transforms
+    <br>Fixed-Coefficient FPGA Techniques
+    <br>Distributed Arithmetic
+    <br>DA Expansion
+    <br>DA Applied to FPGA
+    <br>Reduced-Coefficient Multiplier
+    <br>DCT Example
+    <br>RCM Design Procedure
+    <br>FPGA Multiplier Summary
+    <br><br>
+    -->
+                        <h1>Synthesis Tools for FPGAs</h1> <!--Change-->
+                        <!--High-Level Synthesis
+    <br>HLS from C-Based Languages
+    <br>Xilinx Vivado
+    <br>Control Logic Extraction Phase Example
+    <br>Altera SDK for OpenCL
+    <br>Other HLS Tools
+    <br>Catapult
+    <br>Impulse-C
+    <br>GAUT
+    <br>CAL
+    <br>LegUp
+    <br><br>
+    -->
+                        <h1>Architecture Derivation for FPGA-based DSP Systems</h1> <!--Change-->
+                        <!--DSP Algorithm Characteristics
+    <br>Further Characterization
+    <br>DSP Algorithm Representations
+    <br>SFG Descriptions
+    <br>DFG Descriptions
+    <br>Pipelining DSP Systems
+    <br>Retiming
+    <br>Cut-Set Theorem
+    <br>Application of Delay Scaling
+    <br>Calculation of Pipelining Period
+    <br>Longest Path Matrix Algorithm
+    <br>Parallel Operation
+    <br>Unfolding
+    <br>Folding
+    <br><br>
+    <h1>Complex DSP Core Design for FPGA</h1>
+    <br>Motivation for Design for Reuse
+    <br>Intellectual Property Cores
+    <br>Evolution of IP Cores
+    <br>Arithmetic Libraries
+    <br>Complex DSP Functions
+    <br>Future of IP Cores
+    <br>Parameterizable (Soft) IP Cores
+    <br>Identifying Design Components Suitable for Development as IP
+    <br>Identifying Parameters for IP Cores
+    <br>Development of Parameterizable Features
+    <br>Parameterizable Control Circuitry
+    <br>Application to Simple FIR Filter
+    <br>IP Core Integration
+    <br>Design Issues
+    <br>Current FPGA-based IP Cores
+    <br>Watermarking IP
+    <br><br>
+    -->
+                        <h1>Advanced Model-Based FPGA Accelerator Design</h1>
+                        <!--<br>Dataflow Modeling of DSP Systems
+    <br>Process Networks
+    <br>Synchronous Dataflow
+    <br>Cyclo-static Dataflow
+    <br>Multidimensional Synchronous Dataflow
+    <br>Architectural Synthesis of Custom Circuit Accelerators from DFGs
+    <br>Model-Based Development of Multi-Channel Dataflow Accelerators
+    <br>Multidimensional Arrayed Dataflow
+    <br>Block and Interleaved Processing in MADF
+    <br>MADF Accelerators
+    <br>Pipelined FE Derivation for MADF Accelerators
+    <br>WBC Configuration
+    <br>Design Example: Normalized Lattice Filter
+    <br>Design Example: Fixed Beamformer System
+    <br>Model-Based Development for Memory-Intensive Accelerators
+    <br>Synchronous Dataflow Representation of FSME
+    <br>Cyclo-static Representation of FSME
+    <br><br>
+    -->
+                        <h1>Adaptive Beamformer Example</h1>
+                        <!--<br>Introduction to Adaptive Beamforming
+    <br>Generic Design Process
+    <br>Adaptive Beamforming Specification
+    <br>Algorithm Development
+    <br>Algorithm to Architecture
+    <br>Dependence Graph
+    <br>Signal Flow Graph
+    <br>Efficient Architecture Design
+    <br>Scheduling the QR Operations
+    <br>Generic QR Architecture
+    <br>Processor Array
+    <br>Retiming the Generic Architecture
+    <br>Retiming QR Architectures
+    <br>Parameterizable QR Architecture
+    <br>Choice of Architecture
+    <br>Parameterizable Control
+    <br>Linear Architecture
+    <br>Sparse Linear Architecture
+    <br>Rectangular Architecture
+    <br>Sparse Rectangular Architecture
+    <br>Generic QR Cells
+    <br>Generic Control
+    <br>Generic Input Control for Linear and Sparse Linear Arrays
+    <br>Generic Input Control for Rectangular and Sparse Rectangular Arrays
+    <br>Effect of Latency on the Control Seeds
+    <br>Beamformer Design Example
+    <br><br>
+    -->
+                        <h1>FPGA Solutions for Big Data Applications</h1>
+                        <!--<br>Big Data Analytics
+    <br>Inductive Learning
+    <br>Data Mining Algorithms
+    <br>Classification
+    <br>Regression
+    <br>Clustering
+    <br>The Right Approach
+    <br>Acceleration
+    <br>Scaling Up or Scaling Out
+    <br>FPGA-based System Developments
+    <br>FPGA Implementations
+    <br>Heston Model Acceleration Using FPGA
+    <br>k-Means Clustering FPGA Implementation
+    <br>Computational Complexity Analysis of k-Means Algorithm
+    <br>FPGA-Based Soft Processors
+    <br>IPPro FPGA-Based Processor
+    <br>System Hardware
+    <br>Distance Calculation Block
+    <br>Comparison Block
+    <br>Averaging
+    <br>Optimizations
+    <br><br>
+    -->
+                        <h1>Low-Power FPGA Implementation</h1>
+                        <!--<br>Sources of Power Consumption
+    <br>Dynamic Power Consumption
+    <br>Static power consumption
+    <br>FPGA Power Consumption
+    <br>Clock Tree Isolation
+    <br>Power Consumption Reduction Techniques
+    <br>Dynamic Voltage Scaling in FPGAs
+    <br>Reduction in Switched Capacitance
+    <br>Data Reordering
+    <br>Pipelining
+    <br>Locality
+    <br>Data Mapping
+    <br><br>
+    <h1>Conclusions</h1>
+    <br>Evolution in FPGA Design Approaches
+    <br>Big Data and the Shift toward Computing
+    <br>Programming Flow for FPGAs
+    <br>Support for Floating-Point Arithmetic
+    <br>Memory Architectures
+    <br><br>-->
+                        <br>
+                        <h3><b>Reference Books</b></h3> <!--Change-->
+                        <h1>
+                            <i>
+                                FPGA-based Implementation of Signal Processing Systems
+                                Book by Roger Woods
+                            </i>
+                        </h1>
+                        <a target="_blank" href="Hardware Electronics Pics/FPGA DSP.webp">
+                            <img src="Hardware Electronics Pics/FPGA DSP.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
+                        </a>
+
+</div>
                 <div class="web">
                     <p>
-                        <h1><b>DSP Basics</b></h1> <!--Change-->
-                        Definition of DSP Systems
-                        <br>Sampling
-                        <br>Sampling Rate
-                        <br>DSP Transformations
-                        <br>Discrete Fourier Transform
-                        <br>Fast Fourier Transform
-                        <br>Discrete Cosine Transform
-                        <br>Wavelet Transform
-                        <br>Filters
-                        <br>Finite Impulse Response Filter
-                        <br>Infinite Impulse Response Filter
-                        <br>Wave Digital Filters
-                        <br>Adaptive Filtering
-                        <br>Applications of Adaptive Filters
-                        <br>Adaptive Algorithms
-                        <br>LMS Algorithm
-                        <br>RLS Algorithm
-                        <br>Squared Givens Rotations
-                        <br><br>
-                        <h1><b>Arithmetic Basics</b></h1> <!--Change-->
-                        Number Representations
-                        <br>Signed Magnitude
-                        <br>One’s Complement
-                        <br>Two’s Complement
-                        <br>Binary Coded Decimal
-                        <br>Fixed-Point Representation
-                        <br>Floating-Point Representation
-                        <br>Arithmetic Operations
-                        <br>Adders
-                        <br>Adders and Subtracters
-                        <br>Adder Final Remarks
-                        <br>Multipliers
-                        <br>Alternative Number Representations
-                        <br>Signed Digit Number Representation
-                        <br>Logarithmic Number Systems
-                        <br>Residue Number Systems
-                        <br>CORDIC
-                        <br>Division
-                        <br>Recurrence Division
-                        <br>Division by Functional Iteration
-                        <br>Square Root
-                        <br>Digit Recurrence Square Root
-                        <br>Square Root by Functional Iteration
-                        <br>Initial Approximation Techniques
-                        <br>Fixed-Point versus Floating-Point
-                        <br>Floating-Point on FPGA
-                        <br><br>
-                        <h1><b>Technology Review</b></h1> <!--Change-->
-                        Implications of Technology Scaling
-                        <br>Architecture and Programmability
-                        <br>DSP Functionality Characteristics
-                        <br>Computational Complexity
-                        <br>Parallelism
-                        <br>Data Independence
-                        <br>Arithmetic Requirements
-                        <br>Processor Classification
-                        <br>Microprocessors
-                        <br>ARM Microprocessor Architecture Family
-                        <br>Parallella Computer
-                        <br>DSP Processors
-                        <br>Evolutions in DSP Microprocessors
-                        <br>TMS320C6678 Multicore DSP
-                        <br>Graphical Processing Units
-                        <br>GPU Architecture
-                        <br>System-on-Chip Solutions
-                        <br>Systolic Arrays
-                        <br>Heterogeneous Computing Platforms
-                        <br><br>
-                        <h1><b>Current FPGA Technologies</b></h1> <!--Change-->
-                        Toward FPGAs
-                        <br>Early FPGA Architectures
-                        <br>Altera Stratix V and 10 FPGA Family
-                        <br>ALMs
-                        <br>Memory Organization
-                        <br>DSP Processing Blocks
-                        <br>Clocks and Interconnect
-                        <br>Stratix 10 innovations
-                        <br>Xilinx Ultrascale/Virtex-7 FPGA Families
-                        <br>Configurable Logic Block
-                        <br>Memory
-                        <br>Digital Signal Processing
-                        <br>Xilinx Zynq FPGA Family
-                        <br>Lattice iCE40isp FPGA Family
-                        <br>Programmable Logic Blocks
-                        <br>Memory
-                        <br>Digital Signal Processing
-                        <br>MicroSemi RTG4 FPGA Family
-                        <br>Programmable Logic Blocks
-                        <br>Memory
-                        <br>Mathblocks for DSP
-                        <br>Design Stratregies for FPGA-based DSP Systems
-                        <br>DSP Processing Elements
-                        <br>Memory Organization
-                        <br>Other FPGA-Based Design Guidelines
-                        <br><br>
-                        <h1><b>Detailed FPGA Implementation Techniques</b></h1>
-                        FPGA Functionality
-                        <br>LUT Functionality
-                        <br>DSP Processing Elements
-                        <br>Memory Availability
-                        <br>Mapping to LUT-Based FPGA Technology
-                        <br>Reductions in Inputs/Outputs
-                        <br>Controller Design
-                        <br>Fixed-Coefficient DSP
-                        <br>Fixed-Coefficient FIR Filtering
-                        <br>DSP Transforms
-                        <br>Fixed-Coefficient FPGA Techniques
-                        <br>Distributed Arithmetic
-                        <br>DA Expansion
-                        <br>DA Applied to FPGA
-                        <br>Reduced-Coefficient Multiplier
-                        <br>DCT Example
-                        <br>RCM Design Procedure
-                        <br>FPGA Multiplier Summary
-                        <br><br>
-                        <h1><b>Synthesis Tools for FPGAs</b></h1> <!--Change-->
-                        High-Level Synthesis
-                        <br>HLS from C-Based Languages
-                        <br>Xilinx Vivado
-                        <br>Control Logic Extraction Phase Example
-                        <br>Altera SDK for OpenCL
-                        <br>Other HLS Tools
-                        <br>Catapult
-                        <br>Impulse-C
-                        <br>GAUT
-                        <br>CAL
-                        <br>LegUp
-                        <br><br>
-                        <h1><b>Architecture Derivation for FPGA-based DSP Systems</b></h1> <!--Change-->
-                        DSP Algorithm Characteristics
-                        <br>Further Characterization
-                        <br>DSP Algorithm Representations
-                        <br>SFG Descriptions
-                        <br>DFG Descriptions
-                        <br>Pipelining DSP Systems
-                        <br>Retiming
-                        <br>Cut-Set Theorem
-                        <br>Application of Delay Scaling
-                        <br>Calculation of Pipelining Period
-                        <br>Longest Path Matrix Algorithm
-                        <br>Parallel Operation
-                        <br>Unfolding
-                        <br>Folding
-                        <br><br>
-                        <h1><b>Complex DSP Core Design for FPGA</b></h1>
-                        <br>Motivation for Design for Reuse
-                        <br>Intellectual Property Cores
-                        <br>Evolution of IP Cores
-                        <br>Arithmetic Libraries
-                        <br>Complex DSP Functions
-                        <br>Future of IP Cores
-                        <br>Parameterizable (Soft) IP Cores
-                        <br>Identifying Design Components Suitable for Development as IP
-                        <br>Identifying Parameters for IP Cores
-                        <br>Development of Parameterizable Features
-                        <br>Parameterizable Control Circuitry
-                        <br>Application to Simple FIR Filter
-                        <br>IP Core Integration
-                        <br>Design Issues
-                        <br>Current FPGA-based IP Cores
-                        <br>Watermarking IP
-                        <br><br>
-                        <h1><b>Advanced Model-Based FPGA Accelerator Design</b></h1>
-                        <br>Dataflow Modeling of DSP Systems
-                        <br>Process Networks
-                        <br>Synchronous Dataflow
-                        <br>Cyclo-static Dataflow
-                        <br>Multidimensional Synchronous Dataflow
-                        <br>Architectural Synthesis of Custom Circuit Accelerators from DFGs
-                        <br>Model-Based Development of Multi-Channel Dataflow Accelerators
-                        <br>Multidimensional Arrayed Dataflow
-                        <br>Block and Interleaved Processing in MADF
-                        <br>MADF Accelerators
-                        <br>Pipelined FE Derivation for MADF Accelerators
-                        <br>WBC Configuration
-                        <br>Design Example: Normalized Lattice Filter
-                        <br>Design Example: Fixed Beamformer System
-                        <br>Model-Based Development for Memory-Intensive Accelerators
-                        <br>Synchronous Dataflow Representation of FSME
-                        <br>Cyclo-static Representation of FSME
-                        <br><br>
-                        <h1><b>Adaptive Beamformer Example</b></h1>
-                        <br>Introduction to Adaptive Beamforming
-                        <br>Generic Design Process
-                        <br>Adaptive Beamforming Specification
-                        <br>Algorithm Development
-                        <br>Algorithm to Architecture
-                        <br>Dependence Graph
-                        <br>Signal Flow Graph
-                        <br>Efficient Architecture Design
-                        <br>Scheduling the QR Operations
-                        <br>Generic QR Architecture
-                        <br>Processor Array
-                        <br>Retiming the Generic Architecture
-                        <br>Retiming QR Architectures
-                        <br>Parameterizable QR Architecture
-                        <br>Choice of Architecture
-                        <br>Parameterizable Control
-                        <br>Linear Architecture
-                        <br>Sparse Linear Architecture
-                        <br>Rectangular Architecture
-                        <br>Sparse Rectangular Architecture
-                        <br>Generic QR Cells
-                        <br>Generic Control
-                        <br>Generic Input Control for Linear and Sparse Linear Arrays
-                        <br>Generic Input Control for Rectangular and Sparse Rectangular Arrays
-                        <br>Effect of Latency on the Control Seeds
-                        <br>Beamformer Design Example
-                        <br><br>
-                        <h1><b>FPGA Solutions for Big Data Applications</b></h1>
-                        <br>Big Data Analytics
-                        <br>Inductive Learning
-                        <br>Data Mining Algorithms
-                        <br>Classification
-                        <br>Regression
-                        <br>Clustering
-                        <br>The Right Approach
-                        <br>Acceleration
-                        <br>Scaling Up or Scaling Out
-                        <br>FPGA-based System Developments
-                        <br>FPGA Implementations
-                        <br>Heston Model Acceleration Using FPGA
-                        <br>k-Means Clustering FPGA Implementation
-                        <br>Computational Complexity Analysis of k-Means Algorithm
-                        <br>FPGA-Based Soft Processors
-                        <br>IPPro FPGA-Based Processor
-                        <br>System Hardware
-                        <br>Distance Calculation Block
-                        <br>Comparison Block
-                        <br>Averaging
-                        <br>Optimizations
-                        <br><br>
-                        <h1><b>Low-Power FPGA Implementation</b></h1>
-                        <br>Sources of Power Consumption
-                        <br>Dynamic Power Consumption
-                        <br>Static power consumption
-                        <br>FPGA Power Consumption
-                        <br>Clock Tree Isolation
-                        <br>Power Consumption Reduction Techniques
-                        <br>Dynamic Voltage Scaling in FPGAs
-                        <br>Reduction in Switched Capacitance
-                        <br>Data Reordering
-                        <br>Pipelining
-                        <br>Locality
-                        <br>Data Mapping
-                        <br><br>
-                        <h1><b>Conclusions</b></h1>
-                        <br>Evolution in FPGA Design Approaches
-                        <br>Big Data and the Shift toward Computing
-                        <br>Programming Flow for FPGAs
-                        <br>Support for Floating-Point Arithmetic
-                        <br>Memory Architectures
-                        <br><br>
-                    </p>
-                    <h3>Github</h3>
+                        
+                    <h3>My Github</h3>
                     <a href="https://github.com/jiwook021/Verilog-Projects">
                         https://github.com/jiwook021/Verilog-Projects
-                    </a>
-                    <br>
-                    <br>
-                    <h3><b>Guidline Reference</b></h3> <!--Change-->
-                    <h1>
-                        <i>
-                            Digital Design of Signal Processing Systems: A Practical Approach
-                            Book by Shoab Ahmed Khan
-                        </i>
-                    </h1>
-                    <a target="_blank" href="Hardware Electronics Pics/Digital Design of DSP.webp">
-                        <img src="Hardware Electronics Pics/Digital Design of DSP.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
-                    </a>
-                    <h1>
-                        <i>
-                            FPGA-based Implementation of Signal Processing Systems
-                            Book by Roger Woods
-                        </i>
-                    </h1>
-                    <a target="_blank" href="Hardware Electronics Pics/FPGA DSP.webp">
-                        <img src="Hardware Electronics Pics/FPGA DSP.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
                     </a>
                     <br><br>
                     <h3><b>Lecture Series</b></h3>
@@ -806,8 +712,8 @@
                     <a href="https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=%ED%86%B5%EC%8B%A0&no=65">
                         https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=%ED%86%B5%EC%8B%A0&no=65
                     </a>
-
-                    <br><br><br><br>
+                    
+                    <br><br>
                 </div>
 
 

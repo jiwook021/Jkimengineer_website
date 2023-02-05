@@ -17,102 +17,7 @@
 <!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">-->
 
 <link rel="stylesheet" href="../../jiwook.css">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -125,7 +30,7 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Linux CLI & Shell</h3><!--Change-->
+            <h2 class="w3-padding-32">Linux CLI & Shell</h2><!--Change-->
         </div>
 
 
@@ -135,19 +40,23 @@
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linux CLI & Shell</a>
             <br>
             <br>
-            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
-            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
-            <!--<a href="Software Engineering/C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C and Assembly Language</a>
+            <a href="C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C++</a>
+            <a href="Python.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Python</a>
             <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
             <!-- <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
-            -->
+    -->
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
             <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
+
             <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
             <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
             <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
+            <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
+
             <br>
             <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
             <a href="Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Resources</a>
@@ -171,407 +80,428 @@
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
 
-        <div class="w3-container" style="margin-top:50px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <br>
-                <br>
-                <h8><b>J Library Linux CLI & Shell Script</b></h8>
-                <br>
-                <br>
                 <div>
                     <h4 class="content"><b>Contents</b></h4> <!--Change-->
                     <br>
-
+                    <br>
                     <div class="web">
                         <p>
-                            <h1><b>Shell Basics </b></h1>
-                            Accessing CLI via a Linux Console Terminal
-                            <br>Accessing CLI via Graphical Terminal Emulation
-                            <br>Using the GNOME Terminal Emulator
-                            <br>Using the Konsole Terminal Emulator
-                            <br>Using Xterm Terminal Emulator
-                            <br>
-                            <br>
-                            <h1><b>Bash Shell Commands</b></h1>
-                            Using the Shell Prompt
-                            <br>Bash Manual
-                            <br>File system
-                            <br>----- Linux file system
-                            <br>----- Traversing directories (Absolute and relative directory references)
-                            <br>Listing Files and Directions
-                            <br>----- Basic and long listings
-                            <br>----- Filtering listing output
-                            <br>Handling Files
-                            <br>----- Creating files
-                            <br>----- Copying files
-                            <br>----- Auto-tab complete
-                            <br>----- Linking files
-                            <br>----- Renaming files
-                            <br>----- Deleting files
-                            <br>Managing Directories
-                            <br>----- Creating and deleting directories
-                            <br>Viewing File Contents
-                            <br>----- Viewing the file type
-                            <br>----- Viewing the whole file (cat, more, less command)
-                            <br>----- Viewing the parts of files (tail, head command)
-                            <br>Monitoring Programs
-                            <br>----- Peeking at the Process(Unix-style, BSD stle, GNU long parameters)
-                            <br>----- Real-time Process monitoring
-                            <br>----- Stoping Processes (kill and kill all command)
-                            <br>Monitoring Disk Space
-                            <br>----- Mounting media (mount and unmount command)
-                            <br>----- Using the df command
-                            <br>----- Using the du command
-                            <br>Working with Data Files
-                            <br>----- Sorting data
-                            <br>----- Searching for data
-                            <br>----- Compression data
-                            <br>----- Archiving data
-                            <br>
-                            <br>
-                            <h1><b>Shell Basics</b></h1>
-                            Exploring the Shell Types
-                            <br>Exploring the Parent and Child Shell Relationships
-                            <br>----- Looking at Process list
-                            <br>----- Creatively using subshells (Putting Process list into the background)
-                            <br>Shell Built-In Commands
-                            <br>----- External Commands
-                            <br>----- built-in command(history and aliases Command)
-                            <br>
-                            <h1><b>Linux Environment Variables</b></h1>
-                            Environment Variables
-                            <br>----- Global and Local environment variables
-                            <br>Setting local user-defined and global variables
-                            <br>Removing Environment Variables
-                            <br>Default Shell Environment Variables
-                            <br>Setting the PATH Environment Variable
-                            <br>Locating System Environment Variable
-                            <br>----- Login shell process(Viewing /etc/profile and $HOME startup files)
-                            <br>----- Interactive shell process
-                            <br>----- Non-interactive shell process
-                            <br>----- Making environment variable persistent
-                            <br>Variable Arrays
-                            <br>
-                            <br>
-                            <h1><b>Understanding Linux File Permissions</b></h1>
-                            Linux Security
-                            <br>----- the /etc/passwd file
-                            <br>----- the /etc/shadow file
-                            <br>----- Adding a new user
-                            <br>----- Removing a user
-                            <br>----- Modifying a user (usermod, passwd, chpasswd, chsh, chfn, and change)
-                            <br>Using Linux Groups
-                            <br>----- The /etc/group file
-                            <br>----- Creating new group and Modifying groups
-                            <br>Decoding file permission
-                            <br>----- Using file permission symbols
-                            <br>----- default file permission
-                            <br>Changing Security settings
-                            <br>----- Changing Permission and owndership
-                            <br>
-                            <br>
-                            <h1><b>Managing Filesystems</b></h1>
-                            Basic Linux File Systems(ext and ext2 file systems)
-                            <br>Journaling filesystem(ext3, ext4, Reiser, journaled, XFS filesystem)
-                            <br>Copy-on-write filesystem(ZFS, Btrfs file systems)
-                            <br>Working with filesystem(Creating partitions, file systems, repairing filesystems)
-                            <br>Managing Logical Volumes
-                            <br>----- Logical volume Mangement Layout
-                            <br>----- Using LVM in Linux(Snapshot, Striping, Mirroring)
-                            <br>----- Using the Linux LVM(Physical volumes, volume groups, logical groups, file systems, modifying LVM)
-                            <br>
-                            <br>
-                            <h1><b>Installing Debian-Based Systems</b></h1>
-                            Managing/Installing/updating/uninstalling Packages with aptitude
-                            <br>Installing from Source code
-                            <br>
-                            <br>
-                            <h1><b>Script Building</b></h1>
-                            Using Multiple commands
-                            <br>Create a Script File
-                            <br>Displaying Messages
-                            <br>Using Variables (Environment and user variables, Command substitution)
-                            <br>Redirecting input and output
-                            <br>Pipes
-                            <br>Performing math
-                            <br>----- The expr command
-                            <br>----- brackets
-                            <br>----- floating-point solution
-                            <br>----- bc in scripts
-                            <br>Exiting Script(Checking the exit status, exit command)
-                            <br>
-                            <br>
-                            <h1><b>Structured Commands</b></h1>
-                            if-then-else Statement with nested ifs
-                            <br>Case commands
-                            <br>Trying the test commands
-                            <br>----- Numeric comparisons(String equality, order, size)
-                            <br>file comparisons
-                            <br>---- Checking directories
-                            <br>---- wheather object exists
-                            <br>---- Checking for file
-                            <br>---- Checking for read access
-                            <br>---- Checking for empty files
-                            <br>---- Checking for ownership
-                            <br>---- Checking for defult group membership
-                            <br>---- Checking for file date
-                            <br>Advanced if-then features(Using double parentheses and brackets)
-                            <br>Case command
-                            <br>The for command
-                            <br>----- Reading complex values/values in a lists
-                            <br>----- Reading a list from a variable
-                            <br>----- Reading values from a command
-                            <br>----- Changing the field seperator
-                            <br>----- Reading a directory using wildcards
-                            <br>The C style Command
-                            <br>While, Until, Nested Loops
-                            <br>Looping on File Data
-                            <br>Controlling the loop(break and continue command)
-                            <br>Processing the output of a loop
-                            <br>
-                            <br>
-                            <h1><b>Handling User Input</b></h1>
-                            Passing Parameter (Reading Parameters, Script name, Testing parameters)
-                            <br>Using Special Parameter Variables(Counting Parameter, Grabbing all the Data)
-                            <br>Being Shifty
-                            <br>Working with Options
-                            <br>----- Finding Options(Processing simple options, Sperating options from parameters, Processing options with values)
-                            <br>----- getOpts command (Command format)
-                            <br>Standardizing Options
-                            <br>Getting User Input
-                            <br>----- Reading Basics
-                            <br>----- Timing out
-                            <br>----- Reading with no display
-                            <br>----- Reading from file
-                            <br>
-                            <br>
+                            <h1>Shell</h1>
+                            <!--Accessing CLI via a Linux Console Terminal
+            <br>Accessing CLI via Graphical Terminal Emulation
+            <br>GNOME Terminal Emulator
+            <br>Konsole Terminal Emulator
+            <br>Xterm Terminal Emulator
+            <br>
+            <br>
+            -->
+                            <h1>Bash Shell Commands</h1>
+                            <!--Shell Prompt
+            <br>Bash Manual
+            <br>File system
+            <br>--- Linux file system
+            <br>--- Traversing directories (Absolute and relative directory references)
+            <br>Listing Files and Directions
+            <br>--- Basic and long listings
+            <br>--- Filtering listing output
+            <br>Handling Files
+            <br>--- Creating files
+            <br>--- Copying files
+            <br>--- Auto-tab complete
+            <br>--- Linking files
+            <br>--- Renaming files
+            <br>--- Deleting files
+            <br>Managing Directories
+            <br>--- Creating and deleting directories
+            <br>Viewing File Contents
+            <br>--- Viewing the file type
+            <br>--- Viewing the whole file (cat, more, less command)
+            <br>--- Viewing the parts of files (tail, head command)
+            <br>Monitoring Programs
+            <br>--- Peeking at the Process(Unix-style, BSD stle, GNU long parameters)
+            <br>--- Real-time Process monitoring
+            <br>--- Stoping Processes (kill and kill all command)
+            <br>Monitoring Disk Space
+            <br>--- Mounting media (mount and unmount command)
+            <br>--- Using the df command
+            <br>--- Using the du command
+            <br>Working with Data Files
+            <br>--- Sorting data
+            <br>--- Searching for data
+            <br>--- Compression data
+            <br>--- Archiving data
+            <br>
+            <br>
+            -->
+                            <h1>Shell</h1>
+                            <!--Parent and Child Shell Relationships
+            <br>--- Looking at Process list
+            <br>--- Creatively using subshells (Putting Process list into the background)
+            <br>Shell Built-In Commands
+            <br>--- External Commands
+            <br>--- built-in command (history and aliases Command)
+            <br>
+            -->
+                            <h1>Linux Environment Variables</h1>
+                            <!-- Environment Variables
+             <br>--- Global and Local environment variables
+             <br>Setting local user-defined and global variables
+             <br>Removing Environment Variables
+             <br>Default Shell Environment Variables
+             <br>Setting the PATH Environment Variable
+             <br>Locating System Environment Variable
+             <br>--- Login shell process(Viewing /etc/profile and $HOME startup files)
+             <br>--- Interactive shell process
+             <br>--- Non-interactive shell process
+             <br>--- Making environment variable persistent
+             <br>Variable Arrays
+             <br>
+             <br>
+            -->
+                            <h1>Understanding Linux File Permissions</h1>
+                            <!--Linux Security
+            <br>--- the /etc/passwd file
+            <br>--- the /etc/shadow file
+            <br>--- Adding a new user
+            <br>--- Removing a user
+            <br>--- Modifying a user (usermod, passwd, chpasswd, chsh, chfn, and change)
+            <br>Using Linux Groups
+            <br>--- The /etc/group file
+            <br>--- Creating new group and Modifying groups
+            <br>Decoding file permission
+            <br>--- Using file permission symbols
+            <br>--- default file permission
+            <br>Changing Security settings
+            <br>--- Changing Permission and owndership
+            <br>
+            <br>
+            -->
+                            <h1>Managing Filesystems</h1>
+                            <!--Basic Linux File Systems(ext and ext2 file systems)
+            <br>Journaling filesystem(ext3, ext4, Reiser, journaled, XFS filesystem)
+            <br>Copy-on-write filesystem(ZFS, Btrfs file systems)
+            <br>Working with filesystem(Creating partitions, file systems, repairing filesystems)
+            <br>Managing Logical Volumes
+            <br>--- Logical volume Mangement Layout
+            <br>--- Using LVM in Linux(Snapshot, Striping, Mirroring)
+            <br>--- Using the Linux LVM(Physical volumes, volume groups, logical groups, file systems, modifying LVM)
+            <br>
+            <br>
+            <h1><b>Installing Debian-Based Systems</b></h1>
+            Managing/Installing/updating/uninstalling Packages with aptitude
+            <br>Installing from Source code
+            <br>
+            <br>
+            -->
+                            <h1>Script Building</h1>
+                            <!--                     Using Multiple commands
+                                 <br>Create a Script File
+                                 <br>Displaying Messages
+                                 <br>Using Variables (Environment and user variables, Command substitution)
+                                 <br>Redirecting input and output
+                                 <br>Pipes
+                                 <br>math
+                                 <br>--- The expr command
+                                 <br>--- brackets
+                                 <br>--- floating-point solution
+                                 <br>--- bc in scripts
+                                 <br>Exiting Script(Checking the exit status, exit command)
+                                 <br>
+                                 <br>
+            -->
+                            <h1>Structured Commands</h1>
+                            <!--                  if-then-else Statement with nested ifs
+                              <br>Case commands
+                              <br>Numeric comparisons(String equality, order, size)
+                              <br>file comparisons
+                              <br>--- Checking directories
+                              <br>--- wheather object exists
+                              <br>--- Checking for file
+                              <br>--- Checking for read access
+                              <br>--- Checking for empty files
+                              <br>--- Checking for ownership
+                              <br>--- Checking for defult group membership
+                              <br>--- Checking for file date
+                              <br>if-then features(Using double parentheses and brackets)
+                              <br>Case command
+                              <br>The for command
+                              <br>--- Reading complex values/values in a lists
+                              <br>--- Reading a list from a variable
+                              <br>--- Reading values from a command
+                              <br>--- Changing the field seperator
+                              <br>--- Reading a directory using wildcards
+                              <br>The C style Command
+                              <br>While, Until, Nested Loops
+                              <br>Looping on File Data
+                              <br>Controlling the loop(break and continue command)
+                              <br>Processing the output of a loop
+                              <br>
+                              <br>
+            -->
+                            <h1>Handling User Input</h1>
+                            <!--               Passing Parameter (Reading Parameters, Script name, Testing parameters)
+                           <br>Using Special Parameter Variables(Counting Parameter, Grabbing all the Data)
+                           <br>Being Shifty
+                           <br>Working with Options
+                           <br>--- Finding Options(Processing simple options, Sperating options from parameters, Processing options with values)
+                           <br>--- getOpts command (Command format)
+                           <br>Standardizing Options
+                           <br>Getting User Input
+                           <br>--- Reading Basics
+                           <br>--- Timing out
+                           <br>--- Reading with no display
+                           <br>--- Reading from file
+                           <br>
+                           <br>
+            -->
                             <h1><b>Presenting Data</b></h1>
-                            Standard file descriptors (STDIN, STDOUT, STDERR)
-                            <br>Redirecting errors (Redirecting errors and data)
-                            <br>Redirecting Output in Scripts (Temporary and permanent redirections)
-                            <br>Redirecting Input in Scripts
-                            <br>Creating Your Own Redirections
-                            <br>----- Creating output file descriptors
-                            <br>----- Redirecting input file descriptors
-                            <br>----- Creating a read/write file descriptors
-                            <br>----- Closing file descriptors
-                            <br>Listing Open File Descriptors
-                            <br>Supressing Command Output
-                            <br>Using Temporary Files (Creating a local temporary file, temporary file in /tmp)
-                            <br>logging Messages
+                            <!--            Standard file descriptors (STDIN, STDOUT, STDERR)
+                        <br>Redirecting errors (Redirecting errors and data)
+                        <br>Redirecting Output in Scripts (Temporary and permanent redirections)
+                        <br>Redirecting Input in Scripts
+                        <br>Creating Own Redirections
+                        <br>--- Creating output file descriptors
+                        <br>--- Redirecting input file descriptors
+                        <br>--- Creating a read/write file descriptors
+                        <br>--- Closing file descriptors
+                        <br>Listing Open File Descriptors
+                        <br>Supressing Command Output
+                        <br>Using Temporary Files (Creating a local temporary file, temporary file in /tmp)
+                        <br>logging Messages
+                        <br>
+                        <br>
+            -->
+                            <h1>Script Control</h1>
+                            <!--         Signal Handling the bash shell
+                     <br>--- Generating signals(Interrupting a Process, Pausing a Process)
+                     <br>--- Trappping Signals
+                     <br>--- Trapping a script exit
+                     <br>--- Modifying or removing a trap
+                     <br>Running multiple background jobs
+                     <br>Running Scripts without a hang-up
+                     <br>Controlling the job (Viewing jobs, Restarting stopped jobs)
+                     <br>Nice and Renice command
+                     <br>Scheduling a job using at command
+                     <br>--- Retrieving job output
+                     <br>--- Listing pending jobs
+                     <br>--- Removing Jobs
+                     <br>Scheduling regular scripts
+                     <br>--- Looking at the cron table
+                     <br>--- building the cron table
+                     <br>--- Viewing cron directories
+                     <br>
+                     <br>
+            -->
+                            <h1>Creating Functions</h1>
+                            <!--      Creating and Using Functions
+                  <br>Returning a value
+                  <br>--- The default exit status
+                  <br>--- using the return command
+                  <br>--- Using function output
+                  <br>Passing parameters and Handling variables(Global and Local variables) in a function
+                  <br>Array Variables and Functions
+                  <br>--- Passing arrays to functions
+                  <br>--- Returning arrays froms functions
+                  <br>Function Recursion
+                  <br>Creating Library
+                  <br>Creating functions on the command line
+                  <br>Defining functions in the .bashrc file
+                  <br>--- Directly defining functions
+                  <br>--- Sourcing function files
+                  <br>
+                  <br>
+            -->
+                            <h1>Scripts for Graphical Desktops</h1>
+                            <!--   Creating Text Menus
+               <br>--- Creating Menu layout and Menu function
+               <br>--- Add menu logic
+               <br>--- Using select command
+               <br>The dialog package
+               <br>--- msgbox widget
+               <br>--- yesno widget
+               <br>--- inputbox widget
+               <br>--- textbox widge
+               <br>--- menu widget
+               <br>--- fselect widget
+               <br>The dialog options
+               <br>Using the dialog command in a script
+               <br>Graphics
+               <br>--- KDE environment(kdialog widgets)
+               <br>--- GNOME environment(zenity widgets)
+               <br><br>
+            -->
+                            <h1>sed and gawk</h1>
+                            <!--Sed editor
+            <br>--- Defining an editor command in the command line
+            <br>--- multiple editor commands in the command line
+            <br>--- Reading editor commands from a file
+            <br>Gawk program
+            <br>--- gawk command format
+            <br>--- Reading the program script from the command line
+            <br>--- Data field variable
+            <br>--- Multiple commands in the prgram script
+            <br>--- Reading the program from a file
+            <br>--- Running Scripts before and after processing data
+            <br>sed Editor basics
+            <br>--- Substitution options and flags
+            <br>--- Replacing characters
+            <br>Addresses
+            <br>--- Addressing the numeric line
+            <br>--- Text pattern filters
+            <br>--- Grouping commands
+            <br>Deleting lines
+            <br>Inserting and appending text
+            <br>Changing lines
+            <br>Transforming characters
+            <br>Printing
+            <br>--- Printing lines
+            <br>--- Printing line numbers
+            <br>--- Listing lines
+            <br>Using files with sed
+            <br>--- Writing to a file
+            <br>--- Reading data from a file
+            <br>
+            <br>-->
+                            <h1>Regular Expressions</h1>
+                            <!--Types of regular expressions
+            <br>Defining BRE patterns
+            <br>----- Plain text
+            <br>----- Special charaters
+            <br>----- Anchor characters (Starting at the beginning, looking for the ending, Combining anchors)
+            <br>----- The dot character
+            <br>----- Character classes
+            <br>----- Negating character classes
+            <br>----- Special character classes
+            <br>----- Using ranges
+            <br>----- The asterisk
+            <br>Extended Regular Expressions
+            <br>----- Question mark
+            <br>----- plus sign
+            <br>----- Using braces
+            <br>----- The pipe symbol
+            <br>----- Grouping expressions
+            <br>Regular Expressions in Action
+            <br>----- Counting directory files
+            <br>----- Validating a phone number
+            <br>----- Parsing and e-mail address
+            <br>
+            <br>
+            -->
+                            <h1>Advanced sed</h1>
+                            <!--Multiline Commands
+            <br>----- Next command (Single-line next command, Combining lines of text)
+            <br>----- Multiline delete command
+            <br>----- Multiline print command
+            <br>Holding Space
+            <br>Negating a Command
+            <br>Changing the Flow (Branching, Testing)
+            <br>Placing sed Command in Scripts (wrappers, Redirecting sed output)
+            <br>Creating sed Utilities
+            <br>----- Spacing with doubles lines
+            <br>----- Spacing files that may have blanks
+            <br>----- Numbering lines in a file
+            <br>----- Deleting lines(Deleting Consecutive, trailing leading blank lines)
+            <br>----- Removing HTML tags
+            <br>
+            <br>
+            -->
+                            <h1>Advanced gawk</h1>
+                            <!--Variables
+            <br>----- built-in variables (The field and Record seperator variables)
+            <br>----- User-defined variables (Assigning variables in scripts and command line)
+            <br>Working with Arrays
+            <br>----- Defining array variables
+            <br>----- Interating through array variables
+            <br>----- Deleting array variables
+            <br>Using Patterns
+            <br>----- Regular expressions
+            <br>----- Matching operator
+            <br>----- Mathematical expressions
+            <br>Structured Commands
+            <br>----- if, while, do-while, for statement
+            <br>Formatted Printing
+            <br>Built-In Functions
+            <br>----- Mathematical functions
+            <br>----- String functions
+            <br>----- Time functions
+            <br>User-Defined Functions
+            <br>----- Defining a function
+            <br>----- Using functions
+            <br>----- Creating function library
+            <br>
+            <br>
+            -->
+                            <h1>Writing Script utilities</h1>
+                            <!--Archiving datafiles
+            <br>----- Obtaining the required functions
+            <br>----- Creating a daily archive location and script
+            <br>----- Running the daily archive script
+            <br>----- Creating an hourly archive script
+            <br>----- Running the hourly archive script
+            <br>Managing User Accounts
+            <br>----- Obtaining the required functions
+            <br>----- Creating and running the script
+            <br>Monitoring Disk space
+            <br>----- obtaining required functions
+            <br>----- Creating and running the script
+            <br>MYSQL
+            <br>----- Connecting to the server
+            <br>----- Creating a database
+            <br>----- Creating a user account
+            <br>----- Creating a table
+            <br>----- Inserting and deleting data
+            <br>----- Querying data
+            <br>Using the database in scripts
+            <br>----- Logging into the server
+            <br>----- Sending Commands to the server
+            <br>----- Formatting data
+            <br>Using the Web
+            <br>----- Installing Lynx
+            <br>----- The lynx commandline
+            <br>----- The lync configuration file
+            <br>----- Capturing data from Lynx
+            <br>Using E-Mail
+            <br>
+            <br>
+            -->
+                            <h1>Shell Scripts</h1>
+                            <!--Sending a Message
+            <br>Required Functions
+            <br>----- Determining who is on the system
+            <br>----- Allowing messages
+            <br>----- Sending a message to another user
+            <br>Creating Script
+            <br>----- Checking if user is logged on
+            <br>----- Checking if user accepts message
+            <br>----- Checking if message was included
+            <br>----- Transmitting simple and long message
+            <br>Obtaining a Quote
+            <br>----- Understanding the required function(wget utility, testing a web address)
+            <br>----- Checking the passed URL
+            <br>----- Obtaining webpage information
+            <br>----- Parsing out the desired information
+            <br>Generating an Excuse
+            <br>----- Curl
+            <br>----- Choosing to use e-mail
+            <br><br>
+
+            -->
                             <br>
+                            <h3><b>Reference Book</b></h3>
+
+                            <a>
+                                <i>
+                                    Linux Command Line and Shell Scripting Bible
+                                    Book by Christine Bresnahan and Richard BLUM
+                                </i>
+                            </a>
+
+                            <br>s
+                            <img src="Software Engineering Pics/CLI.webp" alt="Operating Systems pics" style="width:60%" onclick="onClick(this)">
                             <br>
-                            <h1><b>Script Control</b></h1>
-                            Signal Handling the bash shell
-                            <br>----- Generating signals(Interrupting a Process, Pausing a Process)
-                            <br>----- Trappping Signals
-                            <br>----- Trapping a script exit
-                            <br>----- Modifying or removing a trap
-                            <br>Running multiple background jobs
-                            <br>Running Scripts without a hang-up
-                            <br>Controlling the job (Viewing jobs, Restarting stopped jobs)
-                            <br>Nice and Renice command
-                            <br>Scheduling a job using at command
-                            <br>----- Retrieving job output
-                            <br>----- Listing pending jobs
-                            <br>----- Removing Jobs
-                            <br>Scheduling regular scripts
-                            <br>----- Looking at the cron table
-                            <br>----- building the cron table
-                            <br>----- Viewing cron directories
-                            <br>
-                            <br>
-                            <h1><b>Creating Functions</b></h1>
-                            Creating and Using Functions
-                            <br>Returning a value
-                            <br>----- The default exit status
-                            <br>----- using the return command
-                            <br>----- Using function output
-                            <br>Passing parameters and Handling variables(Global and Local variables) in a function
-                            <br>Array Variables and Functions
-                            <br>----- Passing arrays to functions
-                            <br>----- Returning arrays froms functions
-                            <br>Function Recursion
-                            <br>Creating Library
-                            <br>Creating functions on the command line
-                            <br>Defining functions in the .bashrc file
-                            <br>----- Directly defining functions
-                            <br>----- Sourcing function files
-                            <br>
-                            <br>
-                            <h1><b>Scripts for Graphical Desktops</b></h1>
-                            Creating Text Menus
-                            <br>----- Creating Menu layout and Menu function
-                            <br>----- Add menu logic
-                            <br>----- Using select command
-                            <br>The dialog package
-                            <br>----- msgbox widget
-                            <br>----- yesno widget
-                            <br>----- inputbox widget
-                            <br>----- textbox widge
-                            <br>----- menu widget
-                            <br>----- fselect widget
-                            <br>The dialog options
-                            <br>Using the dialog command in a script
-                            <br>Graphics
-                            <br>----- KDE environment(kdialog widgets)
-                            <br>----- GNOME environment(zenity widgets)
-                            <br><br>
-                            <h1><b>sed and gawk</b></h1>
-                            Sed editor
-                            <br>----- Defining an editor command in the command line
-                            <br>----- multiple editor commands in the command line
-                            <br>----- Reading editor commands from a file
-                            <br>Gawk program
-                            <br>----- gawk command format
-                            <br>----- Reading the program script from the command line
-                            <br>----- Data field variable
-                            <br>----- Multiple commands in the prgram script
-                            <br>----- Reading the program from a file
-                            <br>----- Running Scripts before and after processing data
-                            <br>sed Editor basics
-                            <br>----- Substitution options and flags
-                            <br>----- Replacing characters
-                            <br>Using addresses
-                            <br>----- Addressing the numeric line
-                            <br>----- Text pattern filters
-                            <br>----- Grouping commands
-                            <br>Deleting lines
-                            <br>Inserting and appending text
-                            <br>Changing lines
-                            <br>Transforming characters
-                            <br>Printing
-                            <br>----- Printing lines
-                            <br>----- Printing line numbers
-                            <br>----- Listing lines
-                            <br>Using files with sed
-                            <br>----- Writing to a file
-                            <br>----- Reading data from a file
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                    <div class="web">
-                        <p>
-                            <h1><b>Regular Expressions</b></h1>
-                            Types of regular expressions
-                            <br>Defining BRE patterns
-                            <br>----- Plain text
-                            <br>----- Special charaters
-                            <br>----- Anchor characters (Starting at the beginning, looking for the ending, Combining anchors)
-                            <br>----- The dot character
-                            <br>----- Character classes
-                            <br>----- Negating character classes
-                            <br>----- Special character classes
-                            <br>----- Using ranges
-                            <br>----- The asterisk
-                            <br>Extended Regular Expressions
-                            <br>----- Question mark
-                            <br>----- plus sign
-                            <br>----- Using braces
-                            <br>----- The pipe symbol
-                            <br>----- Grouping expressions
-                            <br>Regular Expressions in Action
-                            <br>----- Counting directory files
-                            <br>----- Validating a phone number
-                            <br>----- Parsing and e-mail address
-                            <br>
-                            <br>
-                            <h1><b>Advanced sed</b></h1>
-                            Looking at Multiline Commands
-                            <br>----- Next command (Single-line next command, Combining lines of text)
-                            <br>----- Multiline delete command
-                            <br>----- Multiline print command
-                            <br>Holding Space
-                            <br>Negating a Command
-                            <br>Changing the Flow (Branching, Testing)
-                            <br>Placing sed Command in Scripts (wrappers, Redirecting sed output)
-                            <br>Creating sed Utilities
-                            <br>----- Spacing with doubles lines
-                            <br>----- Spacing files that may have blanks
-                            <br>----- Numbering lines in a file
-                            <br>----- Deleting lines(Deleting Consecutive, trailing leading blank lines)
-                            <br>----- Removing HTML tags
-                            <br>
-                            <br>
-                            <h1><b>Advanced gawk</b></h1>
-                            Variables
-                            <br>----- built-in variables (The field and Record seperator variables)
-                            <br>----- User-defined variables (Assigning variables in scripts and command line)
-                            <br>Working with Arrays
-                            <br>----- Defining array variables
-                            <br>----- Interating through array variables
-                            <br>----- Deleting array variables
-                            <br>Using Patterns
-                            <br>----- Regular expressions
-                            <br>----- Matching operator
-                            <br>----- Mathematical expressions
-                            <br>Structured Commands
-                            <br>----- if, while, do-while, for statement
-                            <br>Formatted Printing
-                            <br>Built-In Functions
-                            <br>----- Mathematical functions
-                            <br>----- String functions
-                            <br>----- Time functions
-                            <br>User-Defined Functions
-                            <br>----- Defining a function
-                            <br>----- Using functions
-                            <br>----- Creating function library
-                            <br>
-                            <br>
-                            <h1><b>Writing Script utilities</b></h1>
-                            Archiving datafiles
-                            <br>----- Obtaining the required functions
-                            <br>----- Creating a daily archive location and script
-                            <br>----- Running the daily archive script
-                            <br>----- Creating an hourly archive script
-                            <br>----- Running the hourly archive script
-                            <br>Managing User Accounts
-                            <br>----- Obtaining the required functions
-                            <br>----- Creating and running the script
-                            <br>Monitoring Disk space
-                            <br>----- obtaining required functions
-                            <br>----- Creating and running the script
-                            <br>MYSQL
-                            <br>----- Connecting to the server
-                            <br>----- Creating a database
-                            <br>----- Creating a user account
-                            <br>----- Creating a table
-                            <br>----- Inserting and deleting data
-                            <br>----- Querying data
-                            <br>Using the database in scripts
-                            <br>----- Logging into the server
-                            <br>----- Sending Commands to the server
-                            <br>----- Formatting data
-                            <br>Using the Web
-                            <br>----- Installing Lynx
-                            <br>----- The lynx commandline
-                            <br>----- The lync configuration file
-                            <br>----- Capturing data from Lynx
-                            <br>Using E-Mail
-                            <br>
-                            <br>
-                            <h1><b>Shell Scripts</b></h1>
-                            Sending a Message
-                            <br>Required Functions
-                            <br>----- Determining who is on the system
-                            <br>----- Allowing messages
-                            <br>----- Sending a message to another user
-                            <br>Creating Script
-                            <br>----- Checking if user is logged on
-                            <br>----- Checking if user accepts message
-                            <br>----- Checking if message was included
-                            <br>----- Transmitting simple and long message
-                            <br>Obtaining a Quote
-                            <br>----- Understanding the required function(wget utility, testing a web address)
-                            <br>----- Checking the passed URL
-                            <br>----- Obtaining webpage information
-                            <br>----- Parsing out the desired information
-                            <br>Generating an Excuse
-                            <br>----- Curl
-                            <br>----- Choosing to use e-mail
-                            <br><br>
-                            <h3><b>Lecture Series</b></h3>
+                            <h2><b>Lecture Series for Linux CLI</b></h2>
                             <h1>Linux Terminal by Joe Collins</h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/Qhm0B5YiMo8?list=PLTXMX1FE5Hj6QRdYfuLsTdwCDDISV9TtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   <br>
                             <br>
@@ -581,11 +511,15 @@
                             <h1>Linux BASH Shell Script Basics by Joe Collins</h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/k91lumNE2zU?list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br>
-                            <h1>Bash Command Line basics to Advanced by Geek's Lesson</h1>
-                            <iframe width="350" height="250" src="https://www.youtube.com/embed/2PGnYjbYuUo" title="Linux Command Line Full course: Beginners to Experts. Bash Command Line Tutorials" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br>
                             <h1>The 50 Most Popular Linux & Terminal Commands by Freecode Camp</h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/ZtqBQ68cfJc" title="The 50 Most Popular Linux & Terminal Commands - Full Course for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                        </p>
+                    </div>
+                    <div class="web">
+                        <p>
+
                             <h3><b>Linux CLI Sources</b></h3>
                             <a href="https://ss64.com/bash/" target="_blank">Linux Commandline Sheet</a>
                             <br><a href="https://www.thegeekdiary.com/understanding-the-job-control-commands-in-linux-bg-fg-and-ctrlz/#:~:text=You%20can%20use%20the%20fg,background%20job%20to%20the%20foreground.&text=Note%3A%20The%20foreground%20job%20occupies,and%20placed%20into%20the%20background.&text=Note%3A%20When%20you%20place%20a,or%20background%2C%20the%20job%20restarts." target="_blank">Job Controls in Linux</a>
@@ -624,18 +558,6 @@
                             <br><a>Install all in one: sudo apt-get install autoconf automake bison bzip2 cmake g++ gcc help2man gettext openssl libssl-dev git vim build-essential terminator openssh-server software-properties-common apt-transport-https wget libssh-dev curl putty gawk xterm iputils-ping libeigen3-dev libtool libtool-bin make patch python3-dev rsync texinfo unzip unzip xz-utils metis gcc-10 gcc-10-base gcc-10-doc g++-10 libstdc++-10-dev libstdc++-10-doc</a>
 
                             <br><br>
-                            <h3><b>Reference</b></h3>
-
-                            <h1>
-                                <i>
-                                    Linux Command Line and Shell Scripting Bible
-                                    Book by Christine Bresnahan and Richard BLUM
-                                </i>
-                            </h1>
-
-                            <br>
-                            <img src="Software Engineering Pics/CLI.webp" alt="Operating Systems pics" style="width:60%" onclick="onClick(this)">
-
 
                             <br><br>
 

@@ -10,119 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 27px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    body {
-        font-size: 13px;
-    }
-
-
-
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-    .main {
-        float: left;
-        width: 60%;
-        padding: 0 20px;
-    }
-
-
-
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -133,7 +21,7 @@
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">Power Electronics</h3> <!--Change-->
+            <h2 class="w3-padding-32">Power Electronics</h2> <!--Change-->
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -141,17 +29,17 @@
             <a href="Power Electronics.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Power Electronics</a>
             <br>
             <br>
-            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Circuit Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Circuit Theory</a>
             <a href="Analog Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Analog Electronics</a>
             <!-- <a href="Hardware Electronics/Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
-            -->
+    -->
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
+            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-       <!--     <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-       -->     <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!--     <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+    -->
+            <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
             <a href="Hardware_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Hardware Resources</a>
@@ -181,151 +69,147 @@
 
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>Power Electronics</b></h8>
-
-            <div style="margin-top:70px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <div>
 
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
                     <p>
-                        <h1><b>Power Computations</b></h1> <!--Change-->
-                        Power and Energy
-                        <br>Inductors and Capacitors
-                        <br>Energy Recovery
-                        <br>Effective Values: RMS
-                        <br>Apparent Power Factor
-                        <br>Power Factor
-                        <br>Power Computations for Sinusoidal AC Circuits
-                        <br>Power Computations for Nonsinusoidal Periodic Waveforms
-                        <br>------- Fourier Series
-                        <br>------- Average Power
-                        <br>------- Nonsinusoidal Source and Linear Load
-                        <br>------- Sinusoidal Source and Nonlinear Load
-                        <br><br>
-                        <h1><b>Half-Wave Rectifiers</b></h1> <!--Change-->
-                        Resistive Load
-                        <br>Resistive-Inductive Load
-                        <br>RL-Source Load(Supplying Power to a DC Source from an AC Source)
-                        <br>Inductor-Source Load
-                        <br>The Freewheeling Diode
-                        <br>Half-Wave Rectifier With a Capacitor Filter
-                        <br>The Controlled Half-Wave Rectifier
-                        <br>The Effect of Source Inductance
-                        <br><br>
-                        <h1><b>Full-Wave Rectifiers</b></h1> <!--Change-->
-                        Single-Phase Full-Wave Rectifiers
-                        <br>------- The Bridge Rectifier
-                        <br>------- The Center-Tapped Transformer Rectifier
-                        <br>------- Resistive Load
-                        <br>------- RL Load
-                        <br>------- Source Harmonics
-                        <br>------- RL-Source Load
-                        <br>------- Capacitance Output Filter
-                        <br>------- Voltage Doublers
-                        <br>------- LC Filtered Output
-                        <br>Controlled Full-Wave Rectifiers
-                        <br>------- Resistive Load
-                        <br>------- RL Load, Discontinuous Curren
-                        <br>------- RL Load, Continuous Current
-                        <br>------- Controlled Rectifier with RL-Source Load
-                        <br>------- Controlled Single-Phase Converter Operating as an Inverter
-                        <br>Three-Phase Rectifiers
-                        <br>Controlled Three-Phase Rectifiers
-                        <br>------- Twelve-Pulse Rectifiers
-                        <br>------- The Three-Phase Converter Operating as an Inverter
-                        <br>DC Power Transmission
-                        <br>Commutation: The Effect of Source Inductance
-                        <br>------- Single-Phase Bridge Rectifier
-                        <br>------- Three-Phase Rectifier
-                        <br><br>
-                        <h1><b>AC Voltage Controllers</b></h1> <!--Change-->
-                        The Single-Phase AC Voltage Controller
-                        <br>------- Single-Phase Controller with a Resistive Load
-                        <br>------- Single-Phase Controller with an RL Load
-                        <br>Three-Phase Voltage Controllers
-                        <br>------- Y-Connected Resistive Load
-                        <br>------- Y-Connected RL Load
-                        <br>------- Delta-Connected Resistive Load
-                        <br>Induction Motor Speed Control
-                        <br>Static VAR(voltage-ampere reactive) Control
-                        <br><br>
-                        <h1><b>DC-DC Converters</b></h1> <!--Change-->
-                        Linear Voltage Regulators
-                        <br>A Basic Switching Converter
-                        <br>The Buck (Step-Down) Converter
-                        <br>------- Voltage and Current Relationships
-                        <br>------- Output Voltage Ripple
-                        <br>------- Capacitor Resistance—The Effect on Ripple Voltage
-                        <br>------- Synchronous Rectification for the Buck Converter
-                        <br>Design Considerations
-                        <br>The Boost Converter
-                        <br>------- Voltage and Current Relationships
-                        <br>------- Output Voltage Ripple
-                        <br>------- Inductor Resistance
-                        <br>The Buck-Boost Converter
-                        <br>------- Voltage and Current Relationships
-                        <br>------- Output Voltage Ripple
-                        <br>The Cuk Converter
-                        <br>The Single-Ended Primary Inductance Converter (SEPIC)
-                        <br>Interleaved Converters
-                        <br>Nonideal Switches and Converter Performance
-                        <br>------- Switch Voltage Drops
-                        <br>------- Switching Losses
-                        <br>Discontinuous-Current Operation
-                        <br>------- Buck Converter with Discontinuous Current
-                        <br>------- Boost Converter with Discontinuous Current
-                        <br>Switched-Capacitor Converters
-                        <br>------- The Step-Up Switched-Capacitor Converter
-                        <br>------- The Inverting Switched-Capacitor Converter
-                        <br>------- The Step-Down Switched-Capacitor Converter
-                        <br><br>
-                        <h1><b>DC Power Supplies</b></h1> <!--Change-->
-                        Transformer Models
-                        <br>The Flyback Converter
-                        <br>------- Continuous-Current Mode
-                        <br>------- Discontinuous-Current Mode in the Flyback Converter
-                        <br>------- Summary of Flyback Converter Operation
-                        <br>The Forward Converter
-                        <br>The Double-Ended (Two-Switch) Forward Converter
-                        <br>The Push-Pull Converter
-                        <br>Full-Bridge and Half-Bridge DC-DC Converters
-                        <br>Current-Fed Converters
-                        <br>Multiple Outputs
-                        <br>Converter Selection
-                        <br>Power Factor Correction
-                        <br>Power Supply Control
-                        <br>------- Control Loop Stability
-                        <br>------- Small-Signal Analysis
-                        <br>------- Switch Transfer Function
-                        <br>------- Filter Transfer Function
-                        <br>------- Pulse-Width Modulation Transfer Function
-                        <br>------- Type 2 Error Amplifier with Compensation
-                        <br>------- Design of a Type 2 Compensated Error Amplifier
-                        <br>------- Type 3 Error Amplifier with Compensation
-                        <br>------- Design of a Type 3 Compensated Error Amplifier
-                        <br>------- PWM Control Circuits
-                        <br>------- The AC Line Filter
-                        <br>------- The Complete DC Power Supply
-                        <br><br>
-
-                    </p>
-                </div>
-
-
-                <div class="web">
-                    <p>
-                        <h1><b>Inverters</b></h1> <!--Change-->
-                        The Full-Bridge Converter
+                        <h1>Power Computations</h1> <!--Change-->
+                        <!--   Power and Energy
+       <br>Inductors and Capacitors
+       <br>Energy Recovery
+       <br>Effective Values: RMS
+       <br>Apparent Power Factor
+       <br>Power Factor
+       <br>Power Computations for Sinusoidal AC Circuits
+       <br>Power Computations for Nonsinusoidal Periodic Waveforms
+       <br>------- Fourier Series
+       <br>------- Average Power
+       <br>------- Nonsinusoidal Source and Linear Load
+       <br>------- Sinusoidal Source and Nonlinear Load
+       <br><br>
+    -->
+                        <h1>Half-Wave Rectifiers</h1> <!--Change-->
+                        <!-- Resistive Load
+     <br>Resistive-Inductive Load
+     <br>RL-Source Load (Supplying Power to a DC Source from an AC Source)
+     <br>Inductor-Source Load
+     <br>The Freewheeling Diode
+     <br>Half-Wave Rectifier With a Capacitor Filter
+     <br>The Controlled Half-Wave Rectifier
+     <br>The Effect of Source Inductance
+     <br><br>
+    -->
+                        <h1>Full-Wave Rectifiers</h1> <!--Change-->
+                        <!--Single-Phase Full-Wave Rectifiers
+    <br>------- The Bridge Rectifier
+    <br>------- The Center-Tapped Transformer Rectifier
+    <br>------- Resistive Load
+    <br>------- RL Load
+    <br>------- Source Harmonics
+    <br>------- RL-Source Load
+    <br>------- Capacitance Output Filter
+    <br>------- Voltage Doublers
+    <br>------- LC Filtered Output
+    <br>Controlled Full-Wave Rectifiers
+    <br>------- Resistive Load
+    <br>------- RL Load, Discontinuous Curren
+    <br>------- RL Load, Continuous Current
+    <br>------- Controlled Rectifier with RL-Source Load
+    <br>------- Controlled Single-Phase Converter Operating as an Inverter
+    <br>Three-Phase Rectifiers
+    <br>Controlled Three-Phase Rectifiers
+    <br>Twelve-Pulse Rectifiers
+    <br>The Three-Phase Converter Operating as an Inverter
+    <br>DC Power Transmission
+    <br>Commutation: The Effect of Source Inductance
+    <br>Single-Phase Bridge Rectifier
+    <br>Three-Phase Rectifier
+    <br><br>
+    -->
+                        <h1>AC Voltage Controllers</h1> <!--Change-->
+                        <!--The Single-Phase AC Voltage Controller
+    <br>Single-Phase Controller with a Resistive Load
+    <br>Single-Phase Controller with an RL Load
+    <br>Three-Phase Voltage Controllers
+    <br>Y-Connected Resistive Load
+    <br>Y-Connected RL Load
+    <br>Delta-Connected Resistive Load
+    <br>Induction Motor Speed Control
+    <br>Static VAR(voltage-ampere reactive) Control
+    <br><br>
+    -->
+                        <h1>DC-DC Converters</h1> <!--Change-->
+                        <!--Linear Voltage Regulators
+    <br>A Basic Switching Converter
+    <br>The Buck (Step-Down) Converter
+    <br>------- Voltage and Current Relationships
+    <br>------- Output Voltage Ripple
+    <br>------- Capacitor Resistance—The Effect on Ripple Voltage
+    <br>------- Synchronous Rectification for the Buck Converter
+    <br>Design Considerations
+    <br>The Boost Converter
+    <br>------- Voltage and Current Relationships
+    <br>------- Output Voltage Ripple
+    <br>------- Inductor Resistance
+    <br>The Buck-Boost Converter
+    <br>------- Voltage and Current Relationships
+    <br>------- Output Voltage Ripple
+    <br>The Cuk Converter
+    <br>The Single-Ended Primary Inductance Converter (SEPIC)
+    <br>Interleaved Converters
+    <br>Nonideal Switches and Converter Performance
+    <br>------- Switch Voltage Drops
+    <br>------- Switching Losses
+    <br>Discontinuous-Current Operation
+    <br>------- Buck Converter with Discontinuous Current
+    <br>------- Boost Converter with Discontinuous Current
+    <br>Switched-Capacitor Converters
+    <br>------- The Step-Up Switched-Capacitor Converter
+    <br>------- The Inverting Switched-Capacitor Converter
+    <br>------- The Step-Down Switched-Capacitor Converter
+    <br><br>
+    -->
+                        <h1>DC Power Supplies</h1> <!--Change-->
+                        <!--Transformer Models
+                            <br>The Flyback Converter
+                            <br>------- Continuous-Current Mode
+                            <br>------- Discontinuous-Current Mode in the Flyback Converter
+                            <br>------- Summary of Flyback Converter Operation
+                            <br>The Forward Converter
+                            <br>The Double-Ended (Two-Switch) Forward Converter
+                            <br>The Push-Pull Converter
+                            <br>Full-Bridge and Half-Bridge DC-DC Converters
+                            <br>Current-Fed Converters
+                            <br>Multiple Outputs
+                            <br>Converter Selection
+                            <br>Power Factor Correction
+                            <br>Control Loop Stability
+                            <br>Small-Signal Analysis
+                            <br>Switch Transfer Function
+                            <br>Filter Transfer Function
+                            <br>Pulse-Width Modulation Transfer Function
+                            <br>Type 2 Error Amplifier with Compensation
+                            <br>Design of a Type 2 Compensated Error Amplifier
+                            <br>Type 3 Error Amplifier with Compensation
+                            <br>Design of a Type 3 Compensated Error Amplifier
+                            <br>PWM Control Circuits
+                            <br>The AC Line Filter
+                            <br>The Complete DC Power Supply
+                            <br><br>
+    -->
+                        <h1>Inverters</h1> <!--Change-->
+                      <!--  The Full-Bridge Converter
                         <br>The Square-Wave Inverter
                         <br>Total Harmonic Distortion
                         <br>Amplitude and Harmonic Control
                         <br>The Half-Bridge Inverter
                         <br>Multilevel Inverters
-                        <br>------- Multilevel Converters with Independent DC Sources
-                        <br>------- Equalizing Average Source Power with Pattern Swapping
-                        <br>------- Diode-Clamped Multilevel Inverters
+                        <br>Multilevel Converters with Independent DC Sources
+                        <br>Equalizing Average Source Power with Pattern Swapping
+                        <br>Diode-Clamped Multilevel Inverters
                         <br>Pulse-Width-Modulated Output
                         <br>------- Bipolar Switching
                         <br>------- Unipolar Switching
@@ -342,8 +226,8 @@
                         <br>------- Multilevel Three-Phase Inverter
                         <br>Induction Motor Speed Control
                         <br><br>
-                        <h1><b>Resonant Converters</b></h1> <!--Change-->
-                        A Resonant Switch Converter: Zero-Current Switching
+                      -->  <h1>Resonant Converters</h1> <!--Change-->
+                        <!--A Resonant Switch Converter: Zero-Current Switching
                         <br>A Resonant Switch Converter: Zero-Voltage Switching
                         <br>The Series Resonant Inverter
                         <br>------- Switching Losses
@@ -354,8 +238,8 @@
                         <br>Resonant Converter Comparison
                         <br>The Resonant DC Link Converter
                         <br><br>
-                        <h1><b>Drive Circuits, Snubber Circuits, and Heat Sinks</b></h1> <!--Change-->
-                        MOSFET and IGBT Drive Circuits
+                        --><h1>Drive Circuits, Snubber Circuits, and Heat Sinks</h1> <!--Change-->
+                        <!--MOSFET and IGBT Drive Circuits
                         <br>Bipolar Transistor Drive Circuits
                         <br>Thyristor Drive Circuits
                         <br>Transistor Snubber Circuits
@@ -363,9 +247,14 @@
                         <br>Thyristor Snubber Circuits
                         <br>Heat Sinks and Thermal Management
                         <br>------- Steady-State Temperatures
-                        <br>------- Time-Varying Temperatures
+                        <br>------- Time-Varying Temperatures-->
                     </p>
-                    <h2><b>Guidline Reference</b></h2> <!--Change-->
+                </div>
+
+
+                <div class="web">
+                    
+                    <h2><b>Book Reference</b></h2> <!--Change-->
                     <h1>
                         <i>
                             Power Electronics

@@ -59,6 +59,14 @@
     background-color: #000000 !important
 }
 */
+body {
+    font-family: "Montserrat", sans-serif
+}
+
+h1, h2, h3, h4, h8 {
+    font-family: "Montserrat", sans-serif
+}
+
 .w3-theme-d1 {
     color: #fff !important;
     background-color: #000000 !important
@@ -275,6 +283,14 @@ html, body {
     line-height: 1.5
 }
 
+p33 {
+    font-size: 7px;
+}
+@media screen and (max-width: 600px) {
+    p33 {
+        font-size: 6px;
+    }
+}
 html {
     overflow-x: hidden
 }
@@ -515,6 +531,7 @@ a {
         .w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child {
             background-color: #ccc;
             color: #000
+
         }
 
 .w3-dropdown-content {
@@ -1299,7 +1316,7 @@ a {
 }
 
 .w3-large {
-    font-size: 17px !important
+    font-size: 16px !important
 }
 
 .w3-xlarge {
@@ -1422,8 +1439,8 @@ a {
 }
 
 .w3-padding-32 {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
 }
 
 .w3-padding-48 {

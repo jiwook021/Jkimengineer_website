@@ -10,127 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 26px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    body {
-        font-size: 13px;
-    }
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-    .web {
-        width: 50%;
-        height: 100%;
-        float: left;
-    }
-
-    .content {
-        margin-left: 30%;
-    }
-
-    @media only screen and (max-width: 620px) {
-        /* For mobile phones: */
-        .web {
-            width: 100%;
-            height: 100%;
-            float: left;
-        }
-
-        .content {
-            margin-left: 0%;
-        }
-    }
-</style>
+<link rel="stylesheet" href="../../reference.css">
 
 <html lang="en">
 
@@ -144,7 +24,7 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Digital Electronics</h3><!--Change-->
+            <h2 class="w3-padding-32">Digital Electronics</h2><!--Change-->
         </div>
 
 
@@ -159,12 +39,12 @@
             <a href="../Analog Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Analog Electronics</a>
             <a href="../Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
             <!--  <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
-            -->
+    -->
             <a href="../FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="../Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
             <a href="../Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-       <!--     <a href="../Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-      -->      <a href="../Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!--     <a href="../Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+    -->
+            <a href="../Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             <a href="../Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="../Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
             <a href="../Hardware_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Hardware Resources</a>
@@ -190,390 +70,372 @@
         <!-- Header -->
 
 
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>Digital Electronics</b></h8>
-
-            <div style="margin-top:50px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+        
+            <div>
 
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
                     <p>
-                        <h1><b>Binary Codes</b></h1> <!--Change-->
-                        Binary Coded Decimal
-                        <br>------- BCD-to-Binary Conversion
-                        <br>------- Binary-to-BCD Conversion
-                        <br>------- Higher-Density BCD Encoding
-                        <br>------- Packed and Unpacked BCD Numbers
-                        <br>Excess-3 Code
-                        <br>Gray Code
-                        <br>------- Binary–Gray Code Conversion
-                        <br>------- Gray Code–Binary Conversion
-                        <br>------- n-ary Gray Code
-                        <br>Alphanumeric Codes
-                        <br>------- ASCII(American Standard Code for Information Interchange) code
-                        <br>------- EBCDIC(Extended Binary Coded Decimal Interchange Code) code
-                        <br>------- Unicode
-                        <br>Seven-segment Display Code
-                        <br>Error Detection and Correction Codes
-                        <br>------- Parity Code
-                        <br>------- Repetition Code
-                        <br>------- Cyclic Redundancy Check Code
-                        <br>------- Hamming Code
-                        <br><br>
-                        <h1><b>Digital Arithmetic</b></h1> <!--Change-->
-                        Basic Rules of Binary Addition and Subtraction
-                        <br>Addition Using the 2’s Complement Method
-                        <br>Subtraction Using 2’s Complement Arithmetic
-                        <br>BCD Addition and Subtraction in Excess-3 Code
-                        <br>Binary Multiplication
-                        <br>------- Repeated Left-Shift and Add Algorithm
-                        <br>------- Repeated Add and Right-Shift Algorithm
-                        <br>Binary Division
-                        <br>------- Repeated Right-Shift and Subtract Algorithm
-                        <br>------- Repeated Subtract and Left-Shift Algorithm
-                        <br>Floating-Point Arithmetic
-                        <br>------- Addition and Subtraction
-                        <br>------- Multiplication and Division
-                        <br><br>
-                        <h1><b>Logic Gates and Related Devices</b></h1> <!--Change-->
-                        Truth Table
-                        <br>Logic Gates
-                        <br>------- OR Gates
-                        <br>------- AND Gates
-                        <br>------- NOT Gates
-                        <br>------- EXCLUSIVE-OR Gates
-                        <br>------- NAND Gates
-                        <br>------- NOR Gates
-                        <br>------- EXCLUSIVE-NOR Gates
-                        <br>------- INHIBIT Gates
-                        <br>Universal Gates
-                        <br>Gates with Open Collector/Drain Outputs
-                        <br>Tristate Logic Gates
-                        <br>AND-OR-INVERT Gates
-                        <br>Schmitt Gates
-                        <br>Special Output Gates
-                        <br>Fan-Out of Logic Gates
-                        <br>Buffers and Transceivers
-                        <br>IEEE/ANSI Standard Symbols
-                        <br><br>
-                        <h1><b>Logic Families</b></h1> <!--Change-->
-                        Logic Families – Significance and Types
-                        <br>Characteristic Parameters
-                        <br>Transistor Transistor Logic (TTL)
-                        <br>Emitter Coupled Logic (ECL)
-                        <br>CMOS(Complementary metal–oxide–semiconductor) Logic
-                        <br>BiCMOS Logic(Bipolar Complementary metal–oxide–semiconductor)
-                        <br>NMOS(N-type metal-oxide-semiconductor) Logic
-                        <br>PMOS(P-type metal-oxide-semiconductor) Logic
-                        <br>Integrated Injection Logic (I2L) Family
-                        <br>Interfacing with Different Logic Families
-                        <br>------- CMOS-to-TTL Interface
-                        <br>------- TTL-to-CMOS Interface
-                        <br>------- TTL-to-ECL and ECL-to-TTL Interfaces
-                        <br>------- CMOS-to-ECL and ECL-to-CMOS Interfaces
-                        <br>Classification of Digital ICs
-                        <br><br>
-                        <h1><b>Boolean Algebra and Simplification Techniques</b></h1> <!--Change-->
-                        Postulates of Boolean Algebra
-                        <br>Theorems of Boolean Algebra
-                        <br>Simplification Techniques
-                        <br>------- Sum-of-Products Boolean Expressions
-                        <br>------- Product-of-Sums Expressions
-                        <br>------- Expanded Forms of Boolean Expressions
-                        <br>------- Canonical Form of Boolean Expressions
-                        <br>Quine–McCluskey Tabular Method
-                        <br>Karnaugh Map Method
-                        <br>------- Construction of a Karnaugh Map
-                        <br>------- Karnaugh Map for Boolean Expressions with a Larger Number of Variables
-                        <br>------- Karnaugh Maps for Multi-Output Functions
-                        <br><br>
-                        <h1><b>Arithmetic Circuits</b></h1> <!--Change-->
-                        Combinational Circuits
-                        <br>Basic Building Blocks
-                        <br>------- Half-Adder
-                        <br>------- Full Adder
-                        <br>------- Half-Subtractor
-                        <br>------- Full Subtractor
-                        <br>------- Controlled Inverter
-                        <br>Adder–Subtractor
-                        <br>BCD Adder
-                        <br>Carry Propagation–Look-Ahead Carry Generator
-                        <br>Arithmetic Logic Unit (ALU)
-                        <br>Multipliers
-                        <br>Magnitude Comparator
-                        <br><br>
-                        <h1><b>Multiplexers and Demultiplexers</b></h1> <!--Change-->
-                        Multiplexer
-                        <br>------- Inside Multiplexer
-                        <br>------- Implementing Boolean Functions with Multiplexers
-                        <br>------- Multiplexers for Parallel-to-Serial Data Conversion
-                        <br>------- Cascading Multiplexer Circuits
-                        <br>Encoder
-                        <br>------- Priority Encoder
-                        <br>Demultiplexers and Decoders
-                        <br>------- Implementing Boolean Functions with Decoders
-                        <br>------- Cascading Decoder Circuits
-                        <br><br>
-                        <h1><b>Programmable Logic Devices</b></h1> <!--Change-->
-                        Fixed Logic Versus Programmable Logic
-                        <br>Programmable ROMs
-                        <br>Programmable Logic Array
-                        <br>Programmable Array Logic
-                        <br>Generic Array Logic
-                        <br>Complex Programmable Logic Device
-                        <br>Field-Programmable Gate Array
-                        <br>Programmable ROMs
-                        <br>Programmable Logic Array
-                        <br>Programmable Array Logic
-                        <br>Generic Array Logic
-                        <br>Complex Programmable Logic Devices
-                        <br>Field-Programmable Gate Arrays
-                        <br>Programmable Interconnect Technologies
-                        <br>------- Fuse
-                        <br>------- Floating-Gate Transistor Switch
-                        <br>------- Static RAM- Controlled Programmable Switches
-                        <br>------- Antifuse
-                        <br>Programming Languges
-                        <br>------- ABEL:Hardware Description Language
-                        <br>------- VHDL:VHSIC Hardware Description Language
-                        <br>------- Verilog: Languge
-                        <br>------- Java HDL: Language
-                        <br>SPLDs(Simple programmable logic devices)
-                        <br>CPLDs(Complex Programmable Logic Device)
-                        <br>FPGAs(Field Programmable Gate Arrays)
-                        <br><br>
-                        <h1><b>Flip-Flops and Related Devices</b></h1> <!--Change-->
-                        Multivibrator
-                        <br>------- Bistable Multivibrator
-                        <br>------- Schmitt Trigger
-                        <br>------- Monostable Multivibrator
-                        <br>------- Astable Multivibrator
-                        <br>R-S Flip-Flop
-                        <br>------- R-S Flip-Flop with Active LOW Inputs
-                        <br>------- R-S Flip-Flop with Active HIGH Inputs
-                        <br>------- Clocked R-S Flip-Flop
-                        <br>Level-Triggered and Edge-Triggered Flip-Flops
-                        <br>J-K Flip-Flop
-                        <br>------- J-K Flip-Flop with PRESET and CLEAR Inputs
-                        <br>------- Master–Slave Flip-Flops
-                        <br>Toggle Flip-Flop (T Flip-Flop)
-                        <br>------- J-K Flip-Flop with PRESET and CLEAR Input
-                        <br>------- Master–Slave Flip-Flops
-                        <br>D Flip-Flop
-                        <br>------- J-K Flip-Flop as D Flip-Flop
-                        <br>------- D Latch
-                        <br>Synchronous and Asynchronous Inputs
-                        <br>Flip-Flop Timing Parameters
-                        <br>Flip-Flop Applications
-                        <br><br>
-                        <h1><b>Counters and Registers</b></h1> <!--Change-->
-                        Ripple (Asynchronous) Counter
-                        <br>------- Propagation Delay in Ripple Counters
-                        <br>Synchronous Counter
-                        <br>Modulus of a Counter
-                        <br>Binary Ripple Counter
-                        <br>Synchronous (or Parallel) Counters
-                        <br>UP/DOWN Counters
-                        <br>Decade and BCD Counters
-                        <br>Presettable Counters
-                        <br>Decoding a Counter
-                        <br>Cascading Counters
-                        <br>------- Cascading Binary Counters
-                        <br>------- Cascading BCD Counters
-                        <br>Designing Counters with Arbitrary Sequences
-                        <br>------- Excitation Table of a Flip-Flop
-                        <br>------- State Transition Diagram
-                        <br>------- Design Procedure
-                        <br>Shift Register
-                        <br>------- Serial-In Serial-Out Shift Register
-                        <br>------- Serial-In Parallel-Out Shift Register
-                        <br>------- Parallel-In Serial-Out Shift Register
-                        <br>------- Parallel-In Parallel-Out Shift Register
-                        <br>------- Bidirectional Shift Register
-                        <br>------- Universal Shift Register
-                        <br>Shift Register Counters
-                        <br>------- Ring Counter
-                        <br>------- Shift Counter
-                        <br>IEEE/ANSI Symbology for Registers and Counters
-                        <br><br>
-                        <h1><b>Data Conversion Circuits – D/A and A/D Converters</b></h1> <!--Change-->
-                        Digital-to-Analogue Converters
-                        <br>------- Simple Resistive Divider Network for D/A Conversion
-                        <br>------- Binary Ladder Network for D/A Conversion
-                        <br>D/A Converter Specifications
-                        <br>------- Resolution, Accuracy, Conversion Speed, Dynamic Range, Nonlinearity and Differential Nonlinearity, Monotonocity
-                        <br>Types of D/A Converter
-                        <br>------- Multiplying D/A Converters,  Bipolar-Output D/A Converters, Companding D/A Converters
-                        <br>Current Steering Mode of Operation
-                        <br>Voltage Switching Mode of Operation
-                        <br>BCD-Input D/A Converter
-                        <br>D/A Converter Applications
-                        <br>------- Multiplier
-                        <br>------- Divider
-                        <br>------- Programmable Integrator
-                        <br>------- Low-Frequency Function Generator
-                        <br>------- Digitally Controlled Filters
-                        <br>A/D Converters
-                        <br>A/D Converter Specifications
-                        <br>------- Resolution
-                        <br>------- Accuracy
-                        <br>------- Gain and Offset Errors
-                        <br>------- Gain and Offset Drifts
-                        <br>------- Sampling Frequency and Aliasing Phenomenon
-                        <br>------- Quantization Error
-                        <br>------- Nonlinearity
-                        <br>------- Differential Nonlinearity
-                        <br>------- Conversion Time
-                        <br>------- Aperture and Acquisition Times
-                        <br>------- Code Width
-                        <br>Unipolar Mode Operation
-                        <br>Bipolar Mode Operation
-                        <br>Coding
-                        <br>Low Byte and High Byte
-                        <br>Right-Justified Data, Left-Justified Data
-                        <br>Command Register, Status Register
-                        <br>Control Lines
-                        <br>Types of A/D Converter
-                        <br>------- Simultaneous or Flash A/D Converters
-                        <br>------- Half-Flash A/D Converter
-                        <br>------- Counter-Type A/D Converter
-                        <br>------- Tracking-Type A/D Converter
-                        <br>------- Successive Approximation Type A/D Converter
-                        <br>------- Single-, Dual- and Multislope A/D Converters
-                        <br>------- Sigma-Delta A/D Converter
-                        <br><br>
-                        <h1><b>Microprocessors</b></h1> <!--Change-->
-                        Inside a Microprocessor(ALU, Register File, Control Unit)
-                        <br>Basic Microprocessor Instructions
-                        <br>------- Data Transfer Instructions
-                        <br>------- Arithmetic Instructions
-                        <br>------- Logic Instructions
-                        <br>------- Control Transfer or Branch or Program Control Instructions
-                        <br>------- Machine Control Instructions
-                        <br>Addressing Modes
-                        <br>------- Absolute or Memory Direct Addressing Mode
-                        <br>------- Immediate Addressing Mode
-                        <br>------- Register Direct Addressing Mode
-                        <br>------- Register Indirect Addressing Mode
-                        <br>------- Indexed Addressing Mode
-                        <br>------- Implicit Addressing Mode and Relative Addressing Mode
-                        <br>Microprocessor Selection
-                        <br>Programming Microprocessors
-                        <br>RISC(reduced instruction set computer) Versus CISC(omplex instruction set computer) Processors
-                        <br>Eight-Bit Microprocessors
-                        <br>16-Bit Microprocessors
-                        <br>32-Bit Microprocessors
-                        <br>Microprocessors for Embedded Applications
-                        <br>Peripherial Devices
-                        <br>------- Programmable Timer/Counter
-                        <br>------- Programmable Peripheral Interface
-                        <br>------- Programmable Interrupt Controller
-                        <br>------- DMA Controller
-                        <br>----- Programmable Communication Interface
-                        <br>------- Math Coprocessor
-                        <br>------- Programmable Keyboard/Display Interface
-                        <br>------- Programmable CRT Controller
-                        <br>------- Floppy Disk Controller
-                        <br>------- Clock Generator
-                        <br>------- Octal Bus Transceiver
-                        <br><br>
-                        <h1><b>Microcontrollers</b></h1> <!--Change-->
-                        Inside the Microcontroller
-                        <br>------- Central Processing Unit (CPU)
-                        <br>------- Random Access Memory (RAM)
-                        <br>------- Read Only Memory (ROM)
-                        <br>------- Special-Function Registers
-                        <br>------- Peripheral Components
-                        <br>Microcontroller Architecture
-                        <br>------- Architecture to Access Memory
-                        <br>------- Mapping Special-Function Registers into Memory Space
-                        <br>------- Processor Architecture
-                        <br>Power-Saving Modes
-                        <br>Eight-Bit Microcontrollers
-                        <br>16-Bit Microcontrollers
-                        <br>32-Bit Microcontrollers
-                        <br>Interfacing Peripheral Devices with a Microcontroller
-                        <br>------- Interfacing LEDs
-                        <br>------- Interfacing Electromechanical Relays
-                        <br>------- Interfacing Keyboards
-                        <br>------- Interfacing Seven-Segment Displays
-                        <br>------- Interfacing LCD Displays
-                        <br>------- Interfacing A/D Converters
-                        <br>------- Interfacing D/A Converters
-                        <br><br>
-                        <h1><b>Computer Fundamentals</b></h1> <!--Change-->
-                        Central Processing Unit,Memory, Input/Output Ports
-                        <br>A Computer System
-                        <br>------- Classification of Computers on the Basis of Applications
-                        <br>------- Classification of Computers on the Basis of the Technology Used
-                        <br>------- Classification of Computers on the Basis of Size and Capacity
-                        <br>Computer Memory
-                        <br>Random Access Memory
-                        <br>------- Static RAM
-                        <br>------- Dynamic RAM
-                        <br>------- RAM Applications
-                        <br>Read Only Memory
-                        <br>------- ROM Architecture
-                        <br>------- Types of ROM
-                        <br>------- Applications of ROMs
-                        <br>Expanding Memory Capacity
-                        <br>------- Word Size Expansion
-                        <br>------- Memory Location Expansion
-                        <br>Input and Output Ports
-                        <br>------- Serial Ports
-                        <br>------- Parallel Ports
-                        <br>------- Internal Buses
-                        <br>Input/Output Devices
-                        <br>Secondary Storage or Auxiliary Storage
-                        <br>------- Magnetic Storage Devices
-                        <br>------- Magneto-Optical Storage Devices
-                        <br>------- Optical Storage Devices
-                        <br>------- USB Flash Drive
-                        <br><br>
-                        <h1><b>Troubleshooting Digital Circuits and Test Equipment</b></h1> <!--Change-->
-                        Faults Internal to Digital Integrated Circuits
-                        <br>Faults External to Digital Integrated Circuits
-                        <br>Troubleshooting Sequential Logic Circuits
-                        <br>Troubleshooting Arithmetic Circuits
-                        <br>Troubleshooting Memory Devices
-                        <br>Troubleshooting RAM Devices
-                        <br>Troubleshooting ROM Devices
-                        <br>Test and Measuring Equipment
-                        <br>Digital Multimeter
-                        <br>------- Advantages of Using a Digital Multimeter
-                        <br>------- Inside the Digital Meter
-                        <br>------- Significance of the Half-Digit
-                        <br>Oscilloscope
-                        <br>------- Importance of Specifications and Front-Panel Controls
-                        <br>------- Types of Oscilloscope
-                        <br>Analogue Oscilloscopes
-                        <br>CRT Storage Type Analogue Oscilloscopes
-                        <br>Digital Oscilloscopes
-                        <br>Analogue Versus Digital Oscilloscopes
-                        <br>Oscilloscope Specifications
-                        <br>------- Analogue Oscilloscopes
-                        <br>------- Analogue Storage Oscilloscope
-                        <br>------- Digital Storage Oscilloscope
-                        <br>Oscilloscope Probes Compensation
-                        <br>Frequency Counter
-                        <br>------- Universal Counters – Functional Modes
-                        <br>------- Basic Counter Architecture
-                        <br>------- Reciprocal Counters
-                        <br>------- Continuous-Count Counters
-                        <br>------- Counter Specifications
-                        <br>------- Microwave Counters
-                        <br>Frequency Synthesizers and Synthesized Function/Signal Generators
-                        <br>------- Direct Frequency Synthesis
-                        <br>------- Indirect Synthesis
-                        <br>------- Sampled Sine Synthesis
-                        <br>------- Important Specifications
-                        <br>------- Synthesized Function Generators
-                        <br>------- Arbitrary Waveform Generator
-                        <br>Logic Probe
-                        <br>Logic Analyser
-                        <br>------- Operational Modes
-                        <br>------- Logic Analyser Architecture
+                        <h1>Binary Codes</h1> <!--Change-->
+                        <!--   BCD-to-Binary Conversion
+       <br>Binary-to-BCD Conversion
+       <br>Higher-Density BCD Encoding
+       <br>Packed and Unpacked BCD Numbers
+       <br>Excess-3 Code
+       <br>Gray Code
+       <br>Binary–Gray Code Conversion
+       <br>Gray Code–Binary Conversion
+       <br>n-ary Gray Code
+       <br>Alphanumeric Codes
+       <br>ASCII(American Standard Code for Information Interchange) code
+       <br>EBCDIC(Extended Binary Coded Decimal Interchange Code) code
+       <br>Unicode
+       <br>Seven-segment Display Code
+       <br>Error Detection and Correction Codes
+       <br>------- Parity Code
+       <br>------- Repetition Code
+       <br>------- Cyclic Redundancy Check Code
+       <br>------- Hamming Code
+       <br><br>
+    -->
+                        <h1>Digital Arithmetic</h1> <!--Change-->
+                        <!--Basic Rules of Binary Addition and Subtraction
+    <br>Addition Using the 2’s Complement Method
+    <br>Subtraction Using 2’s Complement Arithmetic
+    <br>BCD Addition and Subtraction in Excess-3 Code
+    <br>Binary Multiplication
+    <br>------- Repeated Left-Shift and Add Algorithm
+    <br>------- Repeated Add and Right-Shift Algorithm
+    <br>Binary Division
+    <br>------- Repeated Right-Shift and Subtract Algorithm
+    <br>------- Repeated Subtract and Left-Shift Algorithm
+    <br>Floating-Point Arithmetic
+    <br>------- Addition and Subtraction
+    <br>------- Multiplication and Division
+    <br><br>
+    -->
+                        <h1>Logic Gates and Related Devices</h1> <!--Change-->
+                        <!--Truth Table
+    <br>Logic Gates
+    <br>Universal Gates
+    <br>Gates with Open Collector/Drain Outputs
+    <br>Tristate Logic Gates
+    <br>AND-OR-INVERT Gates
+    <br>Schmitt Gates
+    <br>Special Output Gates
+    <br>Fan-Out of Logic Gates
+    <br>Buffers and Transceivers
+    <br>IEEE/ANSI Standard Symbols
+    <br><br>
+    -->
+                        <h1>Logic Families</h1> <!--Change-->
+                        <!--Logic Families – Significance and Types
+    <br>Characteristic Parameters
+    <br>Transistor Transistor Logic (TTL)
+    <br>Emitter Coupled Logic (ECL)
+    <br>CMOS(Complementary metal–oxide–semiconductor) Logic
+    <br>BiCMOS Logic(Bipolar Complementary metal–oxide–semiconductor)
+    <br>NMOS(N-type metal-oxide-semiconductor) Logic
+    <br>PMOS(P-type metal-oxide-semiconductor) Logic
+    <br>Integrated Injection Logic (I2L) Family
+    <br>CMOS-to-TTL Interface
+    <br>TTL-to-CMOS Interface
+    <br>TTL-to-ECL and ECL-to-TTL Interfaces
+    <br>CMOS-to-ECL and ECL-to-CMOS Interfaces
+    <br>Classification of Digital ICs
+    <br><br>
+    -->
+                        <h1>Boolean Algebra and Simplification Techniques</h1> <!--Change-->
+                        <!--Postulates of Boolean Algebra
+    <br>Theorems of Boolean Algebra
+    <br>Simplification Techniques
+    <br>------- Sum-of-Products Boolean Expressions
+    <br>------- Product-of-Sums Expressions
+    <br>------- Expanded Forms of Boolean Expressions
+    <br>------- Canonical Form of Boolean Expressions
+    <br>Quine–McCluskey Tabular Method
+    <br>Karnaugh Map Method
+    <br>------- Karnaugh Map for Boolean Expressions with a Larger Number of Variables
+    <br>------- Karnaugh Maps for Multi-Output Functions
+    <br><br>
+    -->
+                        <h1>Arithmetic Circuits</h1> <!--Change-->
+                        <!--Combinational Circuits
+    <br>Half-Adder
+    <br>Full Adder
+    <br>Half-Subtractor
+    <br>Full Subtractor
+    <br>Controlled Inverter
+    <br>Adder–Subtractor
+    <br>BCD Adder
+    <br>Carry Propagation–Look-Ahead Carry Generator
+    <br>Arithmetic Logic Unit (ALU)
+    <br>Multipliers
+    <br>Magnitude Comparator
+    <br><br>
+    -->
+                        <h1>Multiplexers and Demultiplexers</h1> <!--Change-->
+                        <!--Multiplexer
+    <br>Implementing Boolean Functions with Multiplexers
+    <br>Multiplexers for Parallel-to-Serial Data Conversion
+    <br>Cascading Multiplexer Circuits
+    <br>Encoder (Priority Encoder)
+    <br>Demultiplexers and Decoders
+    <br>Implementing Boolean Functions with Decoders
+    <br>Cascading Decoder Circuits
+    <br><br>
+    -->
+                        <h1>Programmable Logic Devices</h1> <!--Change-->
+                        <!--Fixed Logic Versus Programmable Logic
+    <br>Programmable ROMs
+    <br>Programmable Logic Array
+    <br>Programmable Array Logic
+    <br>Generic Array Logic
+    <br>Complex Programmable Logic Device
+    <br>Field-Programmable Gate Array
+    <br>Programmable ROMs
+    <br>Programmable Logic Array
+    <br>Programmable Array Logic
+    <br>Generic Array Logic
+    <br>Complex Programmable Logic Devices
+    <br>Field-Programmable Gate Arrays
+    <br>Programmable Interconnect Technologies
+    <br>------- Fuse
+    <br>------- Floating-Gate Transistor Switch
+    <br>------- Static RAM- Controlled Programmable Switches
+    <br>------- Antifuse
+    <br>ABEL:Hardware Description Language
+    <br>VHDL:VHSIC Hardware Description Language
+    <br>Verilog: Languge
+    <br>Java HDL: Language
+    <br>SPLDs(Simple programmable logic devices)
+    <br>CPLDs(Complex Programmable Logic Device)
+    <br>FPGAs(Field Programmable Gate Arrays)
+    <br><br>
+    -->
+                        <h1>Flip-Flops and Related Devices</h1> <!--Change-->
+                        <!--Multivibrator
+    <br>Bistable Multivibrator
+    <br>Schmitt Trigger
+    <br>Monostable Multivibrator
+    <br>Astable Multivibrator
+    <br>R-S Flip-Flop
+    <br>R-S Flip-Flop with Active LOW Inputs
+    <br>R-S Flip-Flop with Active HIGH Inputs
+    <br>Clocked R-S Flip-Flop
+    <br>Level-Triggered and Edge-Triggered Flip-Flops
+    <br>J-K Flip-Flop
+    <br>J-K Flip-Flop with PRESET and CLEAR Inputs
+    <br>Master–Slave Flip-Flops
+    <br>Toggle Flip-Flop (T Flip-Flop)
+    <br>J-K Flip-Flop with PRESET and CLEAR Input
+    <br>Master–Slave Flip-Flops
+    <br>D Flip-Flop
+    <br>J-K Flip-Flop as D Flip-Flop
+    <br>D Latch
+    <br>Synchronous and Asynchronous Inputs
+    <br>Flip-Flop Timing Parameters
+    <br>Flip-Flop Applications
+    <br><br>
+    -->
+                        <h1>Counters and Registers</h1> <!--Change-->
+                        <!--Ripple (Asynchronous) Counter
+    <br>Propagation Delay in Ripple Counters
+    <br>Synchronous Counter
+    <br>Modulus of a Counter
+    <br>Binary Ripple Counter
+    <br>Synchronous (or Parallel) Counters
+    <br>UP/DOWN Counters
+    <br>Decade and BCD Counters
+    <br>Presettable Counters
+    <br>Decoding a Counter
+    <br>Cascading Binary Counters
+    <br>Cascading BCD Counters
+    <br>Designing Counters with Arbitrary Sequences
+    <br>------- Excitation Table of a Flip-Flop
+    <br>------- State Transition Diagram
+    <br>Shift Register
+    <br>------- Serial-In Serial-Out Shift Register
+    <br>------- Serial-In Parallel-Out Shift Register
+    <br>------- Parallel-In Serial-Out Shift Register
+    <br>------- Parallel-In Parallel-Out Shift Register
+    <br>------- Bidirectional Shift Register
+    <br>------- Universal Shift Register
+    <br>Shift Register Counters
+    <br>------- Ring Counter
+    <br>------- Shift Counter
+    <br>IEEE/ANSI Symbology for Registers and Counters
+    <br><br>
+    -->
+                        <h1>Data Conversion Circuits – D/A and A/D Converters</h1> <!--Change-->
+                        <!--Digital-to-Analogue Converters
+    <br>Simple Resistive Divider Network for D/A Conversion
+    <br>Binary Ladder Network for D/A Conversion
+    <br>D/A Converter Specifications
+    <br>- Resolution, Accuracy, Conversion Speed, Dynamic Range, Nonlinearity and Differential Nonlinearity, Monotonocity
+    <br>Types of D/A Converter
+    <br>Multiplying D/A Converters,  Bipolar-Output D/A Converters, Companding D/A Converters
+    <br>Current Steering Mode of Operation
+    <br>Voltage Switching Mode of Operation
+    <br>BCD-Input D/A Converter
+    <br>D/A Converter Applications
+    <br>------- Multiplier
+    <br>------- Divider
+    <br>------- Programmable Integrator
+    <br>------- Low-Frequency Function Generator
+    <br>------- Digitally Controlled Filters
+    <br>A/D Converters
+    <br>A/D Converter Specifications
+    <br>------- Resolution
+    <br>------- Accuracy
+    <br>------- Gain and Offset Errors
+    <br>------- Gain and Offset Drifts
+    <br>------- Sampling Frequency and Aliasing Phenomenon
+    <br>------- Quantization Error
+    <br>------- Nonlinearity
+    <br>------- Differential Nonlinearity
+    <br>------- Conversion Time
+    <br>------- Aperture and Acquisition Times
+    <br>------- Code Width
+    <br>Unipolar Mode Operation
+    <br>Bipolar Mode Operation
+    <br>Coding
+    <br>Low Byte and High Byte
+    <br>Right-Justified Data, Left-Justified Data
+    <br>Command Register, Status Register
+    <br>Control Lines
+    <br>Types of A/D Converter
+    <br>------- Simultaneous or Flash A/D Converters
+    <br>------- Half-Flash A/D Converter
+    <br>------- Counter-Type A/D Converter
+    <br>------- Tracking-Type A/D Converter
+    <br>------- Successive Approximation Type A/D Converter
+    <br>------- Single-, Dual- and Multislope A/D Converters
+    <br>------- Sigma-Delta A/D Converter
+    <br><br>
+    -->
+                        <h1>Microprocessors</h1> <!--Change-->
+                        <!--Basic Microprocessor Instructions
+    <br>------- Data Transfer Instructions
+    <br>------- Arithmetic Instructions
+    <br>------- Logic Instructions
+    <br>------- Control Transfer or Branch or Program Control Instructions
+    <br>------- Machine Control Instructions
+    <br>Addressing Modes
+    <br>------- Absolute or Memory Direct Addressing Mode
+    <br>------- Immediate Addressing Mode
+    <br>------- Register Direct Addressing Mode
+    <br>------- Register Indirect Addressing Mode
+    <br>------- Indexed Addressing Mode
+    <br>------- Implicit Addressing Mode and Relative Addressing Mode
+    <br>Microprocessor Selection
+    <br>Programming Microprocessors
+    <br>RISC(reduced instruction set computer) Versus CISC(omplex instruction set computer) Processors
+    <br>Eight-Bit Microprocessors
+    <br>16-Bit Microprocessors
+    <br>32-Bit Microprocessors
+    <br>Microprocessors for Embedded Applications
+    <br>Programmable Timer/Counter
+    <br>Programmable Peripheral Interface
+    <br>Programmable Interrupt Controller
+    <br>DMA Controller
+    <br>Programmable Communication Interface
+    <br>Math Coprocessor
+    <br>Programmable Keyboard/Display Interface
+    <br>Programmable CRT Controller
+    <br>Floppy Disk Controller
+    <br>Clock Generator
+    <br>Octal Bus Transceiver
+    <br><br>
+    -->
+                        <h1>Microcontrollers</h1> <!--Change-->
+                        <!--Central Processing Unit (CPU)
+    <br>Random Access Memory (RAM)
+    <br>Read Only Memory (ROM)
+    <br>Special-Function Registers
+    <br>Peripheral Components
+    <br>Architecture to Access Memory
+    <br>Mapping Special-Function Registers into Memory Space
+    <br>Processor Architecture
+    <br>Power-Saving Modes
+    <br>Eight-Bit Microcontrollers
+    <br>16-Bit Microcontrollers
+    <br>32-Bit Microcontrollers
+    <br><br>
+    -->
+                        <h1>Computer Fundamentals</h1> <!--Change-->
+                        <!--Central Processing Unit,Memory, Input/Output Ports
+    <br>Classification of Computers on the Basis of Applications, the Technology Used, Size and Capcity
+    <br>Computer Memory
+    <br>Random Access Memory
+    <br>Static RAM
+    <br>Dynamic RAM
+    <br>RAM Applications
+    <br>Read Only Memory
+    <br>ROM Architecture
+    <br>Types of ROM
+    <br>Expanding Memory Capacity
+    <br>------- Word Size Expansion
+    <br>------- Memory Location Expansion
+    <br>Serial Ports
+    <br>Parallel Ports
+    <br>Internal Buses
+    <br>Input/Output Devices
+    <br>Magnetic Storage Devices
+    <br>Magneto-Optical Storage Devices
+    <br>Optical Storage Devices
+    <br>USB Flash Drive
+    <br><br>
+    -->
+                        <h1>Troubleshooting Digital Circuits and Test Equipment</h1> <!--Change-->
+                        <!--Faults Internal to Digital Integrated Circuits
+    <br>Faults External to Digital Integrated Circuits
+    <br>Troubleshooting Sequential Logic Circuits
+    <br>Troubleshooting Arithmetic Circuits
+    <br>Troubleshooting Memory Devices
+    <br>Troubleshooting RAM Devices
+    <br>Troubleshooting ROM Devices
+    <br>Test and Measuring Equipment
+    <br>Oscilloscope
+    <br>Importance of Specifications and Front-Panel Controls
+    <br>Types of Oscilloscope
+    <br>Analogue Oscilloscopes
+    <br>CRT Storage Type Analogue Oscilloscopes
+    <br>Digital Oscilloscopes
+    <br>Analogue Versus Digital Oscilloscopes
+    <br>Oscilloscope Specifications
+    <br>Analogue Oscilloscopes
+    <br>Analogue Storage Oscilloscope
+    <br>Digital Storage Oscilloscope
+    <br>Oscilloscope Probes Compensation
+    <br>Frequency Counter
+    <br>------- Universal Counters – Functional Modes
+    <br>------- Basic Counter Architecture
+    <br>------- Reciprocal Counters
+    <br>------- Continuous-Count Counters
+    <br>------- Counter Specifications
+    <br>------- Microwave Counters
+    <br>Frequency Synthesizers and Synthesized Function/Signal Generators
+    <br>------- Direct Frequency Synthesis
+    <br>------- Indirect Synthesis
+    <br>------- Sampled Sine Synthesis
+    <br>------- Important Specifications
+    <br>------- Synthesized Function Generators
+    <br>------- Arbitrary Waveform Generator
+    <br>Logic Probe
+    <br>Logic Analyser(Architecture and Operational Modes)
+    <br><br>-->
+                       <br>
+                        <h2><b>Reference Book</b></h2> <!--Change-->
+                        <h1>
+                            <i>
+                                Digital Electronics: Principles, Devices and Applications by Anii K.Maini
+                            </i>
+                        </h1>
+                        <img src="..\Hardware Electronics Pics\Digital Electronics pic.jpg" alt="Digital Electronics pic" style="width:60%" onclick="onClick(this)">
+
                         <br><br>
                     </p>
                 </div>
@@ -581,24 +443,23 @@
 
                 <div class="web">
                     <p>
-                        <h1><b>Latches, Flip-Flops, and Timers</b></h1> <!--Change-->
-                        Latches
+                        <h1>Latches, Flip-Flops, and Timers</h1> <!--Change-->
+                       <!-- Latches
                         <br>Flip-Flops
                         <br>Flip-Flop Operating Characteristics
                         <br>Flip-Flop Applications
                         <br>One-Shots
                         <br>The Astable Multivibrator
                         <br><br>
-                        <h1><b>Shift Registers</b></h1> <!--Change-->
-                        Shift Register Operations
+                       --> <h1>Shift Registers</h1> <!--Change-->
+                        <!--Shift Register Operations
                         <br>Types of Shift Register Data I/Os
                         <br>Bidirectional Shift Registers
                         <br>Shift Register Counters
-                        <br>Shift Register Applications
                         <br>Logic Symbols with Dependency Notation
                         <br><br>
-                        <h1><b>Counters</b></h1> <!--Change-->
-                        Finite State Machines
+                        --><h1>Counters</h1> <!--Change-->
+                        <!--Finite State Machines
                         <br>Asynchronous Counters
                         <br>Synchronous Counters
                         <br>Up/Down Synchronous Counters
@@ -608,16 +469,16 @@
                         <br>Counter Applications
                         <br>Logic Symbols with Dependency Notation
                         <br><br>
-                        <h1><b>Programmable Logic</b></h1> <!--Change-->
-                        Simple Programmable Logic Devices (SPLDs)
+                        --><h1>Programmable Logic</h1> <!--Change-->
+                        <!--Simple Programmable Logic Devices (SPLDs)
                         <br>Complex Programmable Logic Devices (CPLDs)
                         <br>Macrocell Modes
                         <br>Field-Programmable Gate Arrays (FPGAs)
                         <br>Programmable Logic software
                         <br>Boundary Scan Logic
                         <br><br>
-                        <h1><b>Data Storage</b></h1> <!--Change-->
-                        Semiconductor Memory Basics
+                        --><h1>Data Storage</h1> <!--Change-->
+                        <!--Semiconductor Memory Basics
                         <br>The Random-Access Memory (RAM)
                         <br>The Read-Only Memory (ROM)
                         <br>Programmable ROMs
@@ -628,15 +489,15 @@
                         <br>Memory Hierarchy
                         <br>Cloud Storage
                         <br><br>
-                        <h1><b>Signal Conversion and Processing </b></h1> <!--Change-->
-                        Analog-to-Digital Conversion
+                        --><h1>Signal Conversion and Processing </h1> <!--Change-->
+                        <!--Analog-to-Digital Conversion
                         <br>Methods of Analog-to-Digital Conversion
                         <br>Methods of Digital-to-Analog Conversion
                         <br>Digital Signal Processing
                         <br>The Digital Signal Processor (DSP)
                         <br><br>
-                        <h1><b>Data Transmission</b></h1> <!--Change-->
-                        Data Transmission Media
+                        --><h1>Data Transmission</h1> <!--Change-->
+                        <!--Data Transmission Media
                         <br>Methods and Modes of Data Transmission
                         <br>Modulation of Analog Signals with Digital Data
                         <br>Modulation of Digital Signals with Analog Data
@@ -647,8 +508,8 @@
                         <br>Other Serial Buses
                         <br>Bus Interfacing
                         <br><br>
-                        <h1><b>Data Processing and Control</b></h1> <!--Change-->
-                        The Computer System
+                        --><h1>Data Processing and Control</h1> <!--Change-->
+                        <!--The Computer System
                         <br>Practical Computer System Considerations
                         <br>The Processor: Basic Operation
                         <br>The Processor: Addressing Modes
@@ -658,28 +519,18 @@
                         <br>Microcontrollers and Embedded Systems
                         <br>System on Chip (SoC)
                         <br><br>
-                        <h1><b>Integrated Circuit Technologies</b></h1> <!--Change-->
-                        Basic Operational Characteristics and Parameters
+                        --><h1>Integrated Circuit Technologies</h1> <!--Change-->
+                        <!--Basic Operational Characteristics and Parameters
                         <br>CMOS Circuits
                         <br>TTL (Bipolar) Circuits
                         <br>Practical Considerations in the Use of TTL
                         <br>Comparison of CMOS and TTL Performance
                         <br>Emitter-Coupled Logic (ECL) Circuits
                         <br>PMOS, NMOS, and E2CMOS
-                        <br><br>
+                        <br><br>-->
                     </p>
-                    <div class="w3-container">
-                        <h2><b>Guidline Reference</b></h2> <!--Change-->
                         <br>
-                        <h1>
-                            <i>
-                                Digital Electronics: Principles, Devices and Applications by Anii K.Maini
-                            </i>
-                        </h1>
-                        <img src="..\Hardware Electronics Pics\Digital Electronics pic.jpg" alt="Digital Electronics pic" style="width:60%" onclick="onClick(this)">
-
-                        <br><br>
-
+                        <h2><b>Reference Book</b></h2> <!--Change-->
                         <h1>
                             <i>
                                 Digital Fundamentals
@@ -690,8 +541,7 @@
                         <br>
                         <br>
                     </div>
-                </div>
-
+                
 
             </div>
 

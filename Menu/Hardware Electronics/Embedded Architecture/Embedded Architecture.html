@@ -13,120 +13,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
+<link rel="stylesheet" href="../../reference.css">
 
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 17px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 21px
-        }
-
-        h4 {
-            font-size: 24px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-    .web {
-        width: 50%;
-        height: 100%;
-        float: left;
-    }
-
-    .content {
-        margin-left: 30%;
-    }
-
-    @media only screen and (max-width: 620px) {
-        /* For mobile phones: */
-        .web {
-            width: 100%;
-            height: 100%;
-            float: left;
-        }
-
-        .content {
-            margin-left: 0%;
-        }
-    }
-</style>
 
 <html lang="en">
 
@@ -143,7 +31,7 @@
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">Embedded Architecture</h3>
+            <h2 class="w3-padding-32">Embedded Architecture</h2>
         </div>
         <div class="w3-bar-block">
             <a href="../../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -157,10 +45,10 @@
             <a href="../Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
             <a href="../Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="../FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="../Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
             <a href="../Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-     <!--       <a href="../Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-    -->        <!--  <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!--       <a href="../Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+            -->
+            <!--  <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             -->
             <a href="../Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="../Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
@@ -169,17 +57,6 @@
             <br>
         </div>
     </nav>
-
-
-
-
-
-
-
-
-
-
-
 
     <header class="w3-container w3-top w3-hide-large w3-burgundy w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-burgundy w3-margin-right" onclick="w3_openmenu()">☰</a>
@@ -192,27 +69,24 @@
 
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
-
-
-        <!-- Services -->
-        <!-- TITLE -->
         <div class="w3-container" style="margin-top:80px" id="showcase">
-            <h8><b>Embedded Architecture</b></h8>
-            <div style="margin-top:70px">
+            <div>
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
+
                     <p>
-                        <h1><b>Microcomputer-Based Systems</b></h1>
-                        Computer Architecture
-                        <br>Embedded Computer Systems
-                        <br>9S12 Architecture
-                        <br>Phase-Lock-Loop(PLL)
-                        <br>Parallel I/O ports
-                        <br>Choosing a Micro Controller
-                        <br><br>
-                        <h1><b>Design of Software Systems</b></h1> <!--Change-->
-                        Qaulity Programming
+                        <h1>Microcomputer-Based Systems</h1>
+                        <!-- Computer Architecture
+                         <br>Embedded Computer Systems
+                         <br>9S12 Architecture
+                         <br>Phase-Lock-Loop(PLL)
+                         <br>Parallel I/O ports
+                         <br>Choosing a Micro Controller
+                         <br><br>
+                        -->
+                        <h1>Design of Software Systems</h1> <!--Change-->
+                        <!--Qaulity Programming
                         <br>Assembly Language Programming
                         <br>Self-Documenting Code
                         <br>Abstraction
@@ -224,15 +98,17 @@
                         <br>Recursion
                         <br>Debugging Stragedies
                         <br><br>
-                        <h1><b>Interfacing Methods</b></h1> <!--Change-->
-                        Key Wake-Up
+                        -->
+                        <h1>Interfacing Methods</h1> <!--Change-->
+                        <!--Key Wake-Up
                         <br>Blind Cycle Counting Synchronization
                         <br>Gadfly or Busy-Wait Synchronization
                         <br>Parallel I/O Interfaces
                         <br>Serial Communication Interface(SCI) Device Driver
                         <br><br>
-                        <h1><b>Interrupt Synchronization</b></h1> <!--Change-->
-                        Interrupts
+                        -->
+                        <h1>Interrupt Synchronization</h1> <!--Change-->
+                        <!--Interrupts
                         <br>Reentracy
                         <br>FIFO(First in First out Queue)
                         <br>General Features of Interrupts on the 9S12
@@ -246,45 +122,50 @@
                         <br>Periodic Interrupts
                         <br>Low Power Design
                         <br><br>
-                        <h1><b>Real-Time Operating Systems</b></h1> <!--Change-->
-                        Round robin Scheduler
+                        -->
+                        <h1>Real-Time Operating Systems</h1> <!--Change-->
+                        <!--Round robin Scheduler
                         <br>Semaphores
                         <br>Thread Synchronization and Communication
                         <br>Fixed Scheduling
                         <br>OS Considerations for I/O Devices
                         <br><br>
-                        <h1><b>Timing Generation and Measurements</b></h1> <!--Change-->
-                        Input Capture
+                        -->
+                        <h1>Timing Generation and Measurements</h1> <!--Change-->
+                        <!--Input Capture
                         <br>Output Capture
                         <br>Frequency Measurement
                         <br>Conversion Between Frequency and Period
                         <br>Pulse Accumulator
                         <br>Pulse Width Modulation
                         <br><br>
-                        <h1><b>Serial I/O Devices</b></h1> <!--Change-->
-                        Serial Communication Interface
+                        -->
+                        <h1>Serial I/O Devices</h1> <!--Change-->
+                        <!--Serial Communication Interface
                         <br>SPI
                         <br>I2C Interface
                         <br>Logic Level Conversion
                         <br>Universal Serial Bus(USB)
                         <br><br>
-                        <h1><b>Memory Interfacing</b></h1>
-                        Address Decoding
+                        -->
+                        <h1>Memory Interfacing</h1>
+                        <!--Address Decoding
                         <br>General Memory Bus Timing
                         <br>External Bus Timing
                         <br>Paged Memory
                         <br>Programming Flash EEPROM
                         <br>Dynamic RAM(DRAM)
                         <br><br>
-                        <h1><b>High Speed I/O Interfacing</b></h1> <!--Change-->
-                        High-Speed I/O Applications
+                        -->
+                        <h1>High Speed I/O Interfacing</h1> <!--Change-->
+                        <!--High-Speed I/O Applications
                         <br>General Approaches to High-Speed Interfaces
                         <br>Fundamental Approach to DMA
                         <br>Secure Digital Card Interface
                         <br>File System Management
-                        <br><br>
-                        <h1><b>Inter-integrated Circuits I2C</b></h1>
-                        I2C Protocol
+                        <br><br>-->
+                        <h1>Inter-integrated Circuits I2C</h1>
+                        <!--I2C Protocol
                         <br>The I2C Bus Hardware Structure
                         <br>I2C Bus Interface
                         <br>SDA and SCL Signals
@@ -302,58 +183,81 @@
                         <br>I2C Modes: Bus Speeds
                         <br>I2C as a Multi-master Bus: Bus Arbitration.
                         <br>I2C Interface: Connecting I2C Bus to a PC
-                        <br><br>
-                    </p>
-                </div>
-
-
-                <div class="web">
-                    <p>
-                        <h1><b>Design of I2C Bus and Operation</b></h1>
                         <br>Design of I2C Bus
                         <br>Operating above the Maximum Allowable Bus Capacitance
                         <br>Managing the Delay in Large Systems: Use of Buffers, Repeaters, Multiplexers, and Switches
                         <br>Use of Multiplexor/Switches to Solve Address Conflict
                         <br>Advantages and Limitation of I2C Communication
                         <br><br>
-                        <h1><b>Bluetooth</b></h1>
-                        <br>Bluetooth Stack Architecture
+                        -->
+                        <h1>Bluetooth</h1>
+                        <!--Bluetooth Stack Architecture
                         <br>Bluetooth Stack Layers
                         <br>Device Discovery
                         <br>Service Discovery and Acess
                         <br>Bluetooth Security
                         <br>Bluetooth Vulnerability and Threats
-                        <br><br>
-                        <br><br>
-                        <h1 class="w3-xlarge"><b>Reference</b></h1> <!--Change-->
-                    <p>
-
-                        <h1>
-                            <i>
-                                Embedded Microcomputer Systems Real Time Interfacing Book Jonathan W. Valvano
-                            </i>
-
-                        </h1>
-                        <a target="_blank" href="Pictures/Embedded Architecture pics.jpg">
-                            <img src="Pictures/Embedded Architecture pics.jpg" alt="Equations" style="width:60%">
-                        </a>
-
-                        <h1>
-                            <i>
-                                <br>Microcontroller and Smart Home Networks
-                                Book by Dawound Shenouda Dawound and Peter Dawound
-                            </i>
-                        </h1>
-                        <a target="_blank" href="Pictures/Microcontroller networks.jpg">
-                            <img src="Pictures/Microcontroller networks.jpg" alt="Equations" style="width:60%">
-                        </a>
-
+                        <br><br>-->
                     </p>
-                    <br><br>
+                    <br>
+                    <h2><b>Book References</b></h2> <!--Change-->
 
+                    <a>
+                        <i>
+                            Embedded Microcomputer Systems Real Time Interfacing Book Jonathan W. Valvano
+                        </i>
+
+                    </a>
+                    <br>
+                    <a target="_blank" href="Pictures/Embedded Architecture pics.jpg">
+                        <img src="Pictures/Embedded Architecture pics.jpg" alt="Equations" style="width:60%">
+                    </a>
+                    <br><br>
+                    <h2>
+                        My Projects on Embedded System
+                    </h2>
+
+                    IPC in Linux: <a href="https://github.com/jiwook021/Linux-IPC-Message-Queue">
+                        https://github.com/jiwook021/Linux-IPC-Message-Queue-
+                    </a>
+                    <br>ROS SLAM with C++: <a href="https://github.com/jiwook021/ROS_SLAM_Projects">
+                        https://github.com/jiwook021/ROS_SLAM_Projects
+                    </a>
+                    <br>FPGA Projects: <a href="https://github.com/jiwook021/Verilog-Projects">
+                        https://github.com/jiwook021/Verilog-Projects
+                    </a>
+                    <br>Embedded System Toy Projects: <a href="https://github.com/jiwook021/Embedded_System_Toy_Project">
+                        https://github.com/jiwook021/Embedded_System_Toy_Project
+                    </a>
 
 
                 </div>
+
+
+                <div class="web">
+                    <h2><b>Lecture Series on Embedded System</b></h2>
+                    <h1>STM32 Lecture by Wonyeob Chris Park</h1>
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/_7Ll95FITn4?list=PLUaCOzp6U-RqMo-QEJQOkVOl1Us8BNgXk" title="[HAL, CubeMX, TrueSTUDIO] STM32F4 Tutorial 2-1. USART(UART) in polling mode." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br><br>
+                    <a>
+                        <i>
+                            Microcontroller and Smart Home Networks
+                            Book by Dawound Shenouda Dawound and Peter Dawound
+                        </i>
+                    </a>
+                    <br>
+                    <a target="_blank" href="Pictures/Microcontroller networks.jpg">
+                        <img src="Pictures/Microcontroller networks.jpg" alt="Equations" style="width:60%">
+                    </a>
+                    <br><br>
+                    <h2>Podcast</h2>
+                    <br>
+                    <img src="../../audio books/embedded_edge.png" alt="Equations" style="width:40%">
+                    <br><br>
+                </div>
+
+
+
             </div>
         </div>
 

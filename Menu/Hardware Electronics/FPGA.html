@@ -11,117 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 27px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    body {
-        font-size: 13px;
-    }
-
-
-
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-    .main {
-        float: left;
-        width: 60%;
-        padding: 0 20px;
-    }
-
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -132,7 +22,7 @@
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">FPGA (SystemVerilog)</h3> <!--Change-->
+            <h2 class="w3-padding-32">FPGA (SystemVerilog)</h2> <!--Change-->
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -145,16 +35,17 @@
             <a href="FPGA_Function Generator.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Function Generator</a>
             <br>
             <br>
-            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Circuit Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Circuit Theory</a>
             <a href="Analog Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Analog Electronics</a>
             <a href="Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
-          <!--  <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-         -->   <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
+            <!--  <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
+    -->
+            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-       <!--     <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-       -->     <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!--     <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+    -->
+            <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
             <a href="Hardware_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Hardware Resources</a>
@@ -181,399 +72,456 @@
 
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>FPGA (SystemVerilog)</b></h8>
-
-            <div style="margin-top:70px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+      
+            <div>
 
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
                     <p>
-                        <h1><b>SystemVerilog Simulation and Synthesis</b></h1> <!--Change-->
-                        RTL and Gate-level modeling
-                        <br>------- Abstraction
-                        <br>------- Gate-level models
-                        <br>------- RTL models
-                        <br>------- Behavioral and transaction-level models
-                        <br>Defining an RTL Sythesis subset of SystemVerilog
-                        <br>Modeling for ASICs and FPGAs
-                        <br>------- Standard cell ASICs
-                        <br>------- FPGAs
-                        <br>------- RTL coding styles for ASICs and FPGAs
-                        <br>SystemVerilog simulation
-                        <br>------- SystemVerilog simulators
-                        <br>------- Compilation and elaboration
-                        <br>------- Simulation time and event scheduling
-                        <br>Digital synthesis
-                        <br>------- SystemVerilog synthesis compilers
-                        <br>------- Synthesis Compilation
-                        <br>------- Constraints
-                        <br>SystemVerilog link checkers
-                        <br>Logic Equivalence Checkers
+                        <h1>SystemVerilog Simulation and Synthesis</h1> <!--Change-->
+                        <!--         RTL and Gate-level modeling
+                 <br>Behavioral and transaction-level models
+                 <br>Defining an RTL Sythesis subset of SystemVerilog
+                 <br>Modeling for ASICs and FPGAs
+                 <br>Standard cell ASICs
+                 <br>RTL coding styles for ASICs and FPGAs
+                 <br>SystemVerilog simulation
+                 <br>------- SystemVerilog simulators
+                 <br>------- Compilation and elaboration
+                 <br>------- Simulation time and event scheduling
+                 <br>Digital synthesis
+                 <br>------- SystemVerilog synthesis compilers
+                 <br>------- Synthesis Compilation
+                 <br>------- Constraints
+                 <br>SystemVerilog link checkers
+                 <br>Logic Equivalence Checkers
+                 <br><br>
+        -->
+                        <h1>RTL Modeling Fundamentals</h1> <!--Change-->
+                        <!--      Modules and procedural blocks
+              <br>SystemVerilog language rules
+              <br>------- Comments
+              <br>------- White space
+              <br>------- Reserved keywords
+              <br>------- Keyword backward compatibility 'begin_keywords
+              <br>------- identifiers(user-defined names)
+              <br>------- Naming conventions and guidelines
+              <br>------- System tasks and functions
+              <br>------- Compiler directives
+              <br>Modules instances and hierarchy
+              <br>------- Port order connections
+              <br>------- Named port connections
+              <br>------- The dot-name inferred named port connection shortcut
+              <br>------- The dot-star inferred named port connection shortcut
+              <br><br>
+        -->
+                        <h1>Net and Variable types</h1> <!--Change-->
+                        <!--Four-state data values
+        <br>Literal values (numbers)
+        <br>------- Literal integer values
+        <br>------- vector fill literal values
+        <br>------- Flating-point literal value
+        <br>Types and data types
+        <br>------- Net types and variable types
+        <br>------- Two-state and four-state data types(bit and logic)
+        <br>Variable types
+        <br>------- Synthesizable variable data types
+        <br>------- Variable declaration rules
+        <br>------- Variable assignment rules
+        <br>------- Uninitialized variables
+        <br>------- In-line variable initialization
+        <br>Net types
+        <br>------- Synthesizable net types
+        <br>------- Net declaration rules
+        <br>------- Implicit net declarations
+        <br>------- Net assignment and connection rules
+        <br>Port Declarations
+        <br>------- Synthesizable port declarations
+        <br>------- Non sythesizable port declarations
+        <br>------- Module port declaration recommendations
+        <br>Unpacked array of nets and variables
+        <br>------- Accessing array elements
+        <br>------- Copying arrays
+        <br>------- Array list assignments
+        <br>------- bit-select and part-select of array elements
+        <br>Parameter constants
+        <br>------- Parameter declarations
+        <br>------- Parameter overrides
+        <br>Const variables
+        <br><br>
+        <h1>User-define Types and Packages</h1>-->
+                        <!--Change-->
+                        <!--User-defined types
+        <br>------- Naming conventions for user-defined types
+        <br>------- local typedef definitions
+        <br>------- Shared typedef definition
+        <br>SystemVerilog packages
+        <br>------- Package declarations
+        <br>------- Using package items
+        <br>------- Importing from multiple packages
+        <br>------- Package chaining
+        <br>------- Package compilation order
+        <br>------- Synthesis consideration
+        <br>The $unit declaration space
+        <br>Enumerated types
+        <br>------- Enumerated type declaration syntax
+        <br>------- Importing enumerated types from packages
+        <br>------- Enumerated type assignment rules
+        <br>------- Enumerated type methods
+        <br>Structures
+        <br>------- Structure declarations
+        <br>------- Assigning to structure members
+        <br>------- Assigning to entire structure
+        <br>------- Typed and anonymous structures
+        <br>------- Copying Structures
+        <br>------- Packed and unpacked structures
+        <br>------- Passing structures through ports and to tasks and functions
+        <br>------- Traditional Verilog Versus Structures
+        <br>------- Synthesis considerations
+        <br>Unions
+        <br>------- Typed and anonymous unions
+        <br>------- Assigning to, and reading from, union variables
+        <br>------- Unpacked, packed and tagged unions
+        <br>------- Passing union through ports and to tasks and functions
+        <br>Using arrays with structures and Unions
+        <br><br>-->
+                        <h1>RTL Expression Operators</h1> <!--Change-->
+                        <!--   Operator expression rules
+           <br>------- 4-state and 2-state operations
+           <br>------- X-optimism and X-pessimism
+           <br>------- Expression vector sizes and automatic vector extension
+           <br>------- Signed and unsigned expressions
+           <br>------- Integer (vector) and real (floating-point) expressions
+           <br>Concatenate and replicate operators
+           <br>Ternary operator
+           <br>Bitwise operators
+           <br>Reduction operators
+           <br>Logical operators
+           <br>------- Difference between negate and invert operations
+           <br>------- Short circuiting logical operations
+           <br>------- Non-synthesizable logical operators
+           <br>Comparison operators (equality and relational)
+           <br>Case equality (identity) operators
+           <br>Set membership (inside) operator
+           <br>Shift operators
+           <br>------- Synthesizing shift operations
+           <br>------- Synthesizing rotate operations
+           <br>Streaming operators (pack and unpack)
+           <br>Arithmetic operators
+           <br>------- Integer and floating-point arithmetic
+           <br>------- Unsigned and signed arithmetic might sythesize to the same gates
+           <br>Increment and decrement operators
+           <br>------- Proper usage of increment and decrement operators
+           <br>------- Compound operations with increment and decrement operators
+           <br>Assignment operators
+           <br>Cast operators and type conversions
+           <br>------- Type casting
+           <br>------- Size casting
+           <br>------- Signedness casting
+           <br>------- operator prcedence
+           <br><br>
+        -->
+                        <h1>RTL Programming Statements</h1> <!--Change-->
+                        <!-- SystemVerilog Procedural blocks
+         <br>------- Sensitivity Lists
+         <br>------- Begin-end statement groups
+         <br>------- Using variables and nets in procedural blocks
+         <br>Decision statements
+         <br>------- if-else statements
+         <br>------- Case statements
+         <br>------- Unique and priority decision modifiers
+         <br>Looping statements
+         <br>------- For loops
+         <br>------- Repeat loops
+         <br>------- While and do-while loops
+         <br>------- Foreach loops and lopping through arrays
+         <br>Jump statement
+         <br>------- The continue and break jump statements
+         <br>------- disable jump statement
+         <br>No-op statement
+         <br>Functions and tasks in RTL modeling
+         <br><br>
+        -->
+                        <h1>Modeling Combinational Logic</h1> <!--Change-->
+                        <!--Continuous assignments
+        <br>------- Explicit and inferred continous assignments
+        <br>------- Multiple continuous assignments
+        <br>------- Using both continous assignments and always procedures
+        <br>The always and always_comb procedures
+        <br>------- Synthesizing combinational logic always procedures
+        <br>------- Modeling with the general purpose always procedures
+        <br>------- Modeling with the RTL-specific always_comb procedures
+        <br>------- Using blocking(combinational logic) assignments
+        <br>------- Avoiding unintentional latches in combinational logic procedures
+        <br>Using functions to represent combinational logic
+        <br>Combinational logic decision priority
+        <br>------- Removing unnecessary priority encoding from case decisions
+        <br>------- The unique and unique() decision modifiers
+        <br>------- The obsolete prallel_case synthesis pragma
+        <br><br>
+        -->
+                        <h1>Modeling Sequential Logic</h1> <!--Change-->
+                        <!--RTL models of flip-flops and registers
+        <br>------- Synthesis requirements for RTL sequential logic
+        <br>------- Always procedures and always_ff procedures
+        <br>------- Sequential logic clock-to-Q propagation and setup/hold times
+        <br>------- Using nonblocking assignments
+        <br>------- Synchronous and asynchronous reset
+        <br>------- Multiple clocks and clock domain crossing (CDC)
+        <br>------- Additional RTL sequential logic modeling considerations
+        <br>Modeling Finite State Machines(FSMs)
+        <br>------- Mealy and Moore FSM architectures
+        <br>------- State encoding
+        <br>------- One, two and three-procedure FSM coding styles
+        <br>------- A complete FSM example
+        <br>------- Reverse case statement one-hot decoder
+        <br>------- Avoiding latches in state machine decoders
+        <br>Modeling memory devices such as RAMs
+        <br>------- Modeling asynchronous and synchronous memory devices
+        <br>------- Loading memory models using $readmemb and $readmemh
+        <br><br>
+        -->
+                        <h1>Modeling Latches and Avoiding Unintentional Latches</h1> <!--Change-->
+                        <!--Modeling Latches
+        <br>------- Modeling latches with the general purpose always procedure
+        <br>------- Modeling latches with the always_latch procedure
+        <br>Unintentional latch inference
+        <br>Avoiding latches in intentionally incomplete decisions
+        <br>------- Latch avoidance coding style trade-offs
+        <br>------- Latch avoidance style 1 - Default case item with known values
+        <br>------- Latch avoidance style 2 - Pre-case assignment, known values
+        <br>------- Latch avoidance style 3 - unique and priority decision modifers
+        <br>------- Latch avoidance style 4 - X assignments for unused decision values
+        <br>------- Latch avoidance style 5 - the full_case synthesis pragma
+        <br>Additional notes about synthesis pragmas
+        <br><br>
+        <h1>Modeling Communication Buses - Interfaces Ports</h1>-->
+                        <!--Change-->
+                        <!--Interface port concepts
+        <br>------- Traditional Verilog bus connections
+        <br>------- SystemVerilog interface definitions
+        <br>------- Referencing signals within an interface
+        <br>------- Differences between modules and interfaces
+        <br>------- Source code declaration order
+        <br>Using interfaces as module ports
+        <br>------- Generic interface ports
+        <br>------- Type-specific interface ports
+        <br>Interface modports
+        <br>------- Specifying which modport view to use
+        <br>------- using modports to define different sets of connections
+        <br>Interface methods (tasks and functions)
+        <br>------- Calling methods defined in an interface
+        <br>------- Synthesizing interface methods
+        <br>------- Abstract, non-synthesizable interface methods
+        <br>Interface procedural code
+        <br>Parameterized interfaces
+        <br>Synthesizing interfaces
+        <br><br>-->
+                        <br>
+                        <h2><b>Reference Books</b></h2> <!--Change-->
+                        <a>
+                            <i>
+                                RTL Modeling with SystemVerilog for Simulation and Synthesis using SystemVerilog for ASIC and FPGA design
+                                Book by Stuart Sutherland
+                            </i>
+                        </a>
+                        <br>
+                        <a target="_blank" href="Hardware Electronics Pics/SystemVerilog.webp">
+                            <img src="Hardware Electronics Pics/SystemVerilog.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
+                        </a>
+                    </p>
+                    <br>
+                    <h3><b>Lecture Series</b></h3>
+                    <p>
+                        <h1>FPGA Architecture Training by Xilinix Inc</h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/WQf_b8RqpJs?list=PLRr5m7hDN9TLnlZDmrBlVGEREjauRGMol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br><br>
-                        <h1><b>RTL Modeling Fundamentals</b></h1> <!--Change-->
-                        Modules and procedural blocks
-                        <br>SystemVerilog language rules
-                        <br>------- Comments
-                        <br>------- White space
-                        <br>------- Reserved keywords
-                        <br>------- Keyword backward compatibility 'begin_keywords
-                        <br>------- identifiers(user-defined names)
-                        <br>------- Naming conventions and guidelines
-                        <br>------- System tasks and functions
-                        <br>------- Compiler directives
-                        <br>Modules
-                        <br>Modules instances and hierarchy
-                        <br>------- Port order connections
-                        <br>------- Named port connections
-                        <br>------- The dot-name inferred named port connection shortcut
-                        <br>------- The dot-star inferred named port connection shortcut
+                        <h1>FPGA Design Training by Xilinx Inc</h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/nbYxBFd6x-4?list=PLRr5m7hDN9TJWxZxvX0ZS6hYNgvkDpjCG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br><br>
-                        <h1><b>Net and Variable types</b></h1> <!--Change-->
-                        Four-state data values
-                        <br>Literal values (numbers)
-                        <br>------- Literal integer values
-                        <br>------- vector fill literal values
-                        <br>------- Flating-point literal value
-                        <br>Types and data types
-                        <br>------- Net types and variable types
-                        <br>------- Two-state and four-state data types(bit and logic)
-                        <br>Variable types
-                        <br>------- Synthesizable variable data types
-                        <br>------- Variable declaration rules
-                        <br>------- Variable assignment rules
-                        <br>------- Uninitialized variables
-                        <br>------- In-line variable initialization
-                        <br>Net types
-                        <br>------- Synthesizable net types
-                        <br>------- Net declaration rules
-                        <br>------- Implicit net declarations
-                        <br>------- Net assignment and connection rules
-                        <br>Port Declarations
-                        <br>------- Synthesizable port declarations
-                        <br>------- Non sythesizable port declarations
-                        <br>------- Module port declaration recommendations
-                        <br>Unpacked array of nets and variables
-                        <br>------- Accessing array elements
-                        <br>------- Copying arrays
-                        <br>------- Array list assignments
-                        <br>------- bit-select and part-select of array elements
-                        <br>Parameter constants
-                        <br>------- Parameter declarations
-                        <br>------- Parameter overrides
-                        <br>Const variables
+                        <h1>Verilog Lecture by FPGA King</h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/Juwqs8wYx2o?list=PLieE0qnqO2kSZPQPMk8Vf1Rn_dAfRBs2-" title="(온라인 워크숍) [Verilog 강의 05강]  Verilog Reperesentation of Digital Logic 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br><br>
-                        <h1><b>User-define Types and Packages</b></h1> <!--Change-->
-                        User-defined types
-                        <br>------- Naming conventions for user-defined types
-                        <br>------- local typedef definitions
-                        <br>------- Shared typedef definition
-                        <br>SystemVerilog packages
-                        <br>------- Package declarations
-                        <br>------- Using package items
-                        <br>------- Importing from multiple packages
-                        <br>------- Package chaining
-                        <br>------- Package compilation order
-                        <br>------- Synthesis consideration
-                        <br>The $unit declaration space
-                        <br>Enumerated types
-                        <br>------- Enumerated type declaration syntax
-                        <br>------- Importing enumerated types from packages
-                        <br>------- Enumerated type assignment rules
-                        <br>------- Enumerated type methods
-                        <br>------- Traditional Verilog coding style without enumerated types
-                        <br>Structures
-                        <br>------- Structure declarations
-                        <br>------- Assigning to structure members
-                        <br>------- Assigning to entire structure
-                        <br>------- Typed and anonymous structures
-                        <br>------- Copying Structures
-                        <br>------- Packed and unpacked structures
-                        <br>------- Passing structures through ports and to tasks and functions
-                        <br>------- Traditional Verilog Versus Structures
-                        <br>------- Synthesis considerations
-                        <br>Unions
-                        <br>------- Typed and anonymous unions
-                        <br>------- Assigning to, and reading from, union variables
-                        <br>------- Unpacked, packed and tagged unions
-                        <br>------- Passing union through ports and to tasks and functions
-                        <br>Using arrays with structures and Unions
-                        <br><br>
-                        <h1><b>RTL Expression Operators</b></h1> <!--Change-->
-                        Operator expression rules
-                        <br>------- 4-state and 2-state operations
-                        <br>------- X-optimism and X-pessimism
-                        <br>------- Expression vector sizes and automatic vector extension
-                        <br>------- Signed and unsigned expressions
-                        <br>------- Integer (vector) and real (floating-point) expressions
-                        <br>Concatenate and replicate operators
-                        <br>Ternary operator
-                        <br>Bitwise operators
-                        <br>Reduction operators
-                        <br>Logical operators
-                        <br>------- Difference between negate and invert operations
-                        <br>------- Short circuiting logical operations
-                        <br>------- Non-synthesizable logical operators
-                        <br>Comparison operators (equality and relational)
-                        <br>Case equality (identity) operators
-                        <br>Set membership (inside) operator
-                        <br>Shift operators
-                        <br>------- Synthesizing shift operations
-                        <br>------- Synthesizing rotate operations
-                        <br>Streaming operators (pack and unpack)
-                        <br>Arithmetic operators
-                        <br>------- Integer and floating-point arithmetic
-                        <br>------- Unsigned and signed arithmetic might sythesize to the same gates
-                        <br>Increment and decrement operators
-                        <br>------- Proper usage of increment and decrement operators
-                        <br>------- An example of correct usage of increment and decrement operators
-                        <br>------- Compoung operations with increment and decrement operators
-                        <br>------- An anecdotal story on the increment and decrement operators
-                        <br>Assignment operators
-                        <br>Cast operators and type conversions
-                        <br>------- Type casting
-                        <br>------- Size casting
-                        <br>------- Signedness casting
-                        <br>------- operator prcedence
-                        <br><br>
-                        <h1><b>RTL Programming Statements</b></h1> <!--Change-->
-                        SystemVerilog Procedural blocks
-                        <br>------- Sensitivity Lists
-                        <br>------- Begin-end statement groups
-                        <br>------- Using variables and nets in procedural blocks
-                        <br>Decision statements
-                        <br>------- if-else statements
-                        <br>------- Case statements
-                        <br>------- Unique and priority decision modifiers
-                        <br>Looping statements
-                        <br>------- For loops
-                        <br>------- Repeat loops
-                        <br>------- While and do-while loops
-                        <br>------- Foreach loops and lopping through arrays
-                        <br>Jump statement
-                        <br>------- The continue and break jump statements
-                        <br>------- THe disable jump statement
-                        <br>No-op statement
-                        <br>Functions and tasks in RTL modeling
-                        <br>------- Functions
-                        <br>------- Tasks
-                        <br><br>
-                        <h1><b>Modeling Combinational Logic</b></h1> <!--Change-->
-                        Continuous assignments
-                        <br>------- Explicit and inferred continous assignments
-                        <br>------- Multiple continuous assignments
-                        <br>------- Using both continous assignments and always procedures
-                        <br>The always and always_comb procedures
-                        <br>------- Synthesizing combinational logic always procedures
-                        <br>------- Modeling with the general purpose always procedures
-                        <br>------- Modeling with the RTL-specific always_comb procedures
-                        <br>------- Using blocking(combinational logic) assignments
-                        <br>------- Avoiding unintentional latches in combinational logic procedures
-                        <br>Using functions to represent combinational logic
-                        <br>Combinational logic decision priority
-                        <br>------- Removing unnecessary priority encoding from case decisions
-                        <br>------- The unique and unique() decision modifiers
-                        <br>------- The obsolete prallel_case synthesis pragma
-                        <br><br>
-                        <h1><b>Modeling Sequential Logic</b></h1> <!--Change-->
-                        RTL models of flip-flops and registers
-                        <br>------- Synthesis requirements for RTL sequential logic
-                        <br>------- Always procedures and always_ff procedures
-                        <br>------- Sequential logic clock-to-Q propagation and setup/hold times
-                        <br>------- Using nonblocking assignments
-                        <br>------- Synchronous and asynchronous reset
-                        <br>------- Multiple clocks and clock domain crossing (CDC)
-                        <br>------- Additional RTL sequential logic modeling considerations
-                        <br>Modeling Finite State Machines(FSMs)
-                        <br>------- Mealy and Moore FSM architectures
-                        <br>------- State encoding
-                        <br>------- One, two and three-procedure FSM coding styles
-                        <br>------- A complete FSM example
-                        <br>------- Reverse case statement one-hot decoder
-                        <br>------- Avoiding latches in state machine decoders
-                        <br>Modeling memory devices such as RAMs
-                        <br>------- Modeling asynchronous and synchronous memory devices
-                        <br>------- Loading memory models using $readmemb and $readmemh
-                        <br><br>
-                        <h1><b>Modeling Latches and Avoiding Unintentional Latches</b></h1> <!--Change-->
-                        Modeling Latches
-                        <br>------- Modeling latches with the general purpose always procedure
-                        <br>------- Modeling latches with the always_latch procedure
-                        <br>Unintentional latch inference
-                        <br>Avoiding latches in intentionally incomplete decisions
-                        <br>------- Latch avoidance coding style trade-offs
-                        <br>------- A small example to illustrate avoiding unintentional latches
-                        <br>------- Latch avoidance style 1 - Default case item with known values
-                        <br>------- Latch avoidance style 2 - Pre-case assignment, known values
-                        <br>------- Latch avoidance style 3 - unique and priority decision modifers
-                        <br>------- Latch avoidance style 4 - X assignments for unused decision values
-                        <br>------- Latch avoidance style 5 - the full_case synthesis pragma
-                        <br>Additional notes about synthesis pragmas
-                        <br><br>
-                        <h1><b>Modeling Communication Buses - Interfaces Ports</b></h1> <!--Change-->
-                        Interface port concepts
-                        <br>------- Traditional Verilog bus connections
-                        <br>------- SystemVerilog interface definitions
-                        <br>------- Referencing signals within an interface
-                        <br>------- Differences between modules and interfaces
-                        <br>------- Source code declaration order
-                        <br>Using interfaces as module ports
-                        <br>------- Generic interface ports
-                        <br>------- Type-specific interface ports
-                        <br>Interface modports
-                        <br>------- Specifying which modport view to use
-                        <br>------- using modports to define different sets of connections
-                        <br>Interface methods (tasks and functions)
-                        <br>------- Calling methods defined in an interface
-                        <br>------- Synthesizing interface methods
-                        <br>------- Abstract, non-synthesizable interface methods
-                        <br>Interface procedural code
-                        <br>Parameterized interfaces
-                        <br>Synthesizing interfaces
+                        <h1>Ultrascale and Ultrascale + tutorials Xilinx Inc</h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/TzzzM97L4HI?list=PLRr5m7hDN9TKZSSGwy9RQCqvjx9U5XVoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h1>FPGA Lecture Series by Shawn Hymel</h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/gmaSjyUij9E?list=PLEBQazB0HUyT1WmMONxRZn9NmQ_9CIKhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h1>RTOS(Real Time Operating System) in FPGA</h1>
+                        <a href="https://www.idec.or.kr/vod/apply/view/?&page=10&no=77">
+                            https://www.idec.or.kr/vod/apply/view/?&page=10&no=77
+                        </a>
                         <br><br>
 
                     </p>
+                    <br><br><br><br>
                 </div>
                 <div class="web">
                     <p>
-                        <h1><b>Introduction and Methodology</b></h1> <!--Change-->
-                        Digital Systems and Embedded Systems
-                        <br>Binary Representation and Circuit Elements
-                        <br>Real-World Circuits
-                        <br>------- Integrated Circuits
-                        <br>------- Logic Levels
-                        <br>------- Static Load Levels
-                        <br>------- Capacitive Load and Propagation Delay
-                        <br>------- Wire Delay
-                        <br>------- Sequential Timing
-                        <br>------- Power
-                        <br>------- Area and Packaging
-                        <br>Models
-                        <br>Design Methodology
+                        <h1>Introduction and Methodology</b></h1> <!--Change-->
+                        <!--    Digital Systems and Embedded Systems
+                <br>Binary Representation and Circuit Elements
+                <br>Real-World Circuits
+                <br>------- Integrated Circuits
+                <br>------- Logic Levels
+                <br>------- Static Load Levels
+                <br>------- Capacitive Load and Propagation Delay
+                <br>------- Wire Delay
+                <br>------- Sequential Timing
+                <br>------- Power
+                <br>------- Area and Packaging
+                <br>Models
+                <br>Design Methodology
+                <br><br>
+            -->
+                        <h1>Combinational Basics</b></h1> <!--Change-->
+                        <!-- Boolean Functions and Boolean Algebra
+             <br>------- Boolean Functions
+             <br>------- Boolean Algebra
+             <br>------- Verilog Models of Boolean Equations
+             <br>Binary Coding
+             <br>------- Using Vectors for Binary Codes
+             <br>------- Bit Errors
+             <br>Combinational Components and Circuits
+             <br>------- Decoders and Encoders
+             <br>------- Multiplexers
+             <br>------- Active-Low Logic
+             <br>Verification of Combinational Circuits
+             <br><br>
+            -->
+                        <h1>Numeric Basics</b></h1> <!--Change-->
+                        <!--Unsigned Integers
+            <br>------- Coding Unsigned Integers
+            <br>------- Operations on Unsigned Integers
+            <br>------- Gray Codes
+            <br>Signed Integers
+            <br>------- Coding Signed Integers
+            <br>------- Operations on Signed Integers
+            <br>Fixed-Point Numbers
+            <br>------- Coding Fixed-Point Numbers
+            <br>------- Operations on Fixed-Point Numbers
+            <br>Floating-Point Numbers
+            <br>------- Coding Floating-Point Numbers
+            <br><br>
+            -->
+                        <h1>Sequential Basics</b></h1> <!--Change-->
+                        <!--Storage Elements
+            <br>------- Flip-flops and Registers
+            <br>------- Shift Registers
+            <br>------- Latches
+            <br>Counters
+            <br>Sequential Datapaths and Control
+            <br>------- Finite-State Machines
+            <br>Clocked Synchronous Timing Methodology
+            <br>------- Asynchronous Inputs
+            <br>------- Verification of Sequential Circuits
+            <br>------- Asynchronous Timing Methodologies
+            <br><br>
+            -->
+                        <h1>Memories</b></h1> <!--Change-->
+                        <!--General Concepts
+            <br>Memory Types
+            <br>------- Asynchronous Static RAM
+            <br>------- Synchronous Static RAM
+            <br>------- Multiport Memories
+            <br>------- Dynamic RAM
+            <br>------- Read-Only Memories
+            <br><br>
+            -->
+                        <h1>Implementation Fabrics</b></h1> <!--Change-->
+                        <!--Integrated Circuits
+            <br>------- Integrated Circuit Manufacture
+            <br>------- SSI and MSI Logic Families
+            <br>------- Application-Specific Integrated Circuits (ASICs)
+            <br>Programmable Logic Devices
+            <br>------- Programmable Array Logic
+            <br>------- Complex PLDs
+            <br>------- Field-Programmable Gate Arrays
+            <br>Interconnection and Signal Integrity
+            <br>------- Differential Signaling
+            <br><br>
+            -->
+                        <h1>Processor Basics</b></h1> <!--Change-->
+                        <!--Embedded Computer Organization
+            <br>------- Microcontrollers and Processor Cores
+            <br>Instructions and Data
+            <br>------- The Gumnut Instruction Set
+            <br>------- The Gumnut Assembler
+            <br>------- Instruction Encoding
+            <br>------- Other CPU Instruction Sets
+            <br>Interfacing with Memory
+            <br>------- Cache Memory
+            <br>Induction Motor Speed Control
+            <br><br>
+            -->
+                        <h1>I/O Interfacing</b></h1>
+                        <!--I/O Devices
+            <br>------- Input Devices
+            <br>------- Output Devices
+            <br>I/O Controllers
+            <br>------- Simple I/O Controllers
+            <br>------- Autonomous I/O Controllers
+            <br>Parallel Buses
+            <br>------- Multiplexed Buses
+            <br>------- Tristate Buses
+            <br>------- Open-Drain Buses
+            <br>------- Bus Protocols
+            <br>Serial Transmission
+            <br>------- Serial Transmission Techniques
+            <br>------- Serial Interface Standards
+            <br>I/O Software
+            <br>------- Polling
+            <br>------- Interrupts
+            <br>------- Timers
+            <br><br>
+            -->
+                        <h1>Accelerators</b></h1> <!--Change-->
+                        <!--General Concepts
+            <br>Case Study: Video Edge-Detection
+            <br>Verifying an Accelerator
+            <br><br>
+            -->
+                        <h1>Design Methodology</b></h1> <!--Change-->
+                        <!--Design Flow
+            <br>------- Architecture Exploration
+            <br>------- Functional Design
+            <br>------- Functional Verification
+            <br>------- Synthesis
+            <br>------- Physical Design
+            <br>Design Optimization
+            <br>------- Area Optimization
+            <br>------- Timing Optimization
+            <br>------- Power Optimization
+            <br>Design for Test
+            <br>------- Fault Models and Fault Simulation
+            <br>------- Scan Design and Boundary Scan
+            <br>------- Built-In Self Test (BIST)
+            <br><br>
+            -->
+                        <h1>Verilog for Synthesis</b></h1> <!--Change-->
+                        <!--<br>Data Types and Operations
+            <br>Combinational Functions
+            <br>Sequential Circuits
+            <br>------- Finite-State Machines
+            <br>Memories
+            <br>-->
                         <br><br>
-                        <h1><b>Combinational Basics</b></h1> <!--Change-->
-                        Boolean Functions and Boolean Algebra
-                        <br>------- Boolean Functions
-                        <br>------- Boolean Algebra
-                        <br>------- Verilog Models of Boolean Equations
-                        <br>Binary Coding
-                        <br>------- Using Vectors for Binary Codes
-                        <br>------- Bit Errors
-                        <br>Combinational Components and Circuits
-                        <br>------- Decoders and Encoders
-                        <br>------- Multiplexers
-                        <br>------- Active-Low Logic
-                        <br>Verification of Combinational Circuits
+                        <h2><b>Reference Books</b></h2> <!--Change-->
+                        <a>
+
+                            <i>
+                                Digital Design An Embedded System Approach using Verilog
+                                Book by Peter J. Ashenden
+                            </i>
+                        </a>
+                        <br>
+
+
+                        <a target="_blank" href="Hardware Electronics Pics/Verilog.webp">
+                            <img src="Hardware Electronics Pics/Verilog.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
+                        </a>
                         <br><br>
-                        <h1><b>Numeric Basics</b></h1> <!--Change-->
-                        Unsigned Integers
-                        <br>------- Coding Unsigned Integers
-                        <br>------- Operations on Unsigned Integers
-                        <br>------- Gray Codes
-                        <br>Signed Integers
-                        <br>------- Coding Signed Integers
-                        <br>------- Operations on Signed Integers
-                        <br>Fixed-Point Numbers
-                        <br>------- Coding Fixed-Point Numbers
-                        <br>------- Operations on Fixed-Point Numbers
-                        <br>Floating-Point Numbers
-                        <br>------- Coding Floating-Point Numbers
-                        <br><br>
-                        <h1><b>Sequential Basics</b></h1> <!--Change-->
-                        Storage Elements
-                        <br>------- Flip-flops and Registers
-                        <br>------- Shift Registers
-                        <br>------- Latches
-                        <br>Counters
-                        <br>Sequential Datapaths and Control
-                        <br>------- Finite-State Machines
-                        <br>Clocked Synchronous Timing Methodology
-                        <br>------- Asynchronous Inputs
-                        <br>------- Verification of Sequential Circuits
-                        <br>------- Asynchronous Timing Methodologies
-                        <br><br>
-                        <h1><b>Memories</b></h1> <!--Change-->
-                        General Concepts
-                        <br>Memory Types
-                        <br>------- Asynchronous Static RAM
-                        <br>------- Synchronous Static RAM
-                        <br>------- Multiport Memories
-                        <br>------- Dynamic RAM
-                        <br>------- Read-Only Memories
-                        <br><br>
-                        <h1><b>Implementation Fabrics</b></h1> <!--Change-->
-                        Integrated Circuits
-                        <br>------- Integrated Circuit Manufacture
-                        <br>------- SSI and MSI Logic Families
-                        <br>------- Application-Specific Integrated Circuits (ASICs)
-                        <br>Programmable Logic Devices
-                        <br>------- Programmable Array Logic
-                        <br>------- Complex PLDs
-                        <br>------- Field-Programmable Gate Arrays
-                        <br>Interconnection and Signal Integrity
-                        <br>------- Differential Signaling
-                        <br><br>
-                        <h1><b>Processor Basics</b></h1> <!--Change-->
-                        Embedded Computer Organization
-                        <br>------- Microcontrollers and Processor Cores
-                        <br>Instructions and Data
-                        <br>------- The Gumnut Instruction Set
-                        <br>------- The Gumnut Assembler
-                        <br>------- Instruction Encoding
-                        <br>------- Other CPU Instruction Sets
-                        <br>Interfacing with Memory
-                        <br>------- Cache Memory
-                        <br>Induction Motor Speed Control
-                        <br><br>
-                        <h1><b>I/O Interfacing</b></h1>
-                        I/O Devices
-                        <br>------- Input Devices
-                        <br>------- Output Devices
-                        <br>I/O Controllers
-                        <br>------- Simple I/O Controllers
-                        <br>------- Autonomous I/O Controllers
-                        <br>Parallel Buses
-                        <br>------- Multiplexed Buses
-                        <br>------- Tristate Buses
-                        <br>------- Open-Drain Buses
-                        <br>------- Bus Protocols
-                        <br>Serial Transmission
-                        <br>------- Serial Transmission Techniques
-                        <br>------- Serial Interface Standards
-                        <br>I/O Software
-                        <br>------- Polling
-                        <br>------- Interrupts
-                        <br>------- Timers
-                        <br><br>
-                        <h1><b>Accelerators</b></h1> <!--Change-->
-                        General Concepts
-                        <br>Case Study: Video Edge-Detection
-                        <br>Verifying an Accelerator
-                        <br><br>
-                        <h1><b>Design Methodology</b></h1> <!--Change-->
-                        Design Flow
-                        <br>------- Architecture Exploration
-                        <br>------- Functional Design
-                        <br>------- Functional Verification
-                        <br>------- Synthesis
-                        <br>------- Physical Design
-                        <br>Design Optimization
-                        <br>------- Area Optimization
-                        <br>------- Timing Optimization
-                        <br>------- Power Optimization
-                        <br>Design for Test
-                        <br>------- Fault Models and Fault Simulation
-                        <br>------- Scan Design and Boundary Scan
-                        <br>------- Built-In Self Test (BIST)
-                        <br><br>
-                        <h1><b>Verilog for Synthesis</b></h1> <!--Change-->
-                        <br>Data Types and Operations
-                        <br>Combinational Functions
-                        <br>Sequential Circuits
-                        <br>------- Finite-State Machines
-                        <br>Memories
-                        <br><br><br>
                         <h3><b>FPGA Resources</b></h3>
                         <a href="https://www.xilinx.com/support/documentation/application_notes/xapp586-spi-flash.pdf" target="_blank">Xilinx FPGA: Using SPI Flash with 7 Series FPGAs Application Note</a>
                         <br><a href="https://www.xilinx.com/support/documentation/ip_documentation/clk_wiz/v6_0/pg065-clk-wiz.pdf" target="_blank">Xilinx FPGA: Clocking Wizard</a>
@@ -592,69 +540,18 @@
                         <br><a href="https://wavedrom.com/editor.html" target="_blank">Wavedrom Digital Logic Simulator</a>
                         <br><a href="http://www.32x8.com/index.html" target="_blank">Karnaugh map Solver</a>
                         <br><br>
-                        <h3><b>Lecture Series</b></h3>
-                    <p>
-                        <h1>FPGA Architecture Training by Xilinix Inc</h1>
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/WQf_b8RqpJs?list=PLRr5m7hDN9TLnlZDmrBlVGEREjauRGMol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h1>FPGA Design Training by Xilinx Inc</h1>
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/nbYxBFd6x-4?list=PLRr5m7hDN9TJWxZxvX0ZS6hYNgvkDpjCG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h1>Ultrascale and Ultrascale + tutorials Xilinx Inc</h1>
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/TzzzM97L4HI?list=PLRr5m7hDN9TKZSSGwy9RQCqvjx9U5XVoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h1>FPGA Lecture Series by Shawn Hymel</h1>
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/gmaSjyUij9E?list=PLEBQazB0HUyT1WmMONxRZn9NmQ_9CIKhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h1>RTOS(Real Time Operating System) in FPGA</h1>
-                        <a href="https://www.idec.or.kr/vod/apply/view/?&page=10&no=77">
-                            https://www.idec.or.kr/vod/apply/view/?&page=10&no=77
+                        <h3>My Project with FPGA on GitHub </h3>
+                        <a href="https://github.com/jiwook021/Verilog-Projects">
+                            https://github.com/jiwook021/Verilog-Projects
                         </a>
-
-
-                    </p>
                 </div>
+                <br><br><br><br>
 
 
             </div>
 
-            <div class="w3-container">
-
-
-                <br>
-                <h3>Github</h3>
-                <a href="https://github.com/jiwook021/Verilog-Projects">
-                    https://github.com/jiwook021/Verilog-Projects
-                </a>
-                <br>
-                <br>
-
-                <h2><b>Guidline Reference</b></h2> <!--Change-->
-                <h1>
-                    <i>
-                        RTL Modeling with SystemVerilog for Simulation and Synthesis using SystemVerilog for ASIC and FPGA design
-                        Book by Stuart Sutherland
-                    </i>
-                    <br><br>
-                    <i>
-                        Digital Design An Embedded System Approach using Verilog
-                        Book by Peter J. Ashenden
-                    </i>
-                </h1>
-
-                <div class="responsive">
-                    <br><br>
-                    <div class="gallery">
-                        <a target="_blank" href="Hardware Electronics Pics/SystemVerilog.webp">
-                            <img src="Hardware Electronics Pics/SystemVerilog.webp" alt="Equations" style="width:33%" onclick="onClick(this)">
-                        </a>
-
-                        <a target="_blank" href="Hardware Electronics Pics/Verilog.webp">
-                            <img src="Hardware Electronics Pics/Verilog.webp" alt="Equations" style="width:33%" onclick="onClick(this)">
-                        </a>
-
-                    </div>
-                </div>
-                <br>
-                <br>
-            </div>
-
+         
+        
             <br><br>
             <footer class="w3-container w3-padding-32 w3-center w3-xlarge">
                 <a class="w3-button w3-large w3-light-grey" href="../../Jiwook Kim Resume.pdf" title="Resume" target="_blank"><i class="fa fa-address-book"></i></a>

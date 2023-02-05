@@ -10,105 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 20px
-        }
-
-        h3 {
-            font-size: 23px
-        }
-
-        h4 {
-            font-size: 26px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-  
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-</style>
-
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 
@@ -120,7 +22,7 @@
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">Hardware Resources</h3> <!--Change-->
+            <h2 class="w3-padding-32">Hardware Resources</h2> <!--Change-->
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -128,21 +30,21 @@
             <a href="Hardware_Resources.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Hardware Resources</a>
             <br>
             <br>
-            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Circuit Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Circuit Theory</a>
             <a href="Analog Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Analog Electronics</a>
             <a href="Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
 
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
+            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-        <!--    <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-       -->     <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!--    <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+    -->
+            <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
             <!--  <a href="Hardware_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Hardware Resources</a>
-            -->
+    -->
             <br>
             <br>
         </div>
@@ -168,9 +70,9 @@
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:270px;margin-right:40px">
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <h8><b>Hardware Resources</b></h8>
+                <h4><b>Hardware Resources</b></h4>
                 <br>
                 <br><a href="https://www.xilinx.com/support/documentation/application_notes/xapp586-spi-flash.pdf" target="_blank">Xilinx FPGA: Using SPI Flash with 7 Series FPGAs Application Note</a>
                 <br><a href="https://www.xilinx.com/support/documentation/ip_documentation/clk_wiz/v6_0/pg065-clk-wiz.pdf" target="_blank">Xilinx FPGA: Clocking Wizard</a>

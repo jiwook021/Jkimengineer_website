@@ -10,118 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 27px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    body {
-        font-size: 13px;
-    }
-
-
-
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-    .main {
-        float: left;
-        width: 60%;
-        padding: 0 20px;
-    }
-
-
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -132,7 +21,7 @@
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">Applied Electromagnetics</h3> <!--Change-->
+            <h2 class="w3-padding-32">Applied Electromagnetics</h2> <!--Change-->
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -147,7 +36,6 @@
             <a href="../Mathematics/Differential Equations.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Differential Equations</a>
             <a href="../Mathematics/Complex Analysis.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Complex Analysis</a>
             <br>
-            <br>
             <!-- <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             -->
             <a href="Circuit Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Circuit Theory</a>
@@ -155,7 +43,6 @@
             <a href="Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
             <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
       <!--      <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
     -->        <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
@@ -182,263 +69,274 @@
     <div class="w3-main" style="margin-left:450px;margin-right:40px">
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
 
-            <div style="margin-top:30px" id="showcase">
+            <div>
 
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
                     <p>
-                        <h1><b>Coulomb’s Law and Electric Field Intensity</b></h1> <!--Change-->
-                        The Experimental Law of Coulomb
-                        <br>Electric Field Intensity
-                        <br>Field Arising from a Continuous Volume Charge Distribution
-                        <br>Field of a Line Charge
-                        <br>Field of a Sheet of Charge
-                        <br>Streamlines and Sketches of Fields
-                        <br><br>
-                        <h1><b>Electric Flux Density, Gauss’s Law,and Divergence</b></h1> <!--Change-->
-                        Electric Flux Density
-                        <br>Gauss’s Law
-                        <br>Application of Gauss’s Law: Some Symmetrical Charge Distributions
-                        <br>Application of Gauss’s Law: Differential Volume Element
-                        <br>Divergence and Maxwell’s First Equation
-                        <br>The Vector Operator ∇ and the Divergence Theorem
-                        <br><br>
-                        <h1><b>Energy and Potential </b></h1> <!--Change-->
-                        Energy Expended in Moving a Point Charge in an Electric Field
-                        <br>The Line Integral
-                        <br>Definition of Potential Difference and Potential
-                        <br>The Potential Field of a Point Charge
-                        <br>The Potential Field of a System of Charges: Conservative Property
-                        <br>Potential Gradient
-                        <br>The Electric Dipole
-                        <br>Energy Density in the Electrostatic Field
-                        <br><br>
-                        <h1><b>Conductors and Dielectrics</b></h1> <!--Change-->
-                        Current and Current Density
-                        <br>Continuity of Current
-                        <br>Metallic Conductors
-                        <br>Conductor Properties and Boundary Conditions
-                        <br>The Method of Images
-                        <br>Semiconductors
-                        <br>The Nature of Dielectric Materials
-                        <br>Boundary Conditions for Perfect Dielectric Materials
-                        <br><br>
-                        <h1><b>Capacitance</b></h1> <!--Change-->
-                        Capacitance Defined
-                        <br>Parallel-Plate Capacitor
-                        <br>Several Capacitance Examples
-                        <br>Capacitance of a Two-Wire Line
-                        <br>Using Field Sketches to Estimate Capacitance
-                        <br>Poisson’s and Laplace’s Equations
-                        <br>Poisson’s Equation: the p-n Junction Capacitance
-                        <br><br>
-                        <h1><b>The Steady Magnetic Field</b></h1> <!--Change-->
-                        Biot-Savart Law
-                        <br>Ampere’s Circuital Law
-                        <br>Curl
-                        <br>Stokes' Theorem
-                        <br>Magnetic Flux and Magnetic Flux Density
-                        <br>The Scalar and Vector Magnetic Potentials
-                        <br>Derivation of the Steady-Magnetic-Field Laws
-                        <br><br>
-                        <h1><b>Magnetic Forces, Materials, and Inductance</b></h1> <!--Change-->
-                        Force on a Moving Charge
-                        <br>Force on a Differential Current Element
-                        <br>Force between Differential Current Elements
-                        <br>Force and Torque on a Closed Circuit
-                        <br>The Nature of Magnetic Materials
-                        <br>Magnetization and Permeability
-                        <br>Magnetic Boundary Conditions
-                        <br>The Magnetic Circuits
-                        <br>Potential Energy and Forces on Magnetic Materials
-                        <br>Inductance and Mutual Inductance
-                        <br><br>
-                        <h1><b>Electrostatics</b></h1> <!--Change-->
-                        Charge and Current Distributions
-                        <br>Coulomb’s Law
-                        <br>Gauss’s Law
-                        <br>Electric Scalar Potential(Point Charges, Continuous Distributions, Poisson’s Equation)
-                        <br>Conductors(Drift Velocity, Resistance, Joule’s Law)
-                        <br>Dielectrics(Polarization Field, Dielectric Breakdown)
-                        <br>Electric Boundary Conditions(Dielectric-Conductor Boundary, Conductor-Conductor Boundary)
-                        <br>Capacitance
-                        <br>Supercapacitors as Batteries
-                        <br>Capacitive Sensors
-                        <br>
-                        <br>
-                        <h1><b>Magnetostatics</b></h1> <!--Change-->
-                        Magnetic Force on a Current-Carrying Conductor
-                        <br>Magnetic Torque on a Current-Carrying Loop
-                        <br>Magnetic Field due to Surface and Volume Current Distributions
-                        <br>Magnetic Field of a Magnetic Dipole
-                        <br>Magnetic Force Between Two Parallel Conductors
-                        <br>Ampere’s Law
-                        <br>Vector Magnetic Potential
-                        <br>---- Electron Orbital and Spin Magnetic Moments
-                        <br>---- Magnetic Permeability
-                        <br>---- Magnetic Hysteresis of Ferromagnetic Materials
-                        <br>Magnetic Boundary Conditions
-                        <br>Magnetic Field in a Solenoid
-                        <br>Self-Inductance
-                        <br>Inductive Sensors
-                        <br>Mutual Inductance
-                        <br>Magnetic Energy
-                        <br>
-                        <br>
-                        <h1><b>Maxwell’s Equations for Time-Varying Fields</b></h1> <!--Change-->
-                        Faraday’s Law
-                        <br>Stationary Loop in a Time-Varying Magnetic Field
-                        <br>The Ideal Transformer
-                        <br>Moving Conductor in a Static Magnetic Field
-                        <br>EMF Sensors
-                        <br>The Electromagnetic Generator
-                        <br>Moving Conductor in a Time-Varying Magnetic Field
-                        <br>Displacement Current
-                        <br>Boundary Conditions for Electromagnetics
-                        <br>Charge-Current Continuity Relation
-                        <br>Free-Charge Dissipation in a Conductor
-                        <br>Electromagnetic Potentials
-                        <br>
-                        <br>
-                        <h1><b>Time-Varying Fields and Maxwell’s Equations</b></h1> <!--Change-->
-                        Faraday’s Law
-                        <br>Displacement Current
-                        <br>Maxwell’s Equations in Point Form
-                        <br>Maxwell’s Equations in Integral Form
-                        <br>
-                        <br>
-                        <h1><b>Plane-Wave Propagation</b></h1> <!--Change-->
-                        Time-Harmonic Fields(Complex Permittivity, Wave Equations)
-                        <br>Uniform Plane Waves
-                        <br>General Relation Between E and H
-                        <br>RFID Systems
-                        <br>Wave Linear Polarization
-                        <br>Wave Circular Polarization
-                        <br>Wave Elliptical Polarization
-                        <br>Plane-Wave Propagation in Lossy Media
-                        <br>Liquid Crystal Display (LCD)
-                        <br>Current Flow in a Good Conductor
-                        <br>Plane Wave in a Lossless Medium
-                        <br>Plane Wave in a Lossy Medium
-                        <br>Decibel Scale for Power Ratios
-                        <br>
-                        <br>
-                    </p>
-                </div>
-
-
-                <div class="web">
-                    <p>
-                        <h1><b>Transmission Lines</b></h1> <!--Change-->
-                        Physical Description of Transmission Line Propagation
-                        <br>The Transmission Line Equations
-                        <br>Lossless Propagation of Sinusoidal Voltages
-                        <br>Complex Analysis of Sinusoidal Waves
-                        <br>Transmission Line Equations and Their Solutions in Phasor Form
-                        <br>Low-Loss Propagation
-                        <br>Power Transmission and The Use of Decibels in Loss Characterization
-                        <br>Wave Reflection at Discontinuities
-                        <br>Voltage Standing Wave Ratio
-                        <br>Transmission Lines of Finite Length
-                        <br>Some Transmission Line Examples
-                        <br>Graphical Methods: The Smith Chart
-                        <br>Transient Analysis
-                        <br><br>
-                        <h1><b>The Uniform Plane Wave</b></h1> <!--Change-->
-                        Wave Propagation in Free Space
-                        <br>Wave Propagation in Dielectrics
-                        <br>Poynting’s Theorem and Wave Power
-                        <br>Propagation in Good Conductors: Skin Effect
-                        <br>Wave Polarization
-                        <br>
-                        <br>
-                        <h1><b>Plane Wave Reflection and Dispersion</b></h1> <!--Change-->
-                        Reflection of Uniform plane wave on normal Incidence
-                        <br>Standing Wave Ratio
-                        <br>Poynting’s Theorem and Wave Power
-                        <br>Wave Reflection from Multiple Interfaces
-                        <br>Plane Wave Propagation in General Directions
-                        <br>Plane Wave Reflection at Oblique incidence Angles
-                        <br>Total wave Reflection and Total Transmissions of oblique Incidence Waves
-                        <br>Wave Propagation in Dispersive Media
-                        <br>Pulse Broadening in Dispersive Media
-                        <br>
-                        <br>
-                        <h1><b>Transmission Lines</b></h1> <!--Change-->
-                        Lumped-Element Model
-                        <br>Transmission-Line Equations
-                        <br>Wave Propagation on a Transmission Line
-                        <br>The Lossless Microstrip Line
-                        <br>The Lossless Transmission Line
-                        <br>Wave Impedance of the Lossless Line
-                        <br>Short-Circuited Line
-                        <br>Open-Circuited Line
-                        <br>Lines of Length l = nλ/2
-                        <br>Quarter-Wavelength Transformer
-                        <br>Matched Transmission Line: ZL = Z0
-                        <br>Power Flow on a Lossless Transmission Line
-                        <br>The Smith Chart(Parametric Equations,Wave Impedance,SWR, Voltage Maxima and Minima)
-                        <br>Impedance Matching
-                        <br>Transients on Transmission Lines
-                        <br>
-                        <br>
-
-                        <h1><b>Wave Reflection and Transmission</b></h1> <!--Change-->
-                        Boundary between Lossless Media
-                        <br>Transmission-Line Analogue
-                        <br>Power Flow in Lossless Media
-                        <br>Boundary between Lossy Media
-                        <br>Snell’s Laws
-                        <br>Fiber Optics
-                        <br>Lasers
-                        <br>Perpendicular Polarization
-                        <br>Parallel Polarization
-                        <br>Brewster Angle
-                        <br>Reflectivity and Transmissivity
-                        <br>Waveguides
-                        <br>Bar-Code Readers
-                        <br>General Relations for E and H
-                        <br>TM Modes in Rectangular Waveguide
-                        <br>TE Modes in Rectangular Waveguide
-                        <br>Propagation Velocities
-                        <br>Cavity Resonators(Resonant Frequency, Quality Factor)
-                        <br>
-                        <br>
-                        <h1><b>Radiation and Antennas</b></h1> <!--Change-->
-                        The Hertzian Dipole(Far-Field Approximation, Power Density)
-                        <br>Antenna Pattern
-                        <br>Beam Dimensions
-                        <br>Antenna Directivity
-                        <br>Antenna Gain
-                        <br>Radiation Resistance
-                        <br>Directivity of λ/2 Dipole
-                        <br>Radiation Resistance of λ/2 Dipole
-                        <br>Quarter-Wave Monopole Antenna
-                        <br>Dipole of Arbitrary Length
-                        <br>Effective Area of a Receiving Antenna
-                        <br>Friis Transmission Formula
-                        <br>Radiation by Large-Aperture Antennas
-                        <br> Rectangular Aperture with Uniform Aperture Distribution(Beamwidth, Directivity and Effective Area)
-                        <br>Antenna Arrays
-                        <br>N-Element Array with Uniform Phase Distribution
-                        <br>Electronic Scanning of Arrays
-                        <br>
-                        <br>
-                        <h1><b>Satellite Communication Systems and Radar Sensors</b></h1> <!--Change-->
-                        Satellite Communication Systems
-                        <br>Satellite Transponders
-                        <br>Communication-Link Power Budget
-                        <br>Antenna Beams
-                        <br>Radar Sensors(Unambiguous Range, Range and Angular Resolutions)
-                        <br>Target Detection
-                        <br>Doppler Radar
-                        <br>Monopulse Radar
-                        <br>
-                        <br>
-                        <h2><b>Guidline Reference</b></h2> <!--Change-->
+                        <h1>Coulomb’s Law and Electric Field Intensity</h1> <!--Change-->
+                        <!--      The Experimental Law of Coulomb
+          <br>Electric Field Intensity
+          <br>Field Arising from a Continuous Volume Charge Distribution
+          <br>Field of a Line Charge
+          <br>Field of a Sheet of Charge
+          <br>Streamlines and Sketches of Fields
+          <br><br>
+    -->
+                        <h1>Electric Flux Density, Gauss’s Law,and Divergence</h1> <!--Change-->
+                        <!--   Electric Flux Density
+       <br>Gauss’s Law
+       <br>Application of Gauss’s Law: Some Symmetrical Charge Distributions
+       <br>Application of Gauss’s Law: Differential Volume Element
+       <br>Divergence and Maxwell’s First Equation
+       <br>The Vector Operator ∇ and the Divergence Theorem
+       <br><br>
+    -->
+                        <h1>Energy and Potential </h1> <!--Change-->
+                        <!--Energy Expended in Moving a Point Charge in an Electric Field
+    <br>The Line Integral
+    <br>Definition of Potential Difference and Potential
+    <br>The Potential Field of a Point Charge
+    <br>The Potential Field of a System of Charges: Conservative Property
+    <br>Potential Gradient
+    <br>The Electric Dipole
+    <br>Energy Density in the Electrostatic Field
+    <br><br>
+    -->
+                        <h1>Conductors and Dielectrics</h1> <!--Change-->
+                        <!--     Current and Current Density
+         <br>Continuity of Current
+         <br>Metallic Conductors
+         <br>Conductor Properties and Boundary Conditions
+         <br>The Method of Images
+         <br>Semiconductors
+         <br>The Nature of Dielectric Materials
+         <br>Boundary Conditions for Perfect Dielectric Materials
+         <br><br>
+    -->
+                        <h1>Capacitance</h1> <!--Change-->
+                        <!--       Capacitance Defined
+           <br>Parallel-Plate Capacitor
+           <br>Several Capacitance Examples
+           <br>Capacitance of a Two-Wire Line
+           <br>Using Field Sketches to Estimate Capacitance
+           <br>Poisson’s and Laplace’s Equations
+           <br>Poisson’s Equation: the p-n Junction Capacitance
+           <br><br>
+    -->
+                        <h1>The Steady Magnetic Field</h1> <!--Change-->
+                        <!--    Biot-Savart Law
+        <br>Ampere’s Circuital Law
+        <br>Curl
+        <br>Stokes' Theorem
+        <br>Magnetic Flux and Magnetic Flux Density
+        <br>The Scalar and Vector Magnetic Potentials
+        <br>Derivation of the Steady-Magnetic-Field Laws
+        <br><br>
+    -->
+                        <h1>Magnetic Forces, Materials, and Inductance</h1> <!--Change-->
+                        <!-- Force on a Moving Charge
+     <br>Force on a Differential Current Element
+     <br>Force between Differential Current Elements
+     <br>Force and Torque on a Closed Circuit
+     <br>The Nature of Magnetic Materials
+     <br>Magnetization and Permeability
+     <br>Magnetic Boundary Conditions
+     <br>The Magnetic Circuits
+     <br>Potential Energy and Forces on Magnetic Materials
+     <br>Inductance and Mutual Inductance
+     <br><br>
+    -->
+                        <h1>Electrostatics</h1> <!--Change-->
+                        <!--Charge and Current Distributions
+    <br>Coulomb’s Law
+    <br>Gauss’s Law
+    <br>Electric Scalar Potential(Point Charges, Continuous Distributions, Poisson’s Equation)
+    <br>Conductors(Drift Velocity, Resistance, Joule’s Law)
+    <br>Dielectrics(Polarization Field, Dielectric Breakdown)
+    <br>Electric Boundary Conditions(Dielectric-Conductor Boundary, Conductor-Conductor Boundary)
+    <br>Capacitance
+    <br>Supercapacitors as Batteries
+    <br>Capacitive Sensors
+    <br>
+    <br>
+    -->
+                        <h1>Magnetostatics</h1> <!--Change-->
+                        <!--Magnetic Force on a Current-Carrying Conductor
+    <br>Magnetic Torque on a Current-Carrying Loop
+    <br>Magnetic Field due to Surface and Volume Current Distributions
+    <br>Magnetic Field of a Magnetic Dipole
+    <br>Magnetic Force Between Two Parallel Conductors
+    <br>Ampere’s Law
+    <br>Vector Magnetic Potential
+    <br>---- Electron Orbital and Spin Magnetic Moments
+    <br>---- Magnetic Permeability
+    <br>---- Magnetic Hysteresis of Ferromagnetic Materials
+    <br>Magnetic Boundary Conditions
+    <br>Magnetic Field in a Solenoid
+    <br>Self-Inductance
+    <br>Inductive Sensors
+    <br>Mutual Inductance
+    <br>Magnetic Energy
+    <br>
+    <br>
+    -->
+                        <h1>Maxwell’s Equations for Time-Varying Fields</h1> <!--Change-->
+                        <!--Faraday’s Law
+    <br>Stationary Loop in a Time-Varying Magnetic Field
+    <br>The Ideal Transformer
+    <br>Moving Conductor in a Static Magnetic Field
+    <br>EMF Sensors
+    <br>The Electromagnetic Generator
+    <br>Moving Conductor in a Time-Varying Magnetic Field
+    <br>Displacement Current
+    <br>Boundary Conditions for Electromagnetics
+    <br>Charge-Current Continuity Relation
+    <br>Free-Charge Dissipation in a Conductor
+    <br>Electromagnetic Potentials
+    <br>
+    <br>
+    -->
+                        <h1>Time-Varying Fields and Maxwell’s Equations</h1> <!--Change-->
+                        <!--Faraday’s Law
+    <br>Displacement Current
+    <br>Maxwell’s Equations in Point Form
+    <br>Maxwell’s Equations in Integral Form
+    <br>
+    <br>
+    <h1>Plane-Wave Propagation</h1>-->
+                        <!--Change-->
+                        <!--Time-Harmonic Fields(Complex Permittivity, Wave Equations)
+    <br>Uniform Plane Waves
+    <br>General Relation Between E and H
+    <br>RFID Systems
+    <br>Wave Linear Polarization
+    <br>Wave Circular Polarization
+    <br>Wave Elliptical Polarization
+    <br>Plane-Wave Propagation in Lossy Media
+    <br>Liquid Crystal Display (LCD)
+    <br>Current Flow in a Good Conductor
+    <br>Plane Wave in a Lossless Medium
+    <br>Plane Wave in a Lossy Medium
+    <br>Decibel Scale for Power Ratios
+    <br>
+    <br>-->
+                        <h1>Transmission Lines</h1> <!--Change-->
+                        <!--Physical Description of Transmission Line Propagation
+    <br>The Transmission Line Equations
+    <br>Lossless Propagation of Sinusoidal Voltages
+    <br>Complex Analysis of Sinusoidal Waves
+    <br>Transmission Line Equations and Their Solutions in Phasor Form
+    <br>Low-Loss Propagation
+    <br>Power Transmission and The Use of Decibels in Loss Characterization
+    <br>Wave Reflection at Discontinuities
+    <br>Voltage Standing Wave Ratio
+    <br>Transmission Lines of Finite Length
+    <br>Some Transmission Line Examples
+    <br>Graphical Methods: The Smith Chart
+    <br>Transient Analysis
+    <br><br>
+    <h1>The Uniform Plane Wave</h1>-->
+                        <!--Change-->
+                        <!--Wave Propagation in Free Space
+    <br>Wave Propagation in Dielectrics
+    <br>Poynting’s Theorem and Wave Power
+    <br>Propagation in Good Conductors: Skin Effect
+    <br>Wave Polarization
+    <br>
+    <br>-->
+                        <h1>Plane Wave Reflection and Dispersion</h1> <!--Change-->
+                        <!--Reflection of Uniform plane wave on normal Incidence
+    <br>Standing Wave Ratio
+    <br>Poynting’s Theorem and Wave Power
+    <br>Wave Reflection from Multiple Interfaces
+    <br>Plane Wave Propagation in General Directions
+    <br>Plane Wave Reflection at Oblique incidence Angles
+    <br>Total wave Reflection and Total Transmissions of oblique Incidence Waves
+    <br>Wave Propagation in Dispersive Media
+    <br>Pulse Broadening in Dispersive Media
+    <br>
+    <br>
+    -->
+                        <h1>Transmission Lines</h1> <!--Change-->
+                        <!-- Lumped-Element Model
+     <br>Transmission-Line Equations
+     <br>Wave Propagation on a Transmission Line
+     <br>The Lossless Microstrip Line
+     <br>The Lossless Transmission Line
+     <br>Wave Impedance of the Lossless Line
+     <br>Short-Circuited Line
+     <br>Open-Circuited Line
+     <br>Lines of Length l = nλ/2
+     <br>Quarter-Wavelength Transformer
+     <br>Matched Transmission Line: ZL = Z0
+     <br>Power Flow on a Lossless Transmission Line
+     <br>The Smith Chart(Parametric Equations,Wave Impedance,SWR, Voltage Maxima and Minima)
+     <br>Impedance Matching
+     <br>Transients on Transmission Lines
+     <br>
+     <br>
+    -->
+                        <h1>Wave Reflection and Transmission</h1> <!--Change-->
+                        <!--Boundary between Lossless Media
+                            <br>Transmission-Line Analogue
+                            <br>Power Flow in Lossless Media
+                            <br>Boundary between Lossy Media
+                            <br>Snell’s Laws
+                            <br>Fiber Optics
+                            <br>Lasers
+                            <br>Perpendicular Polarization
+                            <br>Parallel Polarization
+                            <br>Brewster Angle
+                            <br>Reflectivity and Transmissivity
+                            <br>Waveguides
+                            <br>Bar-Code Readers
+                            <br>General Relations for E and H
+                            <br>TM Modes in Rectangular Waveguide
+                            <br>TE Modes in Rectangular Waveguide
+                            <br>Propagation Velocities
+                            <br>Cavity Resonators(Resonant Frequency, Quality Factor)
+                            <br>
+                            <br>
+    -->
+                        <h1>Radiation and Antennas</h1> <!--Change-->
+                        <!--                        The Hertzian Dipole(Far-Field Approximation, Power Density)
+                            <br>Antenna Pattern
+                            <br>Beam Dimensions
+                            <br>Antenna Directivity
+                            <br>Antenna Gain
+                            <br>Radiation Resistance
+                            <br>Directivity of λ/2 Dipole
+                            <br>Radiation Resistance of λ/2 Dipole
+                            <br>Quarter-Wave Monopole Antenna
+                            <br>Dipole of Arbitrary Length
+                            <br>Effective Area of a Receiving Antenna
+                            <br>Friis Transmission Formula
+                            <br>Radiation by Large-Aperture Antennas
+                            <br>Rectangular Aperture with Uniform Aperture Distribution(Beamwidth, Directivity and Effective Area)
+                            <br>Antenna Arrays
+                            <br>N-Element Array with Uniform Phase Distribution
+                            <br>Electronic Scanning of Arrays
+                            <br>
+                            <br>
+    -->
+                        <h1>Satellite Communication Systems and Radar Sensors</h1> <!--Change-->
+                        <!--                     Satellite Communication Systems
+                         <br>Satellite Transponders
+                         <br>Communication-Link Power Budget
+                         <br>Antenna Beams
+                         <br>Radar Sensors(Unambiguous Range, Range and Angular Resolutions)
+                         <br>Target Detection
+                         <br>Doppler Radar
+                         <br>Monopulse Radar
+                         <br>
+                         <br>
+                         <br><br>
+    -->
+                        <h2><b>Reference Books</b></h2> <!--Change-->
                         <h1>
                             <i>
                                 Engineering Electromagnetics
@@ -459,9 +357,47 @@
                         <a target="_blank" href="Hardware Electronics Pics/electromag.webp">
                             <img src="Hardware Electronics Pics/electromag.webp" alt="Equations" style="width:60%" onclick="onClick(this)">
                         </a>
+                        <br><br><br><br>
+                        <a target="_blank" href="Hardware Electronics Pics/gps.png">
+                            <img src="Hardware Electronics Pics/gps.png" alt="Equations" style="width:60%" onclick="onClick(this)">
+                        </a>
+                        <br><br>
 
-                        <br>
                     </p>
+                </div>
+
+
+                <div class="web">
+
+                    <h2><b>Lecture Series for Applied Electromagnetism</b></h2>
+                    <br>
+                    <h1><b>Electromagnetism Lecture by Yale ramamurti Shankar</b></h1>
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/yINtzw63Knc?list=PLD07B2225BB40E582" title="14. Maxwell's Equations and Electromagnetic Waves I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br><br>
+                    <h1><b>Electromagnetic waves by Matt Anderson</b></h1>
+                    <p>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/RJNq3yik4c0?list=PLMXAf0aPgIuWgOnRiKcs92YZm8xD72Hrw" title="Electromagnetic Waves Introduction | Physics with Professor Matt Anderson | M25-01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                    <br><br>
+                    <h1><b>Radio Frequency for Wi-Fi Professional by GTHillWiFi</b></h1>
+                    <br><a href="https://www.youtube.com/watch?v=TszLhm6pWaA&list=PLpdKaoNaDwSJkEMY21w2N2SO12CkGoY71&index=13" target="_blank">Link Radio Frequency for Wi-Fi Professional by GTHillWiFi</a>
+                    <br><br>
+                    <h1><b>Inside Wireless by RF elements s.r.o</b></h1>
+                    <p>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/rwciKjvHFfY?list=PLii-eQuaf57ocpSGH6NR8IKtJvB9mb81h" title="Inside Wireless: Radiation Diagram" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                    <br><br>
+                    <h1><b>Architecture All Access: Wi-Fi Technology by intel</b></h1>
+                    <p>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/0npUm-kRZek" title="Architecture All Access: Wi-Fi Technology" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                    <br><br>
+                    <h1><b>GPS: An Introduction to Satellite Navigation by Stanford University</b></h1>
+                    <p>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/DM4bikQdbDA?list=PLGvhNIiu1ubyEOJga50LJMzVXtbUq6CPo" title="1.7 - Navigation Messages" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                    <br><br>
+
                 </div>
             </div>
         </div>

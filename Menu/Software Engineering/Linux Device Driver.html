@@ -17,103 +17,7 @@
 <!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">-->
 
 <link rel="stylesheet" href="../../jiwook.css">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-   
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -136,19 +40,22 @@
             <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linux Device Driver</a>
             <br>
             <br>
-            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
-            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
-            <!--<a href="C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C and Assembly Language</a>
+            <a href="C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C++</a>
+            <a href="Python.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Python</a>
             <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
             <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
             <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
             <!-- <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
-            -->
+    -->
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
             <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
+            <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
+
             <br>
             <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
             <a href="Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Resources</a>
@@ -172,192 +79,183 @@
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
 
-        <div class="w3-container" style="margin-top:50px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <br>
-                <br>
-                <h8><b>J Library Linux Device Driver</b></h8>
-                <br>
-                <br>
                 <div>
                     <h4 class="content"><b>Contents</b></h4> <!--Change-->
                     <br>
-
+                    <br>
                     <div class="web">
                         <p>
-                            <h1><b>Device Drivers</b></h1>
-                            The Role of the Device Driver
-                            <br>Splitting the Kernel
-                            <br>Classes of Devices and Modules
-                            <br>Security Issues
-                            <br>Version Numbering
-                            <br>License Terms
-                            <br>
-                            <br>
-                            <h1><b>Building and Running Modules</b></h1>
-                            Setting Up Your Test System
-                            <br>The Hello World Module
-                            <br>Kernel Modules Versus Applications
-                            <br>Compiling and Loading
-                            <br>The Kernel Symbol Table
-                            <br>Preliminaries
-                            <br>Initialization and Shutdown
-                            <br>Module Parameters
-                            <br>Doing It in User Space
-                            <br>
-                            <br>
-                            <h1><b>Char Drivers</b></h1>
-                            The Design of scull
-                            <br>Major and Minor Numbers
-                            <br>Some Important Data Structures
-                            <br>Char Device Registration
-                            <br>open and release
-                            <br>scull’s Memory Usage
-                            <br>read and write
-                            <br>Playing with the New Devices
-                            <br>
-                            <br>
-                            <h1><b>Debugging Techniques</b></h1>
-                            Debugging Support in the Kernel
-                            <br>Debugging by Printing
-                            <br>Debugging by Querying
-                            <br>Debugging by Watching
-                            <br>Debugging System Faults
-                            <br>Debuggers and Related Tools
-                            <br>
-                            <br>
-                            <h1><b>Concurrency and Race Conditions</b></h1>
-                            Pitfalls in scull
-                            <br>Concurrency and Its Management
-                            <br>Semaphores and Mutexes
-                            <br>Completions
-                            <br>Spinlocks
-                            <br>Locking Traps
-                            <br>
-                            <br>
-                            <h1><b>Advanced Char Driver Operations</b></h1>
-                            ioctl
-                            <br>Blocking I/O
-                            <br>poll and select
-                            <br>Asynchronous Notification
-                            <br>Seeking a Device
-                            <br>Access Control on a Device File
-                            <br>
-                            <br>
-                            <h1><b>Time, Delays, and Deferred Work</b></h1>
-                            Measuring Time Lapses
-                            <br>Knowing the Current Time
-                            <br>Delaying Execution
-                            <br>Kernel Timers
-                            <br>Tasklets
-                            <br>Workqueues
-                            <br>
-                            <br>
-                            <h1><b>Allocating Memory</b></h1>
-                            The Real Story of kmalloc
-                            <br>Lookaside Caches
-                            <br>get_free_page and Friends
-                            <br>vmalloc and Friends
-                            <br>Per-CPU Variables
-                            <br>Obtaining Large Buffers
-                            <br>
-                            <br>
-                            <h1><b>Communicating with Hardware</b></h1>
-                            I/O Ports and I/O Memory
-                            <br>Using I/O Ports
-                            <br>An I/O Port Example
-                            <br>Using I/O Memory
-                            <br>
-                            <br>
-                            <h1><b>Interrupt Handling</b></h1>
-                            Preparing the Parallel Port
-                            <br>Installing an Interrupt Handler
-                            <br>Implementing a Handler
-                            <br>Top and Bottom Halves
-                            <br>Interrupt Sharing
-                            <br>Interrupt-Driven I/O
-                            <br>
-                            <br>
-                            <h1><b>Data Types in the Kernel</b></h1>
-                            Use of Standard C Types
-                            <br>Assigning an Explicit Size to Data Items
-                            <br>Interface-Specific Types
-                            <br>Linked Lists
-                            <br>
-                            <br>
-                            <h1><b>PCI Drivers</b></h1>
-                            The PCI Interface
-                            <br>ISA
-                            <br>PC/104 and PC/104+
-                            <br>SBus
-                            <br>NuBus
-                            <br>External Buses
-                            <br>
-                            <br>
-                            <h1><b>USB Drivers</b></h1>
-                            USB Device Basics
-                            <br>USB and Sysfs
-                            <br>USB Urbs
-                            <br>Writing a USB Driver
-                            <br>USB Transfers Without Urbs
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                    <div class="web">
-                        <p>
-                            <h1><b>The Linux Device Model</b></h1>
-                            Kobjects, Ksets, and Subsystems
-                            <br>Low-Level Sysfs Operations
-                            <br>Hotplug Event Generation
-                            <br>Buses, Devices, and Drivers
-                            <br>Classes
-                            <br>Hotplug
-                            <br>Dealing with Firmware
-                            <br>
-                            <br>
-                            <h1><b>Memory Mapping and DMA</b></h1>
-                            Memory Management in Linux
-                            <br>The mmap Device Operation
-                            <br>Performing Direct I/O
-                            <br>Direct Memory Access
-                            <br>
-                            <br>
-                            <h1><b>Block Drivers</b></h1>
-                            Registration
-                            <br>The Block Device Operations
-                            <br>Request Processing
-                            <br>
-                            <br>
-                            <h1><b>Network Drivers</b></h1>
-                            How snull Is Designed
-                            <br>Connecting to the Kernel
-                            <br>The net_device Structure in Detail
-                            <br>Opening and Closing
-                            <br>Packet Transmission
-                            <br>Packet Reception
-                            <br>The Interrupt Handler
-                            <br>Receive Interrupt Mitigation
-                            <br>Changes in Link State
-                            <br>The Socket Buffers
-                            <br>MAC Address Resolution
-                            <br>Custom ioctl Commands
-                            <br>Statistical Information
-                            <br>Multicast
-                            <br>
-                            <br>
-                            <h1><b>TTY Drivers</b></h1>
-                            A Small TTY Driver
-                            <br>tty_driver Function Pointers
-                            <br>TTY Line Settings
-                            <br>ioctls
-                            <br>proc and sysfs Handling of TTY Devices
-                            <br>The tty_driver Structure in Detail
-                            <br>The tty_operations Structure in Detail
-                            <br>The tty_struct Structure in Detail
-                            <br>
-                            <br>
-                            <h3><b>Reference</b></h3>
+                            <h1>Device Drivers</h1>
+                            <!--    The Role of the Device Driver
+        <br>Splitting the Kernel
+        <br>Classes of Devices and Modules
+        <br>Security Issues
+        <br>Version Numbering
+        <br>License Terms
+        <br>
+        <br>
+    -->
+                            <h1>Building and Running Modules</h1>
+                            <!--   Setting Up Your Test System
+       <br>Kernel Modules Versus Applications
+       <br>Compiling and Loading
+       <br>The Kernel Symbol Table
+       <br>Preliminaries
+       <br>Initialization and Shutdown
+       <br>Module Parameters
+       <br>
+       <br>
+    -->
+                            <h1>Char Drivers</h1>
+                            <!-- The Design of scull
+     <br>Major and Minor Numbers
+     <br>Char Device Registration
+     <br>Open and release
+     <br>Scull’s Memory Usage
+     <br>Read and write
+     <br>
+     <br>
+    -->
+                            <h1>Debugging Techniques</h1>
+                            <!--Debugging Support in the Kernel
+    <br>Debugging by Printing, Querying, and Watching
+    <br>Debugging System Faults
+    <br>Debuggers
+    <br>
+    <br>
+    -->
+                            <h1>Concurrency and Race Conditions</h1>
+                            <!--Pitfalls in scull
+    <br>Concurrency and Its Management
+    <br>Semaphores and Mutexes
+    <br>Completions
+    <br>Spinlocks
+    <br>Locking Traps
+    <br>
+    <br>
+    -->
+                            <h1>Advanced Char Driver Operations</h1>
+                            <!--ioctl
+    <br>Blocking I/O
+    <br>poll and select
+    <br>Asynchronous Notification
+    <br>Seeking a Device
+    <br>Access Control on a Device File
+    <br>
+    <br>
+    -->
+                            <h1>Time, Delays, and Deferred Work</h1>
+                            <!--Measuring Time Lapses
+    <br>Knowing the Current Time
+    <br>Delaying Execution
+    <br>Kernel Timers
+    <br>Tasklets
+    <br>Workqueues
+    <br>
+    <br>
+    -->
+                            <h1>Allocating Memory</h1>
+                            <!--kmalloc
+    <br>Lookaside Caches
+    <br>get_free_page and Friends
+    <br>vmalloc and Friends
+    <br>Per-CPU Variables
+    <br>Obtaining Large Buffers
+    <br>
+    <br>
+    -->
+                            <h1>Communicating with Hardware</h1>
+                            <!--I/O Ports and I/O Memory
+    <br>Using I/O Ports
+    <br>Using I/O Memory
+    <br>
+    <br>
+    -->
+                            <h1>Interrupt Handling</h1>
+                            <!--Preparing the Parallel Port
+    <br>Installing an Interrupt Handler
+    <br>Implementing a Handler
+    <br>Top and Bottom Halves
+    <br>Interrupt Sharing
+    <br>Interrupt-Driven I/O
+    <br>
+    <br>
+    -->
+                            <h1>Data Types in the Kernel</h1>
+                            <!--Use of Standard C Types
+    <br>Assigning an Explicit Size to Data Items
+    <br>Interface-Specific Types
+    <br>Linked Lists
+    <br>
+    <br>
+    -->
+                            <h1>PCI Drivers</h1>
+                            <!--The PCI Interface
+          <br>ISA
+          <br>PC/104 and PC/104+
+          <br>SBus
+          <br>NuBus
+          <br>External Buses
+          <br>
+          <br>
+    -->
+                            <h1>USB Drivers</h1>
+                            <!--  USB Device Basics
+      <br>USB and Sysfs
+      <br>USB Urbs
+      <br>Writing a USB Driver
+      <br>USB Transfers Without Urbs
+      <br>
+      <br>
+    -->
+                            <h1>The Linux Device Model</h1>
+                            <!--Kobjects, Ksets, and Subsystems
+    <br>Low-Level Sysfs Operations
+    <br>Hotplug Event Generation
+    <br>Buses, Devices, and Drivers
+    <br>Classes
+    <br>Hotplug
+    <br>Dealing with Firmware
+    <br>
+    <br>
+    -->
+                            <h1>Memory Mapping and DMA</h1>
+                            <!--Memory Management in Linux
+    <br>The mmap Device Operation
+    <br>Performing Direct I/O
+    <br>Direct Memory Access
+    <br>
+    <br>
+    -->
+                            <h1>Block Drivers</h1>
+                            <!-- Registration
+     <br>The Block Device Operations
+     <br>Request Processing
+     <br>
+     <br>
+    -->
+                            <h1>Network Drivers</h1>
+                            <!--How snull Is Designed
+    <br>Connecting to the Kernel
+    <br>The net_device Structure in Detail
+    <br>Opening and Closing
+    <br>Packet Transmission
+    <br>Packet Reception
+    <br>The Interrupt Handler
+    <br>Receive Interrupt Mitigation
+    <br>Changes in Link State
+    <br>The Socket Buffers
+    <br>MAC Address Resolution
+    <br>Custom ioctl Commands
+    <br>Statistical Information
+    <br>Multicast
+    <br>
+    <br>
+    -->
+                            <h1>TTY Drivers</h1>
+                            <h3><b>Reference Book</b></h3>
 
                             <h1>
                                 <i>
@@ -369,9 +267,34 @@
                             <br>
                             <img src="Software Engineering Pics/Device Driver.webp" alt="Operating Systems pics" style="width:55%" onclick="onClick(this)">
 
+                        </p>
+                    </div>
+                    <div class="web">
+                        <p>
 
+
+                            <h2><b>Lecture Series for Linux Device Drivers</b></h2>
+                            <br><a href="https://www.linkedin.com/learning/linux-device-drivers/explore-linux-device-drivers?autoplay=true&u=74653650" target="_blank">Linux Device Drivers by Kevin Dankwardt</a>
+                            <br><a href="https://olc.kr/course/course_online_view.jsp?id=35&s_keyword=Kernel&x=0&y=0#self" target="_blank">Kernel of Linux by Seoul National University</a>
                             <br><br>
-
+                            <h1>Linux Kernel Module Programming by SolidusCode</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/S8hifIrDh-g?list=PL16941B715F5507C5" title="Linux Kernel Module Programming - 03 Coding, Compiling the Module" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br><br>
+                            <h1><b>Device tree by Thomas petazzoni</b></h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/m_NyYEBxfn8" title="Device Tree for Dummies! - Thomas Petazzoni, Free Electrons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br><br>
+                            <h1><b>Linux Kernel by Gogeon</b></h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/2Wg42C3Ndg4?list=PLMD7sQed_WQN--YN-5of3NuaSLd-vN4Qw" title="[리눅스커널개발과정] #1-1 Introduction to Linux Operating System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <br><br>
+                            <h1><b>Linux Kernel by Austin Kim</b></h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/XSx22vwKapE?list=PLRrUisvYoUw9-cTYgkbTbr9f9CpbGdq4F" title="[리눅스 커널의 구조와 원리] 3.2/3.3 printk() + dump_stack()" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <br><br>
+                            <h2>
+                                My Github Projects on Linux Device driver
+                            </h2>
+                            RPi: Linux driver Development <a href="https://github.com/jiwook021/RPI_Linux_Driver-Userspace" target="_blank">
+                                https://github.com/jiwook021/RPI_Linux_Driver-Userspace
+                            </a>
 
                         </p>
                     </div>

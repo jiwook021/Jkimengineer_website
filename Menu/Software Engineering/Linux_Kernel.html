@@ -17,103 +17,7 @@
 <!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">-->
 
 <link rel="stylesheet" href="../../jiwook.css">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-    
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -126,7 +30,7 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Linux Kernel</h3><!--Change-->
+            <h2 class="w3-padding-32">Linux Kernel</h2><!--Change-->
         </div>
 
 
@@ -136,19 +40,22 @@
             <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linux Kernel</a>
             <br>
             <br>
-            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
-            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
-            <!--<a href="Software Engineering/C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C and Assembly Language</a>
+            <a href="C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C++</a>
+            <a href="Python.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Python</a>
             <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
             <!--<a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
-            -->
+    -->
+            <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
+
             <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
             <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
             <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
+            <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
             <br>
             <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
             <a href="Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Resources</a>
@@ -172,634 +79,484 @@
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
 
-        <div class="w3-container" style="margin-top:50px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <br><br>
-                <h8><b>Linux Kernel</b></h8>
-                <br>
-                <br>
                 <div>
                     <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                    <br>
+                    <br><br>
                     <div class="web">
                         <p>
-                            <h1><b>The Big Picture</b></h1> <!--Change-->
-                            Levels and Layers of Abstraction in a Linux System
-                            <br>Hardware: Understanding Main Memory
-                            <br>The Kernel
-                            <br>----- Process Management
-                            <br>----- Memory Management
-                            <br>----- Device Drivers and Management
-                            <br>----- System Calls and Support
-                            <br>User Space
-                            <br>Users
-                            <br>
-                            <br>
-                            <h1><b>Basic Commands and Directory Hirarchy</b></h1> <!--Change-->
-                            The Bourne Shell: /bin/sh
-                            <br>Using the Shell
-                            <br>----- The Shell Window
-                            <br>----- cat
-                            <br>----- Standard Input and Standard Output
-                            <br>Basic Commands
-                            <br>----- ls
-                            <br>----- cp
-                            <br>----- mv
-                            <br>----- touch
-                            <br>----- rm
-                            <br>----- echo
-                            <br>Navigating Directories
-                            <br>----- cd
-                            <br>----- mkdir
-                            <br>----- rmdir
-                            <br>----- Shell Globbing("Wildcards")
-                            <br>Intermediate Commands
-                            <br>----- grep
-                            <br>----- less
-                            <br>----- pwd
-                            <br>----- diff
-                            <br>----- file
-                            <br>----- find and locate
-                            <br>----- head and tail
-                            <br>----- sort
-                            <br>Changing Your Password and Shell
-                            <br>Dot Files
-                            <br>Environment and Shell Variables
-                            <br>The Command Path
-                            <br>Special Characters
-                            <br>Command-Line Editing
-                            <br>Text Editors
-                            <br>Shell Input and Output
-                            <br>Understanding Error Messages
-                            <br>----- Anatomy of a Unix Error Message
-                            <br>----- Common Errors
-                            <br>Listing and Manipulating Process
-                            <br>----- Process Termination
-                            <br>----- Job Control
-                            <br>----- Background Process
-                            <br>File Mode and Permissions
-                            <br>----- Modifying Permissions
-                            <br>----- Working with Symbolic Links
-                            <br>Archiving and Compression Files
-                            <br>----- gzip
-                            <br>----- tar
-                            <br>----- Compresses Archives (.tar.gz)
-                            <br>----- zcat
-                            <br>Linux Directory Hierarchy Essentials
-                            <br>----- The /usr Directory
-                            <br>----- Kernel Location
-                            <br>Running Commands as the Superuser
-                            <br>----- sudo
-                            <br>----- /etc/sudoers
-                            <br>----- sudo Logs
-                            <br>
-                            <br>
-                            <h1><b>Devices</b></h1> <!--Change-->
-                            Device Files
-                            <br>The sysfs Device Path
-                            <br>dd and Devices
-                            <br>Device Name Summary
-                            <br>----- Hard Disk:/dev/sd*
-                            <br>----- Virtual Disks: /dev/xvd*, /dev/vd*
-                            <br>----- Non-Volatile Memory Devices: /dev/nvme *
-                            <br>----- Device Mapper: /dev/ dm-*, /dev/mapper/*
-                            <br>----- CD and DVD Drivers: /dev/ sr*
-                            <br>----- PATA Hard Disks: /dev/hd*
-                            <br>----- Terminals: /dev/tty*, /dev/pts/*, and /dev/tty
-                            <br>----- Serial Ports: /dev/ttyS*, /dev/ttyUSB*, /dev/ttyACM*
-                            <br>----- Parallel Ports: /dev/lp0 and /dev/lp1
-                            <br>----- Audio Devices: /dev/snd/*, /dev/dsp, /dev/audio
-                            <br>----- Device File Creation
-                            <br>udev
-                            <br>----- devtmpfs
-                            <br>----- udevd Operation and Configuration
-                            <br>----- udevadm
-                            <br>----- Device Monitoring
-                            <br>In-Depth: SCSI and the Linux Kernel
-                            <br>----- USB Storage and SCSI(Small Computer System Interface)
-                            <br>----- SCSI and ATA
-                            <br>----- Gemeric SCSI Devices
-                            <br>----- Multiple Access Method for a Single Device
-                            <br>
-                            <br>
-                            <h1><b>Disk and FileSystems</b></h1> <!--Change-->
-                            Partition Disk Devices
-                            <br>----- Viewing a Partition Table
-                            <br>----- Modifying Partition Table
-                            <br>----- Creating a Partition Table
-                            <br>----- Navigating Disk and Partition Geometry
-                            <br>----- Reading from Solid-State Disks
-                            <br>Filesystems
-                            <br>----- Filesystem Types
-                            <br>----- Creating a Filesystem
-                            <br>----- Mounting a Filesystem
-                            <br>----- Filesystem UUID(Universal Unique Identifier)
-                            <br>----- Disk Buffering, Caching, and Filesystems
-                            <br>----- Filesystem Mount Options
-                            <br>----- Remounting a Filesystem
-                            <br>----- The /etc/fstab Filesystem Table
-                            <br>----- Alternatives to /etc/fstab
-                            <br>----- Filesystem Capacity
-                            <br>----- Checking and Repairing Filesystems
-                            <br>----- Special-Purpose Filesystems
-                            <br>Swap Space
-                            <br>----- Using a Disk Partition as Swap Space
-                            <br>----- Using a File as Swap Space
-                            <br>----- Determining How Much Swap You Need
-                            <br>The Logical Volume Manager
-                            <br>----- Working with LVM
-                            <br>----- The LVM implementation
-                            <br>Looking Forward: Disks and User Space
-                            <br>Inside a Traditional Filesystem
-                            <br>----- Inode Details and the Link Count
-                            <br>----- Block Allocation
-                            <br>----- Working with Filesystem in User Space
-                            <br>
-                            <br>
-                            <h1><b>How the Linux Kernel Boots</b></h1> <!--Change-->
-                            Startup Message
-                            <br>Kernel Initalization and Boot Options
-                            <br>Kernel Parameters
-                            <br>Boot Loaders
-                            <br>GRUB(Grand Unified Bootloader) Introduction
-                            <br>UEFI(Unified Extensible Firmware Interface)
-                            <br>Chainloading Other Operating Systems
-                            <br>Boot Loader Details
-                            <br>----- MBR(Master Boot Record) Boot
-                            <br>----- UEFI Boot
-                            <br>----- GRUB
-                            <br>
-                            <br>
-                            <h1><b>How User Space Starts</b></h1> <!--Change-->
-                            init
-                            <br>systemd
-                            <br>----- Units and Unit Types
-                            <br>----- Booting and Unit Dependency Graphs
-                            <br>----- systemd Configuration
-                            <br>----- systemd Operations
-                            <br>----- systemd Process Tracking and Synchronization
-                            <br>----- systemd Dependencies
-                            <br>----- systemd On-Demand and Resource-Parallelized Startup
-                            <br>----- systemd Auxiliary Components
-                            <br>System V Runlevels
-                            <br>System V init
-                            <br>----- System V init: Statup Command Sequence
-                            <br>----- The System V init Link Farm
-                            <br>----- run-parts
-                            <br>----- System V init Control
-                            <br>----- system System V Comparibility
-                            <br>Shutting Down Your System
-                            <br>The Initial RAM FileSystem
-                            <br>Emergency Booting and Single-User Mode
-                            <br>
-                            <br>
-                            <h1><b>System Configuration: Logging, System Time, Batch Jobs, and Users</b></h1> <!--Change-->
-                            System Logging
-                            <br>----- Checking Your Log Setup
-                            <br>----- Searching and Monitoring Logs
-                            <br>----- Logfile Rotation
-                            <br>----- Journal Maintenance
-                            <br>The Structure of /etc
-                            <br>User Management Files
-                            <br>----- The /etc/passwd File
-                            <br>----- Special Users
-                            <br>----- The /etc/shadow File
-                            <br>----- Manipulating Users and Passwords
-                            <br>----- Working with Groups
-                            <br>getty and login
-                            <br>Setting the Time
-                            <br>----- Kernel Time Representation and Time Zones
-                            <br>----- Network Time
-                            <br>Scheduling Recurring Tasks with cron and Timer Units
-                            <br>----- System Crontab Files
-                            <br>----- Timer Units
-                            <br>----- cron vs. Timer Units
-                            <br>Scheduling One-Time Tasks with at
-                            <br>----- Timer Unit Equivalents
-                            <br>User Access Topics
-                            <br>----- User IDs and User Switching
-                            <br>----- Process Owndership, Effective UID, Real UID, and Saved UID
-                            <br>----- User Identification, Authentification, and Authorization
-                            <br>----- Using Libraries for User Information
-                            <br>Pluggable Authentication Modules
-                            <br>----- PAM(Pluggable Authentication Modules) Configuration
-                            <br>----- Tips on PAM Configuration Syntax
-                            <br>----- PAM and Passwords
-                            <br>
-                            <br>
-                            <h1><b>Process and Resource Utilization</b></h1> <!--Change-->
-                            Tracking Process
-                            <br>Finding Open Files with lsof(Lists Open Files)
-                            <br>Tracing Program Execution and System Calls
-                            <br>----- strace
-                            <br>----- ltrace
-                            <br>Threads
-                            <br>----- Single-Threaded and Multithreaded Processes
-                            <br>----- Viewing Threads
-                            <br>Introduction to Resource Monitoring
-                            <br>----- Measuring CPU Time
-                            <br>----- Adjusting Process Priorities
-                            <br>----- Measuring CPU Performance with Load Averages
-                            <br>----- Monitoring Memory Status
-                            <br>----- Monitoring CPU and Memory Performance with vmstat
-                            <br>----- I/O Monitoring
-                            <br>----- Per-Process Monitoring with pidstat
-                            <br>Control Groups (cgroups)
-                            <br>----- Differentiating Between cgroup Version
-                            <br>----- Viewing cgroups
-                            <br>----- Manipulating and Creating cgroups
-                            <br>----- Viewing Resource Utilization
-                            <br>
-                            <br>
-                            <h1><b>Network and Its Configuration</b></h1> <!--Change-->
-                            Packets
-                            <br>Network Layers
-                            <br>The Internet Layer
-                            <br>----- Viewing IP Addresses
-                            <br>----- Subnets
-                            <br>----- Common Subnet Masks and CIDR(Classless-Inter Domain Routing) Notation
-                            <br>Routes and the Kernel Routing Table
-                            <br>The Default Gateway
-                            <br>IPv6 Addresses and Networks
-                            <br>----- Viewing IPv6 Configuration on Your System
-                            <br>----- Configuring Dual-Stack Networks
-                            <br>Basic ICMP(Internet Control Message Protocol) and DNS tools
-                            <br>----- ping
-                            <br>----- DNS and Host
-                            <br>The Physical Layer and Ethernet
-                            <br>Understanding Kernel Network Interfaces
-                            <br>Network Interface Configuration
-                            <br>----- Manually Configuring Interfaces
-                            <br>----- Manually Adding and Deleting Routes
-                            <br>Boot-Activated Network Configuration
-                            <br>Problems with Manual and Boot Activated Network Configuration
-                            <br>Network Configuration Managers
-                            <br>----- NetworkManager Operation
-                            <br>----- NetworkManager Iteraction
-                            <br>----- NetworkManager Configuration
-                            <br>Resolving Hostnames
-                            <br>----- /etc/hosts
-                            <br>----- resolv.conf
-                            <br>----- Caching and Zero-Configuration
-                            <br>----- /etc/nsswitch.conf
-                            <br>Localhost
-                            <br>The Transport Layer: TCP, UDP, and Services
-                            <br>----- TCP and UDP
-                            <br>Revisiting a Simple Local Network
-                            <br>Understanding DHCP
-                            <br>----- Linux DHCP Servers and Clients
-                            <br>Automatic IPv6 Network Configuration
-                            <br>Configuring Linux as a Router
-                            <br>Private Networks (IPv4)
-                            <br>Network Address Translation (IP Masquerading)
-                            <br>Routers and Linux
-                            <br>Firewall
-                            <br>----- Linux Firewall Basics, Rules, Strategies
-                            <br>Wireless Ethernet
-                            <br>----- iw
-                            <br>----- Wireless Security
-                            <br>
-                            <br>
-                            <h1><b>Network Application AND Services</b></h1> <!--Change-->
-                            The Basics of Services
-                            <br>A Closer Look
-                            <br>Network Servers
-                            <br>----- Secure Shell
-                            <br>----- The sshd Server
-                            <br>----- Fail2ban
-                            <br>----- The SSH Client
-                            <br>Pre-systemd Network Connection Servers: inetd/ xinetd
-                            <br>Diagonstic Tools
-                            <br>----- Isof
-                            <br>----- tcpdump
-                            <br>----- netcat
-                            <br>----- Port Scanning
-                            <br>Remote Procedure Calls
-                            <br>Network Security
-                            <br>----- Typical Vulnerabilities
-                            <br>----- Security Resources
-                            <br>Looking Forward
-                            <br>Network Socket
-                            <br>Unix Domain Socket
-                            <br>
-                            <br>
-                            <h1><b>Introduction to Shell Scripts</b></h1> <!--Change-->
-                            Shell Script Basics
-                            <br>----- Limitation of Shell Scripts
-                            <br>Quoting and Literals
-                            <br>----- Literals
-                            <br>----- Single Quotes
-                            <br>----- Double Quotes
-                            <br>----- Literal Single Quotes
-                            <br>Special Variables
-                            <br>----- Individual Argument: $1, $2, and So On
-                            <br>----- Number of Argument $#
-                            <br>----- All Arguments: $#
-                            <br>----- Script Name: $0
-                            <br>----- Process ID: $$
-                            <br>----- Exit Code:
-                            <br>Exit Codes
-                            <br>Conditionals
-                            <br>----- A workaround for Empty Parameter Lists
-                            <br>----- Other Commands for Tests
-                            <br>----- elif
-                            <br>----- Logical Construct
-                            <br>----- Testing Condition
-                            <br>----- Case
-                            <br>Loops
-                            <br>----- for Loops
-                            <br>----- while Loops
-                            <br>Command Substitution
-                            <br>Temporary File Management
-                            <br>Here Documents
-                            <br>Important Shell Script Utilities
-                            <br>----- basename
-                            <br>----- awk
-                            <br>----- sed
-                            <br>----- xargs
-                            <br>----- expr
-                            <br>----- exec
-                            <br>Subshells
-                            <br>Including Other Files in Scripts
-                            <br>Reading User Input
-                            <br>
-                            <br>
-                            <h1><b>Network File Transfer and Sharing</b></h1> <!--Change-->
-                            Quick Copy
-                            <br>rsync
-                            <br>----- Getting Started with rync
-                            <br>----- Making Exact Copies of a Directory Structure
-                            <br>----- Using the Trailing Slash
-                            <br>----- Excluding Files and Directories
-                            <br>----- Checking Transfer, Adding Safeguards, and Using Verbose Mode
-                            <br>----- Compressing Data
-                            <br>----- Limiting Bandwidth
-                            <br>----- Transferring Files to your Computer
-                            <br>File Sharing
-                            <br>----- File Sharing Usage and Performance
-                            <br>----- File Sharing Security
-                            <br>Sharing Files with Samba
-                            <br>----- Server Configuration
-                            <br>----- Server Access Control
-                            <br>----- Passwords
-                            <br>----- Manual Server Startup
-                            <br>----- Diagnostics and Logfiles
-                            <br>----- File Share Configuration
-                            <br>----- Home Directories
-                            <br>----- Printer Sharing
-                            <br>----- The Samba Client
-                            <br>SSHFS(Secure SHell FileSystem)
-                            <br>NFS
-                            <br>Cloud Storage
-                            <br>
-                            <br>
-                            <h1><b>User Environments</b></h1> <!--Change-->
-                            Guidelines for Creating Startup Files
-                            <br>When to Alter Startup Files
-                            <br>Shell Startup File Elements
-                            <br>----- The command Path
-                            <br>----- The Manual Page Path
-                            <br>----- The Prompt
-                            <br>----- Aliases
-                            <br>----- The Permissions Mask
-                            <br>Startup File Order and Example
-                            <br>----- The Bash Shell
-                            <br>----- The tcsh Shell
-                            <br>Default User Settings
-                            <br>----- Shell Defaults, Editor, Pager
-                            <br>Startup File Pitfalls
-                            <br>
-                            <br>
-                            <h1><b>Brief Survery of the Linux Desktop and Printing</b></h1> <!--Change-->
-                            Desktop Components
-                            <br>----- Framebuffers
-                            <br>----- The X Window System
-                            <br>----- Wayland
-                            <br>----- Window Managers
-                            <br>----- Toolkits
-                            <br>----- Desktop Environments
-                            <br>----- Applications
-                            <br>Are you Running Wayland
-                            <br>A Closer Look at Wayland
-                            <br>----- The Compositing Window Manager
-                            <br>----- Libinput
-                            <br>----- x Compatibility in Wayland
-                            <br>D-Bus
-                            <br>----- System and Session Instances
-                            <br>----- D-Bus Message Monitoring
-                            <br>Printing
-                            <br>----- CUPS
-                            <br>----- Format Conversion and Print Filters
-                            <br>
-                            <br>
-                            <h1><b>Development Tools</b></h1> <!--Change-->
-                            The C Compiler
-                            <br>----- Compiling Multiple Source Files
-                            <br>----- Linking with Libraries
-                            <br>----- Working with Shared Libraies
-                            <br>----- Working with Header Files and Directories
-                            <br>make
-                            <br>-----A Sample Makefile
-                            <br>-----Built-in Rules
-                            <br>-----Final Program build
-                            <br>-----Dependency Updates
-                            <br>-----Command-Line Arguments and Options
-                            <br>-----Standard Macro and Variables
-                            <br>-----Conventional Targets
-                            <br>-----Makefile Organization
-                            <br>lex and Yacc
-                            <br>Scripting Languages: Python Perl
-                            <br>Java
-                            <br>
-                            <br>
-                            <h1><b>Compiling Software from C Source Code</b></h1> <!--Change-->
-                            Software Build Systems
-                            <br>Unpacking C Source Packages
-                            <br>GNU autoconf
-                            <br>----- Installation using packaging tool
-                            <br>----- configure Script Options
-                            <br>----- Environment Variables
-                            <br>----- Autoconf Targets
-                            <br>----- pkg-config
-                            <br>Installation Practice
-                            <br>Applying a patch
-                            <br>
-                            <br>
-                            <h1><b>Virtualization</b></h1> <!--Change-->
-                            Virtual Machines
-                            <br>----- Hypervisor
-                            <br>----- Hardware in a Virtual Machines
-                            <br>----- Common Uses of Virtual Machines
-                            <br>----- Drawback of Virtual Machines
-                            <br>Continers
-                            <br>----- Docker, Podman, and Privileges
-                            <br>----- LXC
-                            <br>----- Kubernetes
-                            <br>Runtime-Based Virtualization
-                            <br>
-                            <br>
-                    </div>
-
-                    <div class="web">
-                        <p>
-                            <h1><b>Memory Addressing</b></h1>
-                            Memory Addresses
-                            <br>Segmentation in Hardware
-                            <br>Segmentation in Linux
-                            <br>Paging in Hardware
-                            <br>Paging in Linux
-                            <br>
-                            <br>
-                            <h1><b>Processes</b></h1>
-                            Processes, Lightweight Processes, and Threads
-                            <br>Process Descriptor
-                            <br>Process Switch
-                            <br>Creating Processes
-                            <br>Destroying Processes
-                            <br>
-                            <br>
-                            <h1><b>Interrupts and Exceptions</b></h1>
-                            The Role of Interrupt Signals
-                            <br>Interrupts and Exceptions
-                            <br>Nested Execution of Exception and Interrupt Handlers
-                            <br>Initializing the Interrupt Descriptor Table
-                            <br>Exception Handling
-                            <br>Interrupt Handling
-                            <br>Softirqs and Tasklets
-                            <br>Work Queues
-                            <br>Returning from Interrupts and Exceptions
-                            <br>
-                            <br>
-                            <h1><b>Kernel Synchronization</b></h1>
-                            How the Kernel Services Requests
-                            <br>Synchronization Primitives
-                            <br>Synchronizing Accesses to Kernel Data Structures
-                            <br>
-                            <br>
-                            <h1><b>Timing Measurements</b></h1>
-                            Clock and Timer Circuits
-                            <br>The Linux Timekeeping Architecture
-                            <br>Updating the Time and Date
-                            <br>Updating System Statistics
-                            <br>Software Timers and Delay Functions
-                            <br>System Calls Related to Timing Measurements
-                            <br>
-                            <br>
-                            <h1><b>Process Scheduling</b></h1>
-                            Scheduling Policy
-                            <br>The Scheduling Algorithm
-                            <br>Data Structures Used by the Scheduler
-                            <br>Functions Used by the Scheduler
-                            <br>Runqueue Balancing in Multiprocessor Systems
-                            <br>System Calls Related to Scheduling
-                            <br>
-                            <br>
-                            <h1><b>Memory Management</b></h1>
-                            Page Frame Management
-                            <br>Memory Area Management
-                            <br>Noncontiguous Memory Area Management
-                            <br>
-                            <br>
-                            <h1><b>Process Address Space</b></h1>
-                            The Process’s Address Space
-                            <br>The Memory Descriptor
-                            <br>Memory Regions
-                            <br>Page Fault Exception Handler
-                            <br>Creating and Deleting a Process Address Space
-                            <br>Managing the Heap
-                            <br>
-                            <br>
-                            <h1><b>System Calls</b></h1>
-                            POSIX APIs and System Calls
-                            <br>System Call Handler and Service Routines
-                            <br>Entering and Exiting a System Call
-                            <br>Parameter Passing
-                            <br>System Calls Related to Signal Handling
-                            <br>
-                            <br>
-                            <h1><b>The Virtual Filesystem</b></h1>
-                            The Role of the Virtual Filesystem (VFS)
-                            <br>VFS Data Structures
-                            <br>Filesystem Types
-                            <br>Filesystem Handling
-                            <br>Pathname Lookup
-                            <br>Implementations of VFS System Calls
-                            <br>File Locking
-                            <br>
-                            <br>
-                            <h1><b>I/O Architecture and Device Drivers</b></h1>
-                            I/O Architecture
-                            <br>The Device Driver Model
-                            <br>Device Files
-                            <br>Device Drivers
-                            <br>Character Device Drivers
-                            <br>
-                            <br>
-                            <h1><b>Block Device Drivers</b></h1>
-                            Block Devices Handling
-                            <br>The Generic Block Layer
-                            <br>The I/O Scheduler
-                            <br>Block Device Drivers
-                            <br>Opening a Block Device File
-                            <br>
-                            <br>
-                            <h1><b>The Page Cache</b></h1>
-                            The Page Cache
-                            <br>Storing Blocks in the Page Cache
-                            <br>Writing Dirty Pages to Disk
-                            <br>The sync( ), fsync( ), and fdatasync() System Calls
-                            <br>
-                            <br>
-                            <h1><b>Accessing Files</b></h1>
-                            Reading and Writing a File
-                            <br>Memory Mapping
-                            <br>Direct I/O Transfers
-                            <br>Asynchronous I/O
-                            <br>
-                            <br>
-                            <h1><b>Page Frame Reclaiming</b></h1>
-                            The Page Frame Reclaiming Algorithm
-                            <br>Reverse Mapping
-                            <br>Implementing the PFRA
-                            <br>Swapping
-                            <br>
-                            <br>
-                            <h1><b>The Ext2 and Ext3 Filesystems</b></h1>
-                            General Characteristics of Ext2
-                            <br>Ext2 Disk Data Structures
-                            <br>Ext2 Memory Data Structures
-                            <br>Creating the Ext2 Filesystem
-                            <br>Ext2 Methods
-                            <br>Managing Ext2 Disk Space
-                            <br>The Ext3 Filesystem
-                            <br>
-                            <br>
-                            <h1><b>Process Communication</b></h1>
-                            Pipes
-                            <br>FIFOs
-                            <br>System V IPC
-                            <br>POSIX Message Queues
-                            <br>
-                            <br>
-                            <h1><b>Program Execution</b></h1>
-                            Executable Files
-                            <br>Executable Formats
-                            <br>Execution Domains
-                            <br>The exec Functions
-                            <br>
-                            <br><br>
-                            <h3><b>Guideline</b></h3>
-                            <h1>ARM Cortex-A Programmers Guide</h1>
-                            <a href="https://cs140e.sergio.bz/docs/ARMv8-A-Programmer-Guide.pdf">
-                                https://cs140e.sergio.bz/docs/ARMv8-A-Programmer-Guide.pdf
-                            </a>
-                            <br>
-                            <h3><b>Lecture Series</b></h3>
-                            <br>
-                            <h1>Linux Kernel Programming by Austin Kim</h1>
-                            <iframe width="350" height="250" src="https://www.youtube.com/embed/tU3fyezvbfw?list=PLRrUisvYoUw9-cTYgkbTbr9f9CpbGdq4F" title="[리눅스 커널의 구조와 원리]  1.2 리눅스 운영체제의 점유율" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br><br>
-                            <h3><b>Reference</b></h3>
+                            <!--      Levels and Layers of Abstraction in a Linux System
+          <br>Hardware: Understanding Main Memory
+          <br>The Kernel
+          <br>----- Process Management
+          <br>----- Memory Management
+          <br>----- Device Drivers and Management
+          <br>----- System Calls and Support
+          <br>User Space
+          <br>Users
+          <br>
+          <br>
+    -->
+                            <h1>Basic Commands and Directory Hirarchy</h1> <!--Change-->
+                            <!--   The Bourne Shell: /bin/sh
+       <br>Using the Shell
+       <br>----- The Shell Window
+       <br>----- cat
+       <br>----- Standard Input and Standard Output
+       <br>Basic Commands
+       <br>----- ls
+       <br>----- cp
+       <br>----- mv
+       <br>----- touch
+       <br>----- rm
+       <br>----- echo
+       <br>Navigating Directories
+       <br>----- cd
+       <br>----- mkdir
+       <br>----- rmdir
+       <br>----- Shell Globbing("Wildcards")
+       <br>Intermediate Commands
+       <br>----- grep
+       <br>----- less
+       <br>----- pwd
+       <br>----- diff
+       <br>----- file
+       <br>----- find and locate
+       <br>----- head and tail
+       <br>----- sort
+       <br>Changing Your Password and Shell
+       <br>Dot Files
+       <br>Environment and Shell Variables
+       <br>The Command Path
+       <br>Special Characters
+       <br>Command-Line Editing
+       <br>Text Editors
+       <br>Shell Input and Output
+       <br>Understanding Error Messages
+       <br>----- Anatomy of a Unix Error Message
+       <br>----- Common Errors
+       <br>Listing and Manipulating Process
+       <br>----- Process Termination
+       <br>----- Job Control
+       <br>----- Background Process
+       <br>File Mode and Permissions
+       <br>----- Modifying Permissions
+       <br>----- Working with Symbolic Links
+       <br>Archiving and Compression Files
+       <br>----- gzip
+       <br>----- tar
+       <br>----- Compresses Archives (.tar.gz)
+       <br>----- zcat
+       <br>Linux Directory Hierarchy Essentials
+       <br>----- The /usr Directory
+       <br>----- Kernel Location
+       <br>Running Commands as the Superuser
+       <br>----- sudo
+       <br>----- /etc/sudoers
+       <br>----- sudo Logs
+       <br>
+       <br>
+    -->
+                            <h1>Devices</h1> <!--Change-->
+                            <!--Device Files
+    <br>The sysfs Device Path
+    <br>dd and Devices
+    <br>Device Name Summary
+    <br>----- Hard Disk:/dev/sd*
+    <br>----- Virtual Disks: /dev/xvd*, /dev/vd*
+    <br>----- Non-Volatile Memory Devices: /dev/nvme *
+    <br>----- Device Mapper: /dev/ dm-*, /dev/mapper/*
+    <br>----- CD and DVD Drivers: /dev/ sr*
+    <br>----- PATA Hard Disks: /dev/hd*
+    <br>----- Terminals: /dev/tty*, /dev/pts/*, and /dev/tty
+    <br>----- Serial Ports: /dev/ttyS*, /dev/ttyUSB*, /dev/ttyACM*
+    <br>----- Parallel Ports: /dev/lp0 and /dev/lp1
+    <br>----- Audio Devices: /dev/snd/*, /dev/dsp, /dev/audio
+    <br>----- Device File Creation
+    <br>udev
+    <br>----- devtmpfs
+    <br>----- udevd Operation and Configuration
+    <br>----- udevadm
+    <br>----- Device Monitoring
+    <br>In-Depth: SCSI and the Linux Kernel
+    <br>----- USB Storage and SCSI(Small Computer System Interface)
+    <br>----- SCSI and ATA
+    <br>----- Gemeric SCSI Devices
+    <br>----- Multiple Access Method for a Single Device
+    <br>
+    <br>
+    -->
+                            <h1>Disk and FileSystems</h1> <!--Change-->
+                            <!--Partition Disk Devices
+    <br>----- Viewing a Partition Table
+    <br>----- Modifying Partition Table
+    <br>----- Creating a Partition Table
+    <br>----- Navigating Disk and Partition Geometry
+    <br>----- Reading from Solid-State Disks
+    <br>Filesystems
+    <br>----- Filesystem Types
+    <br>----- Creating a Filesystem
+    <br>----- Mounting a Filesystem
+    <br>----- Filesystem UUID(Universal Unique Identifier)
+    <br>----- Disk Buffering, Caching, and Filesystems
+    <br>----- Filesystem Mount Options
+    <br>----- Remounting a Filesystem
+    <br>----- The /etc/fstab Filesystem Table
+    <br>----- Alternatives to /etc/fstab
+    <br>----- Filesystem Capacity
+    <br>----- Checking and Repairing Filesystems
+    <br>----- Special-Purpose Filesystems
+    <br>Swap Space
+    <br>----- Using a Disk Partition as Swap Space
+    <br>----- Using a File as Swap Space
+    <br>----- Determining How Much Swap You Need
+    <br>The Logical Volume Manager
+    <br>----- Working with LVM
+    <br>----- The LVM implementation
+    <br>Looking Forward: Disks and User Space
+    <br>Inside a Traditional Filesystem
+    <br>----- Inode Details and the Link Count
+    <br>----- Block Allocation
+    <br>----- Working with Filesystem in User Space
+    <br>
+    <br>
+    -->
+                            <h1>How the Linux Kernel Boots</h1> <!--Change-->
+                            <!--Startup Message
+    <br>Kernel Initalization and Boot Options
+    <br>Kernel Parameters
+    <br>Boot Loaders
+    <br>GRUB(Grand Unified Bootloader) Introduction
+    <br>UEFI(Unified Extensible Firmware Interface)
+    <br>Chainloading Other Operating Systems
+    <br>Boot Loader Details
+    <br>----- MBR(Master Boot Record) Boot
+    <br>----- UEFI Boot
+    <br>----- GRUB
+    <br>
+    <br>
+    -->
+                            <h1>How User Space Starts</h1> <!--Change-->
+                            <!--init
+    <br>systemd
+    <br>----- Units and Unit Types
+    <br>----- Booting and Unit Dependency Graphs
+    <br>----- systemd Configuration
+    <br>----- systemd Operations
+    <br>----- systemd Process Tracking and Synchronization
+    <br>----- systemd Dependencies
+    <br>----- systemd On-Demand and Resource-Parallelized Startup
+    <br>----- systemd Auxiliary Components
+    <br>System V Runlevels
+    <br>System V init
+    <br>----- System V init: Statup Command Sequence
+    <br>----- The System V init Link Farm
+    <br>----- run-parts
+    <br>----- System V init Control
+    <br>----- system System V Comparibility
+    <br>Shutting Down Your System
+    <br>The Initial RAM FileSystem
+    <br>Emergency Booting and Single-User Mode
+    <br>
+    <br>
+    -->
+                            <h1>System Configuration: Logging, System Time, Batch Jobs, and Users</h1> <!--Change-->
+                            <!--System Logging
+    <br>----- Checking Your Log Setup
+    <br>----- Searching and Monitoring Logs
+    <br>----- Logfile Rotation
+    <br>----- Journal Maintenance
+    <br>The Structure of /etc
+    <br>User Management Files
+    <br>----- The /etc/passwd File
+    <br>----- Special Users
+    <br>----- The /etc/shadow File
+    <br>----- Manipulating Users and Passwords
+    <br>----- Working with Groups
+    <br>getty and login
+    <br>Setting the Time
+    <br>----- Kernel Time Representation and Time Zones
+    <br>----- Network Time
+    <br>Scheduling Recurring Tasks with cron and Timer Units
+    <br>----- System Crontab Files
+    <br>----- Timer Units
+    <br>----- cron vs. Timer Units
+    <br>Scheduling One-Time Tasks with at
+    <br>----- Timer Unit Equivalents
+    <br>User Access Topics
+    <br>----- User IDs and User Switching
+    <br>----- Process Owndership, Effective UID, Real UID, and Saved UID
+    <br>----- User Identification, Authentification, and Authorization
+    <br>----- Using Libraries for User Information
+    <br>Pluggable Authentication Modules
+    <br>----- PAM(Pluggable Authentication Modules) Configuration
+    <br>----- Tips on PAM Configuration Syntax
+    <br>----- PAM and Passwords
+    <br>
+    <br>
+    -->
+                            <h1>Process and Resource Utilization</h1> <!--Change-->
+                            <!--Tracking Process
+    <br>Finding Open Files with lsof(Lists Open Files)
+    <br>Tracing Program Execution and System Calls
+    <br>----- strace
+    <br>----- ltrace
+    <br>Threads
+    <br>----- Single-Threaded and Multithreaded Processes
+    <br>----- Viewing Threads
+    <br>Introduction to Resource Monitoring
+    <br>----- Measuring CPU Time
+    <br>----- Adjusting Process Priorities
+    <br>----- Measuring CPU Performance with Load Averages
+    <br>----- Monitoring Memory Status
+    <br>----- Monitoring CPU and Memory Performance with vmstat
+    <br>----- I/O Monitoring
+    <br>----- Per-Process Monitoring with pidstat
+    <br>Control Groups (cgroups)
+    <br>----- Differentiating Between cgroup Version
+    <br>----- Viewing cgroups
+    <br>----- Manipulating and Creating cgroups
+    <br>----- Viewing Resource Utilization
+    <br>
+    <br>
+    -->
+                            <h1>Network and Its Configuration</h1> <!--Change-->
+                            <!--Packets
+    <br>Network Layers
+    <br>The Internet Layer
+    <br>----- Viewing IP Addresses
+    <br>----- Subnets
+    <br>----- Common Subnet Masks and CIDR(Classless-Inter Domain Routing) Notation
+    <br>Routes and the Kernel Routing Table
+    <br>The Default Gateway
+    <br>IPv6 Addresses and Networks
+    <br>----- Viewing IPv6 Configuration on Your System
+    <br>----- Configuring Dual-Stack Networks
+    <br>Basic ICMP(Internet Control Message Protocol) and DNS tools
+    <br>----- ping
+    <br>----- DNS and Host
+    <br>The Physical Layer and Ethernet
+    <br>Understanding Kernel Network Interfaces
+    <br>Network Interface Configuration
+    <br>----- Manually Configuring Interfaces
+    <br>----- Manually Adding and Deleting Routes
+    <br>Boot-Activated Network Configuration
+    <br>Problems with Manual and Boot Activated Network Configuration
+    <br>Network Configuration Managers
+    <br>----- NetworkManager Operation
+    <br>----- NetworkManager Iteraction
+    <br>----- NetworkManager Configuration
+    <br>Resolving Hostnames
+    <br>----- /etc/hosts
+    <br>----- resolv.conf
+    <br>----- Caching and Zero-Configuration
+    <br>----- /etc/nsswitch.conf
+    <br>Localhost
+    <br>The Transport Layer: TCP, UDP, and Services
+    <br>----- TCP and UDP
+    <br>Revisiting a Simple Local Network
+    <br>Understanding DHCP
+    <br>----- Linux DHCP Servers and Clients
+    <br>Automatic IPv6 Network Configuration
+    <br>Configuring Linux as a Router
+    <br>Private Networks (IPv4)
+    <br>Network Address Translation (IP Masquerading)
+    <br>Routers and Linux
+    <br>Firewall
+    <br>----- Linux Firewall Basics, Rules, Strategies
+    <br>Wireless Ethernet
+    <br>----- iw
+    <br>----- Wireless Security
+    <br>
+    <br>
+    -->
+                            <h1>Network Application AND Services</h1> <!--Change-->
+                            <!--The Basics of Services
+    <br>A Closer Look
+    <br>Network Servers
+    <br>----- Secure Shell
+    <br>----- The sshd Server
+    <br>----- Fail2ban
+    <br>----- The SSH Client
+    <br>Pre-systemd Network Connection Servers: inetd/ xinetd
+    <br>Diagonstic Tools
+    <br>----- Isof
+    <br>----- tcpdump
+    <br>----- netcat
+    <br>----- Port Scanning
+    <br>Remote Procedure Calls
+    <br>Network Security
+    <br>----- Typical Vulnerabilities
+    <br>----- Security Resources
+    <br>Looking Forward
+    <br>Network Socket
+    <br>Unix Domain Socket
+    <br>
+    <br>
+    -->
+                            <h1>Introduction to Shell Scripts</h1> <!--Change-->
+                            <!--Shell Script Basics
+    <br>----- Limitation of Shell Scripts
+    <br>Quoting and Literals
+    <br>----- Literals
+    <br>----- Single Quotes
+    <br>----- Double Quotes
+    <br>----- Literal Single Quotes
+    <br>Special Variables
+    <br>----- Individual Argument: $1, $2, and So On
+    <br>----- Number of Argument $#
+    <br>----- All Arguments: $#
+    <br>----- Script Name: $0
+    <br>----- Process ID: $$
+    <br>----- Exit Code:
+    <br>Exit Codes
+    <br>Conditionals
+    <br>----- A workaround for Empty Parameter Lists
+    <br>----- Other Commands for Tests
+    <br>----- elif
+    <br>----- Logical Construct
+    <br>----- Testing Condition
+    <br>----- Case
+    <br>Loops
+    <br>----- for Loops
+    <br>----- while Loops
+    <br>Command Substitution
+    <br>Temporary File Management
+    <br>Here Documents
+    <br>Important Shell Script Utilities
+    <br>----- basename
+    <br>----- awk
+    <br>----- sed
+    <br>----- xargs
+    <br>----- expr
+    <br>----- exec
+    <br>Subshells
+    <br>Including Other Files in Scripts
+    <br>Reading User Input
+    <br>
+    <br>
+    -->
+                            <h1>Network File Transfer and Sharing</h1> <!--Change-->
+                            <!--Quick Copy
+    <br>rsync
+    <br>----- Getting Started with rync
+    <br>----- Making Exact Copies of a Directory Structure
+    <br>----- Using the Trailing Slash
+    <br>----- Excluding Files and Directories
+    <br>----- Checking Transfer, Adding Safeguards, and Using Verbose Mode
+    <br>----- Compressing Data
+    <br>----- Limiting Bandwidth
+    <br>----- Transferring Files to your Computer
+    <br>File Sharing
+    <br>----- File Sharing Usage and Performance
+    <br>----- File Sharing Security
+    <br>Sharing Files with Samba
+    <br>----- Server Configuration
+    <br>----- Server Access Control
+    <br>----- Passwords
+    <br>----- Manual Server Startup
+    <br>----- Diagnostics and Logfiles
+    <br>----- File Share Configuration
+    <br>----- Home Directories
+    <br>----- Printer Sharing
+    <br>----- The Samba Client
+    <br>SSHFS(Secure SHell FileSystem)
+    <br>NFS
+    <br>Cloud Storage
+    <br>
+    <br>
+    -->
+                            <h1>User Environments</h1> <!--Change-->
+                            <!--Guidelines for Creating Startup Files
+    <br>When to Alter Startup Files
+    <br>Shell Startup File Elements
+    <br>----- The command Path
+    <br>----- The Manual Page Path
+    <br>----- The Prompt
+    <br>----- Aliases
+    <br>----- The Permissions Mask
+    <br>Startup File Order and Example
+    <br>----- The Bash Shell
+    <br>----- The tcsh Shell
+    <br>Default User Settings
+    <br>----- Shell Defaults, Editor, Pager
+    <br>Startup File Pitfalls
+    <br>
+    <br>
+    -->
+                            <h1>Brief Survery of the Linux Desktop and Printing</h1> <!--Change-->
+                            <!--Desktop Components
+    <br>----- Framebuffers
+    <br>----- The X Window System
+    <br>----- Wayland
+    <br>----- Window Managers
+    <br>----- Toolkits
+    <br>----- Desktop Environments
+    <br>----- Applications
+    <br>Are you Running Wayland
+    <br>A Closer Look at Wayland
+    <br>----- The Compositing Window Manager
+    <br>----- Libinput
+    <br>----- x Compatibility in Wayland
+    <br>D-Bus
+    <br>----- System and Session Instances
+    <br>----- D-Bus Message Monitoring
+    <br>Printing
+    <br>----- CUPS
+    <br>----- Format Conversion and Print Filters
+    <br>
+    <br>
+    -->
+                            <h1>Development Tools</h1> <!--Change-->
+                            <!--The C Compiler
+    <br>----- Compiling Multiple Source Files
+    <br>----- Linking with Libraries
+    <br>----- Working with Shared Libraies
+    <br>----- Working with Header Files and Directories
+    <br>make
+    <br>-----A Sample Makefile
+    <br>-----Built-in Rules
+    <br>-----Final Program build
+    <br>-----Dependency Updates
+    <br>-----Command-Line Arguments and Options
+    <br>-----Standard Macro and Variables
+    <br>-----Conventional Targets
+    <br>-----Makefile Organization
+    <br>lex and Yacc
+    <br>Scripting Languages: Python Perl
+    <br>Java
+    <br>
+    <br>
+    -->
+                            <h1>Compiling Software from C Source Code</h1> <!--Change-->
+                            <!--Software Build Systems
+    <br>Unpacking C Source Packages
+    <br>GNU autoconf
+    <br>----- Installation using packaging tool
+    <br>----- configure Script Options
+    <br>----- Environment Variables
+    <br>----- Autoconf Targets
+    <br>----- pkg-config
+    <br>Installation Practice
+    <br>Applying a patch
+    <br>
+    <br>
+    -->
+                            <h1>Virtualization</h1> <!--Change-->
+                            <!--Virtual Machines
+    <br>----- Hypervisor
+    <br>----- Hardware in a Virtual Machines
+    <br>----- Common Uses of Virtual Machines
+    <br>----- Drawback of Virtual Machines
+    <br>Continers
+    <br>----- Docker, Podman, and Privileges
+    <br>----- LXC
+    <br>----- Kubernetes
+    <br>Runtime-Based Virtualization
+    <br>
+    <br>-->
+                            <h2><b>Reference Book</b></h2>
 
                             <h1>
                                 <i>
@@ -809,8 +566,185 @@
                             </h1>
                             <br>
                             <img src="Software Engineering Pics/Linux.webp" alt="Operating Systems pics" style="width:60%" onclick="onClick(this)">
+
                             <br><br>
-                            <br>
+
+
+
+                            <h2><b>Lecture Series for Linux Kernel</b></h2>
+                            <a href="https://www.linkedin.com/learning/advanced-linux-the-linux-kernel-2/linux-kernel-overview?autoplay=true&u=74653650" target="_blank">Advanced Linux Kernel by Kevin Dankwardt</a>
+                            <br><a href="https://olc.kr/course/course_online_view.jsp?id=35&s_keyword=Kernel&x=0&y=0#self" target="_blank">Kernel of Linux by Seoul National University</a>
+                            <h1>Linux Internels - DJ Ware</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/FcZ5A-K2JUo?list=PLWK00SLo2KcQi1hlP2_allMWeG19MkQa7" title="Linux Internals: Memory Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <br><br>
+
+                            <h1>Linux & GNU past current future - DJ Ware</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/6vFFq2D8WnA?list=PLWK00SLo2KcSffkQyuroos63PdDc-2V0H" title="GNU  & Linux Past - Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <br><br>
+                            <h1>Linux internel - google tech talk</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/5osOHhBWKOQ?list=PLSIUOFhnxEiC3YTdxwqZqgEY5imVL8U8J" title="Greybeard Qualification (Linux Internals) part 1: Process Structure and IPC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <br><br>
+</div>
+
+                    <div class="web">
+                        <p>
+                            <h1>Memory Addressing</h1>
+                            <!--Memory Addresses
+    <br>Segmentation in Hardware
+    <br>Segmentation in Linux
+    <br>Paging in Hardware
+    <br>Paging in Linux
+    <br>
+    <br>-->
+                            <h1>Processes</h1>
+                            <!--Processes, Lightweight Processes, and Threads
+    <br>Process Descriptor
+    <br>Process Switch
+    <br>Creating Processes
+    <br>Destroying Processes
+    <br>
+    <br>-->
+                            <h1>Interrupts and Exceptions</h1>
+                            <!--The Role of Interrupt Signals
+    <br>Interrupts and Exceptions
+    <br>Nested Execution of Exception and Interrupt Handlers
+    <br>Initializing the Interrupt Descriptor Table
+    <br>Exception Handling
+    <br>Interrupt Handling
+    <br>Softirqs and Tasklets
+    <br>Work Queues
+    <br>Returning from Interrupts and Exceptions
+    <br>
+    <br>-->
+                            <h1>Kernel Synchronization</h1>
+                            <!--How the Kernel Services Requests
+    <br>Synchronization Primitives
+    <br>Synchronizing Accesses to Kernel Data Structures
+    <br>
+    <br>-->
+                            <h1>Timing Measurements</h1>
+                            <!--Clock and Timer Circuits
+    <br>The Linux Timekeeping Architecture
+    <br>Updating the Time and Date
+    <br>Updating System Statistics
+    <br>Software Timers and Delay Functions
+    <br>System Calls Related to Timing Measurements
+    <br>
+    <br>-->
+                            <h1>Process Scheduling</h1>
+                            <!--Scheduling Policy
+    <br>The Scheduling Algorithm
+    <br>Data Structures Used by the Scheduler
+    <br>Functions Used by the Scheduler
+    <br>Runqueue Balancing in Multiprocessor Systems
+    <br>System Calls Related to Scheduling
+    <br>
+    <br>-->
+                            <h1>Memory Management</h1>
+                            <!--Page Frame Management
+    <br>Memory Area Management
+    <br>Noncontiguous Memory Area Management
+    <br>
+    <br>-->
+                            <h1>Process Address Space</h1>
+                            <!--The Process’s Address Space
+    <br>The Memory Descriptor
+    <br>Memory Regions
+    <br>Page Fault Exception Handler
+    <br>Creating and Deleting a Process Address Space
+    <br>Managing the Heap
+    <br>
+    <br>-->
+                            <h1>System Calls</h1>
+                            <!-- POSIX APIs and System Calls
+    <br>System Call Handler and Service Routines
+    <br>Entering and Exiting a System Call
+    <br>Parameter Passing
+    <br>System Calls Related to Signal Handling
+    <br>
+    <br>-->
+                            <h1>The Virtual Filesystem</h1>
+                            <!-- The Role of the Virtual Filesystem (VFS)
+    <br>VFS Data Structures
+    <br>Filesystem Types
+    <br>Filesystem Handling
+    <br>Pathname Lookup
+    <br>Implementations of VFS System Calls
+    <br>File Locking
+    <br>
+    <br>-->
+                            <h1>I/O Architecture and Device Drivers</h1>
+                            <!--I/O Architecture
+    <br>The Device Driver Model
+    <br>Device Files
+    <br>Device Drivers
+    <br>Character Device Drivers
+    <br>
+    <br>
+    -->
+                            <h1>Block Device Drivers</h1>
+                            <!--Block Devices Handling
+    <br>The Generic Block Layer
+    <br>The I/O Scheduler
+    <br>Block Device Drivers
+    <br>Opening a Block Device File
+    <br>
+    <br>
+    -->
+                            <h1>The Page Cache</h1>
+                            <!--The Page Cache
+    <br>Storing Blocks in the Page Cache
+    <br>Writing Dirty Pages to Disk
+    <br>The sync( ), fsync( ), and fdatasync() System Calls
+    <br>
+    <br>
+    -->
+                            <h1>Accessing Files</h1>
+                            <!--Reading and Writing a File
+    <br>Memory Mapping
+    <br>Direct I/O Transfers
+    <br>Asynchronous I/O
+    <br>
+    <br>
+    -->
+                            <h1>Page Frame Reclaiming</h1>
+                            <!--The Page Frame Reclaiming Algorithm
+    <br>Reverse Mapping
+    <br>Implementing the PFRA
+    <br>Swapping
+    <br>
+    <br>
+    -->
+                            <h1>The Ext2 and Ext3 Filesystems</h1>
+                            <!--General Characteristics of Ext2
+    <br>Ext2 Disk Data Structures
+    <br>Ext2 Memory Data Structures
+    <br>Creating the Ext2 Filesystem
+    <br>Ext2 Methods
+    <br>Managing Ext2 Disk Space
+    <br>The Ext3 Filesystem
+    <br>
+    <br>
+    -->
+                            <h1>Process Communication</h1>
+                            <!--Pipes
+    <br>FIFOs
+    <br>System V IPC
+    <br>POSIX Message Queues
+    <br>
+    <br>
+    -->
+                            <h1>Program Execution</h1>
+                            <!--Executable Files
+    <br>Executable Formats
+    <br>Execution Domains
+    <br>The exec Functions
+    <br>
+    -->
+                            <br><br>
+
+                            <h3><b>Reference Book</b></h3>
+
                             <br>
 
                             <h1>
@@ -822,7 +756,21 @@
                             <br>
                             <img src="Software Engineering Pics/Linux_Kernel.webp" alt="Operating Systems pics" style="width:60%" onclick="onClick(this)">
 
-
+                            <h3><b>Reference Guide</b></h3>
+                            <h1>ARM Cortex-A Programmers Guide</h1>
+                            <a href="https://cs140e.sergio.bz/docs/ARMv8-A-Programmer-Guide.pdf">
+                                https://cs140e.sergio.bz/docs/ARMv8-A-Programmer-Guide.pdf
+                            </a>
+                            <br><br>
+                            <img src="Software Engineering Pics/kernel-dg.png" alt="Operating Systems pics" style="width:80%" onclick="onClick(this)">
+                            <br><br>
+                            <h1>
+                                <i>
+                                    Linux Kernel Development
+                                    Book by Robert Love
+                                </i>
+                            </h1>
+                            <img src="Software Engineering Pics/kernel.jpg" alt="Operating Systems pics" style="width:60%" onclick="onClick(this)">
                             <br><br>
 
 

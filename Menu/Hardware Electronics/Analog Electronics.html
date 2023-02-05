@@ -10,109 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html, p100 {
-            font-size: 16px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html, p100 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 23px
-        }
-
-        h4 {
-            font-size: 26px
-        }
-
-        h8 {
-            font-size: 32px
-        }
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-
-
-    body {
-        font-size: 13px;
-    }
-
-    p, body, html {
-        height: 100%;
-        color: #444;
-        line-height: 2;
-    }
-
-
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-        .w3-half img:hover {
-            opacity: 1
-        }
-
-
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -123,7 +21,7 @@
         <br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class=" w3-xlarge w3-padding-32">Analog Electronics</h3> <!--Change-->
+            <h2 class=" w3-padding-32">Analog Electronics</h2> <!--Change-->
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -140,17 +38,17 @@
             <br>
             <br>
             <br>
-            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Circuit Theory.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Circuit Theory</a>
             <!--<a href="Analog Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Analog Electronics</a>
-            -->
+    -->
             <a href="Power Electronics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Power Electronics</a>
             <a href="Digital Circuit Design/Digital Circuit Design.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Electronics</a>
             <a href="FPGA.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">FPGA (SystemVerilog)</a>
-            <a href="Computer_Organization.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">ARM Computer Organization</a>
+            <a href="Applied Electromagnetics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Applied Electromagnetics</a>
             <a href="Computer Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Architecture</a>
-     <!--       <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
-     -->       <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
+            <!--       <a href="Wireless_Communication.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Wireless Communication</a>
+    -->
+            <a href="Embedded Architecture/Embedded Architecture.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Architecture</a>
             <a href="Digital Design of Signal Processing System.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Digital Design of Signal Processing System</a>
             <a href="Sensor Physics.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Sensor Physics</a>
             <a href="Hardware_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Hardware Resources</a>
@@ -180,286 +78,277 @@
 
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:100px" id="showcase">
-            <h8><b>Analog Electronics</b></h8>
-
-            <div style="margin-top:70px" id="showcase">
-
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <div>
                 <h4 class="content"><b>Contents</b></h4> <!--Change-->
-                <br>
+                <br><br>
                 <div class="web">
                     <p>
-                        <h1><b>Semiconductors</b></h1> <!--Change-->
-                        Conductors
-                        <br>Semiconductors
-                        <br>Silicon Crystals
-                        <br>Intrinsic Semiconductors
-                        <br>Two Types of Flow
-                        <br>Doping a Semiconductor
-                        <br>Two Types of Extrinsic Semiconductors
-                        <br>The Unbiased Diode
-                        <br>Forward Bias
-                        <br>Reverse Bias
-                        <br>Breakdown
-                        <br>Energy Levels
-                        <br>Barrier Potential and Temperature
-                        <br>Reverse-Biased Diode
-                        <br><br>
-                        <h1><b>Diode Theory</b></h1> <!--Change-->
-                        The Ideal Diode
-                        <br>The Second Approximation
-                        <br>The Third Approximation
-                        <br>How to Calculate Bulk Resistance
-                        <br>DC Resistance of a Diode
-                        <br>Load Lines
-                        <br>Surface-Mount Diodes
-                        <br><br>
-                        <h1><b>Diode Circuits</b></h1> <!--Change-->
-                        The Half-Wave Rectifier
-                        <br>The Transformer
-                        <br>The Full-Wave Rectifier
-                        <br>The Bridge Rectifier
-                        <br>The Choke-Input Filter
-                        <br>The Capacitor-Input Filter
-                        <br>Peak Inverse Voltage and Surge Current
-                        <br>Power-Supply Topics
-                        <br>Clippers and Limiters
-                        <br>Clampers
-                        <br>Voltage Multipliers
-                        <br><br>
-                        <h1><b>Special-Purpose Diodes</b></h1> <!--Change-->
-                        The Zener Diode
-                        <br>The Loaded Zener Regulator
-                        <br>Second Approximation of a Zener Diode
-                        <br>Zener Drop-Out Point
-                        <br>Load Lines
-                        <br>Light-Emitting Diodes
-                        <br>Optoelectronic Devices
-                        <br>The Schottky Diode
-                        <br>The Varactor
-                        <br><br>
-                        <h1><b>BJT Fundamentals</b></h1> <!--Change-->
-                        The Unbiased Transistor
-                        <br>The Biased Transistor
-                        <br>Transistor Currents
-                        <br>The CE Connection
-                        <br>The Base Curve
-                        <br>Collector Curves
-                        <br>Transistor Approximations
-                        <br>Surface-Mount Transistors
-                        <br>Variations in Current Gain
-                        <br>The Load Line
-                        <br>The Operating Point
-                        <br>Recognizing Saturation
-                        <br>The Transistor Switch
-                        <br><br>
-                        <h1><b>BJT Biasing</b></h1> <!--Change-->
-                        Emitter Bias
-                        <br>LED Drivers
-                        <br>Troubleshooting Emitter Bias Circuits
-                        <br>More Optoelectronic
-                        Devices
-                        <br>Voltage-Divider Bias
-                        <br>Accurate VDB Analysis
-                        <br>VDB Load Line and Q Point
-                        <br>Two-Supply Emitter Bias
-                        <br>Other Types of Bias
-                        <br>Troubleshooting VDB
-                        Circuits
-                        <br>PNP Transistors
-                        <br><br>
-                        <h1><b>Basic BJT Amplifiers</b></h1> <!--Change-->
-                        Base-Biased Amplifier
-                        <br>Emitter-Biased Amplifier
-                        <br>Small-Signal Operation
-                        <br>AC Beta
-                        <br>AC Resistance of the Emitter Diode
-                        <br>Two Transistor Models
-                        <br>Analyzing an Amplifier
-                        <br>AC Quantities on the Data Sheet
-                        <br>Voltage Gain
-                        <br>The Loading Effect of Input Impedance
-                        <br>Swamped Amplifier
-                        <br>Troubleshooting
-                        <br><br>
-                        <h1><b>Multistage, CC, and CB Amplifiers</b></h1> <!--Change-->
-                        Multistage Amplifiers
-                        <br>Two-Stage Feedback
-                        <br>CC Amplifier
-                        <br>Output Impedance
-                        <br>Cascading CE and CC
-                        <br>Darlington Connections
-                        <br>Voltage Regulation
-                        <br>The Common-Base Amplifier
-                        <br>Troubleshooting Multistage Amplifiers
-                        <br><br>
-                        <h1><b>Power Amplifiers</b></h1> <!--Change-->
-                        Amplifier Terms
-                        <br>Two Load Lines
-                        <br>Class-A Operation
-                        <br>Class-B Operation
-                        <br>Class-B Push-Pull Emitter Follower
-                        <br>Biasing Class-B/AB Amplifiers
-                        <br>Class-B/AB Driver
-                        <br>Class-C Operation
-                        <br>Class-C Formulas
-                        <br>Transistor Power Rating
-                        <br><br>
-                        <h1><b>JFETs</b></h1> <!--Change-->
-                        Drain Curves
-                        <br>The Transconductance Curve
-                        <br>Biasing in the Ohmic Region
-                        <br>Biasing in the Active Region
-                        <br>Transconductance
-                        <br>JFET Amplifiers
-                        <br>The JFET Analog Switch
-                        <br>Other JFET Application
-                        <br>Reading Data Sheets
-                        <br>JFET Testing
-                        <br><br>
-                        <h1><b>MOSFETs</b></h1> <!--Change-->
-                        The Depletion-Mode MOSFET
-                        <br>D-MOSFET Curves
-                        <br>Depletion-Mode MOSFET Amplifiers
-                        <br>The Enhancement-Mode MOSFET
-                        <br>The Ohmic Region
-                        <br>Digital Switching
-                        <br>CMOS
-                        <br>Power FETs
-                        <br>High-Side MOSFET Load Switches
-                        <br>MOSFET H-Bridge
-                        <br>E-MOSFET Amplifiers
-                        <br>MOSFET Testing
-                        <br><br>
-                        <h1><b>Thyristors</b></h1> <!--Change-->
-                        The Four-Layer Diode
-                        <br>The Silicon Controlled Rectifier
-                        <br>The SCR Crowbar
-                        <br>SCR Phase Control
-                        <br>Bidirectional Thyristors
-                        <br>Insulated-gate bipolar transistor
-                        <br>Other Thyristors
-                        <br>Troubleshooting
-                        <br><br>
-                        <h1><b>Frequency Effects</b></h1> <!--Change-->
-                        Frequency Response of an Amplifier
-                        <br>Decibel Power Gain
-                        <br>Decibel Voltage Gain
-                        <br>Impedance Matching
-                        <br>Decibels above a Reference
-                        <br>Bode Plots
-                        <br>The Miller Effect
-                        <br>Risetime-Bandwidth Relationship
-                        <br>Frequency Analysis of BJT Stages
-                        <br>Frequency Analysis of FET Stages
-                        <br>Frequency Effects of Surface-Mount Circuits
-                        <br><br>
+                        <h1>Semiconductors</h1> <!--Change-->
+                        <!--  Conductors
+      <br>Semiconductors
+      <br>Silicon Crystals
+      <br>Intrinsic Semiconductors
+      <br>Doping a Semiconductor
+      <br>The Unbiased Diode
+      <br>Forward Bias
+      <br>Reverse Bias
+      <br>Breakdown
+      <br>Energy Levels
+      <br>Barrier Potential and Temperature
+      <br>Reverse-Biased Diode
+      <br><br>
+    -->
+                        <h1>Diode Theory</h1> <!--Change-->
+                        <!--The Ideal Diode
+    <br>How to Calculate Bulk Resistance
+    <br>DC Resistance of a Diode
+    <br>Load Lines
+    <br>Surface-Mount Diodes
+    <br><br>
+    -->
+                        <h1>Diode Circuits</h1> <!--Change-->
+                        <!--The Half-Wave Rectifier
+    <br>The Transformer
+    <br>The Full-Wave Rectifier
+    <br>The Bridge Rectifier
+    <br>The Choke-Input Filter
+    <br>The Capacitor-Input Filter
+    <br>Peak Inverse Voltage and Surge Current
+    <br>Clippers and Limiters
+    <br>Clampers
+    <br>Voltage Multipliers
+    <br><br>
+    -->
+                        <h1>Special-Purpose Diodes</h1> <!--Change-->
+                        <!-- The Zener Diode
+     <br>The Loaded Zener Regulator
+     <br>Second Approximation of a Zener Diode
+     <br>Zener Drop-Out Point
+     <br>Load Lines
+     <br>Light-Emitting Diodes
+     <br>Optoelectronic Devices
+     <br>The Schottky Diode
+     <br>The Varactor
+     <br><br>
+    -->
+                        <h1>BJT Fundamentals</h1> <!--Change-->
+                        <!--The Unbiased Transistor
+    <br>The Biased Transistor
+    <br>Transistor Currents
+    <br>The CE Connection
+    <br>The Base Curve
+    <br>Collector Curves
+    <br>Transistor Approximations
+    <br>Surface-Mount Transistors
+    <br>Variations in Current Gain
+    <br>The Load Line
+    <br>The Operating Point
+    <br>Recognizing Saturation
+    <br>The Transistor Switch
+    <br><br>
+    -->
+                        <h1>BJT Biasing</h1> <!--Change-->
+                        <!--Emitter Bias
+    <br>LED Drivers
+    <br>Optoelectronic Devices
+    <br>Voltage-Divider Bias
+    <br>Accurate VDB Analysis
+    <br>VDB Load Line and Q Point
+    <br>Two-Supply Emitter Bias
+    <br>Other Types of Bias
+    <br>Troubleshooting VDB Circuits
+    <br>PNP Transistors
+    <br><br>
+    -->
+                        <h1>BJT Amplifiers</h1> <!--Change-->
+                        <!--Base-Biased Amplifier
+    <br>Emitter-Biased Amplifier
+    <br>Small-Signal Operation
+    <br>AC Beta
+    <br>AC Resistance of the Emitter Diode
+    <br>Two Transistor Models
+    <br>Analyzing an Amplifier
+    <br>Voltage Gain
+    <br>The Loading Effect of Input Impedance
+    <br>Swamped Amplifier
+    <br>Troubleshooting
+    <br><br>
+    -->
+                        <h1>Multistage, CC, and CB Amplifiers</h1> <!--Change-->
+                        <!--Multistage Amplifiers
+    <br>Two-Stage Feedback
+    <br>CC Amplifier
+    <br>Output Impedance
+    <br>Cascading CE and CC
+    <br>Darlington Connections
+    <br>Voltage Regulation
+    <br>The Common-Base Amplifier
+    <br>Troubleshooting Multistage Amplifiers
+    <br><br>
+    -->
+                        <h1>Power Amplifiers</h1> <!--Change-->
+                        <!--Amplifier Terms
+    <br>Two Load Lines
+    <br>Class-A Operation
+    <br>Class-B Operation
+    <br>Class-B Push-Pull Emitter Follower
+    <br>Biasing Class-B/AB Amplifiers
+    <br>Class-B/AB Driver
+    <br>Class-C Operation
+    <br>Class-C Formulas
+    <br>Transistor Power Rating
+    -->
+                        <!--<br><br>-->
+                        <h1>JFETs</h1> <!--Change-->
+                        <!--Drain Curves
+    <br>The Transconductance Curve
+    <br>Biasing in the Ohmic Region
+    <br>Biasing in the Active Region
+    <br>Transconductance
+    <br>JFET Amplifiers
+    <br>The JFET Analog Switch
+    <br>Other JFET Application
+    <br>Reading Data Sheets
+    <br>JFET Testing
+    <br><br>
+    -->
+                        <h1>MOSFETs</h1> <!--Change-->
+                        <!--The Depletion-Mode MOSFET
+    <br>D-MOSFET Curves
+    <br>Depletion-Mode MOSFET Amplifiers
+    <br>The Enhancement-Mode MOSFET
+    <br>The Ohmic Region
+    <br>Digital Switching
+    <br>CMOS
+    <br>Power FETs
+    <br>High-Side MOSFET Load Switches
+    <br>MOSFET H-Bridge
+    <br>E-MOSFET Amplifiers
+    <br>MOSFET Testing
+    <br><br>
+    -->
+                        <h1>NULLThyristors</h1> <!--Change-->
+                        <!--The Four-Layer Diode
+    <br>The Silicon Controlled Rectifier
+    <br>The SCR Crowbar
+    <br>SCR Phase Control
+    <br>Bidirectional Thyristors
+    <br>Insulated-gate bipolar transistor
+    <br>Other Thyristors
+    <br><br>
+    -->
+                        <h1>Frequency Effects</h1> <!--Change-->
+                        <!--Frequency Response of an Amplifier
+         <br>Decibel Power Gain
+         <br>Decibel Voltage Gain
+         <br>Impedance Matching
+         <br>Decibels above a Reference
+         <br>Bode Plots
+         <br>The Miller Effect
+         <br>Risetime-Bandwidth Relationship
+         <br>Frequency Analysis of BJT Stages
+         <br>Frequency Analysis of FET Stages
+         <br>Frequency Effects of Surface-Mount Circuits
+         <br><br>
+    -->
 
-
-                    </p>
-                </div>
-
-
-                <div class="web">
-                    <p>
-                        <h1><b>Differential Amplifiers</b></h1> <!--Change-->
-                        The Differential Amplifier
-                        <br>DC Analysis of a Diff Amp
-                        <br>AC Analysis of a Diff Amp
-                        <br>Input Characteristics of a Op Amp
-                        <br>Common-Mode Gain
-                        <br>Integrated Circuits
-                        <br>The Current Mirror
-                        <br>The Loaded Diff Amp
-                        <br><br>
-                        <h1><b>Operational Amplifiers</b></h1> <!--Change-->
-                        The 741 Op Amp
-                        <br>The Inverting Amplifier
-                        <br>The Noninverting Amplifier
-                        <br>Two Op-Amp Applications
-                        <br>Linear ICs
-                        <br>Op Amps as Surface Mount Devices
-                        <br><br>
-                        <h1><b>Negative Feedback</b></h1> <!--Change-->
-                        Four Types of Negative Feedback
-                        <br>VCVS(Voltage Controlled Voltage Source) Voltage Gain
-                        <br>The ICVS(Current Controlled Voltage Source) Amplifier
-                        <br>The VCIS(Voltage Controlled Current Source) Amplifier
-                        <br>The ICIS(Current Controlled Current Source) Amplifier
-                        <br><br>
-                        <h1><b>Linear Op-Amp Circuit Applications</b></h1> <!--Change-->
-                        Inverting-Amplifier Circuits
-                        <br>Noninverting-Amplifier Circuits
-                        <br>Inverter/Noninverter Circuits
-                        <br>Differential Amplifiers
-                        <br>Instrumentation Amplifiers
-                        <br>Summing Amplifier Circuits
-                        <br>Current Boosters
-                        <br>Voltage-Controlled Current Sources
-                        <br>Automatic Gain Control
-                        <br>Single-Supply Operation
-                        <br><br>
-                        <h1><b>Active Filters</b></h1> <!--Change-->
-                        Ideal Responses
-                        <br>Approximate Responses
-                        <br>Passive Filters
-                        <br>First-Order Stages
-                        <br>VCVS Unity-Gain Second Order Low-Pass Filters
-                        <br>Higher-Order Filters
-                        <br>VCVS Equal-Component Low-Pass Filters
-                        <br>VCVS High-Pass Filters
-                        <br>Bandpass Filters
-                        <br>Bandstop Filters
-                        <br>The All-Pass Filter
-                        <br>Biquadratic and State Variable Filters
-                        <br><br>
-                        <h1><b>Nonlinear Op-Amp Circuit Applications</b></h1> <!--Change-->
-                        Comparators with Zero Reference
-                        <br>Comparators with Nonzero References
-                        <br>Comparators with Hysteresis
-                        <br>Window Comparator
-                        <br>The Integrator
-                        <br>Waveform Conversion
-                        <br>Waveform Generation
-                        <br>Triangular Generator
-                        <br>Active-Diode Circuits
-                        <br>The Differentiator
-                        <br>Class-D Amplifier
-                        <br><br>
-                        <h1><b>Oscillators</b></h1> <!--Change-->
-                        Theory of Sinusoidal Oscillation
-                        <br>The Wien-Bridge Oscillator
-                        <br>RC Oscillators
-                        <br>The Colpitts Oscillator
-                        <br>LC Oscillators
-                        <br>Quartz Crystals
-                        <br>The 555 Timer
-                        <br>Astable Operation of the 555 Timer
-                        <br>555 Circuit Applications
-                        <br>The Phase-Locked Loop
-                        <br>Function Generator ICs
-                        <br><br>
-                        <h1><b> Regulated Power Supplies</b></h1> <!--Change-->
-                        Supply Characteristics
-                        <br>Shunt Regulators
-                        <br>Series Regulators
-                        <br>Monolithic Linear Regulators
-                        <br>Current Boosters
-                        <br>DC to DC Converter
-                        <br>Switiching Regulater
+                        <h1>Differential Amplifiers</h1> <!--Change-->
+                        <!-- The Differential Amplifier
+     <br>DC Analysis of a Diff Amp
+     <br>AC Analysis of a Diff Amp
+     <br>Input Characteristics of a Op Amp
+     <br>Common-Mode Gain
+     <br>Integrated Circuits
+     <br>The Current Mirror
+     <br>The Loaded Diff Amp
+     <br><br>
+    -->
+                        <h1>Operational Amplifiers</h1> <!--Change-->
+                        <!--The Inverting Amplifier
+    <br>The Noninverting Amplifier
+    <br>Two Op-Amp Applications
+    <br>Linear ICs
+    <br>Op Amps as Surface Mount Devices
+    <br><br>
+    -->
+                        <h1>Negative Feedback</h1> <!--Change-->
+                        <!--Four Types of Negative Feedback
+    <br>VCVS(Voltage Controlled Voltage Source) Voltage Gain
+    <br>The ICVS(Current Controlled Voltage Source) Amplifier
+    <br>The VCIS(Voltage Controlled Current Source) Amplifier
+    <br>The ICIS(Current Controlled Current Source) Amplifier
+    <br><br>
+    -->
+                        <h1>Linear Op-Amp Circuit Applications</h1> <!--Change-->
+                        <!--Inverting-Amplifier Circuits
+    <br>Noninverting-Amplifier Circuits
+    <br>Inverter/Noninverter Circuits
+    <br>Differential Amplifiers
+    <br>Instrumentation Amplifiers
+    <br>Summing Amplifier Circuits
+    <br>Current Boosters
+    <br>Voltage-Controlled Current Sources
+    <br>Automatic Gain Control
+    <br>Single-Supply Operation
+    <br><br>
+    -->
+                        <h1>Active Filters</h1> <!--Change-->
+                        <!--Ideal Responses
+    <br>Approximate Responses
+    <br>Passive Filters
+    <br>First-Order Stages
+    <br>VCVS Unity-Gain Second Order Low-Pass Filters
+    <br>Higher-Order Filters
+    <br>VCVS Equal-Component Low-Pass Filters
+    <br>VCVS High-Pass Filters
+    <br>Bandpass Filters
+    <br>Bandstop Filters
+    <br>The All-Pass Filter
+    <br>Biquadratic and State Variable Filters
+    <br><br>
+    -->
+                        <h1>Nonlinear Op-Amp Circuit Applications</h1> <!--Change-->
+                        <!--Comparators with Zero Reference
+    <br>Comparators with Nonzero References
+    <br>Comparators with Hysteresis
+    <br>Window Comparator
+    <br>The Integrator
+    <br>Waveform Conversion
+    <br>Waveform Generation
+    <br>Triangular Generator
+    <br>Active-Diode Circuits
+    <br>The Differentiator
+    <br>Class-D Amplifier
+    <br><br>
+    -->
+                        <h1>Oscillators</h1> <!--Change-->
+                        <!--Theory of Sinusoidal Oscillation
+    <br>The Wien-Bridge Oscillator
+    <br>RC Oscillators
+    <br>The Colpitts Oscillator
+    <br>LC Oscillators
+    <br>Quartz Crystals
+    <br>The 555 Timer
+    <br>Astable Operation of the 555 Timer
+    <br>555 Circuit Applications
+    <br>The Phase-Locked Loop
+    <br>Function Generator ICs
+    <br><br>
+    -->
+                        <h1> Regulated Power Supplies</h1> <!--Change-->
+                        <!--Supply Characteristics
+                            <br>Shunt Regulators
+                            <br>Series Regulators
+                            <br>Monolithic Linear Regulators
+                            <br>Current Boosters
+                            <br>DC to DC Converter
+                            <br>Switiching Regulater
+                            <br>
+                            <br>
+    -->
                         <br>
-                        <br>
-                        <h2><b>Analog Electronics Series by Ali Hijimiri</b></h2> <!--Change-->
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/403CnTftB4M?list=PLc7Gz02Znph-c2-ssFpRrzYwbzplXfXUT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2><b>Analog Electronics Series by Behzad Razavi</b></h2> <!--Change-->
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/PxsY1U8aMso?list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <h1>SoC Lesson by Samsung Semiconductor</h1>
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/M30HAGmHKi0?list=PL74m3He-VakaSSBkCHdk5XYuIsc5p9PF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
-                        <iframe width="350" height="250" src="https://www.youtube.com/embed/52TnzJIxhjk?list=PL74m3He-VakYTwNpJ4vqQzUWFQXz5WIWG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br><br><br>
-                        <h2><b>Guidline Reference</b></h2> <!--Change-->
+                        <h2><b>Reference Book</b></h2> <!--Change-->
                         <h1>
                             <i>
                                 Electronic Principles by Malvino Albert
@@ -471,6 +360,24 @@
 
                             <img src="Hardware Electronics Pics/Electronics Principles pic.webp" alt="Equations" style="width:65%" onclick="onClick(this)">
                         </a>
+
+                    </p>
+                </div>
+
+
+                <div class="web">
+                    <p>
+                        <h1><b>Analog Electronics Series by Ali Hijimiri</b></h1> <!--Change-->
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/403CnTftB4M?list=PLc7Gz02Znph-c2-ssFpRrzYwbzplXfXUT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br><br>
+                        <h1><b>Analog Electronics Series by Behzad Razavi</b></h1> <!--Change-->
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/PxsY1U8aMso?list=PLyYrySVqmyVPzvVlPW-TTzHhNWg1J_0LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br><br>
+                        <h1><b>SoC Lesson by Samsung Semiconductor</b></h1>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/M30HAGmHKi0?list=PL74m3He-VakaSSBkCHdk5XYuIsc5p9PF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/52TnzJIxhjk?list=PL74m3He-VakYTwNpJ4vqQzUWFQXz5WIWG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br><br><br>
                     </p>
                 </div>
 

@@ -18,104 +18,7 @@
 
 
 <link rel="stylesheet" href="../../jiwook.css">
-
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-   
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -128,7 +31,7 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Software Resources</h3><!--Change-->
+            <h2 class="w3-padding-32">Software Resources</h2><!--Change-->
         </div>
 
 
@@ -138,22 +41,24 @@
             <a href="Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Software Resources</a>
             <br>
             <br>
-            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
-            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
-            <!--<a href="Software Engineering/C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C and Assembly Language</a>
+            <a href="C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C++</a>
             <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
             <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
             <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
             <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
+            <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
+
             <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
             <br>
             <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
             <!-- <a href="Software Engineering/Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Resources</a>
-            -->
+    -->
             <br>
             <br>
         </div>
@@ -174,9 +79,9 @@
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
 
-        <div class="w3-container" style="margin-top:100px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <h8><b>Software Resources</b></h8>
+                <h4><b>Software Resources</b></h4>
                 <br>
                 <br><a href="https://mintnlatte.tistory.com/581" target="_blank">GDB Instructions</a>
                 <br><a href="https://man7.org/linux/man-pages/dir_all_alphabetic.html" target="_blank">Linux manual Page</a>
@@ -191,6 +96,7 @@
                 <br><a href="https://ss64.com/bash/" target="_blank">Linux Commandline Sheet</a>
                 <br><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Commandline Sheet</a>
                 <br><a href="https://0ver-grow.tistory.com/888" target="_blank">Use Git in Visual Studio Code</a>
+                <br><a href="https://cheershennah.tistory.com/217" target="_blank">Change Git Repository URL Visual Studio Code</a>
                 <br><a href="https://velog.io/@bb5918/Visual-Studio-2019%EC%97%90%EC%84%9C-github-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0" target="_blank">Use Git in Visual Studio</a>
                 <br><a href="https://vim.rtorr.com/" target="_blank">Vim Commandline Sheet</a>
                 <br><a href="http://wiki.ros.org/Documentation" target="_blank">Ros Wiki documentation</a>
@@ -219,7 +125,11 @@
                 <br><a href="https://webnautes.tistory.com/490" target="_blank">Ubuntu and Windows Samba File Sharing method</a>
                 <br><a href="https://www.thegeekdiary.com/understanding-the-job-control-commands-in-linux-bg-fg-and-ctrlz/#:~:text=You%20can%20use%20the%20fg,background%20job%20to%20the%20foreground.&text=Note%3A%20The%20foreground%20job%20occupies,and%20placed%20into%20the%20background.&text=Note%3A%20When%20you%20place%20a,or%20background%2C%20the%20job%20restarts." target="_blank">Job Controls in Linux</a>
                 <br><a href="https://www.aladin.co.kr/home/welcome.aspx" target="_blank">Aladin Online book</a>
-
+                <br><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/" target="_blank">ROS Turtlebot3 Tutorial</a>
+                <br><a href="https://github.com/ROBOTIS-GIT/turtlebot3" target="_blank">ROS Turtlebot3 git</a>
+                <br><a href="https://github.com/google/googletest" target="_blank">GoogleTest</a>
+                <br><a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank">Setup Username and Email on Git</a>
+                <br>
                 <br>
                 <br><h1><a>Security</a></h1>
                 <a href="https://ipipipip.net/" target="_blank">ipipip.net</a>
@@ -230,13 +140,12 @@
                 <br>export PULSE_SERVER="tcp:$HOST_IP"
                 <br>export DISPLAY="$HOST_IP:0.0"
                 <br>export LIBGL_ALWAYS_INDIRECT=0
-                <br>   <br>   <br>   <br>   <br>   <br>
+                <br>
+                <br><h1><a>Automate Boring stuff with Python pip install List</a></h1>
+                pip install beautifulsoup4==4.7.1 certifi==2019.3.9 chardet==3.0.4 et-xmlfile==1.0.1 idna==2.8 IMAPClient==2.1.0 jdcal==1.4.1 lxml==4.3.3 openpyxl==2.6.2 Pillow==6.0.0 PyAutoGUI==0.9.42 PyGetWindow==0.0.5 PyJWT==1.7.1 PyMsgBox==1.0.6 pyobjc-core==5.2 pyobjc-framework-Cocoa==5.2 pyobjc-framework-Quartz==5.2 PyPDF2==1.26.0pyperclip==1.7.0 PyRect==0.1.4 PyScreeze==0.1.21 PySocks==1.7.0 python-docx==0.8.10 PyTweening==1.0.3 pytz==2019.1 pyzmail36==1.0.4 requests==2.22.0 selenium==3.141.0 Send2Trash==1.5.0six==1.12.0 soupsieve==1.9.1 twilio==6.27.0 urllib3==1.25.2
+                <br>   <br>   <br>   <br>    <br>
 
                 <img src="Software Engineering Pics/Git.webp" alt="Operating Systems pics" style="width:90%" onclick="onClick(this)">
-                <br>   <br>
-                <img src="Software Engineering Pics/Git2.webp" alt="Operating Systems pics" style="width:90%" onclick="onClick(this)">
-                <br>   <br>
-                <img src="Software Engineering Pics/docker.webp" alt="Operating Systems pics" style="width:65%" onclick="onClick(this)">
                 <br>   <br>
                 <img src="Software Engineering Pics/command.webp" alt="command" style="width:70%" onclick="onClick(this)">
 

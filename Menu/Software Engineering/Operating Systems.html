@@ -20,100 +20,7 @@
 
 
 <link rel="stylesheet" href="../../jiwook.css">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
+<link rel="stylesheet" href="../reference.css">
     
 </style>
 <html lang="en">
@@ -128,7 +35,7 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Operating Systems</h3><!--Change-->
+            <h2 class="w3-padding-32">Operating Systems</h2><!--Change-->
         </div>
 
 
@@ -138,18 +45,20 @@
             <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Operating Systems</a>
             <br>
             <br>
-            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
-            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
-            <!--<a href="Software Engineering/C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C and Assembly Language</a>
+            <a href="C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C++</a>
+            <a href="Python.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Python</a>
             <!--<a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
-            -->
+    -->
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
             <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
             <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
             <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
+            <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
             <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
             <br>
             <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
@@ -174,266 +83,288 @@
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
 
-        <div class="w3-container" style="margin-top:100px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <h8><b>Operating Systems</b></h8>
-                <br>
-                <br>
-                <br>
-                <br>
                 <div>
                     <h4 class="content"><b>Contents</b></h4> <!--Change-->
                     <br>
+                    <br>
                     <div class="web">
                         <p>
-                            <h1><b>Operating-System Structures</b></h1> <!--Change-->
-                            Operating-System Services
-                            <br>User and Operating-System
-                            Interface
-                            <br>System Calls
-                            <br>System Services
-                            <br>Linkers and Loaders
-                            <br>Why Applications Are Operating-System Specific
-                            <br>Operating-System Design and Implementation
-                            <br>Operating-System Structure
-                            <br>Building and Booting an Operating System
-                            <br>Operating-System Debugging
+                            <h1>Operating-System Structures</h1> <!--Change-->
+                            <!--     Operating-System Services
+         <br>User and Operating-System
+         Interface
+         <br>System Calls
+         <br>System Services
+         <br>Linkers and Loaders
+         <br>Operating-System Design and Implementation
+         <br>Operating-System Structure
+         <br>Building and Booting an Operating System
+         <br>Operating-System Debugging
+         <br><br>
+    -->
+                            <h1>Processes</h1>
+                            <!--  Processes
+      <br>Process Scheduling
+      <br>Operations on Processes
+      <br>Interprocess Communication
+      <br>IPC in Shared-Memory Systems
+      <br>IPC in Message-Passing Systems
+      <br>Communication in Client – Server Systems
+      <br><br>
+    -->
+                            <h1>Threads & Concurrency</h1>
+                            <!-- Multicore Programming
+     <br>Multithreading Models
+     <br>Thread Libraries
+     <br>Implicit Threading
+     <br>Threading Issues
+     <br><br>
+    -->
+                            <h1>CPU Scheduling</h1>
+                            <!--Basic Concepts
+    <br>Scheduling Criteria
+    <br>Scheduling Algorithms
+    <br>Thread Scheduling
+    <br>Multi-Processor Scheduling
+    <br>Real-Time CPU Scheduling
+    <br>Operating-System Examples
+    <br>Algorithm Evaluation
+    <br><br>
+    -->
+                            <h1>Synchronization Tools</h1>
+                            <!--The Critical-Section Problem
+    <br>Peterson's Solution
+    <br>Hardware Support for Synchronization
+    <br>Mutex Locks
+    <br>Semaphores
+    <br>Monitors
+    <br>Liveness
+    <br>Evaluation
+    <br>
+    <br>
+    -->
+                            <h1>Synchronization Examples</h1>
+                            <!--Classic Problems of Synchronization
+    <br>Synchronization within the Kernel
+    <br>POSIX Synchronization
+    <br>Synchronization in Java
+    <br>Alternative Approaches
+    <br>
+    <br>
+    -->
+                            <h1>Deadlocks</h1>
+                            <!--System Model
+    <br>Deadlock in Multithreaded Applications
+    <br>Deadlock Characterization
+    <br>Methods for Handling Deadlocks
+    <br>Deadlock Prevention, Avoidance, Detection
+    <br>Recovery from Deadlock
+    <br>
+    <br>
+    -->
+                            <h1>Main Memory</h1>
+                            <!--Contiguous Memory Allocation
+    <br>Paging
+    <br>Structure of the Page Table
+    <br>Swapping
+    <br>Intel 32- and 64-bit Architectures
+    <br>ARMv8 Architecture
+    <br>
+    <br>
+    -->
+                            <h1>Virtual Memory</h1>
+                            <!--Demand Paging
+    <br>Copy-on-Write
+    <br>Page Replacement
+    <br>Allocation of Frames
+    <br>Thrashing
+    <br>Memory Compression
+    <br>Allocating Kernel Memory
+    <br>Other Considerations
+    <br>
+    <br>
+    -->
+                            <h1>Mass-Storage Structure</h1>
+                            <!--Overview of Mass-Storage Structure
+    <br>HDD Scheduling
+    <br>NVM Scheduling
+    <br>Error Detection and Correction
+    <br>Storage Device Management
+    <br>Swap-Space Management
+    <br>Storage Attachment
+    <br>RAID Structure
+    <br>
+    <br>
+    -->
+                            <h1>I/O Systems</h1>
+                            <!--I/O Hardware
+    <br>Application I/O Interface
+    <br>Kernel I/O Subsystem
+    <br>Transforming I/O Requests to Hardware Operations
+    <br>STREAMS
+    <br>Performance
+    <br>
+    <br>
+    -->
+                            <h1>File-System Interface</h1>
+                            <!--File Concept
+    <br>Access Methods
+    <br>Directory Structure
+    <br>Protection
+    <br>Memory-Mapped Files
+    <br>
+    <br>
+    -->
+                            <h1>File-System Implementation</h1>
+                            <!--File-System Structure
+    <br>File-System Operations
+    <br>Directory Implementation
+    <br>Allocation Methods
+    <br>Free-Space Management
+    <br>Efficiency and Performance
+    <br>Recovery
+    <br>The WAFL File System
+    <br>
+    <br>
+    -->
+                            <h1>File-System Internals</h1>
+                            <!--File Systems
+    <br>File-System Mounting
+    <br>Partitions and Mounting
+    <br>File Sharing
+    <br>Virtual File Systems
+    <br>Remote File Systems
+    <br>Consistency Semantics
+    <br>NFS
+    <br>
+    <br>
+    -->
+                            <h1>Security</h1>
+                            <!--The Security Problem
+    <br>Program Threats
+    <br>System and Network Threats
+    <br>Cryptography as a Security Tool
+    <br>User Authentication
+    <br>Implementing Security Defenses
+    <br>
+    <br>
+    -->
+                            <h1>Protection</h1>
+                            <!--Principles of Protection
+                                <br>Protection Rings
+                                <br>Domain of Protection
+                                <br>Access Matrix
+                                <br>Implementation of the Access Matrix
+                                <br>Revocation of Access Rights
+                                <br>Role-Based Access Control
+                                <br>Mandatory Access Control
+                                <br>Capability-Based Systems
+                                <br>Other Protection Improvement Methods
+                                <br>Language-Based Protection
+                                <br><br>
+    -->
+                            <h1>Virtual Machines</h1>
+                            <!--                     Benefits and Features
+                         <br>Building Blocks
+                         <br>Types of VMs and Their Implementations
+                         <br>Virtualization and Operating-System Components
+                         <br>
+                         <br>
+    -->
+                            <h1>Networks and Distributed Systems</h1>
+                            <!--                  Advantages of Distributed Systems
+                      <br>Network Structure
+                      <br>Communication Structure
+                      <br>Network and Distributed Operating Systems
+                      <br>Design Issues in Distributed Systems
+                      <br>Distributed File Systems
+                      <br>DFS Naming and Transparency
+                      <br>Remote File Access
+                      <br><br>
+    -->
+                            <h1>The Linux System</h1>
+                            <!--               Design Principles
+                   <br>Kernel Modules
+                   <br>Process Management
+                   <br>Scheduling
+                   <br>Memory Management
+                   <br>File Systems
+                   <br>Input and Output
+                   <br>Interprocess Communication
+                   <br>Network Structure
+                   <br>Security
+                   <br>
+                   <br>
+    -->
+                            <h1>Windows 10</h1>
+                            <!--            Design Principles
+                <br>System Components
+                <br>Terminal Services and Fast User Switching
+                <br>File System
+                <br>Networking
+                <br>Programmer Interface
+                <br>
+                <br>
+    -->
+                            <br>
+                            <h3><b>Reference Book</b></h3>
+                            <a><i>Operating System Concepts, 10e by Avi Silberschatz, Greg Gagne, and Peter Baer Galvin</i></a>
                             <br><br>
-                            <h1><b>Processes</b></h1>
-                            Processes
-                            <br>Process Scheduling
-                            <br>Operations on Processes
-                            <br>Interprocess Communication
-                            <br>IPC in Shared-Memory Systems
-                            <br>IPC in Message-Passing Systems
-                            <br>Examples of IPC Systems
-                            <br>Communication in Client – Server Systems
-                            <br><br>
-                            <h1><b>Threads & Concurrency</b></h1>
-                            Multicore Programming
-                            <br>Multithreading Models
-                            <br>Thread Libraries
-                            <br>Implicit Threading
-                            <br>Threading Issues
-                            <br>Operating-System Examples
-                            <br><br>
-                            <h1><b>CPU Scheduling</b></h1>
-                            Basic Concepts
-                            <br>Scheduling Criteria
-                            <br>Scheduling Algorithms
-                            <br>Thread Scheduling
-                            <br>Multi-Processor Scheduling
-                            <br>Real-Time CPU Scheduling
-                            <br>Operating-System Examples
-                            <br>Algorithm Evaluation
-                            <br><br>
-                            <h1><b>Synchronization Tools</b></h1>
-                            The Critical-Section Problem
-                            <br>Peterson’s Solution
-                            <br>Hardware Support for Synchronization
-                            <br>Mutex Locks
-                            <br>Semaphores
-                            <br>Monitors
-                            <br>Liveness
-                            <br>Evaluation
+                            <img src="Software Engineering Pics/Operating Systems pics.webp" alt="Operating Systems pics" style="width:65%" onclick="onClick(this)">
                             <br>
                             <br>
-                            <h1><b>Synchronization Examples</b></h1>
-                            Classic Problems of Synchronization
-                            <br>Synchronization within the Kernel
-                            <br>POSIX Synchronization
-                            <br>Synchronization in Java
-                            <br>Alternative Approaches
+                            <h1>Git game</h1>
+                            <a href="https://learngitbranching.js.org/">
+                                https://learngitbranching.js.org/
+                            </a>
                             <br>
-                            <br>
-                            <h1><b>Deadlocks</b></h1>
-                            System Model
-                            <br>Deadlock in Multithreaded Applications
-                            <br>Deadlock Characterization
-                            <br>Methods for Handling Deadlocks
-                            <br>Deadlock Prevention
-                            <br>Deadlock Avoidance
-                            <br>Deadlock Detection
-                            <br>Recovery from Deadlock
-                            <br>
-                            <br>
-                            <h1><b>Main Memory</b></h1>
-                            Contiguous Memory Allocation
-                            <br>Paging
-                            <br>Structure of the Page Table
-                            <br>Swapping
-                            <br>Example: Intel 32- and 64-bit Architectures
-                            <br>Example: ARMv8 Architecture
-                            <br>
-                            <br>
-                            <h1><b>Virtual Memory</b></h1>
-                            Demand Paging
-                            <br>Copy-on-Write
-                            <br>Page Replacement
-                            <br>Allocation of Frames
-                            <br>Thrashing
-                            <br>Memory Compression
-                            <br>Allocating Kernel Memory
-                            <br>Other Considerations
-                            <br>Operating-System Examples
-                            <br>
-                            <br>
-                            <h1><b>Mass-Storage Structure</b></h1>
-                            Overview of Mass-Storage Structure
-                            <br>HDD Scheduling
-                            <br>NVM Scheduling
-                            <br>Error Detection and Correction
-                            <br>Storage Device Management
-                            <br>Swap-Space Management
-                            <br>Storage Attachment
-                            <br>RAID Structure
-                            <br>
-                            <br>
+                            <h2>
+                                My Github Projects on Operating System
+                            </h2>
+                            Algorithms with C and C++: <a href="https://github.com/jiwook021/Algorithms-with-C-and-Cpp" target="_blank">
+                                https://github.com/jiwook021/Algorithms-with-C-and-Cpp
+                            </a>
+                            <br>IPC in Linux: <a href="https://github.com/jiwook021/Linux-IPC-Message-Queue">
+                                https://github.com/jiwook021/Linux-IPC-Message-Queue-
+                            </a>
+                            <br>Windows System Programming with C <a href="https://github.com/jiwook021/Windows-Operating-System-in-C">
+                                https://github.com/jiwook021/Windows-Operating-System-in-C
+                            </a>
+
                         </p>
                     </div>
-                    <div>
+                    <div class="web">
+
+                        <h2><b>Lecture Series for Operating Systems</b></h2>
                         <p>
-                            <h1><b>I/O Systems</b></h1>
-                            I/O Hardware
-                            <br>Application I/O Interface
-                            <br>Kernel I/O Subsystem
-                            <br>Transforming I/O Requests to Hardware Operations
-                            <br>STREAMS
-                            <br>Performance
-                            <br>
-                            <br>
-                            <h1><b>File-System Interface</b></h1>
-                            File Concept
-                            <br>Access Methods
-                            <br>Directory Structure
-                            <br>Protection
-                            <br>Memory-Mapped Files
-                            <br>
-                            <br>
-                            <h1><b>File-System Implementation</b></h1>
-                            File-System Structure
-                            <br>File-System Operations
-                            <br>Directory Implementation
-                            <br>Allocation Methods
-                            <br>Free-Space Management
-                            <br>Efficiency and Performance
-                            <br>Recovery
-                            <br>Example: The WAFL File System
-                            <br>
-                            <br>
-                            <h1><b>File-System Internals</b></h1>
-                            File Systems
-                            <br>File-System Mounting
-                            <br>Partitions and Mounting
-                            <br>File Sharing
-                            <br>Virtual File Systems
-                            <br>Remote File Systems
-                            <br>Consistency Semantics
-                            <br>NFS
-                            <br>
-                            <br>
-                            <h1><b>Security</b></h1>
-                            The Security Problem
-                            <br>Program Threats
-                            <br>System and Network Threats
-                            <br>Cryptography as a Security Tool
-                            <br>User Authentication
-                            <br>Implementing Security Defenses
-                            <br>An Example: Windows 10
-                            <br>
-                            <br>
-                            <h1><b>Protection</b></h1>
-                            Goals of Protection
-                            <br>Principles of Protection
-                            <br>Protection Rings
-                            <br>Domain of Protection
-                            <br>Access Matrix
-                            <br>Implementation of the Access Matrix
-                            <br>Revocation of Access Rights
-                            <br>Role-Based Access Control
-                            <br>Mandatory Access Control
-                            <br>Capability-Based Systems
-                            <br>Other Protection Improvement Methods
-                            <br>Language-Based Protection
+                            <h1>Operating System and System Programming Lecture by Anthony D. Joseph Berkeley University</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/KRenWKpfGo4?list=PLRdybCcWDFzCag9A0h1m9QYaujD0xefgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br><br>
-                            <h1><b>Virtual Machines</b></h1>
-                            Benefits and Features
-                            <br>Building Blocks
-                            <br>Types of VMs and Their Implementations
-                            <br>Virtualization and Operating-System Components
-                            <br>
-                            <br>
-                            <h1><b>Networks and Distributed Systems</b></h1>
-                            Advantages of Distributed Systems
-                            <br>Network Structure
-                            <br>Communication Structure
-                            <br>Network and Distributed Operating Systems
-                            <br>Design Issues in Distributed Systems
-                            <br>Distributed File Systems
-                            <br>DFS Naming and Transparency
-                            <br>Remote File Access
-                            <br>Final Thoughts on Distributed File Systems
+                            <h1>Operating System Lecture by Tami Sorgente</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/0jw1_49Y2Gg?list=PLgre7dUq8DGKbtnlMuJPvPYlvLdXOC9uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   <br>
                             <br><br>
-                            <h1><b>The Linux System</b></h1>
-                            Design Principles
-                            <br>Kernel Modules
-                            <br>Process Management
-                            <br>Scheduling
-                            <br>Memory Management
-                            <br>File Systems
-                            <br>Input and Output
-                            <br>Interprocess Communication
-                            <br>Network Structure
-                            <br>Security
-                            <br>
-                            <br>
-                            <h1><b>Windows 10</b></h1>
-                            Design Principles
-                            <br>System Components
-                            <br>Terminal Services and Fast User Switching
-                            <br>File System
-                            <br>Networking
-                            <br>Programmer Interface
-                            <br>
-                            <br>
+                            <h1>Gatech CS6200 Intro to OS by Ada Gavrilovska Georgia Tech </h1>
+                            <a href="https://omscs.gatech.edu/cs-6200-introduction-operating-systems-course-videos-">
+                                https://omscs.gatech.edu/cs-6200-introduction-operating-systems-course-videos
+                            </a>  <br>
+                            <h1>Operating System Lecture by HPC Lab Koreatech</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/jZuTw2tRT7w?list=PLBrGAFAIyf5rby7QylRc6JxU5lzQ9c4tN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br><br>
+                            <h1>Operating System Lecture by SFU CMPT 300</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/b3HlH4IubZE?list=PLNC6lmsIySCOAP_dlmSveNgzFk6IVL-My" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
                         </p>
+
+                        <br>
                     </div>
 
 
                 </div>
             </div>
 
-            <div class="w3-container">
-                <h3><b>Lecture Series</b></h3>
-                <p>
-                    <h1>Operating System and System Programming Lecture by Anthony D. Joseph Berkeley University</h1>
-                    <iframe width="350" height="250" src="https://www.youtube.com/embed/KRenWKpfGo4?list=PLRdybCcWDFzCag9A0h1m9QYaujD0xefgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br>
-                    <h1>Operating System Lecture by Tami Sorgente</h1>
-                    <iframe width="350" height="250" src="https://www.youtube.com/embed/0jw1_49Y2Gg?list=PLgre7dUq8DGKbtnlMuJPvPYlvLdXOC9uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   <br>
-                    <br><br>
-                    <h1>Operating System Lecture by Ada Gavrilovska Georgia Tech </h1>
-                    <iframe width="350" height="250" src="https://www.youtube.com/embed/uYlaQN1qqxQ?list=PLTsf9UeqkReZbK7xqIYn_mXmsQZIb011T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br>
-                    <h1>Operating System Lecture by HPC Lab Koreatech</h1>
-                    <iframe width="350" height="250" src="https://www.youtube.com/embed/jZuTw2tRT7w?list=PLBrGAFAIyf5rby7QylRc6JxU5lzQ9c4tN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br>
-                    <h1>Operating System Lecture by SFU CMPT 300</h1>
-                    <iframe width="350" height="250" src="https://www.youtube.com/embed/b3HlH4IubZE?list=PLNC6lmsIySCOAP_dlmSveNgzFk6IVL-My" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h1>Git game</h1>
-                    <a href="https://learngitbranching.js.org/">
-                        https://learngitbranching.js.org/
-                    </a>
-
-                </p>
-
-                <h3><b>Reference</b></h3>
-                <h1><i>Operating System Concepts, 10e by Avi Silberschatz, Greg Gagne, and Peter Baer Galvin</i></h1>
-                <br><br>
-                <img src="Software Engineering Pics/Operating Systems pics.webp" alt="Operating Systems pics" style="width:35%" onclick="onClick(this)">
-                <br>
-                <br>
-                <br>
             </div>
         </div>
 

@@ -18,102 +18,7 @@
 
 
 <link rel="stylesheet" href="../../jiwook.css">
-
-<style>
-    body {
-        font-family: "Lato", sans-serif
-    }
-
-    h1, h2, h3, h4, h8 {
-        font-family: "Montserrat", sans-serif
-    }
-
-
-    h, h1, h2, h3, h4, h5 {
-        color: #333;
-    }
-
-    @media screen and (min-width: 601px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 2;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 18px
-        }
-
-        h2 {
-            font-size: 21px
-        }
-
-        h3 {
-            font-size: 24px
-        }
-
-        h4 {
-            font-size: 28px
-        }
-
-        h8 {
-            font-size: 36px
-        }
-    }
-
-    .w3-burgundy {
-        color: #fff !important;
-        background-color: #940f0f !important
-    }
-
-    @media screen and (max-width: 600px) {
-        p, body, html {
-            height: 100%;
-            color: #555;
-            line-height: 1.7;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 16px
-        }
-
-        h2 {
-            font-size: 19px
-        }
-
-        h3 {
-            font-size: 22px
-        }
-
-        h4 {
-            font-size: 25px
-        }
-
-        h8 {
-            font-size: 30px
-        }
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-half img:hover {
-        opacity: 1
-    }
-
-
-    .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer
-    }
-
-   
-</style>
+<link rel="stylesheet" href="../reference.css">
 <html lang="en">
 
 <body>
@@ -126,9 +31,8 @@
 
 
         <div class="w3-container">
-            <h3 class="w3-padding-32">Linux System Programming</h3><!--Change-->
+            <h2 class="w3-padding-32">Linux System Programming</h2><!--Change-->
         </div>
-
 
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Home</a>
@@ -136,19 +40,21 @@
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-large">Linux System Programming</a>
             <br>
             <br>
-            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Low-level Programming</a>
-            <a href="Data Structure and Algorithm C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Data Structure and Algorithm with C++</a>
-            <!--<a href="C++ STL.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">C++ STL</a>-->
+            <a href="C.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C and Assembly Language</a>
+            <a href="C++.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">C++</a>
+            <a href="Python.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Python</a>
             <a href="Operating Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Operating Systems</a>
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <!--<a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
-            -->
+    -->
             <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
             <a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
             <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
             <!--<a href="Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
+            <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
             <br>
             <a href="Software_Setup.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Setup</a>
             <a href="Software_Resources.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Software Resources</a>
@@ -167,831 +73,849 @@
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    e
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:350px;margin-right:40px">
 
 
-        <div class="w3-container" style="margin-top:50px" id="showcase">
+        <div class="w3-container" style="margin-top:80px" id="showcase">
             <div class="w3-container">
-                <br>
-                <br>
-                <h8><b>Linux System Programming</b></h8>
-                <br>
-                <br>
+           
                 <div>
                     <h4 class="content"><b>Contents</b></h4> <!--Change-->
                     <br>
-
+                    <br>
                     <div class="web">
                         <p>
-                            <h1><b>HISTORY AND STANDARDS</b></h1>
-                            A Brief History of UNIX and C
-                            <br>The GNU Project
-                            <br>The Linux Kernel
-                            <br>The C Programming Language
-                            <br>The First POSIX(Portable Operating System Interface) Standards
-                            <br>X/Open Company and The Open Group
-                            <br>SUSv3 and POSIX. 1-2001
-                            <br>SUSv4 and POSIX. 1-2008
-                            <br>UNIX Standards Timeline
-                            <br>Implementation Standards
-                            <br>Linux, Standards, and the Linux Standard Base
-                            <br>
-                            <br>
-                            <h1><b>FUNDAMENTAL CONCEPTS</b></h1>
-                            The Core Operating System: The Kernel
-                            <br>The Shell
-                            <br>Users and groups
-                            <br>Signle Directory Hierarchy, Directory, Links, and Files
-                            <br>File I/O Model
-                            <br>Programs
-                            <br>Process
-                            <br>Memory Mappings
-                            <br>Statis and Shared Libraries
-                            <br>Interprocess Communication and Sychronization
-                            <br>Signals
-                            <br>Threads
-                            <br>Process Groups and Shell job Control
-                            <br>Sessions, Controlling Terminals, and COntrolling Processes
-                            <br>Pseduoterminals
-                            <br>Date and Time
-                            <br>Cliient-Server Architecture
-                            <br>Real time
-                            <br>The /proc File System
-                            <br>
-                            <br>
-                            <h1><b>System Programming Concepts</b></h1>
-                            System Calls
-                            <br>Library Function
-                            <br>The Standard C Library; The GNU C Library [glibc]
-                            <br>Handling Errors from System Calls and Library Functions
-                            <br>Portability Issues
-                            <br>
-                            <br>
-                            <h1><b>FILE I/O: THE UNIVERSAL I/O MODEL</b></h1>
-                            Universality of I/O
-                            <br>Opening a file: open()
-                            <br>Reading from a File: read()
-                            <br>Writing to a File: write
-                            <br>Closing a File: close()
-                            <br>Changing the File OFFset: lseek()
-                            <br>Operations Outside the Universal I/O Model: ioctl
-                            <br>Atomicity and Race Condition
-                            <br>File COntrol Operations: fcntl()
-                            <br>Open File Status Flags
-                            <br>Relationship Between File Descriptors and Open Files
-                            <br>Duplicating File Descriptors
-                            <br>File I/O at a Specified Offset: pread() and pwrite()
-                            <br>Scatter-Gather I/O: readv() and writev()
-                            <br>Truncating a file: truncate() and ftruncate()
-                            <br>Nonblocking I/O
-                            <br>I/O on Large Files
-                            <br>The /dev/fd Directory
-                            <br>Creating Temporary Files
-                            <br>
-                            <br>
-                            <h1><b>Processes</b></h1>
-                            Processes and Programs
-                            <br>Process ID and Parent Process ID
-                            <br>Memory Layout of a Process
-                            <br>Virtual Memory Management
-                            <br>The Stack and Stack Frames
-                            <br>Command-Line Arguments (argc, argv)
-                            <br>Environment List
-                            <br>Performing a Nonlocal Goto: setjmp() and long jmp()
-                            <br>
-                            <br>
-                            <h1><b>MEMORY ALLOCATION</b></h1>
-                            Allocating Memory on the Heap
-                            <br>----- Adjusting the Program Break: brk() and sbrk()
-                            <br>----- Allocating Memory on the Heap: malloc() and free()
-                            <br>Allocating Memory on the Stack: alloca()
-                            <br>
-                            <br>
-                            <h1><b>USERS AND GROUPS</b></h1>
-                            The Password File: /etc/passwd
-                            <br>The Shadow Password File: /etc/shadow
-                            <br>The Group File: /etc/group
-                            <br>Retrieving User and Group Information
-                            <br>Password Encryption and user Authentication
-                            <br>
-                            <br>
-                            <h1><b>PROCESS CREDENTIALS</b></h1>
-                            Real User ID and Real Group ID
-                            <br>Effective User ID and Effective Group ID
-                            <br>Set-User-ID and Set-Group-ID Programs
-                            <br>Saved set-User-ID and Set-Group-ID
-                            <br>File-System User ID and File-System Group ID
-                            <br>Retrieving and Modifying Real, Effective, and Saved Set IDs, File-System IDs, Supplementary Group IDs
-                            <br>
-                            <br>
-                            <h1><b>TIME</b></h1>
-                            Calender Time
-                            <br>Time
-                            <br>Timezones
-                            <br>Locales
-                            <br>Updating the System Clock
-                            <br>The Software Clock (jiffies)
-                            <br>Process Time
-                            <br>
-                            <br>
-                            <h1><b>SYSTEM LIMITS AND OPTIONS</b></h1>
-                            System Limits
-                            <br>Retrieving System Limits at Run Time
-                            <br>Retrieving File-Related Limits at Run Time
-                            <br>Indeterminate Limits
-                            <br>System Options
-                            <br>
-                            <br>
-                            <h1><b>SYSTEM AND PROCESS INFORMATION</b></h1>
-                            The /proc File System
-                            <br>----- Obtaining Information about a Process: /proc/PID
-                            <br>----- System Information Under /proc
-                            <br>----- Accessing /proc Files
-                            <br>System Identification: uname()
-                            <br>
-                            <br>
-                            <h1><b>FILE I/O BUFFERING</b></h1>
-                            Kernel Buffering of File I/O: The Buffer Cache
-                            <br>Buffering in the stdio Library
-                            <br>Controlling Kernel Buffering of File I/O
-                            <br>Summary of I/O Buffering
-                            <br>Advising the Kernel About I/O Patterns
-                            <br>Bypassing the Buffer Cache: Direct I/O
-                            <br>Mixing Library Functions and System Calls for File I/O
-                            <br>
-                            <br>
-                            <h1><b>FILE SYSTEMS</b></h1>
-                            Device Special Files (Devices)
-                            <br>Disks and Partitions
-                            <br>File System
-                            <br>I-nodes
-                            <br>The Virtual File System (VFS)
-                            <br>Journaling File System
-                            <br>Single Directory Hierarchy and Mount Points
-                            <br>Mounting a File System: mount()
-                            <br>Unmounting a File System: umount() and umount2()
-                            <br>Mounting a File System at Multiple Mount Points
-                            <br>Stacking Multiple Mounts on the Same Mount Point
-                            <br>Bind Mounts
-                            <br>A Virtual Memory File System: tmpfs
-                            <br>Obtaining Information About a File System: statvfs()
-                            <br>
-                            <br>
-                            <br>
-                            <h1><b>FILE ATTRIBUTES</b></h1>
-                            Retrieving File Information: stat()
-                            <br>File Timestamps
-                            <br>----- Changing File Timestamps with utime() and utimes()
-                            <br>----- Changing File Timestamps with utimensat() and furimens()
-                            <br>File Owndership
-                            <br>----- Changing File Ownership: chown(), fchown(), and lchown()
-                            <br>File Permissions
-                            <br>----- Permissions on Regular Files
-                            <br>----- Permissions on Directories
-                            <br>----- Permissions-Checking Algorithm
-                            <br>----- Checking File Accessibility: access()
-                            <br>----- Set-User-ID, Set-Group-ID, and Sticky Bits
-                            <br>----- The Process File Mode Creation Mask: umask()
-                            <br>----- Changing File Permissions: chmod() and fchmod()
-                            <br>I-node Flags (ext2 Extended File Attributes)
-                            <br>
-                            <br>
-                            <h1><b>EXTENDED ATTRIBUTES</b></h1>
-                            Extended Attribute Implementation Details
-                            <br>System Calls for Manipulating Extended Attributes
-                            <br>
-                            <br>
-                            <h1><b>ACCESS CONTROL LISTS</b></h1>
-                            ACL Permission-Checking Algorithm
-                            <br>Long and Short Text Forms for ACLs
-                            <br>The ACL_MASK Entry and the ACL Group Class
-                            <br>The getfacl and setfacl Commands
-                            <br>Default ACLs and File Creation
-                            <br>ACL Implementation Limits
-                            <br>The ACL API
-                            <br>
-                            <br>
-                            <h1><b>DIRECTORIES AND LINKS</b></h1>
-                            Directories and (Hard) Links
-                            <br>Symbolic (Soft) Links
-                            <br>Creating and Removing (Hard) Links: link() and unlink()
-                            <br>Changing the Name of a File: rename()
-                            <br>Working with Symbolic Links: symlink() and readlink()
-                            <br>Creating and Removing Directories: mkdir() and rmdir()
-                            <br>Removing a File or Directory: remove()
-                            <br>Reading Directories: opendir() and readdir()
-                            <br>File Tree Walking: nftw()
-                            <br>The Current Working Directory of a Process
-                            <br>Operating Relative to a Directory File Descriptor
-                            <br>Changing the Root Directory of a Process: chroot()
-                            <br>Resolving a Pathname: realpath()
-                            <br>Parsing Pathname Strings: dirname() and basename()
-                            <br>
-                            <br>
-                            <h1><b>MONITORING FILE EVENTS</b></h1>
-                            The inotify API
-                            <br>inotify Events
-                            <br>Reading inotify Events
-                            <br>Queue Limits and /proc Files
-                            <br>An Older System for Monitoring File Events: dnotify
-                            <br>
-                            <br>
-                            <h1><b>SIGNALS</b></h1>
-                            Signal Types and Default Actions
-                            <br>Changing Signal Dispositions: signal()
-                            <br>Sending Signals: kill()
-                            <br>Checking for the Existence of a Process
-                            <br>Other Ways of Sending Signals: raise() and killpg()
-                            <br>Displaying Signal Descriptions
-                            <br>Signal Sets
-                            <br>The Signal Mask (Blocking Signal Delivery)
-                            <br>Pending Signals
-                            <br>Signals Are Not Queued
-                            <br>Changing Signal Dispositions: sigaction()
-                            <br>Waiting for a Signal: pause()
-                            <br>
-                            <br>
-                            <h1><b>SIGNALS: SIGNAL HANDLERS</b></h1>
-                            <br>Reentrant and Async-Signal-Safe Functions
-                            <br>Global Variables and the sig_atomic_t Data Type
-                            <br>Performing a Nonlocal Goto from a Signal Handler
-                            <br>Terminating a Process Abnormally:abort()
-                            <br>Handling a Signal on an Alternate Stack: sigaltstack()
-                            <br>The SA_SIGINFO Flag
-                            <br>Interruption and Restarting of System Calls
-                            <br>
-                            <br>
-                            <h1><b>SIGNALS: ADVANCED FEATURES</b></h1>
-                            Core Dump Files
-                            <br>Special Cases for Delivery, Disposition, and Handling
-                            <br>Interruptible and Uninterruptible Process Sleep States
-                            <br>Hardware-Generated Signals
-                            <br>Synchronous and Asynchronous Signal Generation
-                            <br>Timing and Order of Signal Delivery
-                            <br>Implementation and Portability of signal()
-                            <br>Sending and Handling Realtime Signals
-                            <br>Waiting for a Signal Using a Mask: sigsuspend()
-                            <br>Synchronously Waiting for a Signal
-                            <br>Fetching Signals via a File Descriptor
-                            <br>Interprocess Communication with Signals
-                            <br>Earlier Signal APIs (System V and BSD)
-                            <br>
-                            <br>
-                            <h1><b>TIMERS AND SLEEPING</b></h1>
-                            Interval Timers
-                            <br>Scheduling and Accuracy of Timer
-                            <br>Setting Timeout on Blocking Operations
-                            <br>Low-Resolution Sleeping: sleep(), High-Resolution Sleeping: nanosleep()
-                            <br>POSIX Clocks
-                            <br>----- Retrieving the Value of a clock: clock_gettime()
-                            <br>----- Setting the Value of a clock: clock_settime()
-                            <br>----- Obtaining the Clock ID of a Specific Process or Thread
-                            <br>----- Improved High-Resolution sleeping: clock_nanosleep()
-                            <br>POSIX Interval Timers
-                            <br>----- Creating a Timer: timer_create()
-                            <br>----- Arming and Disarming a Timer: timer_settime()
-                            <br>----- Retrieving the Current Value of a Timer: timer_gettime()
-                            <br>----- Deleting a Timer: timer_delete()
-                            <br>----- Notification via Signal
-                            <br>----- Timer Overruns
-                            <br>----- Notification via a Thread
-                            <br>Timer That Notify via File Descriptor: the timerfd API
+                            <!--<h1><b>HISTORY AND STANDARDS</b></h1>
+            A Brief History of UNIX and C
+            <br>The GNU Project
+            <br>The Linux Kernel
+            <br>The First POSIX(Portable Operating System Interface) Standards
+            <br>X/Open Company and The Open Group
+            <br>SUSv3 and POSIX. 1-2001
+            <br>SUSv4 and POSIX. 1-2008
+            <br>UNIX Standards Timeline
+            <br>Implementation Standards
+            <br>Linux, Standards, and the Linux Standard Base
+            <br>
+            <br>
+            <h1><b>FUNDAMENTAL CONCEPTS</b></h1>
+            The Core Operating System: The Kernel
+            <br>The Shell
+            <br>Users and groups
+            <br>Signal Directory Hierarchy, Directory, Links, and Files
+            <br>File I/O Model
+            <br>Programs
+            <br>Process
+            <br>Memory Mappings
+            <br>Statics and Shared Libraries
+            <br>Interprocess Communication and Sychronization
+            <br>Signals
+            <br>Threads
+            <br>Process Groups and Shell job Control
+            <br>Sessions, Controlling Terminals, and Controlling Processes
+            <br>Date and Time
+            <br>Client-Server Architecture
+            <br>Real time
+            <br>The /proc File System
+            <br>
+            <br>
+            -->
+                            <h1>System Programming Concepts</h1>
+                            <!--System Calls
+            <br>Library Function
+            <br>The Standard C Library; The GNU C Library [glibc]
+            <br>Handling Errors from System Calls and Library Functions
+            <br>Portability Issues
+            <br>
+            <br>
+            -->
+                            <h1>FILE I/O: THE UNIVERSAL I/O MODEL</h1>
+                            <!--Universality of I/O
+            <br>Opening a file: open()
+            <br>Reading from a File: read()
+            <br>Writing to a File: write()
+            <br>Closing a File: close()
+            <br>Changing the File OFFset: lseek()
+            <br>Operations Outside the Universal I/O Model: ioctl
+            <br>Atomicity and Race Condition
+            <br>File Control Operations: fcntl()
+            <br>Open File Status Flags
+            <br>Relationship Between File Descriptors and Open Files
+            <br>Duplicating File Descriptors
+            <br>File I/O at a Specified Offset: pread() and pwrite()
+            <br>Scatter-Gather I/O: readv() and writev()
+            <br>Truncating a file: truncate() and ftruncate()
+            <br>Nonblocking I/O
+            <br>I/O on Large Files
+            <br>The /dev/fd Directory
+            <br>Creating Temporary Files
+            <br>
+            <br>
+            -->
+                            <h1>Processes</h1>
+                            <!--Processes and Programs
+            <br>Process ID and Parent Process ID
+            <br>Memory Layout of a Process
+            <br>Virtual Memory Management
+            <br>The Stack and Stack Frames
+            <br>Command-Line Arguments (argc, argv)
+            <br>Environment List
+            <br>Performing a Nonlocal Goto: setjmp() and long jmp()
+            <br>
+            <br>
+            -->
+                            <h1>MEMORY ALLOCATION</h1>
+                            <!--Allocating Memory on the Heap
+            <br>----- Adjusting the Program Break: brk() and sbrk()
+            <br>----- Allocating Memory on the Heap: malloc() and free()
+            <br>Allocating Memory on the Stack: alloca()
+            <br>
+            <br>
+            -->
+                            <h1>USERS AND GROUPS</h1>
+                            <!--The Password File: /etc/passwd
+            <br>The Shadow Password File: /etc/shadow
+            <br>The Group File: /etc/group
+            <br>Retrieving User and Group Information
+            <br>Password Encryption and user Authentication
+            <br>
+            <br>
+            -->
+                            <h1>PROCESS CREDENTIALS</h1>
+                            <!--Real User ID and Real Group ID
+            <br>Effective User ID and Effective Group ID
+            <br>Set-User-ID and Set-Group-ID Programs
+            <br>Saved set-User-ID and Set-Group-ID
+            <br>File-System User ID and File-System Group ID
+            <br>Retrieving and Modifying Real, Effective, and Saved Set IDs, File-System IDs, Supplementary Group IDs
+            <br>
+            <br>
+            -->
+                            <h1>TIME</h1>
+                            <!--Calender Time
+            <br>Time
+            <br>Timezones
+            <br>Locales
+            <br>Updating the System Clock
+            <br>The Software Clock (jiffies)
+            <br>Process Time
+            <br>
+            <br>
+            -->
+                            <h1>SYSTEM LIMITS AND OPTIONS</h1>
+                            <!--System Limits
+            <br>Retrieving System Limits at Run Time
+            <br>Retrieving File-Related Limits at Run Time
+            <br>Indeterminate Limits
+            <br>
+            <br>
+            -->
+                            <h1>SYSTEM AND PROCESS INFORMATION</h1>
+                            <!--The /proc File System
+            <br>----- Obtaining Information about a Process: /proc/PID
+            <br>----- System Information Under /proc
+            <br>----- Accessing /proc Files
+            <br>System Identification: uname()
+            <br>
+            <br>
+            -->
+                            <h1>FILE I/O BUFFERING</h1>
+                            <!--Kernel Buffering of File I/O: The Buffer Cache
+            <br>Buffering in the stdio Library
+            <br>Controlling Kernel Buffering of File I/O
+            <br>Advising the Kernel About I/O Patterns
+            <br>Bypassing the Buffer Cache: Direct I/O
+            <br>Mixing Library Functions and System Calls for File I/O
+            <br>
+            <br>
+            -->
+                            <h1>FILE SYSTEMS</h1>
+                            <!--Device Special Files (Devices)
+            <br>Disks and Partitions
+            <br>File System
+            <br>I-nodes
+            <br>The Virtual File System (VFS)
+            <br>Journaling File System
+            <br>Single Directory Hierarchy and Mount Points
+            <br>Mounting a File System: mount()
+            <br>Unmounting a File System: umount() and umount2()
+            <br>Mounting a File System at Multiple Mount Points
+            <br>Stacking Multiple Mounts on the Same Mount Point
+            <br>Bind Mounts
+            <br>A Virtual Memory File System: tmpfs
+            <br>Obtaining Information About a File System: statvfs()
+            <br>
+            <br>
+            <br>
+            -->
+                            <h1>FILE ATTRIBUTES</h1>
+                            <!--Retrieving File Information: stat()
+            <br>File Timestamps
+            <br>----- Changing File Timestamps with utime() and utimes()
+            <br>----- Changing File Timestamps with utimensat() and furimens()
+            <br>File Owndership
+            <br>----- Changing File Ownership: chown(), fchown(), and lchown()
+            <br>File Permissions
+            <br>----- Permissions on Regular Files
+            <br>----- Permissions on Directories
+            <br>----- Permissions-Checking Algorithm
+            <br>----- Checking File Accessibility: access()
+            <br>----- Set-User-ID, Set-Group-ID, and Sticky Bits
+            <br>----- The Process File Mode Creation Mask: umask()
+            <br>----- Changing File Permissions: chmod() and fchmod()
+            <br>I-node Flags (ext2 Extended File Attributes)
+            <br>
+            <br>
+            -->
+                            <h1>EXTENDED ATTRIBUTES</h1>
+                            <!--Extended Attribute Implementation Details
+            <br>System Calls for Manipulating Extended Attributes
+            <br>
+            <br>
+            <h1><b>ACCESS CONTROL LISTS</b></h1>
+            ACL Permission-Checking Algorithm
+            <br>Long and Short Text Forms for ACLs
+            <br>The ACL_MASK Entry and the ACL Group Class
+            <br>The getfacl and setfacl Commands
+            <br>Default ACLs and File Creation
+            <br>ACL Implementation Limits
+            <br>The ACL API
+            <br>
+            <br>
+            -->
+                            <h1>DIRECTORIES AND LINKS</h1>
+                            <!--Directories and (Hard) Links
+            <br>Symbolic (Soft) Links
+            <br>Creating and Removing (Hard) Links: link() and unlink()
+            <br>Changing the Name of a File: rename()
+            <br>Working with Symbolic Links: symlink() and readlink()
+            <br>Creating and Removing Directories: mkdir() and rmdir()
+            <br>Removing a File or Directory: remove()
+            <br>Reading Directories: opendir() and readdir()
+            <br>File Tree Walking: nftw()
+            <br>The Current Working Directory of a Process
+            <br>Operating Relative to a Directory File Descriptor
+            <br>Changing the Root Directory of a Process: chroot()
+            <br>Resolving a Pathname: realpath()
+            <br>Parsing Pathname Strings: dirname() and basename()
+            <br>
+            <br>
+            -->
+                            <h1>MONITORING FILE EVENTS</h1>
+                            <!--The inotify API
+            <br>inotify Events
+            <br>Reading inotify Events
+            <br>Queue Limits and /proc Files
+            <br>
+            <br>
+            -->
+                            <h1>SIGNALS</h1>
+                            <!--Signal Types and Default Actions
+            <br>Changing Signal Dispositions: signal()
+            <br>Sending Signals: kill()
+            <br>Checking for the Existence of a Process
+            <br>Other Ways of Sending Signals: raise() and killpg()
+            <br>Displaying Signal Descriptions
+            <br>Signal Sets
+            <br>The Signal Mask (Blocking Signal Delivery)
+            <br>Pending Signals
+            <br>Changing Signal Dispositions: sigaction()
+            <br>Waiting for a Signal: pause()
+            <br>
+            <br>
+            -->
+                            <h1>SIGNALS: SIGNAL HANDLERS</h1>
+                            <!--<br>Reentrant and Async-Signal-Safe Functions
+            <br>Global Variables and the sig_atomic_t Data Type
+            <br>Performing a Nonlocal Goto from a Signal Handler
+            <br>Terminating a Process Abnormally:abort()
+            <br>Handling a Signal on an Alternate Stack: sigaltstack()
+            <br>The SA_SIGINFO Flag
+            <br>Interruption and Restarting of System Calls
+            <br>
+            <br>
+            -->
+                            <h1>SIGNALS</h1>
+                            <!--Core Dump Files
+            <br>Special Cases for Delivery, Disposition, and Handling
+            <br>Interruptible and Uninterruptible Process Sleep States
+            <br>Hardware-Generated Signals
+            <br>Synchronous and Asynchronous Signal Generation
+            <br>Timing and Order of Signal Delivery
+            <br>Implementation and Portability of signal()
+            <br>Sending and Handling Realtime Signals
+            <br>Waiting for a Signal Using a Mask: sigsuspend()
+            <br>Synchronously Waiting for a Signal
+            <br>Fetching Signals via a File Descriptor
+            <br>Interprocess Communication with Signals
+            <br>Earlier Signal APIs (System V and BSD)
+            <br>
+            <br>
+            -->
+                            <h1>TIMERS AND SLEEPING</h1>
+                            <!--Interval Timers
+            <br>Scheduling and Accuracy of Timer
+            <br>Setting Timeout on Blocking Operations
+            <br>Low-Resolution Sleeping: sleep(), High-Resolution Sleeping: nanosleep()
+            <br>POSIX Clocks
+            <br>----- Retrieving the Value of a clock: clock_gettime()
+            <br>----- Setting the Value of a clock: clock_settime()
+            <br>----- Obtaining the Clock ID of a Specific Process or Thread
+            <br>----- Improved High-Resolution sleeping: clock_nanosleep()
+            <br>POSIX Interval Timers
+            <br>----- Creating a Timer: timer_create()
+            <br>----- Arming and Disarming a Timer: timer_settime()
+            <br>----- Retrieving the Current Value of a Timer: timer_gettime()
+            <br>----- Deleting a Timer: timer_delete()
+            <br>----- Notification via Signal
+            <br>----- Timer Overruns
+            <br>----- Notification via a Thread
+            <br>Timer That Notify via File Descriptor: the timerfd API
+            <br><br>
+            -->
+                            <h1>PROCESS CREATION</h1>
+                            <!--Creating a New Process: fork()
+            <br>File Sharing Between Parent and Child
+            <br>Memory Semantics of fork()
+            <br>the vfork() System call
+            <br>Race Condition After fork()
+            <br>Avoiding Race Conditions by Sychronizing with Signals
+            <br>
+            <br>
+            -->
+                            <h1>PROCESS TERMINATION</h1>
+                            <!--Terminating a Process: _exit() and exit()
+            <br>Details of Process Termination
+            <br>Exit Handlers
+            <br>Interactions Between fork(), stdio Buffers, and _exit()
+            <br>
+            <br>
+            -->
+                            <h1>MONITORING CHILD PROCESSES</h1>
+                            <!--Waiting on a Child Process
+            <br>----- The wait() System Call
+            <br>----- The waitpid() System Call
+            <br>----- The Wait Status Value
+            <br>----- Process Termination from a Signal Handler
+            <br>----- The waitid() System call
+            <br>Orphans and Zombies
+            <br>The SIGCHLD Signal
+            <br>----- Establishing a Handler for SIGCHLD
+            <br>----- Delivery of SIGCHLD for Stopped Children
+            <br>----- Ignoring Dead Child Processes
+            <br>
+            <br>
+            -->
+                            <h1>PROGRAM EXECUTION</h1>
+                            <!--Executing a New Program: execve()
+            <br>The exec() Library Functions
+            <br>----- The PATH Environment Variable
+            <br>----- Specifying Program Arguments as a List
+            <br>----- Passing the Caller's Environment to the New Program
+            <br>----- Executing a File Referred to by a Descriptor: fexecve()
+            <br>Interpreter Scripts
+            <br>File Descriptors and exec()
+            <br>Signals and exec()
+            <br>Executing a Shell Command: System()
+            <br>Implementing System()
+            <br>Process Accounting
+            <br>The clone() System Call
+            <br>----- The clone() flags Argument
+            <br>----- Extensions to waitpid() for cloned Children
+            <br>Speed of Process Creation
+            <br>Effect of exec() and fork() on Process Attributes
+            <br>
+            <br>
+            -->
+                            <h1>Thread</h1>
+                            <!--Thread Creation
+            <br>Thread Termination
+            <br>Thread IDs
+            <br>Joining with a Terminated Thread
+            <br>Detaching a Thread
+            <br>Thread Attributes
+            <br>
+            <br>
+            -->
+                            <h1>THREAD: THREAD SYNCHRONIZATION</h1>
+                            <!--Protecting Accesses to Shared Variables: Mutexes
+            <br>----- Statically Allocated Mutexes
+            <br>----- Locking and Unlocking a Mutex
+            <br>----- Performance of Mutex
+            <br>----- Mutex Deadlocks
+            <br>----- Dynamically Initializing a Mutex
+            <br>----- Mutex Attributes
+            <br>----- Mutex Types
+            <br>Signaling Changes of State: Condition Variables
+            <br>----- Statically Allocated Condition Variables
+            <br>----- Signaling and Waiting on Condition Variables
+            <br>----- Testing a Condition Variable's Predicate
+            <br>----- Joining Any Terminated Thread
+            <br>----- Dynamically Allocated Condition Variables
+            <br>
+            <br>
+            -->
+                            <h1>THREADS: THREAD SAFETY AND PER-THREAD STORAGE</h1>
+                            <!--THREAD SAFETY
+            <br>One-Time Initialization
+            <br>Thread-Specific Data
+            <br>----- Thread-Specific Data from the Library Function's Perspective
+            <br>Thread-Local Storage
+            <br>
+            <br>-->
+                            <h1>THREADS: THREAD CANCELLATION</h1>
+                            <!--Cancelling a Thread
+            <br>Cancellation State and Type
+            <br>Cancellation Points
+            <br>Testing for Thread Cancellation
+            <br>Cleanup Hanlders
+            <br>Asynchronous Cancelability
+            <br>
+            <br>
+            -->
+                            <h1>THREADS</h1>
+                            <!--Thread Stacks
+            <br>Threads and Signals
+            <br>----- How the UNIX Signal Model Maps to Threads
+            <br>----- Manipulating the Thread Signal Mask
+            <br>----- Sending a Signal to a Thread
+            <br>----- Dealing with Asynchronous Signals Sanely
+            <br>Threads and Process Control
+            <br>Thread Implementation Models
+            <br>Linux Implementations of POSIX Thread
+            <br>----- LinuxThreads
+            <br>----- NPTL(Native POSIX Threads Library)
+            <br>Advanced Features of the Pthreads API
+            <br>
+            <br>
+            -->
+                            <h1>PROCESS GROUPS, SESSIONS, AND JOB CONTROL</h1>
+                            <!--Process Groups
+            <br>Sessions
+            <br>Controlling Terminals and Controlling Process
+            <br>Foreground and Background Process Groups
+            <br>The SIGHUP Signal
+            <br>----- Handling of SIGHUP by the Shell
+            <br>----- SIGHUP and Termination of the Controlling Process
+            <br>Job Control
+            <br>----- Using Job Control Within the Shell
+            <br>----- Implementing Job Control
+            <br>----- Handling Job-Control Signal
+            <br>----- Orphaned Process Groups (and SIGHUP Revisted)
+            <br>
+            <br>
+            -->
+                            <h1>PROCESS PRIORITIES AND SCHEDULING</h1>
+                            <!--Process Priorities
+            <br>Overview of Realtime Process Scheduling
+            <br>----- The SCHED_RR Policy
+            <br>----- The SCHED_FIFO Policy
+            <br>----- The SCHED_BATCH and SCHED_IDLE Policy
+            <br>Realtime Process Scheduling API
+            <br>----- Realtime Priority Ranges
+            <br>----- Modifying and Retrieving Policies and Priorities
+            <br>----- Relinquishing the CPU
+            <br>----- The SCHED_RR Time Slice
+            <br>CPU Affinity
+            <br>
+            <br>
+            -->
+                            <h1>PROCESS RESOURCES</h1>
+                            <!--Process Resource Usage
+            <br>Process Resource Limits
+            <br>Details of Specific Resource Limits
+            <br>
+            <br>
+            -->
+                            <h1>DAEMONS</h1>
+                            <!--Creating a Daemon
+            <br>Guidelines for Writing Daemons
+            <br>Using SIGHUP to Reinitialize a Daemon
+            <br>Logging Messages and Errors Using syslog
+            <br>-----The syslog API
+            <br>-----The /etc/syslog.conf File
+            <br>
+            <br>
+            -->
+                            <h1>WRITING SECURE PRIVILEGED PROGRAMS</h1>
+                            <!--Operate with Least Privilege
+            <br>Be Careful When Executing a Program
+            <br>Avoid Exposing Sensitive Information
+            <br>Confine the Process
+            <br>Beware of Signals and Race Conditions
+            <br>Pitfalls When Performing File Operations and File I/O
+            <br>Buffer Overruns
+            <br>Denial-of-Service Attacks
+            <br>Check Return Statuses and Fail Safetly
+            <br>
+            <br>
+            -->
+                            <h1>CAPABILITIES</h1>
+                            <!--Rationale for Capabilities
+            <br>The Linux Capabilities
+            <br>Process and File Capabilities
+            <br>----- Purpose of the Process Permitted and Effective Capability Sets
+            <br>----- Purpose of the File Permitted and Effective Capability Sets
+            <br>----- Purpose of the Process and File Inheritable Sets
+            <br>----- Assigning and Viewing File Capabilities from the Shell
+            <br>The Modern Capabilities Implementation
+            <br>Transformation of Process Capabilities During exec()
+            <br>----- Capability Bounding Set
+            <br>----- Preserving root Semantics
+            <br>Effect on Process Capabilities of Changing User IDs
+            <br>Changing Process Capabilities Programmatically
+            <br>Creating Capabilities-Only Environments
+            <br>Discovering the Capabilities Required by a Program
+            <br>
+            <br>
+            -->
+                            <h1>LOGIN ACCOUNTING</h1>
+                            <!--Overview of the utmp and wtmp Files
+            <br>The utmpx API
+            <br>The utmpx Structure
+            <br>Retrieving Information from the utmp and wtmp wtmp Files
+            <br>Retrieving the Login Name: getlogin()
+            <br>Updating the utmp and wtmp Files for a Login Session
+            <br>The lastlog File
+            <br>
+            <br>-->
+                            <h1>SHARED LIBRARIES</h1>
+                            <!--Object Libraries
+            <br>Static Libraries
+            <br>Creating and Using Shared Libraries—A First Pass
+            <br>----- Creating a Shared Library
+            <br>----- Position-Independent Code
+            <br>----- Using a Shared Library
+            <br>----- The Shared Library Soname
+            <br>Shared Library Versions and Naming Conventions
+            <br>Installing Shared Libraries
+            <br>Compatible Versus Incompatible Libraries
+            <br>Upgrading Shared Libraries
+            <br>Specifying Library Search Directories in an Object File
+            <br>Finding Shared Libraries at Run Time
+            <br>Run-Time Symbol Resolution
+            <br>Using a Static Library Instead of a Shared Library
+            <br>Dynamically Loaded Libraries
+            <br>----- Opening a Shared Library: dlopen()
+            <br>----- Diagnosing Errors: dlerror()
+            <br>----- Obtaining the Address of a Symbol: dlsym()
+            <br>----- Closing a Shared Library: dlclose()
+            <br>----- Obtaining Information About Loaded Symbols: dladdr()
+            <br>----- Accessing Symbols in the Main Program
+            <br>Controlling Symbol Visibility
+            <br>Linker Version Scripts
+            <br>----- Controlling Symbol Visibility with Version Scripts
+            <br>----- Symbol Versioning
+            <br>Initialization and Finalization Functions
+            <br>Preloading Shared Libraries
+            <br>Monitoring the Dynamic Linker: LD_DEBUG
+            <br>
+            <br>-->
+                            <h1>INTERPROCESS COMMUNICATION</h1>
+                            <!--A Taxonomy of IPC Facilities
+            <br>Communication Facilities
+            <br>Synchronization Facilities
+            <br>Comparing IPC Facilities
+            <br>
+            <br>-->
+                            <h1>PIPES AND FIFOS</h1>
+                            <!--Creating and Using Pipes
+            <br>Pipes as a Method of Process Synchronization
+            <br>Using Pipes to Connect Filters
+            <br>Talking to a Shell Command via a Pipe: popen()
+            <br>Pipes and stdio Buffering
+            <br>FIFOs
+            <br>A Client-Server Application Using FIFOs
+            <br>Nonblocking I/O
+            <br>Semantics of read() and write() on Pipes and FIFOs
+            <br>
+            <br>-->
+                            <h1>SYSTEM V IPC</h1>
+                            <!--IPC Keys
+            <br>Associated Data Structure and Object Permissions
+            <br>IPC Identifiers and Client-Server Applications
+            <br>Algorithm Employed by System V IPC get Calls
+            <br>The ipcs and ipcrm Commands
+            <br>Obtaining a List of All IPC Objects
+            <br>IPC Limits
+            <br>
+            <br>-->
+                            <h1>SYSTEM V MESSAGE QUEUES</h1>
+                            <!--Creating or Opening a Message Queue
+            <br>Exchanging Messages
+            <br>----- Sending Messages
+            <br>----- Receiving Messages
+            <br>Message Queue Control Operations
+            <br>Message Queue Associated Data Structure
+            <br>Message Queue Limits
+            <br>Displaying All Message Queues on the System
+            <br>Client-Server Programming with Message Queues
+            <br>A File-Server Application Using Message Queues
+            <br>Disadvantages of System V Message Queues
+            <br>
+            <br>-->
+                            <h1>SYSTEM V SEMAPHORES</h1>
+                            <!--Creating or Opening a Semaphore Set
+            <br>Semaphore Control Operations
+            <br>Semaphore Associated Data Structure
+            <br>Semaphore Initialization
+            <br>Semaphore Operations
+            <br>Handling of Multiple Blocked Semaphore Operations
+            <br>Semaphore Undo Values
+            <br>Implementing a Binary Semaphores Protocol
+            <br>Semaphore Limits
+            <br>Disadvantages of System V Semaphores
+            <br>
+            <br>-->
+                            <h1>SYSTEM V SHARED MEMORY</h1>
+                            <!--Creating or Opening a Shared Memory Segment
+            <br>Using Shared Memory
+            <br>Transferring Data via Shared Memory
+            <br>Location of Shared Memory in Virtual Memory
+            <br>Storing Pointers in Shared Memory
+            <br>Shared Memory Control Operations
+            <br>Shared Memory Associated Data Structure
+            <br>Shared Memory Limits
+            <br>
+            <br>-->
+                            <h1>MEMORY MAPPINGS</h1>
+                            <!--Creating a Mapping: mmap()
+            <br>Unmapping a Mapped Region: munmap()
+            <br>File Mapping
+            <br>----- Private File Mappings
+            <br>----- Shared File Mappings
+            <br>----- Boundary Cases
+            <br>----- Memory Protection and File Access Mode Interactions
+            <br>Synchronizing a Mapped Region: msync()
+            <br>Additional mmap() Flags
+            <br>Anonymous Mappings
+            <br>Remapping a Mapped Region: mremap()
+            <br>MAP_NORESERVE and Swap Space Overcommitting
+            <br>The MAP_FIXED Flag
+            <br>Nonlinear Mappings: remap_file_pages()
+            <br>
+            <br>-->
+                            <h1>VIRTUAL MEMORY OPERATIONS</h1>
+                            <!--Changing Memory Protection: mprotect()
+            <br>Memory Locking: mlock() and mlockall()
+            <br>Determining Memory Residence: minicore()
+            <br>Advising Future Memory Usage Patterns: madvise()
+            <br>
+            <br>-->
+                            <h1>POSIX MESSAGE QUEUES</h1>
+                            <!--Opening, Closing, and Unlinking a Message Queue
+            <br>Relationship Between Descriptors and Message Queues
+            <br>Message Queue Attributes
+            <br>Exchanging Messages
+            <br>----- Sending Messages
+            <br>----- Receiving Messages
+            <br>----- Sending and Receiving Messages with a Timeout
+            <br>Message Notification
+            <br>----- Receiving Notification via a Signal
+            <br>----- Receiving Notification via a Thread
+            <br>Linux-Specific Features
+            <br>Message Queue Limits
+            <br>Comparison of POSIX and System V Message Queues
+            <br>
+            <br>
+            -->
+                            <h1>POSIX SEMAPHORES</h1>
+                            <!--Named Semaphores
+            <br>----- Opening a Named Semaphore
+            <br>----- Closing a Semaphore
+            <br>----- Removing a Named Semaphore
+            <br>Semaphore Operations
+            <br>----- Waiting on a Semaphore
+            <br>----- Posting a Semaphore
+            <br>----- Retrieving the Current Value of a Semaphore
+            <br>Unnamed Semaphores
+            <br>----- Initializing an Unnamed Semaphore
+            <br>----- Destroying an Unnamed Semaphore
+            <br>Comparisons with Other Synchronization Techniques
+            <br>Semaphore Limits
+            <br>
+            <br>
+            -->
+                            <h1>POSIX SHARED MEMORY</h1>
+                            <!--Creating Shared Memory Objects
+            <br>Using Shared Memory Objects
+            <br>Removing Shared Memory Objects
+            <br>Comparisons Between Shared Memory APIs
+            <br>
+            <br>
+            -->
+                            <h1>FILE LOCKING</h1>
+                            <!--File Locking with flock()
+            <br>----- Semantics of Lock Inheritance and Release
+            <br>----- Limitation of flock()
+            <br>Record Locking with fcntl()
+            <br>----- Deadlock
+            <br>----- Lock Limits and Performance
+            <br>----- Semantics of Lock Inheritance and Release
+            <br>----- Lock Starvation and Priority of Queued Lock Requests
+            <br>Mandatory Locking
+            <br>The /proc/locks File
+            <br>Running Just One Instance of a Program
+            <br>Older Locking Techniques
+            <br>
+            <br>
+            -->
+                            <h1>SOCKETS</h1>
+                            <!--Creating a Socket: socket()
+            <br>Binding a Socket to an Address: bind()
+            <br>Generic Socket Address Structures: struct sockaddr
+            <br>Stream Sockets
+            <br>----- Listening for Incoming Connections: listen()
+            <br>----- Accepting a Connection: accept()
+            <br>----- Connecting to a Peer Socket: connect()
+            <br>----- I/O on Stream Sockets
+            <br>----- Connection Termination: close()
+            <br>Datagram Sockets
+            <br>----- Exchanging Datagrams: recvfrom() and sendto()
+            <br>----- Using connect() with Datagram Sockets
+            <br>
+            <br>
+            -->
+                            <h1>SOCKETS: UNIX DOMAIN</h1>
+                            <!--UNIX Domain Socket Addresses: struct sockaddr_un
+            <br>Stream Sockets in the UNIX Domain
+            <br>Datagram Sockets in the UNIX Domain
+            <br>UNIX Domain Socket Permissions
+            <br>Creating a Connected Socket Pair: socketpair()
+            <br>The Linux Abstract Socket Namespace
+            <br>
+            <br>
+            -->
+                            <h1>SOCKETS: INTERNET DOMAINS</h1>
+                            <!--Internet Domain Sockets
+            <br>Network Byte Order
+            <br>Data Representation
+            <br>Internet Socket Address
+            <br>Host and Service Conversion Functions
+            <br>The inet_pton() and inet_ntop() Functions
+            <br>Domain Name System (DNS)
+            <br>The /etc/services File
+            <br>Protocol-Independent Host and Service Conversion
+            <br>----- The getaddrinfo() Function
+            <br>----- Freeing addrinfo Lists: freeaddrinfo()
+            <br>----- Diagnosing Errors: gai_strerror()
+            <br>----- The getnameinfo() function
+            <br>Client-Server Example (Stream Socket)
+            <br>An Internet Domain Socket Library
+            <br>Obsolete APIs for Host and Service Conversion
+            <br>----- The inet_aton() and inet_ntoa() Functions
+            <br>----- The gethostbyname() and gethosybyaddr() Function
+            <br>----- The getservbyname() and getservbyport() Function
+            <br>UNIX Versus Internet Domain Sockets
+            <br>
+            <br>
+            -->
+                            <h1>SOCKETS: SERVER DESIGN</h1>
+                            <!--Iterative and Concurrent Servers
+            <br>An Iterative UDP echo Server
+            <br>A Concurrent TCP echo Server
+            <br>Other Concurrent Server Designs
+            <br>The inetd (Internet Superserver) Daemon
+            <br>
+            <br>
+            -->
+                            <h1>SOCKETS</h1>
+                            <!--Partial Reads and Writes on Stream Sockets
+            <br>The shutdown() System Call
+            <br>Socket-Specific I/O System Calls: recv() and send()
+            <br>The sendfile() System call
+            <br>Retrieving Socket Addresses
+            <br>Format of a TCP Segment
+            <br>TCP Sequence Numbers and Acknowledgement
+            <br>TCP State Machine and State Transition Diagram
+            <br>TCP Connection Establishment
+            <br>TCP Connection Termination
+            <br>Calling shutdown() on a TCP Socket
+            <br>The TIME_WAIT State
+            <br>Monitoring Sockets: netstat
+            <br>Using tcpdump to Monitor TCP Traffic
+            <br>Socket Options
+            <br>The SO_REUSEADDR Socket Option
+            <br>Inheritance of Flags and Options Across accept()
+            <br>TCP Versus UDP
+            <br>Advanced Features
+            <br>----- Out-of-Band Data
+            <br>----- The sendmsg() and recvmsg() System Calls
+            <br>----- Passing File Descriptors
+            <br>----- Receiving Sender Credentials
+            <br>----- Sequenced-Packet Sockets
+            <br>----- SCTP and DCCP Transport-Layer Protocols
+            <br>
+            <br>
+            <h1><b>TERMINALS</b></h1>
+            Retrieving and Modifying Terminal Attributes
+            <br>The stty Command
+            <br>Terminal Special Characters
+            <br>Terminal Flags
+            <br>Terminal I/O Modes
+            <br>----- Canonical Mode
+            <br>----- Noncanonical Mode
+            <br>----- Cooked, Cbreak, and Raw Modes
+            <br>Terminal Line Speed (Bit Rate)
+            <br>Terminal Line Control
+            <br>Terminal Window Size
+            <br>Terminal Indentification
+            <br>
+            <br>
+            -->
+                            <h1>ALTERNATIVE I/O MODELS</h1>
+                            <!--Level-Triggered and Edge-Triggered Notification
+            <br>Employing Nonblocking I/O with Alternative I/O Models
+            <br>I/O Multiplexing
+            <br>----- The select() System Call
+            <br>----- The poll() System Call
+            <br>----- When Is a File Descriptor Ready?
+            <br>----- Comparison of select() and poll()
+            <br>----- Problems with select() and poll()
+            <br>Signal-Driven I/O
+            <br>----- When Is “I/O Possible” Signaled?
+            <br>----- Refining the Use of Signal-Driven I/O
+            <br>The epoll API
+            <br>----- Creating an epoll Instance: epoll_create()
+            <br>----- Modifying the epoll Interest List: epoll_ctl()
+            <br>----- Waiting for Events:epoll_wait()
+            <br>----- epoll Semantics
+            <br>----- Performance of epoll Versus I/O Multiplexing
+            <br>----- Edge-Triggered Notification
+            <br>Waiting on Signals and File Descriptors
+            <br>----- The pselect() System Call
+            <br>----- The Self-Pipe Trick
+            <br>
+            <br>-->
+                            <h1>PSEUDOTERMINALS</h1>
+                            <!--   UNIX 98 Pseduoterminals
+               <br>----- Opening an Unused Master:posix_openpt()
+               <br>----- Changing Slave Ownership and Permissions: grantpt()
+               <br>----- Unlocking the Slave: unlockpt()
+               <br>----- Obtaining the Name of the Slave: ptsname()
+               <br>Opening a Master: ptyMasterOpen()
+               <br>Connecting Processes with a Pseudoterminal: ptyFork()
+               <br>Pseudoterminal I/O
+               <br>Implementing script(1)
+               <br>Terminal Attributes and Window Size
+               <br>BSD Pseudoterminals
+               <br>
+               <br>-->
+                            <h1>Tracing System Calls</h1>
+                            <h1>Pasing Command-Line Options</h1>
+                            <h3><b>Reference Book</b></h3>
+                            <i>
+                                The Linux Programming Interface
+                                Book by Michael Kerrisk
+                            </i>
                             <br><br>
-                            <h1><b>PROCESS CREATION</b></h1>
-                            Creating a New Process: fork()
-                            <br>File Sharing Between Parent and Child
-                            <br>Memory Semantics of fork()
-                            <br>the vfork() System call
-                            <br>Race Condition After fork()
-                            <br>Avoiding Race Conditions by Sychronizing with Signals
-                            <br>
-                            <br>
-                            <h1><b>PROCESS TERMINATION</b></h1>
-                            Terminating a Process: _exit() and exit()
-                            <br>Details of Process Termination
-                            <br>Exit Handlers
-                            <br>Interactions Between fork(), stdio Buffers, and _exit()
-                            <br>
-                            <br>
-                            <h1><b>MONITORING CHILD PROCESSES</b></h1>
-                            Waiting on a Child Process
-                            <br>----- The wait() System Call
-                            <br>----- The waitpid() System Call
-                            <br>----- The Wait Status Value
-                            <br>----- Process Termination from a Signal Handler
-                            <br>----- The waitid() System call
-                            <br>Orphans and Zombies
-                            <br>The SIGCHLD Signal
-                            <br>----- Establishing a Handler for SIGCHLD
-                            <br>----- Delivery of SIGCHLD for Stopped Children
-                            <br>----- Ignoring Dead Child Processes
-                            <br>
-                            <br>
-                            <h1><b>PROGRAM EXECUTION</b></h1>
-                            Executing a New Program: execve()
-                            <br>The exec() Library Functions
-                            <br>----- The PATH Environment Variable
-                            <br>----- Specifying Program Arguments as a List
-                            <br>----- Passing the Caller's Environment to the New Program
-                            <br>----- Executing a File Referred to by a Descriptor: fexecve()
-                            <br>Interpreter Scripts
-                            <br>File Descriptors and exec()
-                            <br>Signals and exec()
-                            <br>Executing a Shell Command: System()
-                            <br>Implementing System()
-                            <br>Process Accounting
-                            <br>The clone() System Call
-                            <br>----- The clone() flags Argument
-                            <br>----- Extensions to waitpid() for cloned Children
-                            <br>Speed of Process Creation
-                            <br>Effect of exec() and fork() on Process Attributes
-                            <br>
-                            <br>
-                            <h1><b>Thread</b></h1>
-                            Thread Creation
-                            <br>Thread Termination
-                            <br>Thread IDs
-                            <br>Joining with a Terminated Thread
-                            <br>Detaching a Thread
-                            <br>Thread Attributes
-                            <br>Threads Versus Processes
-                            <br>
-                            <br>
-                            <h1><b>THREAD: THREAD SYNCHRONIZATION</b></h1>
-                            Protecting Accesses to Shared Variables: Mutexes
-                            <br>----- Statically Allocated Mutexes
-                            <br>----- Locking and Unlocking a Mutex
-                            <br>----- Performance of Mutex
-                            <br>----- Mutex Deadlocks
-                            <br>----- Dynamically Initializing a Mutex
-                            <br>----- Mutex Attributes
-                            <br>----- Mutex Types
-                            <br>Signaling Changes of State: Condition Variables
-                            <br>----- Statically Allocated Condition Variables
-                            <br>----- Signaling and Waiting on Condition Variables
-                            <br>----- Testing a Condition Variable's Predicate
-                            <br>----- Joining Any Terminated Thread
-                            <br>----- Dynamically Allocated Condition Variables
-                            <br>
-                            <br>
-                            <h1><b>THREADS: THREAD SAFETY AND PER-THREAD STORAGE</b></h1>
-                            THREAD SAFETY
-                            <br>One-Time Initialization
-                            <br>Thread-Specific Data
-                            <br>----- Thread-Specific Data from the Library Function's Perspective
-                            <br>Thread-Local Storage
-                            <br>
-                            <br>
-                            <h1><b>THREADS: THREAD CANCELLATION</b></h1>
-                            Cancelling a Thread
-                            <br>Cancellation State and Type
-                            <br>Cancellation Points
-                            <br>Testing for Thread Cancellation
-                            <br>Cleanup Hanlders
-                            <br>Asynchronous Cancelability
-                            <br>
-                            <br>
-                            <h1><b>THREADS: FURTHER Details</b></h1>
-                            Thread Stacks
-                            <br>Threads and Signals
-                            <br>----- How the UNIX Signal Model Maps to Threads
-                            <br>----- Manipulating the Thread Signal Mask
-                            <br>----- Sending a Signal to a Thread
-                            <br>----- Dealing with Asynchronous Signals Sanely
-                            <br>Threads and Process Control
-                            <br>Thread Implementation Models
-                            <br>Linux Implementations of POSIX Thread
-                            <br>----- LinuxThreads
-                            <br>----- NPTL(Native POSIX Threads Library)
-                            <br>Advanced Features of the Pthreads API
-                            <br>
-                            <br>
-                            <h1><b>PROCESS GROUPS, SESSIONS, AND JOB CONTROL</b></h1>
-                            Process Groups
-                            <br>Sessions
-                            <br>Controlling Terminals and Controlling Process
-                            <br>Foreground and Background Process Groups
-                            <br>The SIGHUP Signal
-                            <br>----- Handling of SIGHUP by the Shell
-                            <br>----- SIGHUP and Termination of the Controlling Process
-                            <br>Job Control
-                            <br>----- Using Job Control Within the Shell
-                            <br>----- Implementing Job Control
-                            <br>----- Handling Job-Control Signal
-                            <br>----- Orphaned Process Groups (and SIGHUP Revisted)
-                            <br>
-                            <br>
-                            <h1><b>PROCESS PRIORITIES AND SCHEDULING</b></h1>
-                            Process Priorities
-                            <br>Overview of Realtime Process Scheduling
-                            <br>----- The SCHED_RR Policy
-                            <br>----- The SCHED_FIFO Policy
-                            <br>----- The SCHED_BATCH and SCHED_IDLE Policy
-                            <br>Realtime Process Scheduling API
-                            <br>----- Realtime Priority Ranges
-                            <br>----- Modifying and Retrieving Policies and Priorities
-                            <br>----- Relinquishing the CPU
-                            <br>----- The SCHED_RR Time Slice
-                            <br>CPU Affinity
-                            <br>
-                            <br>
-                            <h1><b>PROCESS RESOURCES</b></h1>
-                            Process Resource Usage
-                            <br>Process Resource Limits
-                            <br>Details of Specific Resource Limits
-                            <br>
-                            <br>
-                            <h1><b>DAEMONS</b></h1>
-                            Creating a Daemon
-                            <br>Guidelines for Writing Daemons
-                            <br>Using SIGHUP to Reinitialize a Daemon
-                            <br>Logging Messages and Errors Using syslog
-                            <br>-----The syslog API
-                            <br>-----The /etc/syslog.conf File
-                            <br>
-                            <br>
-                            <h1><b>WRITING SECURE PRIVILEGED PROGRAMS</b></h1>
-                            Operate with Least Privilege
-                            <br>Be Careful When Executing a Program
-                            <br>Avoid Exposing Sensitive Information
-                            <br>Confine the Process
-                            <br>Beware of Signals and Race Conditions
-                            <br>Pitfalls When Performing File Operations and File I/O
-                            <br>Don’t Trust Inputs or the Environment
-                            <br>Beware of Buffer Overruns
-                            <br>Beware of Denial-of-Service Attacks
-                            <br>Check Return Statuses and Fail Safetly
-                            <br>
-                            <br>
-                            <h1><b>CAPABILITIES</b></h1>
-                            Rationale for Capabilities
-                            <br>The Linux Capabilities
-                            <br>Process and File Capabilities
-                            <br>----- Purpose of the Process Permitted and Effective Capability Sets
-                            <br>----- Purpose of the File Permitted and Effective Capability Sets
-                            <br>----- Purpose of the Process and File Inheritable Sets
-                            <br>----- Assigning and Viewing File Capabilities from the Shell
-                            <br>The Modern Capabilities Implementation
-                            <br>Transformation of Process Capabilities During exec()
-                            <br>----- Capability Bounding Set
-                            <br>----- Preserving root Semantics
-                            <br>Effect on Process Capabilities of Changing User IDs
-                            <br>Changing Process Capabilities Programmatically
-                            <br>Creating Capabilities-Only Environments
-                            <br>Discovering the Capabilities Required by a Program
-                            <br>Older Kernels and Systems Without File Capabilities
-                            <br>
-                            <br>
+                            <img src="Software Engineering Pics/Linux_System.webp" alt="Linux_System" style="width:65%" onclick="onClick(this)">
                         </p>
                     </div>
                     <div class="web">
                         <p>
-
-                            <h1><b>LOGIN ACCOUNTING</b></h1>
-                            Overview of the utmp and wtmp Files
-                            <br>The utmpx API
-                            <br>The utmpx Structure
-                            <br>Retrieving Information from the utmp and wtmp wtmp Files
-                            <br>Retrieving the Login Name: getlogin()
-                            <br>Updating the utmp and wtmp Files for a Login Session
-                            <br>The lastlog File
-                            <br>
-                            <br>
-                            <h1><b>FUNDAMENTALS OF SHARED LIBRARIES</b></h1>
-                            Object Libraries
-                            <br>Static Libraries
-                            <br>Creating and Using Shared Libraries—A First Pass
-                            <br>----- Creating a Shared Library
-                            <br>----- Position-Independent Code
-                            <br>----- Using a Shared Library
-                            <br>----- The Shared Library Soname
-                            <br>Useful Tools for Working with Shared Libraries
-                            <br>Shared Library Versions and Naming Conventions
-                            <br>Installing Shared Libraries
-                            <br>Compatible Versus Incompatible Libraries
-                            <br>Upgrading Shared Libraries
-                            <br>Specifying Library Search Directories in an Object File
-                            <br>Finding Shared Libraries at Run Time
-                            <br>Run-Time Symbol Resolution
-                            <br>Using a Static Library Instead of a Shared Library
-                            <br>Dynamically Loaded Libraries
-                            <br>----- Opening a Shared Library: dlopen()
-                            <br>----- Diagnosing Errors: dlerror()
-                            <br>----- Obtaining the Address of a Symbol: dlsym()
-                            <br>----- Closing a Shared Library: dlclose()
-                            <br>----- Obtaining Information About Loaded Symbols: dladdr()
-                            <br>----- Accessing Symbols in the Main Program
-                            <br>Controlling Symbol Visibility
-                            <br>Linker Version Scripts
-                            <br>----- Controlling Symbol Visibility with Version Scripts
-                            <br>----- Symbol Versioning
-                            <br>Initialization and Finalization Functions
-                            <br>Preloading Shared Libraries
-                            <br>Monitoring the Dynamic Linker: LD_DEBUG
-                            <br>
-                            <br>
-                            <h1><b>INTERPROCESS COMMUNICATION</b></h1>
-                            A Taxonomy of IPC Facilities
-                            <br>Communication Facilities
-                            <br>Synchronization Facilities
-                            <br>Comparing IPC Facilities
-                            <br>
-                            <br>
-                            <h1><b>PIPES AND FIFOS</b></h1>
-                            Creating and Using Pipes
-                            <br>Pipes as a Method of Process Synchronization
-                            <br>Using Pipes to Connect Filters
-                            <br>Talking to a Shell Command via a Pipe: popen()
-                            <br>Pipes and stdio Buffering
-                            <br>FIFOs
-                            <br>A Client-Server Application Using FIFOs
-                            <br>Nonblocking I/O
-                            <br>Semantics of read() and write() on Pipes and FIFOs
-                            <br>
-                            <br>
-                            <h1><b>SYSTEM V IPC</b></h1>
-                            IPC Keys
-                            <br>Associated Data Structure and Object Permissions
-                            <br>IPC Identifiers and Client-Server Applications
-                            <br>Algorithm Employed by System V IPC get Calls
-                            <br>The ipcs and ipcrm Commands
-                            <br>Obtaining a List of All IPC Objects
-                            <br>IPC Limits
-                            <br>
-                            <br>
-                            <h1><b>SYSTEM V MESSAGE QUEUES</b></h1>
-                            Creating or Opening a Message Queue
-                            <br>Exchanging Messages
-                            <br>----- Sending Messages
-                            <br>----- Receiving Messages
-                            <br>Message Queue Control Operations
-                            <br>Message Queue Associated Data Structure
-                            <br>Message Queue Limits
-                            <br>Displaying All Message Queues on the System
-                            <br>Client-Server Programming with Message Queues
-                            <br>A File-Server Application Using Message Queues
-                            <br>Disadvantages of System V Message Queues
-                            <br>
-                            <br>
-                            <h1><b>SYSTEM V SEMAPHORES</b></h1>
-                            Creating or Opening a Semaphore Set
-                            <br>Semaphore Control Operations
-                            <br>Semaphore Associated Data Structure
-                            <br>Semaphore Initialization
-                            <br>Semaphore Operations
-                            <br>Handling of Multiple Blocked Semaphore Operations
-                            <br>Semaphore Undo Values
-                            <br>Implementing a Binary Semaphores Protocol
-                            <br>Semaphore Limits
-                            <br>Disadvantages of System V Semaphores
-                            <br>
-                            <br>
-                            <h1><b>SYSTEM V SHARED MEMORY</b></h1>
-                            Creating or Opening a Shared Memory Segment
-                            <br>Using Shared Memory
-                            <br>Transferring Data via Shared Memory
-                            <br>Location of Shared Memory in Virtual Memory
-                            <br>Storing Pointers in Shared Memory
-                            <br>Shared Memory Control Operations
-                            <br>Shared Memory Associated Data Structure
-                            <br>Shared Memory Limits
-                            <br>
-                            <br>
-                            <h1><b>MEMORY MAPPINGS</b></h1>
-                            Creating a Mapping: mmap()
-                            <br>Unmapping a Mapped Region: munmap()
-                            <br>File Mapping
-                            <br>----- Private File Mappings
-                            <br>----- Shared File Mappings
-                            <br>----- Boundary Cases
-                            <br>----- Memory Protection and File Access Mode Interactions
-                            <br>Synchronizing a Mapped Region: msync()
-                            <br>Additional mmap() Flags
-                            <br>Anonymous Mappings
-                            <br>Remapping a Mapped Region: mremap()
-                            <br>MAP_NORESERVE and Swap Space Overcommitting
-                            <br>The MAP_FIXED Flag
-                            <br>Nonlinear Mappings: remap_file_pages()
-                            <br>
-                            <br>
-                            <h1><b>VIRTUAL MEMORY OPERATIONS</b></h1>
-                            Changing Memory Protection: mprotect()
-                            <br>Memory Locking: mlock() and mlockall()
-                            <br>Determining Memory Residence: minicore()
-                            <br>Advising Future Memory Usage Patterns: madvise()
-                            <br>
-                            <br>
-                            <h1><b>POSIX MESSAGE QUEUES</b></h1>
-                            Opening, Closing, and Unlinking a Message Queue
-                            <br>Relationship Between Descriptors and Message Queues
-                            <br>Message Queue Attributes
-                            <br>Exchanging Messages
-                            <br>----- Sending Messages
-                            <br>----- Receiving Messages
-                            <br>----- Sending and Receiving Messages with a Timeout
-                            <br>Message Notification
-                            <br>----- Receiving Notification via a Signal
-                            <br>----- Receiving Notification via a Thread
-                            <br>Linux-Specific Features
-                            <br>Message Queue Limits
-                            <br>Comparison of POSIX and System V Message Queues
-                            <br>
-                            <br>
-                            <h1><b>POSIX SEMAPHORES</b></h1>
-                            Named Semaphores
-                            <br>----- Opening a Named Semaphore
-                            <br>----- Closing a Semaphore
-                            <br>----- Removing a Named Semaphore
-                            <br>Semaphore Operations
-                            <br>----- Waiting on a Semaphore
-                            <br>----- Posting a Semaphore
-                            <br>----- Retrieving the Current Value of a Semaphore
-                            <br>Unnamed Semaphores
-                            <br>----- Initializing an Unnamed Semaphore
-                            <br>----- Destroying an Unnamed Semaphore
-                            <br>Comparisons with Other Synchronization Techniques
-                            <br>Semaphore Limits
-                            <br>
-                            <br>
-                            <h1><b>POSIX SHARED MEMORY</b></h1>
-                            Creating Shared Memory Objects
-                            <br>Using Shared Memory Objects
-                            <br>Removing Shared Memory Objects
-                            <br>Comparisons Between Shared Memory APIs
-                            <br>
-                            <br>
-                            <h1><b>FILE LOCKING</b></h1>
-                            File Locking with flock()
-                            <br>----- Semantics of Lock Inheritance and Release
-                            <br>----- Limitation of flock()
-                            <br>Record Locking with fcntl()
-                            <br>----- Deadlock
-                            <br>----- Lock Limits and Performance
-                            <br>----- Semantics of Lock Inheritance and Release
-                            <br>----- Lock Starvation and Priority of Queued Lock Requests
-                            <br>Mandatory Locking
-                            <br>The /proc/locks File
-                            <br>Running Just One Instance of a Program
-                            <br>Older Locking Techniques
-                            <br>
-                            <br>
-                            <h1><b>SOCKETS</b></h1>
-                            Creating a Socket: socket()
-                            <br>Binding a Socket to an Address: bind()
-                            <br>Generic Socket Address Structures: struct sockaddr
-                            <br>Stream Sockets
-                            <br>----- Listening for Incoming Connections: listen()
-                            <br>----- Accepting a Connection: accept()
-                            <br>----- Connecting to a Peer Socket: connect()
-                            <br>----- I/O on Stream Sockets
-                            <br>----- Connection Termination: close()
-                            <br>Datagram Sockets
-                            <br>----- Exchanging Datagrams: recvfrom() and sendto()
-                            <br>----- Using connect() with Datagram Sockets
-                            <br>
-                            <br>
-                            <h1><b>SOCKETS: UNIX DOMAIN</b></h1>
-                            UNIX Domain Socket Addresses: struct sockaddr_un
-                            <br>Stream Sockets in the UNIX Domain
-                            <br>Datagram Sockets in the UNIX Domain
-                            <br>UNIX Domain Socket Permissions
-                            <br>Creating a Connected Socket Pair: socketpair()
-                            <br>The Linux Abstract Socket Namespace
-                            <br>
-                            <br>
-                            <h1><b>SOCKETS: FUNDAMENTALS OF TCP/IP NETWORKS</b></h1>
-                            Internets
-                            <br>Networking Protocols and Layers
-                            <br>The Data-Link Layer
-                            <br>The Network Layer: IP
-                            <br>IP Addresses
-                            <br>The Transport Layer
-                            <br>----- Port Numbers
-                            <br>----- User Datagram Protocol(UDP)
-                            <br>----- Transmission Control Protocol(TCP)
-                            <br>Requests for Comments (RFCs)
-                            <br>
-                            <br>
-                            <h1><b>SOCKETS: INTERNET DOMAINS</b></h1>
-                            Internet Domain Sockets
-                            <br>Network Byte Order
-                            <br>Data Representation
-                            <br>Internet Socket Address
-                            <br>Host and Service Conversion Functions
-                            <br>The inet_pton() and inet_ntop() Functions
-                            <br>Client-Server Example (Datagram Sockets)
-                            <br>Domain Name System (DNS)
-                            <br>The /etc/services File
-                            <br>Protocol-Independent Host and Service Conversion
-                            <br>----- The getaddrinfo() Function
-                            <br>----- Freeing addrinfo Lists: freeaddrinfo()
-                            <br>----- Diagnosing Errors: gai_strerror()
-                            <br>----- The getnameinfo() function
-                            <br>Client-Server Example (Stream Socket)
-                            <br>An Internet Domain Socket Library
-                            <br>Obsolete APIs for Host and Service Conversion
-                            <br>----- The inet_aton() and inet_ntoa() Functions
-                            <br>----- The gethostbyname() and gethosybyaddr() Function
-                            <br>----- The getservbyname() and getservbyport() Function
-                            <br>UNIX Versus Internet Domain Sockets
-                            <br>
-                            <br>
-                            <h1><b>SOCKETS: SERVER DESIGN</b></h1>
-                            Iterative and Concurrent Servers
-                            <br>An Iterative UDP echo Server
-                            <br>A Concurrent TCP echo Server
-                            <br>Other Concurrent Server Designs
-                            <br>The inetd (Internet Superserver) Daemon
-                            <br>
-                            <br>
-                            <h1><b>SOCKETS</b></h1>
-                            Partial Reads and Writes on Stream Sockets
-                            <br>The shutdown() System Call
-                            <br>Socket-Specific I/O System Calls: recv() and send()
-                            <br>The sendfile() System call
-                            <br>Retrieving Socket Addresses
-                            <br>Format of a TCP Segment
-                            <br>TCP Sequence Numbers and Acknowledgement
-                            <br>TCP State Machine and State Transition Diagram
-                            <br>TCP Connection Establishment
-                            <br>TCP Connection Termination
-                            <br>Calling shutdown() on a TCP Socket
-                            <br>The TIME_WAIT State
-                            <br>Monitoring Sockets: netstat
-                            <br>Using tcpdump to Monitor TCP Traffic
-                            <br>Socket Options
-                            <br>The SO_REUSEADDR Socket Option
-                            <br>Inheritance of Flags and Options Across accept()
-                            <br>TCP Versus UDP
-                            <br>Advanced Features
-                            <br>----- Out-of-Band Data
-                            <br>----- The sendmsg() and recvmsg() System Calls
-                            <br>----- Passing File Descriptors
-                            <br>----- Receiving Sender Credentials
-                            <br>----- Sequenced-Packet Sockets
-                            <br>----- SCTP and DCCP Transport-Layer Protocols
-                            <br>
-                            <br>
-                            <h1><b>TERMINALS</b></h1>
-                            Retrieving and Modifying Terminal Attributes
-                            <br>The stty Command
-                            <br>Terminal Special Characters
-                            <br>Terminal Flags
-                            <br>Terminal I/O Modes
-                            <br>----- Canonical Mode
-                            <br>----- Noncanonical Mode
-                            <br>----- Cooked, Cbreak, and Raw Modes
-                            <br>Terminal Line Speed (Bit Rate)
-                            <br>Terminal Line Control
-                            <br>Terminal Window Size
-                            <br>Terminal Indentification
-                            <br>
-                            <br>
-                            <h1><b>ALTERNATIVE I/O MODELS</b></h1>
-                            Level-Triggered and Edge-Triggered Notification
-                            <br>Employing Nonblocking I/O with Alternative I/O Models
-                            <br>I/O Multiplexing
-                            <br>----- The select() System Call
-                            <br>----- The poll() System Call
-                            <br>----- When Is a File Descriptor Ready?
-                            <br>----- Comparison of select() and poll()
-                            <br>----- Problems with select() and poll()
-                            <br>Signal-Driven I/O
-                            <br>----- When Is “I/O Possible” Signaled?
-                            <br>----- Refining the Use of Signal-Driven I/O
-                            <br>The epoll API
-                            <br>----- Creating an epoll Instance: epoll_create()
-                            <br>----- Modifying the epoll Interest List: epoll_ctl()
-                            <br>----- Waiting for Events:epoll_wait()
-                            <br>----- A Closer Look at epoll Semantics
-                            <br>----- Performance of epoll Versus I/O Multiplexing
-                            <br>----- Edge-Triggered Notification
-                            <br>Waiting on Signals and File Descriptors
-                            <br>----- The pselect() System Call
-                            <br>----- The Self-Pipe Trick
-                            <br>
-                            <br>
-                            <h1><b>PSEUDOTERMINALS</b></h1>
-                            UNIX 98 Pseduoterminals
-                            <br>----- Opening an Unused Master:posix_openpt()
-                            <br>----- Changing Slave Ownership and Permissions: grantpt()
-                            <br>----- Unlocking the Slave: unlockpt()
-                            <br>----- Obtaining the Name of the Slave: ptsname()
-                            <br>Opening a Master: ptyMasterOpen()
-                            <br>Connecting Processes with a Pseudoterminal: ptyFork()
-                            <br>Pseudoterminal I/O
-                            <br>Implementing script(1)
-                            <br>Terminal Attributes and Window Size
-                            <br>BSD Pseudoterminals
-                            <br>
-                            <br>
-                            <h1><b>Tracing System Calls</b></h1>
-                            <h1><b>Pasing Command-Line Options</b></h1>
-                            <br>
-                            <br>
-                            <h3><b>Lecture Series</b></h3>
+                            <h2><b>Lecture Series For Linux System Programming</b></h2>
                             <br>
                             <h1>Linux System Programming by HPC Lab Koreatech</h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/GHV1bXWJdWM?list=PLBrGAFAIyf5pIIFQv_U1dG36L5rylTvbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -999,23 +923,34 @@
                             <h1>Linux System Programming by Jeonghun Cho</h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/Tkkq-81_8KI?list=PL_Whxrj87Gsi3wvvVqOes4daHw1A9VFoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br><br>
-                            <h1>Linux C Programming by ShellWave</h1>
-                            <iframe width="350" height="250" src="https://www.youtube.com/embed/n9IT5RAludA?list=PLypxmOPCOkHXbJhUgjRaV2pD9MJkIArhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br><br>
-                            <h1>Operating System and System Programming</h1>
+                            <h1>Linux System Programming with C by Chris brown</h1>
+                            <!--  <iframe width="350" height="250" src="https://www.youtube.com/embed/p-vqh0KBtHM?list=PLysdvSvCcUhbrU3HhGhfQVbhjnN9GXCq4" title="01 01 Kernel Space and User Space" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>-->
+                            <br>
+
+                            <h1>Operating System and System Programming by Developer</h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/VmclwfKzNO0?list=PLXvgR_grOs1DGFOeD792kHlRml0PhCe9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br><br>
-                            <h3><b>Linux Programming Sources</b></h3>
-                            <br><a href="https://man7.org/linux/man-pages/dir_all_alphabetic.html" target="_blank">Linux manual Page</a>
+                            <h1>Programming with Process by Jacob Sorber</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/ss1-REMJ9GA?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw" title="Creating new processes with fork()!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br><br>
+                            <h1>Programming with Threads by Jacob Sorber</h1>
+                            <iframe width="350" height="250" src="https://www.youtube.com/embed/uA8X5zNOGw8?list=PL9IEJIKnBJjFZxuqyJ9JqVYmuFZHr7CFM" title="How to create and join threads in C (pthreads)." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br><br>
 
-                            <h3><b>Reference</b></h3>
-                            <i>
-                                The Linux Programming Interface
-                                Book by Michael Kerrisk
-                            </i>
-                            <br><br>
-                            <img src="Software Engineering Pics/Linux_System.webp" alt="Linux_System" style="width:60%" onclick="onClick(this)">
+                            <br>
+                            <h2>
+                                My Github Projects on Linux System Programming
+                            </h2>
+                            <br>Algorithms with C and C++: <a href="https://github.com/jiwook021/Algorithms-with-C-and-Cpp" target="_blank">
+                                https://github.com/jiwook021/Algorithms-with-C-and-Cpp
+                            </a>
+                            <br>IPC in Linux: <a href="https://github.com/jiwook021/Linux-IPC-Message-Queue">
+                                https://github.com/jiwook021/Linux-IPC-Message-Queue-
+                            </a>
+                            <br>Windows System Programming with C <a href="https://github.com/jiwook021/Windows-Operating-System-in-C">
+                                https://github.com/jiwook021/Windows-Operating-System-in-C
+                            </a>
                         </p>
                     </div>
                 </div>
