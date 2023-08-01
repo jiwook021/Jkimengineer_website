@@ -50,11 +50,11 @@
             <a href="Linux_CLI.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux CLI & Shell Scripts</a>
             <a href="Computer Network.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Computer Network</a>
             <a href="Linux System Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux System Programming</a>
-            <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel</a>
+            <a href="Linux_Kernel.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Kernel Development</a>
             <a href="RTOS.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">RTOS</a>
             <!--<a href="Embedded Linux.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Embedded Linux</a>
     -->
-            <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a>
+            <!-- <a href="Linux Device Driver.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Linux Device Driver</a> -->
             <a href="Network Socket Programming.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Network Programming</a>
             <!--<a href="Software Engineering/Distributed Systems.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white">Data-Intensive Applications</a>-->
             <a href="Clean_Code.html" onclick="w3_closemenu()" class="w3-bar-item w3-button w3-hover-white w3-medium">Clean Code</a>
@@ -89,377 +89,7 @@
                     <br><br>
                         <div class="web">
                             <p>
-                                <h1>Embedded Linux</h1>
-                                <!--    BIOS versus Bootloader
-            <br>Anatomy of an Embedded System
-            <br>----- Booting the Kernel
-            <br>----- Kernel Initialization
-            <br>----- First User SPace Process: init
-            <br>Storage Consideration
-            <br>----- Flash Memory
-            <br>----- NAND Flash
-            <br>----- Flash Usage
-            <br>----- Flash File Systems
-            <br>----- Memory Space
-            <br>----- Execution Contexts
-            <br>----- Process Virtual Memory
-            <br>----- Cross-Development Environment
-            <br>Embedded Linux Distribution
-            <br>
-            <br>
-        -->
-                                <h1>Processor</h1>
-                                <!-- Stand-Alone Processors
-         <br>----- IBM 970FX
-         <br>----- Intel Pentium M
-         <br>----- Intel Atom
-         <br>----- Freescale MPC7448
-         <br>----- Companion Chipsets
-         <br>Integrated Processors: Systems on Chip
-         <br>----- Power Architecture
-         <br>----- Freescale PowerQUICC I
-         <br>----- Freescale PowerQUICC II
-         <br>----- PowerQUICC II Pro
-         <br>----- Freescale Power QUICC III
-         <br>----- Freescale QorIQ
-         <br>----- AMCC Power Architectures
-         <br>----- MIPS(Microprocessor without interlocked Pipeline Stages)
-         <br>----- Broadcom MIPS
-         <br>----- ARM
-         <br>----- TI ARM
-         <br>----- Freescale ARM
-         <br>Hardware Platforms
-         <br>----- Compact PCI
-         <br>----- ATCA
-         <br><br>
-        -->
-                                <h1>The Linux Kernel</h1>
-                                <!--Kernel Versions
-        <br>Kernel Source Repositories
-        <br>Using git to Download a Kernel
-        <br>Linux Kernel Construction
-        <br>----- Top-Level Source Directory
-        <br>----- Compiling the Kernel
-        <br>----- vmlinux
-        <br>----- Kernel Image Components
-        <br>----- Subdirectory Layout
-        <br>Kernel Build System
-        <br>----- The Dot-Config
-        <br>----- Configuration Editors
-        <br>----- Makefile Targets
-        <br>Kernel Configuration
-        <br>----- Custom Configuration Options
-        <br>----- Kernel Make files
-        <br>Kernel Documentation
-        <br>Obtaining Custum Linux Kernel
-        <br>
-        <br>
-        -->
-                                <h1>Kernel Initialization</h1>
-                                <!--Composite Kernel Image
-        <br>----- The Image Object
-        <br>----- Architecture Objects
-        <br>----- Bootstrap Loader
-        <br>----- Boot messages
-        <br>Initalization Flow of Control
-        <br>----- Kernel Entry point: head.o
-        <br>----- Kernel Startup: main.c
-        <br>----- Architecture Setup
-        <br>Kernel Command-Line Processing
-        <br>----- The __setup Macro
-        <br>Subsystem Initalization
-        <br>----- The *__initcall Macros
-        <br>The init Thread
-        <br>----- Initialization via initcalls
-        <br>----- initcall_debug
-        <br>----- Final boot steps
-        <br>
-        <br>
-        -->
-                                <h1>User Space Initalization</h1>
-                                <!--Root File System
-        <br>----- FHS: File System Hieracrchy Standard
-        <br>----- File System Layout
-        <br>----- Minimal File System
-        <br>----- The Embedded FS Challenge
-        <br>----- Trial and Error Method
-        <br>----- Automated File System build Tool
-        <br>Kernel's Last Boot Steps
-        <br>----- Resolving Dependencies
-        <br>----- Custmized Inital Process
-        <br>The init Process
-        <br>----- inittab
-        <br>----- Sample Web Server Startup Script
-        <br>Initial RAM Disk
-        <br>----- Booting with initrd
-        <br>----- Bootloader Support for initrd
-        <br>----- initrd Magic: linuxrc
-        <br>----- The initrd Plubing
-        <br>----- Building an initrd Image
-        <br>Using initramfs
-        <br>
-        <br>
-        -->
-                                <h1>Bootloaders</h1>
-                                <!--Role of Bootloader
-        <br>Bootloader Challenges
-        <br>----- DRAM Controller
-        <br>----- Flash Versus RAM
-        <br>----- Image Complexity
-        <br>----- Execution Context
-        <br>A Universal Bootloader: Das U-Boot
-        <br>----- Obtaining U-Boot
-        <br>----- Configurating U-Boot
-        <br>----- U-Boot Monitor Commands
-        <br>----- Network Operations
-        <br>----- Storage Subsystems
-        <br>----- Booting from Disk
-        <br>Porting U-Boot
-        <br>----- EP405 U-Boot port
-        <br>----- U-Boot Makefile Configuration Target
-        <br>----- EP405 First build
-        <br>----- Ep405 Processor Initalization
-        <br>----- Board-Specific Initalization
-        <br>----- Port Summary
-        <br>----- U-Boot Image Format
-        <br>Device Tree Blob (Flat Device Tree)
-        <br>----- Device Tree Source
-        <br>----- Device Tree Compiler
-        <br>----- Alternative Kernel Image Using DTB(Device Tree block)
-        <br>Lilo boot loader
-        <br>GRUB (Grand Unified Boot loader)
-        <br>
-        <br>
-        -->
-                                <h1>Device Driver Basics</h1>
-                                <!--Device Driver Concepts
-        <br>----- Loadable Modules
-        <br>----- Device Driver Architecture
-        <br>----- Minimal Device Driver
-        <br>----- Module Build Infrastructure
-        <br>----- Installing Device Driver
-        <br>----- Loading a module
-        <br>----- Module Parameters
-        <br>Module Utilities
-        <br>----- insmod
-        <br>----- lsmod
-        <br>----- modprobe
-        <br>----- depmod
-        <br>----- rmmod
-        <br>----- modinfo
-        <br>Driver Methods
-        <br>----- Driver File System Operations
-        <br>----- Allocation of Device Numbers
-        <br>----- Device Nodes and mknod
-        <br>Building Out-of-Tree Drivers
-        <br>Device Drivers and the GPL(GNU Public License)
-        <br>
-        <br>
-        -->
-                                <h1>File Systems</h1>
-                                <!--Partitions
-        <br>Mounting a file System
-        <br>Checking File System Integrity
-        <br>ext2
-        <br>ext3
-        <br>ext4
-        <br>ReiserFS
-        <br>building a JFFS2 (Journaling Flash File system version 2) Image
-        <br>cramfs
-        <br>Network File system
-        <br>Root file system on NFS
-        <br>Pseudo file System
-        <br>----- /proc File System
-        <br>----- sysfs
-        <br>
-        <br>
-        -->
-                                <h1>MTD(Memory Technology Device) Subsystem</h1>
-                                <!--Enabling MTD Services
-        <br>Configuring MTD on Target
-        <br>MTD Partitions
-        <br>----- Redboot Partition Table Partitioning
-        <br>----- Kernel Command-Line Partitioning
-        <br>----- Mapping Driver
-        <br>----- Flash Chip Drivers
-        <br>----- Board-Specific Initalization
-        <br>MTD Utilities
-        <br>----- JFFS2 Root file System
-        <br>UBI(Unsorted Block Images) File System
-        <br>----- Configuring for UBIFS
-        <br>----- Building a UBIFS Image
-        <br>----- Using UBIFS as the Root File System
-        <br>
-        <br>
-        -->
-                                <h1>BusyBox</h1>
-                                <!--BusyBox Configuration
-        <br>----- Cross-Compiling BusyBox
-        <br>BusyBox Operation
-        <br>----- Busy init
-        <br>----- Sample rcS Initialization Script
-        <br>----- BusyBox Target Installation
-        <br>----- BusyBox Applets
-        <br>
-        <br>
-        -->
-                                <h1>Embedded Development Environment</h1>
-                                <!--Cross-Development Environment
-        <br>Host System Requirement
-        <br>----- Hardware Debug Probe
-        <br>Hosting Target Boards
-        <br>----- TFTP(Trivial File Transfer Protocol) Service
-        <br>----- BOOTP(Boot Strap Protocol)/DHCP(Dynamic Host Configuration Protocol)
-        <br>----- NFS Server
-        <br>----- Target NFS Root Mount
-        <br>----- U-Boot NFS Root Mount
-        <br>
-        <br>
-        -->
-                                <h1>Development Tools</h1>
-                                <!--GDB (GNU Debugger)
-                     <br>----- Debugging a Core Dump
-                     <br>----- Invoking GDB
-                     <br>----- Debug Session in GDB
-                     <br>Data Display Debugger
-                     <br>cbrowser/cscope
-                     <br>Tracing and Profiling tools
-                     <br>----- Strace
-                     <br>----- ltrace
-                     <br>----- ps
-                     <br>----- top
-                     <br>----- mtrace
-                     <br>----- dmalloc
-                     <br>----- Kernel Oops
-                     <br>Binary Utilities
-                     <br>----- readIF
-                     <br>----- Examining Debug Information using readelf
-                     <br>----- objdump
-                     <br>----- objcopy
-                     <br>Miscellaneous Binary Utilities
-                     <br>----- strip
-                     <br>----- addr2line
-                     <br>----- strings
-                     <br>----- ldd
-                     <br>----- nm
-                     <br>----- prelink
-                     <br>
-                     <br>
-        -->
-                                <h1>Kernel Debugging Techniques</h1>
-                                <!--     Using KGDB for Kernel Debugging
-             <br>----- KGDB kernel Debugging
-             <br>----- Target Boot with KGDB Support
-             <br>----- Useful Kernel Breakpoints
-             <br>----- Sharing a Console Serial Port with KGDB
-             <br>----- Debugging Very Early Kernel Code
-             <br>Kernel Debugging Techniques
-             <br>----- GDB remote Serial Protocol
-             <br>----- Debugging Optimized Kernel Code
-             <br>----- Useful Kernel GDB Macros
-             <br>----- Debugging Loadable Modules
-             <br>----- Printk debugging
-             <br>----- Magic SysReq Key
-             <br>Hardware-Assised Debugging
-             <br>----- Programming Flash Using JTAG Probe
-             <br>----- Debugging with a JTAG Probe
-             <br>When It Doesn't boot
-             <br>----- Early Serial Debug Output
-             <br>----- Dumping the printk Log Buffer
-             <br>----- KGDB on Panic
-             <br>
-             <br>
-        -->
-                                <h1>Debugging Embedded Linux Applications</h1>
-                                <!--  Target Debugging
-          <br>Remote (Cross) Debugging
-          <br>----- gdbserver
-          <br>Debugging with Shared Libraries
-          <br>----- Shared Library Events in GDB
-          <br>Debugging Multiple Tasks
-          <br>----- Debugging Multiple Processes
-          <br>----- Debugging Multithreaded Applications
-          <br>----- Debugging Bootloader/Flash Code
-          <br>Debugging Using a Serial Port
-          <br>Attaching to a Running Process
-          <br>
-          <br>
-        -->
-                                <h1>Open Source Build Systems</h1>
-                                <!--Buildroot
-        <br>----- Buildroot Installation
-        <br>----- Buildroot Configuration
-        <br>----- Buildroot Build
-        <br>OpenEmbedded
-        <br>----- OpenEmbedded Composition
-        <br>----- BitBake Metadata
-        <br>----- Recipe Basics
-        <br>----- Metadata Tasks
-        <br>----- Metadata Classes
-        <br>----- Configuring OpenEmbedded
-        <br>----- Building Images
-        <br>
-        <br>
-        -->
-                                <h1>Linux and Real Time</h1>
-                                <!--Real Time
-        <br>----- Soft and Hard Real Time
-        <br>----- Linux Scheduling
-        <br>----- Latency
-        <br>Kernel Preemption
-        <br>----- Impediments to Preemption
-        <br>----- Preemption Models
-        <br>----- SMP(Symmetrical Multiprocessing) Kernel
-        <br>----- Sources of Preemption Latency
-        <br>Real-Time Kernel Patch
-        <br>----- Real-Time Features
-        <br>----- O(1) Scheduler
-        <br>----- Creating a Real-Time Process
-        <br>Real-Time Kernel Performance Analysis
-        <br>----- Using Ftrace for Tracing
-        <br>----- Preemption Off Latency Measurement
-        <br>----- Wakeup Latency Measurement
-        <br>----- Interrupt Off Timing
-        <br>----- Soft Lockup Detection
-        <br><br>
-        -->
-                                <h1>Universal Serial Bus</h1>
-                                <!--USB Physical Topology
-        <br>USB Logical Topology
-        <br>USB Revisions
-        <br>USB Connectors
-        <br>USB Cable Assemblies
-        <br>USB Modes
-        <br>USB Initalization
-        <br>sysfs and USB Device Naming
-        <br>Useful USB Tools
-        <br>----- USB Mass Storage Class
-        <br>----- USB HID(Human Interface Device) Class
-        <br>----- USB CDC(Communivation Device Class) Class Drivers
-        <br>----- USB Network Support
-        <br>USB Debug
-        <br>----- usbmon
-        <br>
-        <br>
-        -->
-                                <h1>udev</h1>
-                                <!--                            Device Discovery
-                                    <br>Default udev Behavior
-                                    <br>udev Rules
-                                    <br>----- Modalias
-                                    <br>----- Typical udev Rules Configuration
-                                    <br>----- Inital System setup for udev
-                                    <br>Loading Platform Device Drivers
-                                    <br>Customizing udev Behavior
-                                    <br>Persistent Device Naming
-                                    <br>----- udev Helper utilities
-                                    <br>Using udev with busybox
-                                    <br>----- busybox mdev
-                                    <br>----- configuraing mdev
-                                    <br>
-                                    <br>
-        -->
-                                <br>
+                              
                                 <h3><b>Book Reference</b></h3>
                                 <h1>
                                     <i>
@@ -495,17 +125,23 @@
                             <br><a href="https://www.putty.org/" target="_blank">Install Putty</a>
                             <br><a href="https://www.arduino.cc/en/software" target="_blank">Install Arduino IDE 2.0</a>
                             <br><a href="https://ttssh2.osdn.jp/index.html.en" target="_blank">Install teraterm</a>
-                            <br><br>
-
+                            <br>
+                            <h3><b>Linux Guide</b></h3>
+                            <a href="https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=%EB%A6%AC%EB%88%85%EC%8A%A4&no=192">Link for Embedded Linux by IDEC</a>
+                            <br>
+                            <a href="https://www.yoctoproject.org/software-overview/">Link for Yocto Project</a>
+                            <br>
+                            <h1>Embedded Recipes</h1>
+                            <a href="http://recipes.egloos.com/">http://recipes.egloos.com/</a>
 
                         </div>
                     <div class="web">
                         <h3><b>Lecture Series on Embedded Linux</b></h3>
                         <p>
-                            <h1>Yocto Linux by BOPV</h1>
+                            <h1><b>Yocto Linux by BOPV</b></h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/U5G_rT-GwPE?list=PLFp__VNK_gyiOK6K2hFmJafQP1W-bxWc9" title="Yocto Linux #3 - Hello World Kernel Module" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br><br>
-                            <h1>Embedded Linux by Shawn Hymel</h1>
+                            <h1><b>Embedded Linux by Shawn Hymel</b></h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/2-PwskQrZac?list=PLEBQazB0HUyTpoJoZecRK6PpDG31Y7RPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <br><br>
                             <h1><b>Linux Kernel by Gogeon</b></h1>
@@ -513,10 +149,8 @@
                             <br><br>
                             <h1><b>Linux Kernel by Austin Kim</b></h1>
                             <iframe width="350" height="250" src="https://www.youtube.com/embed/XSx22vwKapE?list=PLRrUisvYoUw9-cTYgkbTbr9f9CpbGdq4F" title="[리눅스 커널의 구조와 원리] 3.2/3.3 printk() + dump_stack()" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <br><br>
-                            <a href="https://www.idec.or.kr/vod/apply/view/?pay=nopay&search_val=%EB%A6%AC%EB%88%85%EC%8A%A4&no=192">Link for Embedded Linux by IDEC</a>
+                           
                             <br>
-                            <a href="https://www.yoctoproject.org/software-overview/">Link for Yocto Project</a>
                             <br><br>
                             <br>
                         </p>
