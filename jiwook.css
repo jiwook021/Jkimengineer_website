@@ -701,11 +701,6 @@ a {
     clear: both;
 }
 
-.search-container {
-    display: grid;
-    justify-content: center;
-}
-
 .w3-col,
 .w3-half,
 .w3-third,
@@ -2005,30 +2000,66 @@ a {
     border-color: #e7ffff !important
 }
 
-#autocompleteList {
-    font-size: 13px !important;
-    float: left;
-    width: 30em;
-    display: block;
-    outline: 0;
-    border: none;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: opacity 0s;
-    padding: 6px 12px !important;
+.search-container {
+    width: 40em;
     margin-left: auto;
     margin-right: auto;
-    clear: both;
+}
+
+#searchInput {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none; /* 클릭했을 때 나타나는 외곽선 제거 */
+    transition: border 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.result-exist #searchInput {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* #searchInput:focus {
+    border-color: #4285f4;
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2);
+} */
+
+#autocompleteList {
+    font-size: 13px;
+    width: 100%;
+
+    border: 1px solid #ccc;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none; /* 클릭했을 때 나타나는 외곽선 제거 */
+    overflow: hidden;
+
+    /* text-align: center; */
+    cursor: pointer;
+    white-space: nowrap;
+    /* transition: opacity 0s; */
+    padding: 6px 12px;
+
+    display: none;
+}
+
+.result-exist #autocompleteList {
+    display: block
 }
 
 #autocompleteList > a {
-    font-size: 13px !important;
+    /* font-size: 13px !important; */
     width: 100%;
     display: block;
     float: none;
@@ -2039,50 +2070,27 @@ a {
     text-decoration: none;
     color: inherit;
     background-color: inherit;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     white-space: nowrap;
     transition: opacity 0s;
-    padding: 6px 12px !important;
+    padding: 4px 12px !important;
     clear: both;
 }
 
-#searchInput {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 40px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    /* 모서리 둥글게 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* 약간의 그림자 */
-    outline: none;
-    /* 클릭했을 때 나타나는 외곽선 제거 */
-    transition: border 0.2s ease, box-shadow 0.2s ease;
-    /* 부드러운 효과 */
-}
-
-#searchInput:focus {
-    border-color: #4285f4;
-    /* 포커스 상태일 때의 테두리 색 */
-    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2);
-    /* 포커스 상태일 때의 그림자 */
+#autocompleteList > a:hover {
+    background-color: #e3e2e26a;
 }
 
 @media screen and (max-width: 600px) {
-    #searchInput {
-        width: 70%;
+    #searchContainer {
+        max-width: 90%;
     }
-
 }
 
 @media screen and (min-width: 601px) {
-    #searchInput {
-        width: 100%;
+    #searchContainer {
+        width: 40em;
     }
 }
 

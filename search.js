@@ -86,20 +86,41 @@ const folderContents = filePaths.map(filePath => {
     return { title, url };
 });
 
-console.log("const folderContents =", JSON.stringify(folderContents, null, 2));
+// console.log("const folderContents =", JSON.stringify(folderContents, null, 2));
 
 function autocomplete(event) {
+    console.log(`event = ${event}`);
+
     const searchInput = event.target.value.toLowerCase();
     const autocompleteList = document.getElementById("autocompleteList");
     autocompleteList.innerHTML = "";
 
-    folderContents.filter(content => content.title.toLowerCase().includes(searchInput)).slice(0, 10)
-        .forEach(content => {
-            const resultLink = document.createElement("a");
-            resultLink.href = content.url;
-            resultLink.textContent = content.title;
-            autocompleteList.appendChild(resultLink);
-        });
+    const max_item = 15;
+    const filteredItems = folderContents.filter(content => !!searchInput && content.title.toLowerCase().includes(searchInput));
+
+    filteredItems.sort((a, b) => {
+        const positionA = a.title.toLowerCase().indexOf(searchInput);
+        const positionB = b.title.toLowerCase().indexOf(searchInput);
+
+        // 0, 1 => -1
+        // 1, 1 => 0
+        // 2, 0 => 2
+        return positionA - positionB;
+    });
+
+    filteredItems.slice(0, max_item).forEach(content => {
+      const resultLink = document.createElement("a");
+      resultLink.href = content.url;
+      resultLink.textContent = content.title;
+      autocompleteList.appendChild(resultLink);
+    });
+
+    const container = document.getElementById("searchContainer");
+    if (filteredItems.length > 0) {
+        container.classList.add("result-exist");
+    } else {
+        container.classList.remove("result-exist");
+    }
 }
 
 function searchFile(file) {
