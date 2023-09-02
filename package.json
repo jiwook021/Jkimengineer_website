@@ -1,0 +1,23 @@
+{
+  "name": "jkimengineer_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server '.' --files './**/*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiwook021/Jkimengineer_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiwook021/Jkimengineer_website/issues"
+  },
+  "homepage": "https://github.com/jiwook021/Jkimengineer_website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}

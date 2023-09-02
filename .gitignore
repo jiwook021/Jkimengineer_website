@@ -1,2 +1,4 @@
 *.DS_Store
 pusher_config.php
+
+node_modules
