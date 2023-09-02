@@ -1,4 +1,7 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
 <title>JKim Software Engineering</title>
 
 <meta charset="UTF-8">
@@ -114,8 +117,9 @@
 		cursor: pointer
 	}
 </style>
+<script src="/search.js"></script>
 
-<html lang="en">
+</head>
 
 <body>
 
@@ -169,12 +173,15 @@
 
 
 
-
-
 	<!-- !PAGE CONTENT! -->
 	<div class="w3-main" style="margin-left:390px;margin-right:40px">
 
 		<div class="w3-container" style="margin-top:80px" id="showcase">
+
+			<div id="searchContainer" class="w3-center clearfix search-container" style="margin-left: 0;">
+					<input type="text" id="searchInput" placeholder="Enter title to search">
+					<div id="autocompleteList"> </div>
+			</div>
 
 
 			<!-- Header -->
